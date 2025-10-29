@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <style>
+        footer {
+            background-color: #212121;
+            color: white;
+            padding: 40px 0 0 0;
+            font-family: sans-serif;
+        }
+
+        .footer-content-wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            padding: 0 20px 30px 20px;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer-column {
+            flex: 1;
+            max-width: 380px;
+            line-height: 1.6;
+        }
+
+        .footer-column h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-circle {
+            width: 25px;
+            height: 25px;
+            background-color: #00bcd4;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .footer-logo h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .about-section p {
+            font-size: 0.9rem;
+            color: #ccc;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .contact-section .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .contact-section .contact-item span {
+            font-family: 'Material Symbols Outlined';
+            font-size: 1.2rem;
+            margin-right: 8px;
+            color: #00bcd4;
+        }
+
+        .contact-section p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+
+        .footer-copyright {
+            text-align: center;
+            padding: 15px 20px;
+            border-top: 1px solid #333;
+            background-color: #1a1a1a;
+        }
+
+        .footer-copyright p {
+            font-size: 0.85rem;
+            margin: 0;
+            color: #aaa;
+        }
+
+        /* --- Responsive Layout --- */
+        @media (max-width: 800px) {
+            .footer-content-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-column {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .about-section p {
+                font-size: 0.9rem;
+                color: #ccc;
+                text-align: justify;
+            }
+
+            .footer-logo {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-content-wrapper">
+            <div class="footer-column about-section">
+                <div class="footer-logo">
+                    <div class="logo-circle"></div>
+                    <h2>LPU Fit Space</h2>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat."
+                </p>
+            </div>
+
+            <div class="footer-column course-section">
+                <h2>Course</h2>
+                <p>PATHFIT 1: Movement Competency Training</p>
+                <p>PATHFIT 2: Exercise-Based Fitness Activities</p>
+                <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts, Group Exercise, Outdoor and Adventure Activities</p>
+            </div>
+
+            <div class="footer-column contact-section">
+                <h2>Contact Info</h2>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>LPU Cavite</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">call</span>
+                    <p>(639) 158-3558</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">mail</span>
+                    <p>fitspace@lpu.edu.ph</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+        </div>
+    </footer>
+</body>
+
+</html>

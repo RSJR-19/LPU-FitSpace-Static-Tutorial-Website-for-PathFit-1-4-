@@ -1,0 +1,183 @@
+.hero-section {
+  margin: 0;
+  background-color: #c00000;
+  padding-top: 10px;
+  /* TOP Margin, RIGHT, BOTTOM, LEFT */
+  padding: 40px auto 0 auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  flex: 1;
+  margin: 10px;
+  color: white;
+}
+.left-section h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.red-body-sub-text {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.start-button a {
+  text-decoration: none;
+  color: #333;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.graphics-box {
+  background-color: white;
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.modules-section {
+  padding-top: 5px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.modules-section h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.pathfit-modules-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-module {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px #d3d3d3;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  background-color: aqua;
+}
+
+.card-module h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-module h4 {
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.card-module p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.explore-button {
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.explore-button a {
+  text-decoration: none;
+  color: #555;
+}
+
+.about-pe-dept {
+  padding-top: 5px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-pe-dept h2 {
+  color: #b11e23;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.about-pe-dept p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  height: 60px;
+  /* TOP, RIGHT, BOTTOM, LEFT */
+  margin: 50px 100px 30px 100px;
+  overflow: hidden;
+}
+
+.about-pe-btn {
+  background-color: #b11e23;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.about-pe-btn a {
+  text-decoration: none;
+  color: #fff;
+}

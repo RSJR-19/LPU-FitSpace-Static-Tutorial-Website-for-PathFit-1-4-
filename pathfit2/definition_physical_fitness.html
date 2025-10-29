@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Physical Fitness - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit2.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+
+            <a href="">Introduction to Physical Education</a></li>
+            <a href="">What is Physical Education?</a></li>
+            <a href="">Objectives of Physical Education</a></li>
+            <a href="">Legal Bases of Physical Education</a></li>
+            <a href="">Minimum Standards of Physical Education Program</a></li>
+            <a href="">Physical Activity Readiness Questionnaire (PAR-Q)</a></li>
+            <a href="">Waist-to-Hip Ratio (WHR)</a></li>
+            <a href="">Body Mass Index (BMI)</a></li>
+            <a href="">Fundamental Movement Skills</a></li>
+            <a href="">Body Awareness and Body Mechanics</a></li>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="">Definition of Physical Fitness</a>
+            <a href="">Definition of Physical Activity</a>
+            <a href="">Definiton of Fitness</a>
+            <a href="">Fundamentals of Fitness</a>
+            <a href="">Definiton of Exercise</a>
+            <a href="">Benefits of Regular Physical Activity/ Exercise</a>
+            <a href="">Definition of Training</a>
+            <a href="">Types of Fitness Training</a>
+            <a href="">Fitness Program: 5 Steps to Get Started</a>
+            <a href="">Sample Fitness Plan</a>
+            <a href="">FITT Principle</a>
+            <a href="">Weight Management</a>
+            <a href="">Physical Fitness Test Score Card</a>
+            <a href="">Developing a Personal Fitness Plan</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="">Introduction to Applied Physical Activities</a>
+            <a href="">Course Goals and Objectives</a>
+            <a href="">Choosing your PATHFIT 3/4 Track</a>
+
+
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="">Folk Dance</a>
+              <a href="">Modern Dance/ Hip-hop</a>
+              <a href="">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="">Basketball</a>
+              <a href="">Volleyball</a>
+              <a href="">Handball</a>
+              <a href="">Badminton</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="">Arnis (Filipino Martial Arts)</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="">Cardio Workouts</a>
+              <a href="">Core and Circuit Training</a>
+              <a href="">Outdoor and Adventure</a>
+              <a href="">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="">Team-building and Recreational Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <a class="back" href="../list_view/pathfit2_list_view..html">← Back to PathFit 2 Index</a>
+
+        <h1>PATHRT2- OVERVIEW</h1>
+
+
+        <div class="image-placeholder-large">
+          <div>INSERT AN IMAGE</div>
+        </div>
+
+        <h2 class="section-title">Overview</h2>
+
+        <p class="content-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor nibh vitae lamcus hendrerit, integer
+          vulputate euismod hendrerit. Donec et varius dignissim, mauris lacus eros, mollis me. Etiam in scelerisque
+          Praesent convallis id amcus quis vehicula, porttitor et, rhoncus nisl quam ac justo imperdiet ante. In
+          facilisis
+          ornare lacus, et laoreet. Sed pulvinar malesuada lorem, non dignissim. Praesent at finibus augue. Donec
+          consectetur in lacus id, malesuada ante hendrerit in. Nullam templa.
+        </p>
+
+        <div class="pictures-section">
+          <h2 class="section-title">PICTURES</h2>
+
+          <div class="image-grid">
+            <div class="image-placeholder-small">
+              <div>INSERT AN IMAGE</div>
+            </div>
+            <div class="image-placeholder-small">
+              <div>INSERT AN IMAGE</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="content-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor nibh vitae lamcus hendrerit, integer
+          vulputate euismod hendrerit. Donec et varius dignissim, mauris lacus eros, mollis me. Etiam in scelerisque
+          Praesent convallis id amcus quis vehicula, porttitor et, rhoncus nisl quam ac justo imperdiet ante. In
+          facilisis
+          ornare lacus, et laoreet. Sed pulvinar malesuada lorem, non dignissim. Praesent at finibus augue. Donec
+          Imagen id larcer veritcularly, sodales nibh at, suscipit dolor. Nulla malesuada velit quis aliquet luctus.
+          Nulla
+          quam amet, sollicitudin et felis in, tempor porta diam. Curabitur vehicula tincidunt convallis. Vestibulum
+          cursus,
+          metus quis auctor tincidunt, nibh leo consequat elit nulla ac suscipit sem, sit amet placerat quis at felis.
+          Donec
+          amet elit. Pellentesque pretium, in luctus eque malesuada fermentum. Vestibulum sollicitudin suscipit urna
+          tortor,
+          ornas. Lorem ultricies massa ut ultricies turpis sit amet. Ultricies a, malesuada et velit ut, ultricies quam
+          quis ligula lorem ipsum. Maecenas luctus accumsan lacus, ac lacus Donec Pellentesque habitant in.
+          In hac habitasse palcese dictumst. Maecenas vitae malesuada turpis, eu finibus Praesent habitant elis eu.
+        </p>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTENT AREA -->
+
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+          molestias error modi, iste qui aliquid?</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="js/pathfit2.js"></script>
+  <script src="/assets/js/main.js"> </script>
+  <!-- END: Copied from template -->
+
+</body>
+
+</html>
