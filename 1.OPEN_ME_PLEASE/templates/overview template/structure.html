@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>save</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="structure.css">
+</head>
+
+<body>
+    <header>
+        <div style="height: 1dvh;background-color: white;"></div>
+        <nav>
+            <div class="spacer"></div>
+            <div class="left-nav">
+                <div class="lpu-logo">
+                    <img src="https://i.postimg.cc/kgRTSGH1/image.png" alt="lpu logo">
+                </div>
+                <div class="fitspace-text">
+                    <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+
+                </div>
+
+
+            </div>
+            <div class="right-nav">
+                <div class="input-container">
+                    <input type="text" placeholder=" Search Lessons...">
+                    <button>Search</button>
+                </div>
+
+            </div>
+            <div class="spacer"></div>
+        </nav>
+
+        <nav class="nav-main">
+            <div>
+                <p class="nav-button" onclick="gotoPage(homeButton, homePage, '88')">Home</p>
+                <p class="nav-button" onclick="gotoPage(pathfit1Button, pathfit1Page, '150')">PATHFIT 1</p>
+                <p class="nav-button" onclick="gotoPage(pathfit2Button, pathfit2Page, '200')">PATHFIT 2</p>
+                <p class="nav-button" onclick="gotoPage(pathfit3Button, pathfit3Page, '200')">PATHFIT 3 & 4</p>
+                <p class="nav-button" onclick="gotoPage(missionButton, missionPage, '200')">Mission & Vision</p>
+                <p class="nav-button" onclick="gotoPage(departmentButton, departmentPage, '200')">Department Overview
+                </p>
+                <p class="nav-button" onclick="gotoPage(aboutUsButton, aboutUsPage, '200')">About FitSpace</p>
+            </div>
+        </nav>
+
+    </header>
+    <div style="height: 3dvh;"></div>
+    <main id="main">
+        <div class="main-side" style="border-top-right-radius: 10px;"></div>
+        <section id="homePage" class="main-page">
+            <div class="index" id="home">
+                <h1>THIS IS THE HOME PAGE</h1>
+            </div>
+            <div class="page" id="pathfit1">
+                <div class="spacer-structure"></div>
+                <div class="main-pathfit1">
+                    <div class="title-bar">
+                        <h1>PATHFIT-1: MOVEMENT COMPETENCY TRAINING</h1>
+                    </div>
+                    <div style="height: 3dvh;background-color: white;"></div>
+                    <div class="tab-container">
+                        <h1>GRAPHICS HERE</h1><!--paltan pic pag meron na -->
+                    </div>
+                    <div style="height: 3dvh;background-color: white;"></div>
+                    <h1 class="topic-text">TOPICS:</h1>
+                    <div style="height: 3dvh;background-color: white;"></div>
+                    <a href="" class="lesson-link">Introduction to Physical Education</a>
+                    <a href="" class="lesson-link">Objectives of PhysicalEducation</a>
+                    <a href="" class="lesson-link">Legal Bases of Physical Education</a>
+                    <a href="" class="lesson-link">Minimun Standards of Physical Education</a>
+                    <a href="" class="lesson-link">Physical Activity Readiness Questionnaire (PAR-Q)</a>
+                    <a href="" class="lesson-link">Waist-to-Hip Ratio (WHR)</a>
+                    <a href="" class="lesson-link">Body Mass Index (BMI)</a>
+                    <a href=" " class="lesson-link">Fundamental Movement Skills</a>
+                    <a href="" class="lesson-link">Body Awareness and Body Mechanics</a>
+                </div>
+
+                <div class="spacer-structure"></div>
+            </div>
+            <div class="page" id="pathfit2">
+                <h1>THIS IS THE PATHFIT 2</h1>
+            </div>
+            <div class="page" id="pathfit3">
+                <h1>THIS IS THE PATHFIT 3</h1>
+            </div>
+            <div class="page" id="mission">
+                <h1>THIS IS THE MISSION VISION</h1>
+            </div>
+            <div class="page" id="department">
+                <h1>THIS IS THE DEPARTMENT PAGE</h1>
+            </div>
+            <div class="page" id="aboutUs">
+                <h1>THIS IS THE ABOUT US PAGE</h1>
+            </div>
+
+
+        </section>
+        <div class="main-side" style="border-top-left-radius: 10px;"></div>
+
+    </main>
+
+    <footer>
+        <section class="main-footer">
+            <div class="sub-main-footer">
+
+                <div class="footer-logo">
+                    <div class="logo-circle"> <!-- insert logo image here --> </div>
+                    <h1>LPU Fit Space</h1>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+                    exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+                    molestias error modi, iste qui aliquid?</p>
+            </div>
+
+            <div class="sub-main-footer">
+                <h1>Courses:</h1>
+                <p>PATHFIT 1: Movement competency Training</p>
+                <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+                <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+            </div>
+            <div class="sub-main-footer">
+                <h1>Contact:</h1>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>LPU Cavite</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">call</span>
+                    <p>(639) 158-3558</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">mail</span>
+                    <p>fitspace@lpu.edu.ph</p>
+                </div>
+
+            </div>
+        </section>
+        <div class="bottom-footer">
+            <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        const navButton = document.getElementsByClassName('nav-button');
+        const homeButton = navButton[0];
+        const pathfit1Button = navButton[1];
+        const pathfit2Button = navButton[2];
+        const pathfit3Button = navButton[3];
+        const missionButton = navButton[4];
+        const departmentButton = navButton[5];
+        const aboutUsButton = navButton[6];
+
+        const main = document.getElementById('main');
+        const homePage = document.getElementById('home');
+        const pathfit1Page = document.getElementById('pathfit1');
+        const pathfit2Page = document.getElementById('pathfit2');
+        const pathfit3Page = document.getElementById('pathfit3');
+        const missionPage = document.getElementById('mission');
+        const departmentPage = document.getElementById('department');
+        const aboutUsPage = document.getElementById('aboutUs');
+
+        const lessonLinks = document.querySelectorAll(".lesson-link");
+        const lessonTag = document.getElementsByClassName("lesson-link");
+
+
+
+        let initial = homePage;
+
+        //homePage.style.display = "flex";   add mamaya
+        //homeButton.classList.add('active'); mamaya na to
+
+
+        function removeAll() {
+            const navButtons = document.querySelectorAll('.nav-button')
+            navButtons.forEach(navTarget => {
+                navTarget.classList.remove('active');
+            });
+        }
+
+
+
+        function gotoPage(targetButton, targetPage, size) {
+            if (initial === targetPage) return;
+            initial.style.display = "none";
+            removeAll()
+            targetButton.classList.add('active');
+            initial = targetPage;
+            initial.style.display = "flex";
+            main.style.height = `${size}dvh`
+
+            window.scrollTo({
+                top: 0, behavior: "smooth"
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>
