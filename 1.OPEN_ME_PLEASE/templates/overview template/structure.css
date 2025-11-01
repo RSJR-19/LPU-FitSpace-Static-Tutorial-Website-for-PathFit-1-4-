@@ -2,6 +2,7 @@
     box-sizing:border-box;
     font-size: 16px;
     font-family: sans-serif;
+    scroll-behavior: smooth;
     outline: none;
     user-select: none;
 }
@@ -20,6 +21,7 @@ body{
 
 header{
     position: sticky;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     top: 0;
     
 }
@@ -182,242 +184,221 @@ nav div{
 
 
 main{
-    height: 88dvh ;
-    background-color: white;
+    background: url(campus_background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
+}
+#home{
+    height: 160dvh;
+    width:90% ;
+    display: flex;
+       background-color: #d4af3748;
+}
+
+#pathfit1{
+    height: 188dvh ;
+    width: 90%;
+    display: none;
+       background-color: #d4af3748;
+}
+#pathfit2{
+    height: 230dvh;
+    width: 90%;
+    display: none;
+     background-color: #d4af3748;
+}
+#pathfit3{
+    height: 293dvh;
+    width: 90%;
+    display: none;
+     background-color: #d4af3748;
+}
+#mission{
+    height: 160dvh;
+    width: 90%;
+    display: none;
+     background-color: #d4af3748;
+}
+#department{
+    height: 160dvh;
+    width: 90%;
+    display: none;
+     background-color: #d4af3748;
+}
+#aboutUs{
+    height: 160dvh;
+    width: 90%;
+    display: none;
+     background-color: #d4af3748;
+}
+
+
+.main-spacer{
+    height: 100%;
+    width: 4%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.834);
+}
+
+
+
+
+.main-home, .main-pathfit1, .main-pathfit2, .main-pathfit3{
+    width: 92%;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.834);
+ 
+
+}
+.main-pathfit2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.821);
+
 
 }
 
 .main-side{
-   background-color: #d4af37;
+   background-color: #d4af3748;
     width: 5%;
    
 }
 
-.main-page{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-}
-.main-page::-webkit-scrollbar{
-    display: none;
-}
-.page{
-    height:100%;
-    width: 95%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    background-color:white;
-    display: none;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#pathfit1{ /* pansamantala*/
-    display: flex;
-    height: 150dvh;
- 
-
-}
-.spacer-structure{
-    height: 100%;
-    width: 3.5%;
-}
-.title-bar{
+.title-text{
+    margin: 0;
+    padding: 15px;
     background-color: #b11e23;
-    height: 6%;
-    width: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-.title-bar h1{
-    font-size: 1.5rem;
-    letter-spacing: 5px;
+.title-text h1{
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
 }
-.tab-container{
+
+.graphic-box{
     width: 100%;
-    height: 40%;
+    height: 33.5%;
     background-color: white;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+ #pathfit2 .graphic-box {
+    height: 26.8%;
+ }
+  #pathfit3 .graphic-box {
+    height: 21.5%;
+ }
+
+.topic-text h1{
+    padding: 0;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.link-container, .link-container-2, .link-container-3{
     display: flex;
+    flex-direction: column;
+}
+.link-container a, .link-container-2 a, .link-container-3 a{
+    border-radius: 5px;
+    padding: 20px 0 20px 20px;
+    text-decoration-color: #b11e23;
+    margin: 0;
+}
+.link-container-3 h1 a{
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px   ;
+    margin: 0;
+    color: white;
+    background-color: #b11e23;
+    padding: 20px;
+    transition: all 0.2s ease-in;
+
+}
+
+ .link-container-2 h1 a, .link-container h1 a{
+    padding-left: 20px;
+    margin: 0;
+ }
+.overview-3:hover, #overview-2:hover, #overview-3:hover{
+    font-size: 1.35rem;
+    text-decoration: underline;
+}
+
+.link-container a span , .link-container-2 a span, .link-container-3 a span{
+    font-size: 1rem;
+    display: flex;
+    color: #b11e23;
+    transition: all 0.2s ease-in;
+}
+.link-container-2 a span{
+    font-size: 1rem;
+}
+.link-container a span:hover, .link-container-2 a span:hover, .link-container-3 a span:hover{
+    font-size: 1.3rem;
+    
+}
+#overview-2, #overview-1, .overview-3{
+    background-color: #b11e23;
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    
+}
+
+footer{
+    height: 30dvh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg,rgb(17, 17, 17) 0%,rgb(34, 34, 34) 50%,rgb(43, 43, 43) 100%);
+
+}
+.main-footer{
+    height: 85%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-bottom: white 2px solid;  
+}
+.bottom-footer{
+    height: 15%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.bottom-footer p{
+    font-size: 0.8rem;
+}
+.sub-main-footer{
+    
+    width: 25%;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    border: 2px black solid; /*remove later*/
+    color: white;
 }
-
-.main-pathfit1{
-    width: 93%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
+.sub-main-footer h1{
+    font-size: 1.5rem;
 }
-.main-pathfit1::-webkit-scrollbar{
-    display: none;
-}
-
-.main-pathfit1 > *{
-    flex-shrink: 0;
-}
-.topic-text{
-    margin: 0;
-    color: black;
-    font-size: 2.5rem;
-}
-
-.main-pathfit1 a{
-    font-size: 1.3rem;
-    padding: 20px 20px 20px 0;
-    color: #b11e23;
-    font-weight: bold;
-
-
-}
-
-.index{
-    display:none;
-    height:100%;
-    width: 95%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    background-color:white;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-footer {
-  height: auto;
-  background: linear-gradient(
-    135deg,
-    rgb(17, 17, 17) 0%,
-    rgb(34, 34, 34) 50%,
-    rgb(43, 43, 43) 100%
-  );
-  padding: 30px 0 0 0;
-  font-family: sans-serif;
-  display: block;
-}
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-
-  max-width: 1200px;
-  margin: 0 auto;
-
-  padding: 0 20px 30px 20px;
-}
-
-.sub-main-footer {
-  flex: 1;
-  max-width: 380px;
-  padding: 0 10px;
-  line-height: 1.6;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.logo-circle {
-  width: 30px;
-  height: 30px;
-  background-color: #00bcd4;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.sub-main-footer h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.sub-main-footer p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin: 5px 0;
-  line-height: 1.7;
-  text-align: justify;
-  padding-right: 20px;
-}
-
-.sub-main-footer:nth-child(3) {
-  text-align: left;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.contact-item .material-symbols-outlined {
-  font-size: 1.2rem;
-  margin-right: 8px;
-  color: #ccc;
-  position: static;
-}
-
-.contact-item p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin: 0;
-  text-align: left;
-  line-height: 1.2;
-  padding-right: 0;
-}
-
-.bottom-footer {
-  text-align: center;
-  padding: 15px 20px;
-  border-top: 1px solid #333;
-  background-color: #1a1a1a;
-}
-
-.bottom-footer p {
-  font-size: 0.85rem;
-  margin: 0;
-  color: #aaa;
-}
-
-/* 
---- Responsive Layout ---  
-HINDI KO GAWA TOH SORRY NA RENAN :( 
--gaw
-*/
-@media (max-width: 800px) {
-  .main-footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .sub-main-footer {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .sub-main-footer h1 {
-    text-align: center;
-  }
-
-  .sub-main-footer p {
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .sub-main-footer:first-child p:first-of-type {
-    text-align: center;
-    padding: 0 10px;
-  }
+.sub-main-footer p{
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    
+    
 }
