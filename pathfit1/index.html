@@ -1,0 +1,330 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPU FitSpace - PathFit 1 Topics</title>
+  <style>
+	○  {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+
+    header h1 {
+      font-size: 2.3em;
+      font-weight: bold;
+    }
+
+    .lpu {
+      color: #DC143C;
+    }
+
+    .fitspace {
+      color: gray;
+      text-transform: uppercase;
+    }
+
+    /* Search bar styling */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #f4f4f4;
+      border-radius: 20px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar input {
+      border: none;
+      background: none;
+      outline: none;
+      padding: 5px 10px;
+      width: 160px;
+      font-size: 0.95em;
+    }
+
+    .search-bar button {
+      background-color: #DC143C;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .search-bar button:hover {
+      background-color: #B22222;
+    }
+
+    nav {
+      background-color: white;
+      border-top: 1px solid #ddd;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 15px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      color: #DC143C;
+    }
+
+    section {
+      display: none;
+      background: white;
+      margin: 20px;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #DC143C;
+      margin-bottom: 20px;
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: 250px;
+      object-fit: cover;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Added style for the “TOPICS:” text */
+    .topics-title {
+      text-align: left;
+      font-size: 1.5em;
+      color: #333;
+      font-weight: bold;
+      margin: 30px auto 10px;
+      max-width: 800px;
+    }
+
+    .topics {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .topic-btn {
+      width: 100%;
+      text-align: left;
+      background-color: #DC143C;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .topic-btn:hover {
+      background-color: #B22222;
+    }
+
+    .topic-content {
+      display: none;
+      background: #f9f9f9;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="IMG_5908.jpg" alt="LPU FitSpace Logo" class="logo">
+        <h1><span class="lpu">LPU</span> <span class="fitspace">FITSPACE</span></h1>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchTopics()">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('home')">HOME</a></li>
+      <li><a href="#" onclick="showSection('pathfit1')">PATHFIT 1</a></li>
+      <li><a href="#" onclick="showSection('pathfit2')">PATHFIT 2</a></li>
+      <li><a href="#" onclick="showSection('pathfit3')">PATHFIT 3</a></li>
+      <li><a href="#" onclick="showSection('pathfit4')">PATHFIT 4</a></li>
+      <li><a href="#" onclick="showSection('about')">ABOUT US</a></li>
+      <li><a href="#" onclick="showSection('contact')">CONTACT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="active">
+    <h2>Welcome to LPU FitSpace</h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto;">
+      LPU FitSpace promotes physical wellness and holistic development through the PathFit program.
+    </p>
+  </section>
+
+  <!-- PATHFIT 1 -->
+  <section id="pathfit1">
+    <h2>PATHFIT 1: MOVEMENT COMPETENCY TRAINING</h2>
+    <img src="Lyceum Lyceum of the Philippines University - Cavite Campus.jpg" alt="Fitness" class="hero-image">
+
+    <!-- Added TOPICS label -->
+    <p class="topics-title">TOPICS:</p>
+
+    <div class="topics">
+      <button class="topic-btn" onclick="window.location.href='lesson1.html'">Introduction to Physical Education</button>
+      <div class="topic-content">Physical Education (P.E.) is an educational course that focuses on developing physical fitness and the ability to perform and enjoy day-to-day physical activities.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">What is Physical Education?</button>
+      <div class="topic-content">It is the process of learning through physical activities designed to improve fitness, develop motor skills, and promote an active lifestyle.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Objectives of Physical Education</button>
+      <div class="topic-content">To enhance physical fitness, social interaction, teamwork, discipline, and healthy habits for lifelong wellness.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Legal Bases of Physical Education</button>
+      <div class="topic-content">Physical Education is supported by national laws that mandate schools to promote physical well-being and sports participation.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Minimum Standards of Physical Education Program</button>
+      <div class="topic-content">P.E. programs must include structured physical activities, health education, and safety measures aligned with educational standards.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Physical Activity Readiness Questionnaire (PAR-Q)</button>
+      <div class="topic-content">A screening tool used to identify individuals who require medical clearance before engaging in physical activity.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Waist-to-Hip Ratio (WHR)</button>
+      <div class="topic-content">A health indicator that measures the distribution of body fat — calculated by dividing waist circumference by hip circumference.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Body Mass Index (BMI)</button>
+      <div class="topic-content">A numerical value derived from a person’s weight and height, used to categorize underweight, normal, overweight, or obesity levels.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Fundamental Movement Skills</button>
+      <div class="topic-content">Basic movement patterns such as running, jumping, throwing, and catching, which form the foundation for more complex skills.</div>
+
+      <button class="topic-btn" onclick="toggleTopic(this)">Body Awareness and Body Mechanics</button>
+      <div class="topic-content">Understanding how the body moves efficiently to prevent injury and enhance performance in daily and sports activities.</div>
+    </div>
+  </section>
+
+  <!-- OTHER SECTIONS -->
+  <section id="pathfit2"><h2>PATHFIT 2</h2></section>
+  <section id="pathfit3"><h2>PATHFIT 3</h2></section>
+  <section id="pathfit4"><h2>PATHFIT 4</h2></section>
+  <section id="about"><h2>ABOUT US</h2></section>
+  <section id="contact"><h2>CONTACT US</h2></section>
+
+  <footer>
+    <p>&copy; 2025 LPU FitSpace. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(s => s.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    function toggleTopic(button) {
+      const content = button.nextElementSibling;
+      const allContents = document.querySelectorAll('.topic-content');
+      allContents.forEach(c => {
+        if (c !== content) c.style.display = 'none';
+      });
+
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function searchTopics() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const topics = document.querySelectorAll('.topic-btn');
+      let found = false;
+
+      topics.forEach(btn => {
+        const text = btn.textContent.toLowerCase();
+        if (text.includes(input) && input.trim() !== '') {
+          btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          btn.style.backgroundColor = '#B22222';
+          found = true;
+          setTimeout(() => btn.style.backgroundColor = '#DC143C', 1500);
+        }
+      });
+
+      if (!found && input.trim() !== '') {
+        alert('No matching topic found.');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -9,3 +9,7 @@
     arrow2.classList.add("active");
     tab2.classList.add("active");
   });
+
+  function takeQuiz() {
+    alert("Quz")
+  }

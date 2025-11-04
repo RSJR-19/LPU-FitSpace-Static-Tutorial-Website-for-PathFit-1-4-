@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Definition of Physical Fitness - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit2.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+
+            <a href="">Introduction to Physical Education</a></li>
+            <a href="">What is Physical Education?</a></li>
+            <a href="">Objectives of Physical Education</a></li>
+            <a href="">Legal Bases of Physical Education</a></li>
+            <a href="">Minimum Standards of Physical Education Program</a></li>
+            <a href="">Physical Activity Readiness Questionnaire (PAR-Q)</a></li>
+            <a href="">Waist-to-Hip Ratio (WHR)</a></li>
+            <a href="">Body Mass Index (BMI)</a></li>
+            <a href="">Fundamental Movement Skills</a></li>
+            <a href="">Body Awareness and Body Mechanics</a></li>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical Fitness</a>
+            <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical Activity</a>
+            <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+            <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+            <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+            <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical Activity/ Exercise</a>
+            <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+            <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
+            <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+            <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+            <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+            <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal Fitness Plan</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="">Introduction to Applied Physical Activities</a>
+            <a href="">Course Goals and Objectives</a>
+            <a href="">Choosing your PATHFIT 3/4 Track</a>
+
+
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="">Folk Dance</a>
+              <a href="">Modern Dance/ Hip-hop</a>
+              <a href="">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="">Basketball</a>
+              <a href="">Volleyball</a>
+              <a href="">Handball</a>
+              <a href="">Badminton</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="">Arnis (Filipino Martial Arts)</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="">Cardio Workouts</a>
+              <a href="">Core and Circuit Training</a>
+              <a href="">Outdoor and Adventure</a>
+              <a href="">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="">Team-building and Recreational Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+          <!-- Back Link -->
+        <a href="#" class="back-link">Back to PathFit 2 Index</a>
+
+        <!-- Main Header -->
+        <h1>DEFINITION OF PHYSICAL FITNESS</h1>
+
+        <!-- Banner Image Placeholder -->
+        <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Physical Fitness Overview</div>
+            <div class="image-placeholder-subtext">Visual representation of physical fitness components</div>
+        </div>
+
+        <!-- Lesson Overview -->
+        <section class="content-section">
+            <h2>Lesson Overview</h2>
+            <p>Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leisure and emergency situations. It is not limited to sports or athletic performance—it is an essential part of overall wellness and quality of life.</p>
+
+            <p>In the PathFit program, developing physical fitness means improving both health-related and skill-related capacities to promote lifelong movement competency and an active lifestyle.</p>
+        </section>
+
+        <!-- Main Discussion -->
+        <section class="content-section">
+            <h2>What is Physical Fitness?</h2>
+            <p>Physical fitness refers to a state of well-being in which an individual possesses sufficient energy and vitality to carry out everyday responsibilities and enjoy recreational pursuits. It reflects how efficiently the heart, lungs, muscles, and body systems work together.</p>
+
+            <p>Researchers commonly classify physical fitness into two categories:</p>
+            <ul>
+                <li>Health-Related Components – contribute directly to disease prevention and overall wellness.</li>
+                <li>Skill-Related Components – enhance athletic ability and performance in physical activities.</li>
+            </ul>
+        </section>
+
+        <!-- Components of Physical Fitness -->
+        <section class="content-section">
+            <h2>Components of Physical Fitness</h2>
+            
+            <div class="components-grid">
+                <div class="component-box">
+                    <h3>Health-Related Components</h3>
+                    <ul>
+                        <li>Cardiovascular Endurance - Ability of the heart and lungs to deliver oxygen</li>
+                        <li>Muscular Strength - Maximum force a muscle can exert in a single effort</li>
+                        <li>Muscular Endurance - Ability to sustain repeated contractions</li>
+                        <li>Flexibility - Range of motion available at a joint</li>
+                        <li>Body Composition - Ratio of fat mass to fat-free mass</li>
+                    </ul>
+                </div>
+
+                <div class="component-box">
+                    <h3>Skill-Related Components</h3>
+                    <ul>
+                        <li>Agility - Quick directional changes with control</li>
+                        <li>Balance - Maintaining equilibrium while stationary or moving</li>
+                        <li>Coordination - Smooth, efficient movement integration</li>
+                        <li>Power - Combination of strength and speed</li>
+                        <li>Reaction Time - Speed of response to stimuli</li>
+                        <li>Speed - Rapid movement from point to point</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Benefits -->
+        <section class="content-section">
+            <h2>Health Benefits of Physical Fitness</h2>
+            <p>Regular participation in physical activities has wide-ranging effects on the human body and mind:</p>
+
+            <div class="image-placeholder">
+                <div class="image-placeholder-icon"></div>
+                <div class="image-placeholder-text">Health Benefits Infographic</div>
+            </div>
+
+            <ul>
+                <li>Strengthens the heart, lungs, and muscular system</li>
+                <li>Helps maintain healthy weight and body composition</li>
+                <li>Reduces risk of non-communicable diseases</li>
+                <li>Improves mental health and reduces stress</li>
+                <li>Enhances self-esteem, focus, and academic performance</li>
+                <li>Promotes social interaction and teamwork</li>
+            </ul>
+
+            <div class="note-box">
+                <p><strong>Did you know?</strong> According to the World Health Organization (WHO), adults should engage in at least 150–300 minutes of moderate-intensity or 75–150 minutes of vigorous-intensity aerobic activity each week for optimal health.</p>
+            </div>
+        </section>
+
+        <!-- Practical Application -->
+        <section class="content-section">
+            <h2>Practical Application</h2>
+            <p>Try integrating simple habits that promote daily fitness:</p>
+            <ul>
+                <li>Take the stairs instead of the elevator</li>
+                <li>Perform stretching exercises every morning</li>
+                <li>Engage in 30 minutes of brisk walking, cycling, or jogging</li>
+                <li>Join recreational sports or group fitness sessions</li>
+            </ul>
+            <p><em>Remember: Consistency is more important than intensity.</em></p>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="key-takeaways">
+            <h2>Key Takeaways</h2>
+            <div class="takeaways-box">
+                <ol>
+                    <li>Physical fitness is vital for efficient daily functioning and overall well-being.</li>
+                    <li>It has two major categories — health-related and skill-related components.</li>
+                    <li>Regular physical activity prevents diseases and promotes mental and social health.</li>
+                    <li>Developing fitness is a lifelong process that requires consistency and balance.</li>
+                    <li>Physical fitness serves as the foundation for all PathFit courses.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+            <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+            <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
+                through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
+            <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+        </section>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTENT AREA -->
+
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+          molestias error modi, iste qui aliquid?</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="js/pathfit2.js"></script>
+  <script src="/assets/js/main.js"> </script>
+  <!-- END: Copied from template -->
+
+</body>
+
+</html>

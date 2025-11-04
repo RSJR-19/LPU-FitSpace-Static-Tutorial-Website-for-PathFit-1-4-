@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Management - PathFit</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="css/pathfit2.css">
+</head>
+
+<body>
+    <!-- START: Copied from template -->
+    <!-- header + sidebar from template -->
+    <header>
+        <div style="height: 1dvh;background-color: white;"></div>
+        <nav>
+            <div class="spacer"></div>
+            <div class="left-nav">
+                <div class="lpu-logo">
+                    <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+                </div>
+                <div class="fitspace-text">
+                    <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+                </div>
+            </div>
+            <div class="right-nav">
+                <a>Mission & Vision</a>
+                <a>Department Overview</a>
+                <a>About FitSpace</a>
+                <div class="input-container">
+                    <input type="text" placeholder=" Search Lessons...">
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </nav>
+        <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <div class="spacer"></div>
+            <section class="sidebar-main">
+                <h1>COURSES:</h1>
+                <div class="lesson-tab-container">
+
+                    <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+                        <b>PATHFIT 1</b>
+                        <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+                    </div>
+                    <div id="dropdown1" class="dropdown">
+
+                        <a href="">Introduction to Physical Education</a></li>
+                        <a href="">What is Physical Education?</a></li>
+                        <a href="">Objectives of Physical Education</a></li>
+                        <a href="">Legal Bases of Physical Education</a></li>
+                        <a href="">Minimum Standards of Physical Education Program</a></li>
+                        <a href="">Physical Activity Readiness Questionnaire (PAR-Q)</a></li>
+                        <a href="">Waist-to-Hip Ratio (WHR)</a></li>
+                        <a href="">Body Mass Index (BMI)</a></li>
+                        <a href="">Fundamental Movement Skills</a></li>
+                        <a href="">Body Awareness and Body Mechanics</a></li>
+                    </div>
+
+                    <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+                        <b>PATHFIT 2</b>
+                        <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+                    </div>
+                    <div id="dropdown2" class="dropdown">
+                        <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical
+                            Fitness</a>
+                        <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical
+                            Activity</a>
+                        <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+                        <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+                        <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+                        <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical
+                            Activity/ Exercise</a>
+                        <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+                        <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+                        <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get
+                            Started</a>
+                        <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+                        <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+                        <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+                        <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+                        <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal
+                            Fitness Plan</a>
+                    </div>
+
+                    <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+                        <b>PATHFIT 3 & 4</b>
+                        <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+                    </div>
+                    <div id="dropdown3" class="dropdown">
+                        <a href="">Introduction to Applied Physical Activities</a>
+                        <a href="">Course Goals and Objectives</a>
+                        <a href="">Choosing your PATHFIT 3/4 Track</a>
+
+
+                        <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+                            <b>Dance Activities</b>
+                            <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownDance" class="dropdown2">
+                            <a href="">Folk Dance</a>
+                            <a href="">Modern Dance/ Hip-hop</a>
+                            <a href="">Zumba Dance</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+                            <b>Sports Activities</b>
+                            <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownSports" class="dropdown2">
+                            <a href="">Basketball</a>
+                            <a href="">Volleyball</a>
+                            <a href="">Handball</a>
+                            <a href="">Badminton</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+                            <b>Martial Arts</b>
+                            <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownMartial" class="dropdown2">
+                            <a href="">Arnis (Filipino Martial Arts)</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+                            <b>Group Exercises</b>
+                            <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownGroup" class="dropdown2">
+                            <a href="">Cardio Workouts</a>
+                            <a href="">Core and Circuit Training</a>
+                            <a href="">Outdoor and Adventure</a>
+                            <a href="">Hiking and Trekking</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+                            <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+                            <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownCamping" class="dropdown2">
+                            <a href="">Team-building and Recreational Games</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+        </section>
+
+        <!-- MAIN CONTENT AREA -->
+        <section class="main-content-container">
+            <div class="main-content">
+
+                <!-- Back Link -->
+                <a href="#" class="back-link">Back to PathFit 2 Index</a>
+
+                <!-- Main Header -->
+                <h1>WEIGHT MANAGEMENT</h1>
+
+                <!-- Banner Image Placeholder -->
+                <div class="image-placeholder">
+                    <div class="image-placeholder-icon"></div>
+                    <div class="image-placeholder-text">Weight Management Concepts</div>
+                    <div class="image-placeholder-subtext">Visual guide to weight management principles</div>
+                </div>
+
+                <!-- Lesson Overview -->
+                <section class="content-section">
+                    <h2>Lesson Overview</h2>
+                    <p>Weight management is a crucial aspect of overall health and fitness. This lesson explores the
+                        principles of maintaining a healthy weight through proper nutrition and exercise, understanding
+                        energy balance, and developing sustainable habits.</p>
+                </section>
+
+                <!-- Energy Balance -->
+                <section class="content-section">
+                    <h2>Understanding Energy Balance</h2>
+
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h3>Energy Input</h3>
+                            <ul>
+                                <li>Caloric intake</li>
+                                <li>Nutrient timing</li>
+                                <li>Food choices</li>
+                                <li>Portion control</li>
+                            </ul>
+                        </div>
+
+                        <div class="component-box">
+                            <h3>Energy Output</h3>
+                            <ul>
+                                <li>Basal metabolism</li>
+                                <li>Physical activity</li>
+                                <li>Exercise</li>
+                                <li>Daily movement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Nutrition Principles -->
+                <section class="content-section">
+                    <h2>Nutrition for Weight Management</h2>
+
+                    <div class="image-placeholder">
+                        <div class="image-placeholder-icon"></div>
+                        <div class="image-placeholder-text">Nutrition Guidelines</div>
+                    </div>
+
+                    <div class="takeaways-box">
+                        <h3>Key Nutritional Components</h3>
+                        <ul>
+                            <li>Macronutrients
+                                <ul>
+                                    <li>Proteins: Building blocks</li>
+                                    <li>Carbohydrates: Energy source</li>
+                                    <li>Fats: Essential functions</li>
+                                </ul>
+                            </li>
+                            <li>Meal Timing
+                                <ul>
+                                    <li>Regular meals</li>
+                                    <li>Pre/post workout nutrition</li>
+                                    <li>Snack planning</li>
+                                </ul>
+                            </li>
+                            <li>Hydration
+                                <ul>
+                                    <li>Daily water needs</li>
+                                    <li>Exercise hydration</li>
+                                    <li>Hydration monitoring</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Exercise Strategies -->
+                <section class="content-section">
+                    <h2>Exercise for Weight Management</h2>
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h3>Cardio Activities</h3>
+                            <ul>
+                                <li>Low-intensity steady state</li>
+                                <li>High-intensity intervals</li>
+                                <li>Mixed cardio sessions</li>
+                                <li>Daily movement goals</li>
+                            </ul>
+                        </div>
+
+                        <div class="component-box">
+                            <h3>Strength Training</h3>
+                            <ul>
+                                <li>Resistance exercises</li>
+                                <li>Circuit training</li>
+                                <li>Metabolic conditioning</li>
+                                <li>Muscle maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lifestyle Factors -->
+                <section class="content-section">
+                    <h2>Lifestyle Considerations</h2>
+                    <p>Important factors affecting weight management:</p>
+                    <ul>
+                        <li>Sleep quality and quantity</li>
+                        <li>Stress management</li>
+                        <li>Daily activity levels</li>
+                        <li>Social support</li>
+                        <li>Environmental factors</li>
+                    </ul>
+                </section>
+
+                <!-- Key Takeaways -->
+                <section class="key-takeaways">
+                    <h2>Key Takeaways</h2>
+                    <div class="takeaways-box">
+                        <ol>
+                            <li>Weight management depends on energy balance</li>
+                            <li>Both nutrition and exercise play crucial roles</li>
+                            <li>Sustainable habits are key to long-term success</li>
+                            <li>Multiple lifestyle factors influence weight management</li>
+                            <li>Regular monitoring helps maintain progress</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Quiz Section -->
+                <section class="quiz-section">
+                    <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+                    <p>You've completed the lesson on Weight Management. Now it's time to assess your understanding
+                        through our interactive quiz. This quiz will help reinforce key concepts and identify areas for
+                        review.</p>
+                    <button class="quiz-button" onclick="alert('Quiz functionality would be implemented here')">TAKE
+                        QUIZ</button>
+                </section>
+            </div>
+        </section>
+        <!-- END OF MAIN CONTENT AREA -->
+
+    </main>
+
+    <footer>
+        <section class="main-footer">
+            <div class="sub-main-footer">
+
+                <div class="footer-logo">
+                    <div class="logo-circle"> <!-- insert logo image here --> </div>
+                    <h1>LPU Fit Space</h1>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+                    exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+                    molestias error modi, iste qui aliquid?</p>
+            </div>
+
+            <div class="sub-main-footer">
+                <h1>Courses:</h1>
+                <p>PATHFIT 1: Movement competency Training</p>
+                <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+                <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+            </div>
+            <div class="sub-main-footer">
+                <h1>Contact:</h1>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>LPU Cavite</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">call</span>
+                    <p>(639) 158-3558</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">mail</span>
+                    <p>fitspace@lpu.edu.ph</p>
+                </div>
+
+            </div>
+        </section>
+        <div class="bottom-footer">
+            <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+        </div>
+
+    </footer>
+
+    <script src="js/pathfit2.js"></script>
+    <script src="/assets/js/main.js"> </script>
+    <!-- END: Copied from template -->
+
+</body>
+
+</html>
