@@ -6,118 +6,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About FitSpace - LPU</title>
     <!-- Link to your structure.css -->
-    <link rel="stylesheet" href="/assets/css/structure.css">
+    <!-- <link rel="stylesheet" href="/assets/css/structure.css"> -->
     <style>
-        /* About Us page */
-        .about-container {
-            width: 100%;
-            height: 100%;
-            padding: 2rem;
-            background-color: rgba(255, 255, 255, 0.834);
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
+     /* About Us Section */
+#aboutUs {
+    min-height: 100dvh;
+    width: 90%;
+    display: flex;
+    background-color: #d4af3748;
+}
 
-        .about-section {
-            padding: 2rem 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
+#aboutUs .main-home {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
-        .about-section:last-child {
-            border-bottom: none;
-        }
+.about-container {
+    width: 92%;
+    min-height: 100%;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0.834);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-        .about-section h2 {
-            color: #b11e23;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
+.about-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-        .card {
-            background: white;
-            border: 2px solid #b11e23;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
-        }
+.about-title h1 {
+    color: #b11e23;
+    font-size: 2.2rem;
+    margin: 0;
+}
 
-        .card h3 {
-            color: #b11e23;
-            margin-top: 0;
-            font-size: 1.3rem;
-        }
+.about-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
 
-        .card p {
-            margin-bottom: 0;
-            line-height: 1.6;
-        }
+.about-section:last-child {
+    border-bottom: none;
+}
 
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
+.about-section h2 {
+    color: #b11e23;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
+/* Card Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
 
-        .team-member {
-            background: white;
-            border: 2px solid #b11e23;
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform 0.3s;
-        }
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .team-member:hover {
-            transform: translateY(-5px);
-        }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
-        .member-avatar {
-            width: 80px;
-            height: 80px;
-            background: #b11e23;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
+.card-header {
+    background: #b11e23;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
-        .instructor-box {
-            background: #f9f9f9;
-            border: 2px solid #b11e23;
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            max-width: 400px;
-            margin: 2rem auto 0;
-        }
+.card-body {
+    padding: 1.5rem;
+}
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
+.card-body p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
 
-            .card-grid,
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    background: #b11e23;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.team-member h3 {
+    color: #b11e23;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.team-member p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.instructor-box {
+    background: #f9f9f9;
+    border: 2px solid #b11e23;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 400px;
+    margin: 2rem auto 0;
+}
+
+.instructor-box h3 {
+    color: #b11e23;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.instructor-box p {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.instructor-box .course-name {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
     </style>
 </head>
 
 <body>
 
-  
+   <section id="aboutUs">
+    <div class="main-spacer" style="border-bottom-left-radius: 10px;"></div>
+    <div class="main-home">
+        <div class="about-container">
+            <!-- About Us Title -->
+            <div class="about-title">
+                <h1>About FitSpace</h1>
+            </div>
+
+            <!-- What is FitSpace -->
+            <div class="about-section">
+                <h2>What is FitSpace?</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">Our Purpose</div>
+                        <div class="card-body">
+                            <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement classroom learning and support holistic student growth.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Our Goal</div>
+                        <div class="card-body">
+                            <p>To provide a centralized, user-friendly platform for PATHFIT curriculum, making physical education accessible and engaging for all students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Study at FitSpace -->
+            <div class="about-section">
+                <h2>Why Study at FitSpace?</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">Centralized Learning</div>
+                        <div class="card-body">
+                            <p>Access all PATHFIT lessons in one place, with no need to search through multiple sources.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Clean Layouts</div>
+                        <div class="card-body">
+                            <p>Lessons are presented with modern design principles for easy understanding and retention.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Quick Access</div>
+                        <div class="card-body">
+                            <p>Find PATHFIT content quickly, supporting both classroom and independent study.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PATHFIT Modules -->
+            <div class="about-section">
+                <h2>PATHFIT Modules</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">PATHFIT 1</div>
+                        <div class="card-body">
+                            <p>Movement Competency Training: Foundational PE principles, movement skills, and body control.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">PATHFIT 2</div>
+                        <div class="card-body">
+                            <p>Exercise-Based Fitness: Physical training, exercise planning, and fitness measurement.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">PATHFIT 3 & 4</div>
+                        <div class="card-body">
+                            <p>Applied Physical Activities: Performance-based and recreational activities for skill application.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="about-section">
+                <h2>Meet the Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">GP</div>
+                        <h3>Gaudenz R. Padullon</h3>
+                        <p>Project Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">RS</div>
+                        <h3>Renan Jr. C. Sumbad</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">ET</div>
+                        <h3>Emmanuel T. Tonga</h3>
+                        <p>Research & Content</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">MY</div>
+                        <h3>Min Sun O. Yoo</h3>
+                        <p>Wireframe Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">CH</div>
+                        <h3>Celine Joy H. Hernandez</h3>
+                        <p>Content Processing</p>
+                    </div>
+                </div>
+                <div class="instructor-box">
+                    <h3>Course Instructor</h3>
+                    <p>Mr. Arsenio Jr. Arellano</p>
+                    <p class="course-name">Introduction to Computing (IT102)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-spacer" style="border-bottom-right-radius: 10px;"></div>
+</section>
+
 
 </body>
 
