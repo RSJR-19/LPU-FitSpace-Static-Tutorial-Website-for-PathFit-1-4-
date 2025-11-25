@@ -4,8 +4,9 @@ const pathfit1Button = navButton[1];
 const pathfit2Button = navButton[2];
 const pathfit3Button = navButton[3];
 const missionButton = navButton[4];
-const departmentButton = navButton[5];
-const aboutUsButton = navButton[6];
+const aboutUsButton = navButton[5];
+
+
 
 const main = document.getElementById("main");
 const homePage = document.getElementById("home");
@@ -15,11 +16,19 @@ const pathfit3Page = document.getElementById("pathfit3");
 const missionPage = document.getElementById("mission");
 const departmentPage = document.getElementById("department");
 const aboutUsPage = document.getElementById("aboutUs");
+const missionTitle = ["INSTRUCTION", 'RESEARCH', 'COMMUNITY ENGAGEMENT', 'INSTITUTIONAL DEVELOPMENT', 'SUSTAINABILITY']
+const missionMeaning = ["Provide industry-based knowledge and skills.", 'Undertake multi-disciplinary research.','Support community engagement and social responsibility.', 'Establish local and international linkages.', 'Produce sustainability advocates for global action.']
+const LPUNJPL = ['L - Love of God ', 'P - Probity', 'U - Unity', 'N - Nationalism', 'J - Justice', 'P - Pro Environment', 'L - Leadership ']
+const valuesDetail = document.getElementById('valuesDetail');
+const missionHead = document.getElementById('missionHead');
+const missionDetail = document.getElementById('missionDetail');
 
 const lessonLinks = document.querySelectorAll(".lesson-link");
 const lessonTag = document.getElementsByClassName("lesson-link");
 
 let initial = homePage;
+
+
 
 // homePage.style.display = "flex";   //add mamaya
 homeButton.classList.add("active");
@@ -32,7 +41,7 @@ function removeAll() {
 }
 
 function gotoPage(targetButton, targetPage) {
-  if (initial === targetPage) return;
+  if (initial !== targetPage){
   initial.style.display = "none";
   removeAll();
   targetButton.classList.add("active");
@@ -47,15 +56,15 @@ function gotoPage(targetButton, targetPage) {
   // clear the hash part
 
   //mapping coresponding hash
-  pageMap = new Map([
-    [homePage, "home"],
-    [pathfit1Page, "pathfit1"],
-    [pathfit2Page, "pathfit2"],
-    [pathfit3Page, "pathfit3"],
-    [missionPage, "mission"],
-    [departmentPage, "department"],
-    [aboutUsPage, "aboutUs"],
-  ]);
+    const pageMap = new Map([
+      [homePage, "home"],
+      [pathfit1Page, "pathfit1"],
+      [pathfit2Page, "pathfit2"],
+      [pathfit3Page, "pathfit3"],
+      [missionPage, "mission"],
+      [departmentPage, "department"],
+      [aboutUsPage, "aboutUs"],
+    ]);
 
   hash = pageMap.get(targetPage); //mapped hash with corresponding page
 
@@ -69,6 +78,33 @@ function gotoPage(targetButton, targetPage) {
     history.replaceState(null, "", " ");
   }
 }
+
+if (targetPage === missionPage) resetText();
+}
+
+let missionInterval = null; 
+
+function resetText() {
+    if (missionInterval !== null) clearInterval(missionInterval)
+
+    let index = 0;
+    let counter = 0
+
+    missionHead.innerHTML = missionTitle[index];
+    missionDetail.innerHTML = missionMeaning[index];
+    valuesDetail.innerHTML = LPUNJPL[counter];
+
+    missionInterval = setInterval(()=>{
+        index = (index + 1) % missionTitle.length;
+        counter = (counter + 1) % LPUNJPL.length;
+
+        missionHead.innerHTML = missionTitle[index];
+         missionDetail.innerHTML = missionMeaning[index];
+        valuesDetail.innerHTML = LPUNJPL[counter];
+
+    }, 1500)
+}
+
 
 // -------------------------------------------------------
 // URL Hash Navigation Support

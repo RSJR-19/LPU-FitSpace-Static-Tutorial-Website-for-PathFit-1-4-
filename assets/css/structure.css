@@ -3,8 +3,8 @@
   font-size: 16px;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  outline: none;
-  user-select: none;
+  /* outline: none;
+  user-select: none; */
 }
 
 body,
@@ -179,7 +179,6 @@ main {
   width: 90%;
   display: flex;
   background-color: #d4af3748;
-
 }
 
 #pathfit1 {
@@ -201,18 +200,12 @@ main {
   background-color: #d4af3748;
 }
 #mission {
-  height: 160dvh;
+  height: 90dvh;
   width: 90%;
   display: none;
   background-color: #d4af3748;
 }
 #department {
-  height: 160dvh;
-  width: 90%;
-  display: none;
-  background-color: #d4af3748;
-}
-#aboutUs {
   height: 160dvh;
   width: 90%;
   display: none;
@@ -230,25 +223,297 @@ main {
     Sorry medjo madaming adjustment ang naganap  
     i cant talaga sa walang padding WHAHAHA  -gaw */
 
-
 .main-home,
 .main-pathfit1,
 .main-pathfit2,
 .main-pathfit3 {
-  
   width: 92%;
   height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   background-color: rgba(255, 255, 255, 0.834);
 }
 
-.main-home{
+.main-mission {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.card-container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-side-cc,
+.right-side-cc {
+  height: 100%;
+}
+.left-side-cc {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.right-side-cc {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.vision-card {
+  height: 95%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-vision {
+  height: 15%;
+  width: 100%;
+  background-color: #b11e23;
+  border-radius: 10px 10px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white
- 
 }
+.vision-effect {
+  height: 97%;
+  width: 95%;
+}
+.inner-effect {
+  height: 94%;
+  width: 97%;
+}
+.title-vision h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+.logo-vision {
+  height: 35%;
+  background-color: yellow;
+  width: 100%;
+}
+
+.text-vision h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.mission-card {
+  height: 46%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-mission h1,
+.text-values h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+.text-mission p,
+.text-values p {
+  margin: 10px 0 0 0;
+  color: white;
+}
+
+.text-mission,
+.text-values {
+  height: 30%;
+  background-color: #b11e23;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.values-card {
+  height: 46%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+#missionHead {
+  transition: all ease-in-out 0.1s;
+}
+#missionHead.show {
+  opacity: 0;
+}
+
+.text-values {
+  height: 30%;
+  background-color: #b11e23;
+  border-radius: 10px 10px 0 0;
+}
+.bottom-container {
+  height: 70%;
+  background-color: green;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+}
+.image-mc {
+  background-color: yellow;
+  height: 100%;
+  width: 30%;
+}
+
+#reversed {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.content-mission,
+.content-values {
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-mission h1,
+.content-values h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* About Us Section */
+#aboutUs {
+  min-height: 100dvh;
+  width: 90%;
+  display: none;
+  background-color: #d4af3748;
+}
+
+#aboutUs .main-home {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.about-container {
+  width: 92%;
+  min-height: 100%;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  background-color: rgba(255, 255, 255, 0.834);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-title h1 {
+  color: #b11e23;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.about-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.about-section:last-child {
+  border-bottom: none;
+}
+
+.about-section h2 {
+  color: #b11e23;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  border: 2px solid #b11e23;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  color: #b11e23;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-member {
+  background: white;
+  border: 2px solid #b11e23;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: #b11e23;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.instructor-box {
+  background: #f9f9f9;
+  border: 2px solid #b11e23;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 2rem auto 0;
+}
+
+
 .fitspace-text-home {
   display: flex;
   gap: 2%;
@@ -257,8 +522,7 @@ main {
   font-size: 2.2rem;
   font-weight: bold;
 }
-.topic-img-container{
- 
+.topic-img-container {
   height: 90%;
   width: 100%;
   border-radius: 10px;
@@ -266,20 +530,19 @@ main {
   flex-direction: column;
   gap: 10px;
 }
-.topic-img-container h1{
+.topic-img-container h1 {
   font-size: 2rem;
   margin: 0;
   margin-left: 24px;
 }
-.img-box-wrapper{
-   display: flex;
-   justify-content: center;
+.img-box-wrapper {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 80%;
-  
 }
 
-.img-box{
+.img-box {
   width: 95%;
   height: 100%;
   border-radius: 10px;
@@ -330,7 +593,7 @@ main {
   border: 2px black solid;
 }
 #pathfit2 .graphic-box {
-  height: 26.8%;
+  height: 27%;
 }
 #pathfit3 .graphic-box {
   height: 21.5%;
