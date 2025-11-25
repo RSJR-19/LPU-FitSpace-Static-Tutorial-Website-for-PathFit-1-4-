@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfit Quiz</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Segoe UI";
+            background: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        #loading-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #007bff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            border-radius: 8px;
+            height: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background: #007bff;
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .question-header {
+            margin-bottom: 15px;
+        }
+
+        .unit-tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-bottom: 8px;
+        }
+
+        .question-text {
+            font-size: 1.2em;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .option-button {
+            background: white;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.2s;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .option-button:hover {
+            background: #f8f9fa;
+        }
+
+        .option-button:disabled {
+            opacity: 0.7;
+            cursor: default;
+        }
+
+        .option-button i {
+            margin-right: 8px;
+        }
+
+        .correct-answer {
+            background: #d4edda !important;
+            border-left: 4px solid #28a745;
+        }
+
+        .wrong-answer {
+            background: #f8d7da !important;
+            border-left: 4px solid #dc3545;
+        }
+
+        .answer-feedback {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            text-align: left;
+        }
+
+        .answer-feedback h4 {
+            margin: 0 0 8px 0;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .answer-feedback h4 i {
+            margin-right: 6px;
+        }
+
+        .answer-feedback p {
+            margin: 8px 0 0 0;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .next-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .next-button:hover {
+            background: #0056b3;
+        }
+
+        .next-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .next-button i {
+            margin-right: 6px;
+        }
+
+        .results-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .score-circle.a {
+            background: #28a745;
+        }
+
+        .score-circle.b {
+            background: #17a2b8;
+        }
+
+        .score-circle.c {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .score-circle.d {
+            background: #fd7e14;
+        }
+
+        .score-circle.f {
+            background: #dc3545;
+        }
+
+        .percentage {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .grade {
+            font-size: 1.1em;
+        }
+
+        .restart-button button {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        .restart-button button:hover {
+            background: #5a6268;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Pathfit Quiz</h1>
+    <div id="loading-message">
+        <div class="spinner"></div>
+        <p>Loading Quiz...</p>
+    </div>
+    <div id="quiz-container"></div>
+    <script src="quiz.js"></script>
+    <script>
+        loadQuiz('pathfit1-data.json');
+    </script>
+</body>
+
+</html>
