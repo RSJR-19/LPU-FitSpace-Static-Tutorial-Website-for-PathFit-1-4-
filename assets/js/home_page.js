@@ -1,13 +1,3 @@
-const navButton = document.getElementsByClassName("nav-button");
-const homeButton = navButton[0];
-const pathfit1Button = navButton[1];
-const pathfit2Button = navButton[2];
-const pathfit3Button = navButton[3];
-const missionButton = navButton[4];
-const aboutUsButton = navButton[5];
-
-
-
 const main = document.getElementById("main");
 const homePage = document.getElementById("home");
 const pathfit1Page = document.getElementById("pathfit1");
@@ -26,27 +16,33 @@ const missionDetail = document.getElementById('missionDetail');
 const lessonLinks = document.querySelectorAll(".lesson-link");
 const lessonTag = document.getElementsByClassName("lesson-link");
 
+const inputBar = document.getElementById("input-bar");
+const search = document.getElementById("search");
+
+
+
 let initial = homePage;
 
 
+function displaySearch(){
+  search.classList.toggle('active');
+  inputBar.classList.toggle("active");
 
-// homePage.style.display = "flex";   //add mamaya
-homeButton.classList.add("active");
+  inputBar.focus()
 
-function removeAll() {
-  const navButtons = document.querySelectorAll(".nav-button");
-  navButtons.forEach((navTarget) => {
-    navTarget.classList.remove("active");
-  });
+  
+  
 }
 
-function gotoPage(targetButton, targetPage) {
+function gotoPage(targetPage) {
   if (initial !== targetPage){
   initial.style.display = "none";
-  removeAll();
-  targetButton.classList.add("active");
+
   initial = targetPage;
   initial.style.display = "flex";
+
+  search.classList.remove('active');
+  inputBar.classList.remove("active");
 
   window.scrollTo({
     top: 0,
@@ -129,21 +125,21 @@ window.addEventListener("DOMContentLoaded", () => {
   // Mapping between hash names and their matching elements
   // target = [tab button, tab div/section ]
   const mapping = {
-    home: [homeButton, homePage],
-    pathfit1: [pathfit1Button, pathfit1Page],
-    pathfit2: [pathfit2Button, pathfit2Page],
-    pathfit3: [pathfit3Button, pathfit3Page],
-    mission: [missionButton, missionPage],
-    department: [departmentButton, departmentPage],
-    aboutUs: [aboutUsButton, aboutUsPage],
+    home: [homePage],
+    pathfit1: [pathfit1Page],
+    pathfit2: [pathfit2Page],
+    pathfit3: [pathfit3Page],
+    mission: [missionPage],
+    department: [departmentPage],
+    aboutUs: [aboutUsPage],
   };
 
   const selected = mapping[target]; //mapped hash with corresponding page
   if (selected) {
-    gotoPage(selected[0], selected[1]);
+    gotoPage(selected[0]);
   } else {
     // Default to Home if no hash is provided
-    gotoPage(homeButton, homePage);
+    gotoPage(homePage);
   }
 });
 
@@ -151,15 +147,15 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("hashchange", () => {
   const target = window.location.hash.substring(1);
   const mapping = {
-    home: [homeButton, homePage],
-    pathfit1: [pathfit1Button, pathfit1Page],
-    pathfit2: [pathfit2Button, pathfit2Page],
-    pathfit3: [pathfit3Button, pathfit3Page],
-    mission: [missionButton, missionPage],
-    department: [departmentButton, departmentPage],
-    aboutUs: [aboutUsButton, aboutUsPage],
+    home: [homePage],
+    pathfit1: [pathfit1Page],
+    pathfit2: [pathfit2Page],
+    pathfit3: [pathfit3Page],
+    mission: [missionPage],
+    department: [departmentPage],
+    aboutUs: [aboutUsPage],
   };
 
   const selected = mapping[target];
-  if (selected) gotoPage(selected[0], selected[1]);
+  if (selected) gotoPage(selected[0]);
 });

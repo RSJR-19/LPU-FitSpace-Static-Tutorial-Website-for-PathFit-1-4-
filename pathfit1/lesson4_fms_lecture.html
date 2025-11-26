@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Functional Movement Screen - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit1.css">
+</head>
+
+<body>
+  <!-- HEADER + SIDEBAR TEMPLATE -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo"><img src="../assets/images/logo/LPU-logo.svg" alt="lpu logo"></div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional Movement Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html" class="active">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html">Basic locomotor and Non Locomotor Dance</a>
+            <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical Fitness</a>
+            <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical Activity</a>
+            <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+            <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+            <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+            <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical Activity/Exercise</a>
+            <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+            <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
+            <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+            <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+            <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+            <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal Fitness Plan</a>
+          </div>
+
+        </div>
+      </section>
+      <div class="spacer"></div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <a href="#" class="back-link">Back to PathFit 1 Index</a>
+
+        <h1>Functional Movement Screen (FMS)</h1>
+
+        <!-- Banner -->
+        <div class="image-placeholder">
+          <div class="image-placeholder-icon"></div>
+          <div class="image-placeholder-text">Functional Movement Screen</div>
+          <div class="image-placeholder-subtext">Evaluates seven fundamental movement patterns</div>
+        </div>
+
+        <!-- Lesson Overview -->
+        <section class="content-section">
+          <h2>What is FMS?</h2>
+          <p>The Functional Movement Screen (FMS) is a screening tool used to evaluate seven fundamental movement
+            patterns in individuals with no current pain or musculoskeletal injury. It identifies opportunities for
+            improving movement quality.</p>
+        </section>
+
+        <!-- Screening Guidelines -->
+        <section class="content-section">
+          <h2>Screening Guidelines</h2>
+          <ul>
+            <li>Perform the test with assistance or use a mirror/camera for proper execution.</li>
+            <li>Three attempts are allowed for each test to observe movement from different angles.</li>
+            <li>Wear training shoes for consistent screening conditions.</li>
+            <li>Perform the screen with no prior warm-up or stretching to assess natural movement patterns.</li>
+          </ul>
+        </section>
+
+        <!-- FMS Tests -->
+        <section class="content-section">
+          <h2>FMS Test Patterns</h2>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>1. Deep Squat</h3>
+              <p>Challenges total body mechanics and neuromuscular control.</p>
+              <p><b>Instructions:</b> Stand feet shoulder-width apart, hold a dowel overhead, squat deeply, hold, and
+                return.</p>
+              <p><b>Scoring:</b></p>
+              <ul>
+                <li>3 – Torso parallel with tibia, femur below horizontal, knees aligned, dowel over feet.</li>
+                <li>2 – Heels elevated or minor misalignment.</li>
+                <li>1 – Significant misalignment.</li>
+                <li>0 – Pain associated with movement.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=fJLR9Vw4zH8">Video Link</a></p>
+            </div>
+
+            <div class="component-box">
+              <h3>2. Hurdle Step</h3>
+              <p>Tests step/stride mechanics, stability, and control in single-leg stance.</p>
+              <p><b>Instructions:</b> Hold dowel, step over hurdle with proper alignment, return.</p>
+              <ul>
+                <li>3 – Perfect alignment, minimal lumbar movement, dowel/hurdle parallel.</li>
+                <li>2 – Some alignment loss or lumbar movement.</li>
+                <li>1 – Inability to clear hurdle or loss of balance.</li>
+                <li>0 – Pain associated.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=7EtMvPFewq8">Video Link</a></p>
+            </div>
+
+            <div class="component-box">
+              <h3>3. Inline Lunge</h3>
+              <p>Evaluates mobility, stability, and balance.</p>
+              <p><b>Instructions:</b> Step on board, dowel along spine, lunge deeply maintaining posture, return.</p>
+              <ul>
+                <li>3 – Proper dowel contact, minimal torso movement, correct knee placement.</li>
+                <li>2 – Loss of balance, partial completion.</li>
+                <li>1 – Inability to complete movement.</li>
+                <li>0 – Pain associated.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=nUPiekbIm9Q">Video Link</a></p>
+            </div>
+
+            <div class="component-box">
+              <h3>4. Shoulder Mobility</h3>
+              <p>Assesses bilateral shoulder mobility.</p>
+              <ul>
+                <li>3 – Fists within one hand length.</li>
+                <li>2 – Fists within one and a half hand lengths.</li>
+                <li>1 – Fists not within one and a half hand lengths.</li>
+                <li>0 – Pain associated.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=4_66p7a6Opk">Video Link</a></p>
+            </div>
+
+            <div class="component-box">
+              <h3>5. Active Leg Raise</h3>
+              <p>Evaluates active hamstring and core stability.</p>
+              <ul>
+                <li>3 – Vertical line between mid-thigh and ASIS, non-moving limb neutral.</li>
+                <li>2 – Vertical line between mid-thigh and mid-patella.</li>
+                <li>1 – Vertical line below mid-patella.</li>
+                <li>0 – Pain associated.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=4SRBJN-Ql24">Video Link</a></p>
+            </div>
+
+            <div class="component-box">
+              <h3>6. Trunk Stability Push-Up</h3>
+              <p>Assesses core stability in push-up movement.</p>
+              <ul>
+                <li>3 – Proper alignment, body lifts as unit, thumbs aligned correctly.</li>
+                <li>2 – Minor misalignment of thumbs or lift.</li>
+                <li>1 – Significant misalignment.</li>
+                <li>0 – Pain associated.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=Vvdh2w4Co_k">Video Link</a></p>
+            </div>
+
+            <div class="component-box">
+              <h3>7. Rotary Stability</h3>
+              <p>Assesses multi-plane pelvis, core, and shoulder stability.</p>
+              <ul>
+                <li>3 – Correct unilateral repetition, limbs over board, elbow-knee touch maintained.</li>
+                <li>2 – Correct diagonal repetition.</li>
+                <li>1 – Inability to perform diagonal repetition.</li>
+                <li>0 – Pain associated.</li>
+              </ul>
+              <p><b>Reference:</b> <a href="https://www.youtube.com/watch?v=3iiRKurUlFc">Video Link</a></p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="key-takeaways">
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>FMS evaluates seven fundamental movement patterns.</li>
+              <li>Scores identify movement limitations and risk factors.</li>
+              <li>Pain during tests requires medical evaluation.</li>
+              <li>Screening helps guide exercise interventions and improvement.</li>
+            </ol>
+          </div>
+        </section>
+
+      </div>
+    </section>
+    <!-- END MAIN CONTENT AREA -->
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+        <div class="footer-logo">
+          <div class="logo-circle"></div>
+          <h1>LPU Fit Space</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement Competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts, Group Fitness Activities</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+  </footer>
+
+  <script src="js/pathfit1.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

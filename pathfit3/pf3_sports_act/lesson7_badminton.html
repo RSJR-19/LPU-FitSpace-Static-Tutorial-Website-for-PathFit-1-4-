@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Definition of Physical Fitness - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../css/pathfit3.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+              Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional Movement Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html" class="active">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html">Basic locomotor and Non Locomotor
+              Dance</a>
+            <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical Fitness</a>
+            <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical Activity</a>
+            <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+            <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+            <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+            <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical
+              Activity/Exercise</a>
+            <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+            <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
+            <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+            <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+            <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+            <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal Fitness
+              Plan</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="../lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+              Physical Activities</a>
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="../pf3_dance_act/lesson1_folk_dance.html">Folk Dance</a>
+              <a href="../pf3_dance_act/lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+              <a href="../pf3_dance_act/lesson3_zumba_dance.html">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="lesson4_basketball.html">Basketball</a>
+              <a href="lesson5_volleyball.html">Basketball</a>
+              <a href="lesson6_pickleball.html">Pickleball</a>
+              <a href="lesson7_badminton.html">Badminton</a>
+              <a href="lesson8_table_tennis.html">Table Tennis</a>
+              <a href="lesson9_swimming.html">Swimming</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="../lesson10_arnis.html">Arnis</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="../pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+              <a href="../pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                Training</a>
+              <a href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
+              <a href="../pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="../lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
+                Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <!-- Back Link -->
+        <a href="#" class="back-link">Back to PathFit 3 Index</a>
+
+        <!-- Main Header -->
+        <h1>BADMINTON</h1>
+
+        <!-- Banner Image Placeholder -->
+        <div class="image-placeholder">
+          <div class="image-placeholder-icon"></div>
+          <div class="image-placeholder-text">Physical Fitness Overview</div>
+          <div class="image-placeholder-subtext">Visual representation of physical fitness components</div>
+        </div>
+
+        <!-- Lesson Overview -->
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>This course offers a dynamic and engaging learning experience. It involves the fundamental skills that
+            include shuttle
+            control, footwork, defense, and offense. </p>
+
+          <p>Through skills training, exercise drills, game play and independent or self-directed PAs, fitness levels
+            will be enhanced.
+            In conjunction with this, fitness levels, PA participation and dietary/eating patterns are evaluated to
+            monitor one's progress and achievement of personal fitness and dietary goals.</p>
+        </section>
+
+        <!-- Main Discussion -->
+        <section class="content-section">
+          <h2>What is Badminton?</h2>
+          <p>Badminton is a racquet sport played using racquets to hit a shuttlecock across the net. This comprehensive
+            course
+            is designed to beginner and intermediate players to the fundamental techniques, strategies, and rules of
+            badminton</p>
+
+        </section>
+
+        <!-- Nature and Background -->
+        <section class="content-section">
+          <h2>Nature and Background</h2>
+
+          <div class="nature-box">
+            <div class="left-side">
+              <div class="content-box">
+                <p>The game is named for Badminton, the country estate of the dukes of Beaufort in Gloucestershire,
+                  England,
+                  where it was first played about 1873. The roots of the sport can be traced to ancient Greece, China,
+                  and India,
+                  and it is closely related to the old children's game battledore and shuttlecock.</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="content-box">
+                <p>Badminton is derived directly from poona, which was played by British army officers stationed in
+                  India in the
+                  1860s. The first unofficial all-England badminton championships for men were held in 1899, and the
+                  first badminton
+                  tournament for women was arranged the next year.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Basic Grips in Badminton -->
+        <section class="content-section">
+          <h2>Basic Grips in Badminton</h2>
+          <h3>Forehand Grip</h3>
+          <p>The easiest way to learn the forehand grip is to pretend you are shaking someone's hand.</p>
+
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Forehand Grip Infographic</div>
+          </div>
+
+          <p>The forehand grip is used for:</p>
+
+          <ul>
+            <li>Forehand clears, smashes and drops</li>
+            <li>Forehand drives</li>
+            <li>Forehand lifts</li>
+            <li>Forehand net shots</li>
+          </ul>
+
+          <h3>Backhand Grip</h3>
+          <p>The easiest way to learn the backhand grip is to set up with your thumb on top of the wider section of the
+            grip,
+            with your strings facing the floor & ceiling like in the photo below. Your fingers should be relaxed around
+            the side.</p>
+
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Backhand Grip Infographic</div>
+          </div>
+
+          <p>The backhand grip is used for:</p>
+
+          <ul>
+            <li>Backhand drives</li>
+            <li>Backhand lifts</li>
+            <li>Backhand net shots</li>
+            <li>Backhand serves</li>
+            <li>Doubles defence</li>
+          </ul>
+
+        </section>
+
+        <!-- Basic Badminton Equipment -->
+        <section class="content-section">
+          <h2>Basic Badminton Equipment</h2>
+          <h3>1. Badminton Racket</h3>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+          <h3>2. Shuttlecock</h3>
+          <p>Sixteen feathers fixed in a cork base enveloped in a thin leather sheet make a shuttlecock. Interestingly,
+            the best Badminton Shuttlecocks are made from feathers from the wing of a goose. The shuttle weighs between
+            4.74 to 5.50
+            grams</p>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+          <h3>3. Badminton Court</h3>
+          <p>The court is rectangular and divided into halves by a net. Courts are usually marked for both singles and
+            doubles play,
+            although badminton rules permit a court to be marked for singles only. The doubles court is wider than the
+            singles court, but
+            both are of the same length.</p>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+        </section>
+
+        <!-- Badminton Serve -->
+        <section class="content-section">
+          <h2>Badminton Serve</h2>
+          <p>There are 5 serving rules in badminton for both doubles and singles:</p>
+          <h3>1. Both feet must be in contact with the floor when striking the shuttle.</h3>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+          <h3>2. Your feet must not be touching any of the court lines.</h3>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+          <h3>3. You must strike the cork, not the feather.</h3>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+          <h3>4. The whole shuttle must be struck below 1.15m</h3>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+          <h3>5. The serve must be delivered in a forward continuous motion.</h3>
+          <p>Once you begin your backswing, the serve must be one continuous motion. At no point during the serving
+            action can you pause.</p>
+          <p>Examples of illegal serves under this rule include:</p>
+          <ul>
+            <li>Stopping at the backswing and then moving forwards.</li>
+            <li>Moving forwards and backwards multiple times before striking the shuttle.</li>
+          </ul>
+
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+        </section>
+
+        <!-- BADMINTON RULES AND REGULATIONS -->
+        <section class="content-section">
+          <h2>BADMINTON RULES AND REGULATIONS</h2>
+          <p>Badminton has many intricate rules and regulations. The Badminton World Federation has done a thorough job
+            of compiling these
+            rules and laying them out in an organized manner for you to learn. Check them out along with their
+            vocabulary and simplified
+            badminton rules below.</p>
+          <p>Below are some basic rules you need to know:</p>
+          <ul>
+            <li>A match consists of the best of three games to 21 points</li><br>
+            <li>Every time there is a serve, one point is scored</li><br>
+            <li>If the score is 20-20, the individual or team must win by two points to win the game</li><br>
+            <li>In terms of serving, at the beginning of the game when the score is 0-0 or if the server’s score is
+              even, they will serve
+              from the right service court. However, when the server’s score is odd, they will serve from the left
+              service court.</li><br>
+            <li>The rally is over once the birdie contacts the floor, does not return over the net, or lands outside the
+              court lines.</li><br>
+          </ul>
+        </section>
+
+        <!-- BADMINTON SINGLES AND DOUBLES AREA OF PLAY -->
+        <section class="content-section">
+          <h2>BADMINTON SINGLES AND DOUBLES AREA OF PLAY</h2>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Badminton Racket Infographic</div>
+          </div>
+
+          <!-- GOVERNING BODY IN BADMINTON -->
+          <section class="content-section">
+            <h2>GOVERNING BODY IN BADMINTON</h2>
+            <ul>
+              <li>The Badminton World Federation (BWF) is recognised by the International Olympic Committee (IOC) and
+                the International
+                Paralympic Committee (IPC) as the world governing body for badminton. The International Badminton
+                Federation (IBF), as it was
+                originally called, was established in London, on 5 July 1934 with nine founding member associations. The
+                BWF is a federation of
+                196 members.</li><br>
+              <li>The Philippine Badminton Association (PBAD) is the national governing body for badminton in the
+                Philippines. In 1952,
+                PBA became the first national badminton group. Today, PBAD is recognized by PSC, POC, Badminton World
+                Federation, and Badminton
+                Asia.</li>
+            </ul>
+          </section>
+
+          <!-- BADMINTON OFFICIALS -->
+          <section class="content-section">
+            <h2>BADMINTON OFFICIALS</h2>
+            <p>There are three types of officials in the sport of Badminton.</p>
+            <h3>1. Referee</h3>
+            <p>The Referee takes responsibility for making sure the tournament is run according to all the rules, is
+              fair and that
+              sportsmanship is being upheld.</p>
+            <h3>2. Umpire</h3>
+            <p>The Umpire takes responsibility for running individual matches. He or she is responsible for making all
+              final decisions
+              for points awarded in a match.</p>
+            <h3>3. Linesman</h3>
+            <p>Linesmen take responsibility for making line calls on shuttles that land on the floor of the badminton
+              court.
+              They are there to assist the umpire in making the best decision possible. Linesmen are not mandatory for
+              any provincial
+              tournaments, but are frequently used in more important matches.</p>
+          </section>
+
+          <!-- Key Takeaways -->
+          <section class="key-takeaways">
+            <h2>Key Takeaways</h2>
+            <div class="takeaways-box">
+              <ol>
+                <li>Badminton is a dynamic racquet sport that develops agility, coordination, endurance, and strategic
+                  thinking.</li>
+                <li>Mastering basic grips—forehand and backhand—is essential for learning proper strokes and effective
+                  gameplay.</li>
+                <li>Understanding the rules, serving guidelines, and court dimensions ensures fair and competitive play.
+                </li>
+                <li>Badminton builds physical fitness through continuous movement, quick reactions, and full-body
+                  engagement.</li>
+                <li>The sport is governed globally by the BWF and locally by the PBAD, ensuring standardized rules and
+                  development.</li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- Quiz Section -->
+          <section class="quiz-section">
+            <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+            <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
+              through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.
+            </p>
+            <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+          </section>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTENT AREA -->
+
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+          molestias error modi, iste qui aliquid?</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="../js/pathfit3.js"></script>
+  <script src="../../assets/js/main.js"> </script>
+  <!-- END: Copied from template -->
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+/* For PathFit 2 Pages */
+.main-content {
+  padding: 1rem;
+}
+/* Back Button */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #a92c2c;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.back-link::before {
+  content: "←";
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 40px 0 20px;
+  color: #1a1a1a;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  width: 100%;
+  background-color: #f8f8f8;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  margin-bottom: 30px;
+}
+
+.image-placeholder-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #d0d0d0;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpath d='M21 15l-5-5L5 21'/%3E%3C/svg%3E")
+    center/contain no-repeat;
+  margin-bottom: 15px;
+}
+
+.image-placeholder-text {
+  color: #999;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.image-placeholder-subtext {
+  color: #aaa;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Content Sections */
+.content-section {
+  margin-bottom: 40px;
+}
+
+.content-section p {
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Components Grid */
+.components-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.component-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #fafafa;
+}
+
+.component-box h3 {
+  color: #a92c2c;
+  margin-bottom: 15px;
+}
+
+.component-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.component-box li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.component-box li::before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+  color: #a92c2c;
+  font-weight: bold;
+}
+
+/* Picture Gallery */
+.picture-gallery {
+  margin: 40px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 250px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.gallery-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #d0d0d0;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpath d='M21 15l-5-5L5 21'/%3E%3C/svg%3E")
+    center/contain no-repeat;
+  margin-bottom: 10px;
+}
+
+.gallery-placeholder-text {
+  color: #aaa;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery-content {
+  padding: 20px;
+}
+
+.gallery-content h4 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.gallery-content p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Key Takeaways */
+.key-takeaways {
+  margin: 40px 0;
+}
+
+.takeaways-box {
+  border-left: 4px solid #a92c2c;
+  background-color: #fef5f5;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.takeaways-box ol {
+  list-style: none;
+  counter-reset: takeaway-counter;
+}
+
+.takeaways-box li {
+  counter-increment: takeaway-counter;
+  padding: 15px 0;
+  position: relative;
+  padding-left: 40px;
+  color: #444;
+}
+
+.takeaways-box li::before {
+  content: counter(takeaway-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #a92c2c;
+  font-size: 1.1em;
+}
+
+/* Quiz Section */
+.quiz-section {
+  background: linear-gradient(135deg, #a92c2c 0%, #8b2323 100%);
+  color: white;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.quiz-section h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quiz-section p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quiz-button {
+  background-color: white;
+  color: #a92c2c;
+  padding: 15px 40px;
+  font-size: 1.1em;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .components-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .quiz-section {
+    padding: 30px 20px;
+  }
+
+  .quiz-section h2 {
+    font-size: 1.5em;
+  }
+
+  .image-placeholder {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .quiz-button {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+}

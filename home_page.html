@@ -6,47 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitSpace - Home</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/assets/css/structure.css">
+    <link rel="stylesheet" href="assets/css/structure.css">
 </head>
 
 <body>
+
     <header>
-        <div style="height: 1dvh;background-color: white;"></div>
         <nav>
-            <div class="spacer"></div>
-            <div class="left-nav">
+            <div class="sider"></div>
+            <div class="main-nav">
                 <div class="lpu-logo">
-                    <img src="https://i.postimg.cc/kgRTSGH1/image.png" alt="lpu logo">
+                    <img src="../assets/images/logo/LPU-logo.svg" alt="lpu logo">
                 </div>
-                <div class="fitspace-text">
-                    <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+                <div class="fitspace-title">
+                    <!-- <a style="color: #b1onclick="gotoPage(pathfit1Button, pathfit1Page)1e23;">LPU<a style="color: rgb(83, 83, 83);"> FitSpace</a></a>-->
+                    <h1 style="color: #b11e23;">LPU</h1>
+                    <h1 style="color: rgb(83, 83, 83)">FitSpace</h1>
+                </div>
+                <div class="navbar">
+                    <a href="" onclick="gotoPage(homePage)">Home</a>
+                    <div class="pathfit-dropdown">
+                        <h1>PathFit</h1>
+                        <div class="main-dropdown">
+                            <p onclick="gotoPage(pathfit1Page)">PathFit 1</p>
+                            <p onclick="gotoPage(pathfit2Page)">PathFit 2</p>
+                            <p onclick="gotoPage(pathfit3Page)">PathFit 3 & 4</p>
+                        </div>
+                    </div>
+                    <a onclick="gotoPage(missionPage)">Mission Vision</a>
+                    <a onclick="gotoPage(aboutUsPage)">About Us</a>
+                </div>
+                <div class="search-box">
+                    <a onclick="displaySearch()" id="search">Search</a>
+                    <input type="text" id="input-bar" placeholder="Lessons...">
+
 
                 </div>
+
 
 
             </div>
-            <div class="right-nav">
-                <div class="input-container">
-                    <input type="text" placeholder=" Search Lessons...">
-                    <button>Search</button>
-                </div>
+            <div class="sider"></div>
 
-            </div>
-            <div class="spacer"></div>
         </nav>
-
-        <nav class="nav-main">
-            <div>
-                <p class="nav-button" onclick="gotoPage(homeButton, homePage)">Home</p>
-                <p class="nav-button" onclick="gotoPage(pathfit1Button, pathfit1Page)">PATHFIT 1</p>
-                <p class="nav-button" onclick="gotoPage(pathfit2Button, pathfit2Page)">PATHFIT 2</p>
-                <p class="nav-button" onclick="gotoPage(pathfit3Button, pathfit3Page)">PATHFIT 3 & 4</p>
-                <p class="nav-button" onclick="gotoPage(missionButton, missionPage); resetText()">Mission & Vision</p>
-                <p class="nav-button" onclick="gotoPage(aboutUsButton, aboutUsPage)">About FitSpace</p>
-            </div>
-        </nav>
-        <div style="height: 3dvh;background-color:white;"></div>
     </header>
+
+
+
+
     <main id="main">
 
         <div class="main-side"></div>
@@ -229,57 +236,51 @@
         </section>
         <section id="mission">
             <div class="main-spacer" style="border-bottom-left-radius: 10px;"></div>
-            <div class="main-mission">
-                <div class="card-container">
-                    <div class="left-side-cc">
-                        <div class="vision-card">
-                            <div class="vision-effect">
-                                <div class="title-vision">
-                                    <h1>VISION: </h1>
-                                </div>
-                                <div class="logo-vision"></div>
-                                <div class="text-vision">
-                                    <h1>An internationally accredited university by 2030, dedicated to innovation and
-                                        excellence in the service of God and country.</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-side-cc">
-                        <div class="mission-card">
-                            <div class="inner-effect">
-                                <div class="text-mission">
-                                    <h1>MISSION:</h1>
-                                    <p>The Lyceum of the Philippines University, espousing the ideals of Jose P. Laurel,
-                                        is committed to the :</p>
-                                </div>
-                                <div class="bottom-container">
-                                    <div class="image-mc"></div>
-                                    <div class="content-mission">
-                                        <h1 id="missionHead">INSTRUCTION</h1>
-                                        <p id="missionDetail">Provide Industry-based knowledge and skills.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="values-card">
-                            <div class="inner-effect">
-                                <div class="text-values">
-                                    <h1>CORE VALUES:</h1>
-                                    <p>LPU ‘N JPL</p>
-                                </div>
-                                <div class="bottom-container" id="reversed">
-                                    <div class="image-mc"></div>
-                                    <div class="content-values">
-                                        <h1 id="valuesDetail">L - Love of God</h1>
-                                    </div>
+            <div class="mission-main">
+                <div class="mission-card">
+                    <div class="title-card">
+                        <h1>MISSION :</h1>
 
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                    <div class="mission-logo-box">
+                        <div class="mission-logo"></div>
+                    </div>
+                    <div class="mission-text">
+                        <div class="text-main"></div>
+                    </div>
+
                 </div>
+                <div class="mission-card">
+                    <div class="title-card">
+                        <h1>VISION :</h1>
+                    </div>
+                    <div class="mission-logo-box">
+                        <div class="mission-logo">
 
+                        </div>
+
+                    </div>
+                    <div class="mission-text">
+                        <div class="text-main">
+                            <h1> An Internationally accredited university by 2030, dedicated to innovation and
+                                excellence in the service of God and country.</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mission-card">
+                    <div class="title-card">
+                        <h1>CORE VALUES :</h1>
+                    </div>
+                    <div class="mission-logo-box">
+                        <div class="mission-logo"></div>
+                    </div>
+                    <div class="mission-text">
+                        <div class="text-main"></div>
+                    </div>
+
+                </div>
+            </div>
             </div>
             <div class="main-spacer" style="border-bottom-right-radius: 10px;"></div>
         </section>
@@ -402,7 +403,7 @@
                                 <p>TAO</p>
                             </div>
                         </div>
-                       
+
                         <!-- add sir IF ALLOWED  -->
                         <!-- <div class="instructor-box">
                             <h3>Course Instructor</h3>
@@ -464,7 +465,7 @@
 
     </footer>
 
-    <script src="/assets/js/home_page.js"> </script>
+    <script src="assets/js/home_page.js"> </script>
 </body>
 
 </html>

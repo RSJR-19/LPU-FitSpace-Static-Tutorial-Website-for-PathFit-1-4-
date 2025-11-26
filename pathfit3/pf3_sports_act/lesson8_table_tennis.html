@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Definition of Physical Fitness - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit3.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical
+              Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+              Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional Movement Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html" class="active">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html">Basic locomotor and Non
+              Locomotor
+              Dance</a>
+            <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical Fitness</a>
+            <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical Activity</a>
+            <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+            <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+            <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+            <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical
+              Activity/Exercise</a>
+            <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+            <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
+            <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+            <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+            <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+            <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal Fitness
+              Plan</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="../lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+              Physical Activities</a>
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="lesson1_folk_dance.html">Folk Dance</a>
+              <a href="lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+              <a href="lesson3_zumba_dance.html">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="../pf3_sports_act/lesson4_basketball.html">Basketball</a>
+              <a href="../pf3_sports_act/lesson5_volleyball.html">Basketball</a>
+              <a href="../pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
+              <a href="../pf3_sports_act/lesson7_badminton.html">Badminton</a>
+              <a href="../pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
+              <a href="../pf3_sports_act/lesson9_swimming.html">Swimming</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="../lesson10_arnis.html">Arnis</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="../pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+              <a href="../pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                Training</a>
+              <a href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
+              <a href="../pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="../lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
+                Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <!-- Back Link -->
+        <a href="#" class="back-link">Back to PathFit 3 Index</a>
+
+        <h1>Introduction to Table Tennis</h1>
+
+        <div class="image-placeholder">
+          <div class="image-placeholder-icon"></div>
+          <div class="image-placeholder-text">Table Tennis Equipment and Play</div>
+          <div class="image-placeholder-subtext">Visual representation of a regulation table, racket, and ball
+            <img src="">
+          </div>
+        </div>
+
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>Table tennis, also known as Ping-Pong, is a fast-paced sport played by either two (singles) or four
+            (doubles) players. It is a sport of finesse, speed, and strategy, demanding high levels of coordination
+            and
+            quick reaction time.</p>
+
+          <p>This lesson introduces the rich history of table tennis, the official rules and equipment as governed by
+            the ITTF, and the fundamental mechanics of gameplay, including serving, scoring, and stroke types.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>History and Governance</h2>
+          <p>Table tennis originated as an after-dinner pastime for the elite in England towards the end of the 19th
+            century, evolving from makeshift equipment like cigar boxes and champagne corks.</p>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Key Historical Points</h3>
+              <ul>
+                <li>Early Names: It was known as Gossima, Whif-Whaf (or wiff-waff), Flim Flam, and Ping-Pong, the
+                  latter
+                  due to the sound of the ball hitting the table and racket.</li>
+                <li>Olympic Status: Table tennis became an Olympic sport in 1988 in Seoul, South Korea, initially
+                  featuring singles and doubles competitions. The doubles event was replaced by the team event in
+                  2008.
+                </li>
+                <li>Governance: The sport is globally governed by the International Table Tennis Federation (ITTF),
+                  founded in 1926.</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Major Rule Changes (Post-2000)</h3>
+              <p>The ITTF instituted changes to slow down the game and increase rally length for better spectator
+                viewing:</p>
+              <ul>
+                <li>Ball Size: The older 38 mm ball was replaced by a 40 mm ball in October 2000, which increased air
+                  resistance and slowed the game down.</li>
+                <li>Scoring: The game was changed from a 21-point system to an 11-point scoring system (effective
+                  September 2001), aiming for faster-paced, more exciting matches.</li>
+                <li>Service Rule: Rules were changed in 2002 to prevent players from hiding the ball during service,
+                  requiring the ball to be tossed a minimum of 16 cm (6.3 in) high.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>Equipment Specifications</h2>
+          <p>Official equipment adheres to strict ITTF standards to ensure fair and consistent play. </p>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Equipment</th>
+                <th>Specifications</th>
+                <th>Key Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Table (Playing Surface)</td>
+                <td>2.74 m long, 1.525 m wide, 76 cm high</td>
+                <td>Must yield a uniform bounce of about 23 cm when dropped from 30 cm. Must be uniformly dark and
+                  matt
+                  with 2 cm white side lines.</td>
+              </tr>
+              <tr>
+                <td>Net Assembly</td>
+                <td>15.25 cm high</td>
+                <td>The net assembly includes the net, suspension, and supporting posts, which extend 15.25 cm outside
+                  the side line.</td>
+              </tr>
+              <tr>
+                <td>Ball</td>
+                <td>40 mm diameter, 2.7 g weight</td>
+                <td>Made of celluloid or similar plastics, and must be white or orange and matt.</td>
+              </tr>
+              <tr>
+                <td>Racket</td>
+                <td>Any size, shape, or weight</td>
+                <td>The blade must be flat and rigid. At least 85% of the blade by thickness must be of natural wood.
+                  Common grips are Penhold and Shakehand.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="content-section">
+          <h2>Gameplay and Strokes</h2>
+          <p>Matches start with the first serve decided by lot (e.g., coin toss). The ultimate goal is to win a point
+            by
+            forcing the opponent to commit a Fault or fail to make a legal return.</p>
+
+          <h3>Types of Strokes</h3>
+          <p>Different strokes are used to impart various speeds and spins on the ball:</p>
+          <ul>
+            <li>BLOCK: Played defensively to control an attacking shot.</li>
+            <li>LOOP: Generates high topspin, causing the ball to dip quickly on the opponent's side.</li>
+            <li>CHOP: A stroke that produces heavy underspin on the ball.</li>
+            <li>SMASH: An offensive "trump card," a powerful, fast hit with minimal spin.</li>
+          </ul>
+
+          <h3>Service and Scoring Summary</h3>
+          <ul>
+            <li>Service: The ball must be tossed vertically at least 16 cm (6.3 in) high. It must touch the server's
+              court once, then the receiver's court once, without hitting the net.</li>
+            <li>Service Alternation: Service alternates every two points until the end of the game, or until deuce
+              (10-10), when service alternates every one point.</li>
+            <li>Ends: Players switch sides of the table after each game. In the final possible game, players switch
+              ends
+              when the first player scores five points.</li>
+          </ul>
+        </section>
+
+        <section class="key-takeaways">
+          <h2>Key Terminologies</h2>
+          <div class="takeaways-box">
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>RALLY: The period during which the ball is in play.</li>
+              <li>POINT: A rally which the result is scored (e.g., one player fails to make a legal return).</li>
+              <li>LET: A rally of which the result is not scored (e.g., the ball touches the net during a legal serve,
+                or the receiver was not ready).</li>
+              <li>DEAD BALL: A ball that is not in play.</li>
+              <li>FAULT: Any error committed by a player (e.g., Double Bounce, Moved Table, Wrong Side in doubles
+                service).</li>
+              <li>RECEIVER: The player due to strike the ball second in a rally.</li>
+            </ul>
+          </div>
+        </section>
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+          <p>You've completed the lesson on introduction to table tennis?. Now it's time to assess your understanding
+            through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.
+          </p>
+          <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+        </section>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTENT AREA -->
+
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+          molestias error modi, iste qui aliquid?</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="../js/pathfit3.js"></script>
+  <script src="../../assets/js/main.js"> </script>
+  <!-- END: Copied from template -->
+
+</body>
+
+</html>

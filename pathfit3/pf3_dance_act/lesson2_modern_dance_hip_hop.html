@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Definition of Physical Fitness - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../css/pathfit3.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+              Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional Movement Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html" class="active">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html">Basic locomotor and Non Locomotor
+              Dance</a>
+            <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical Fitness</a>
+            <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical Activity</a>
+            <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+            <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+            <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+            <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical
+              Activity/Exercise</a>
+            <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+            <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
+            <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+            <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+            <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+            <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal Fitness
+              Plan</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="../lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+              Physical Activities</a>
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="lesson1_folk_dance.html">Folk Dance</a>
+              <a href="lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+              <a href="lesson3_zumba_dance.html">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="../pf3_sports_act/lesson4_basketball.html">Basketball</a>
+              <a href="../pf3_sports_act/lesson5_volleyball.html">Basketball</a>
+              <a href="../pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
+              <a href="../pf3_sports_act/lesson7_badminton.html">Badminton</a>
+              <a href="../pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
+              <a href="../pf3_sports_act/lesson9_swimming.html">Swimming</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="../lesson10_arnis.html">Arnis</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="../pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+              <a href="../pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                Training</a>
+              <a href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
+              <a href="../pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="../lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
+                Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <!-- Back Link -->
+        <a href="#" class="back-link">Back to PathFit 3 Index</a>
+
+        <!-- Main Header -->
+        <h1>INTRODUCTION TO MODERN DANCE – HIP HOP</h1>
+
+        <!-- Banner Image Placeholder -->
+        <div class="image-placeholder">
+          <div class="image-placeholder-icon"></div>
+          <div class="image-placeholder-text">Hip Hop Dance Overview</div>
+          <div class="image-placeholder-subtext">Visual representation of hip hop movement and culture</div>
+        </div>
+
+        <!-- Lesson Overview -->
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>Hip Hop dance is a dynamic and expressive form of modern dance that originated from urban street culture. It emphasizes rhythm, creativity, individuality, and musicality. Today, it has evolved into a global movement that blends performance, athleticism, and artistic expression.</p>
+
+          <p>In the PathFit program, Hip Hop serves as an avenue for students to build confidence, coordination, body awareness, and physical fitness while exploring cultural identity and artistic freedom.</p>
+        </section>
+
+        <!-- Main Discussion -->
+        <section class="content-section">
+          <h2>What is Hip Hop Dance?</h2>
+          <p>Hip Hop dance is a style rooted in African American and Latino street culture, incorporating energetic movements and freestyle expression. It is often performed to hip hop music and includes various substyles such as breaking, popping, locking, and freestyle.</p>
+
+          <p>Dancers commonly classify Hip Hop elements into two major categories:</p>
+          <ul>
+            <li>Foundation Styles – breaking, popping, locking, and groove-based steps.</li>
+            <li>Choreographed Hip Hop – structured routines used in performances and competitions.</li>
+          </ul>
+        </section>
+
+        <!-- Components of Hip Hop Dance -->
+        <section class="content-section">
+          <h2>Key Components of Hip Hop Dance</h2>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Foundation Techniques</h3>
+              <ul>
+                <li>Grooves – Basic body movements that follow rhythm</li>
+                <li>Popping – Quick muscle contractions creating a “pop” effect</li>
+                <li>Locking – Distinct pauses and exaggerated movements</li>
+                <li>Breaking – Floorwork, power moves, and toprock</li>
+                <li>Freestyle – Improvised expression guided by music</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Performance Skills</h3>
+              <ul>
+                <li>Musicality – Interpreting beats and accents</li>
+                <li>Coordination – Synchronizing upper and lower body movements</li>
+                <li>Expression – Conveying attitude, story, and character</li>
+                <li>Precision – Clean and controlled execution of moves</li>
+                <li>Creativity – Developing original steps and combinations</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="content-section">
+          <h2>Benefits of Learning Hip Hop Dance</h2>
+          <p>Engaging in Hip Hop dance provides physical, emotional, and social benefits:</p>
+
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Hip Hop Benefits Infographic</div>
+          </div>
+
+          <ul>
+            <li>Improves coordination, balance, and full-body control</li><br>
+            <li>Boosts cardiovascular endurance and stamina</li><br>
+            <li>Enhances creativity, self-expression, and confidence</li><br>
+            <li>Reduces stress and supports emotional well-being</li><br>
+            <li>Strengthens teamwork and interpersonal communication</li><br>
+            <li>Promotes cultural appreciation and identity</li><br>
+          </ul>
+
+          <div class="note-box">
+            <p><strong>Did you know?</strong> Hip Hop began in the 1970s in the Bronx, New York, and quickly evolved into a global artistic movement influencing dance, music, and culture.</p>
+          </div>
+        </section>
+
+        <!-- Practical Application -->
+        <section class="content-section">
+          <h2>Practical Application</h2>
+          <p>Try incorporating simple Hip Hop practices into your routine:</p>
+          <ul>
+            <li>Practice basic grooves for 5–10 minutes daily</li><br>
+            <li>Follow an online beginner Hip Hop routine</li><br>
+            <li>Freestyle to your favorite hip hop track for self-expression</li><br>
+            <li>Join a school dance club or community dance class</li><br>
+          </ul>
+          <p><em>Remember: Hip Hop is about confidence, creativity, and authenticity.</em></p>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="key-takeaways">
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>Hip Hop is a modern dance form rooted in rhythm, culture, and self-expression.</li>
+              <li>It includes foundational styles such as breaking, popping, locking, and grooves.</li>
+              <li>Practicing Hip Hop improves coordination, musicality, and emotional well-being.</li>
+              <li>Hip Hop empowers individuality while fostering community and collaboration.</li>
+              <li>It is an accessible and engaging component of the PathFit program.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+          <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
+            through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
+          <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+        </section>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTENT AREA -->
+
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+          molestias error modi, iste qui aliquid?</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="../js/pathfit3.js"></script>
+  <script src="../../assets/js/main.js"> </script>
+  <!-- END: Copied from template -->
+
+</body>
+
+</html>

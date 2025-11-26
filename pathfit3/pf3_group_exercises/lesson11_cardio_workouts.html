@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Definition of Physical Fitness - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../css/pathfit3.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a>Mission & Vision</a>
+        <a>Department Overview</a>
+        <a>About FitSpace</a>
+        <div class="input-container">
+          <input type="text" placeholder=" Search Lessons...">
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+              Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional Movement Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html" class="active">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html">Basic locomotor and Non Locomotor
+              Dance</a>
+            <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_definition_of_physical_fitness.html">Definition of Physical Fitness</a>
+            <a href="../pathfit2/lesson2_definition_of_physical_activity.html">Definition of Physical Activity</a>
+            <a href="../pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
+            <a href="../pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
+            <a href="../pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
+            <a href="../pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical
+              Activity/Exercise</a>
+            <a href="../pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
+            <a href="../pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
+            <a href="../pathfit2/lesson10_sample_fitness_plan.html">Sample Fitness Plan</a>
+            <a href="../pathfit2/lesson11_fitt_principle.html">FITT Principle</a>
+            <a href="../pathfit2/lesson12_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson13_physical_fitness_test.html">Physical Fitness Test Score Card</a>
+            <a href="../pathfit2/lesson14_developing_a_personal_fitness_plan.html">Developing a Personal Fitness
+              Plan</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="../lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+              Physical Activities</a>
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="lesson1_folk_dance.html">Folk Dance</a>
+              <a href="lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+              <a href="lesson3_zumba_dance.html">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="../pf3_sports_act/lesson4_basketball.html">Basketball</a>
+              <a href="../pf3_sports_act/lesson5_volleyball.html">Basketball</a>
+              <a href="../pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
+              <a href="../pf3_sports_act/lesson7_badminton.html">Badminton</a>
+              <a href="../pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
+              <a href="../pf3_sports_act/lesson9_swimming.html">Swimming</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="../lesson10_arnis.html">Arnis</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="../pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+              <a href="../pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                Training</a>
+              <a href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
+              <a href="../pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="../lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
+                Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+    
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <!-- Back Link -->
+        <a href="#" class="back-link">Back to PathFit 3 Index</a>
+
+        <!-- Main Header -->
+        <h1>Cardio Workouts</h1>
+
+        <div class="image-placeholder">
+          <div class="image-placeholder-icon"></div>
+          <div class="image-placeholder-text">Cardio Training Overview</div>
+          <div class="image-placeholder-subtext">Visual representation of various cardio activities (running, cycling,
+            swimming) </div>
+        </div>
+
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>Cardiovascular exercise, commonly known as cardio or aerobic exercise, is any physical activity that raises
+            your heart rate and respiration rate for a sustained period. Its primary purpose is to strengthen the heart
+            and lungs, making the body more efficient at delivering oxygen.</p>
+
+          <p>This lesson introduces the definition of cardio, the immense health benefits it offers, and the FITT
+            principle—the essential framework for designing a safe and effective cardio training program.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>What is Cardiovascular Fitness?</h2>
+          <p>Cardiovascular fitness is the ability of the circulatory and respiratory systems to supply fuel (oxygen and
+            nutrients) during sustained physical activity. Activities like running, swimming, and brisk walking are
+            classic examples of cardio because they rely on aerobic metabolism (using oxygen) to generate energy.</p>
+
+          <h3>Key Benefits of Cardio Training</h3>
+          <ul>
+            <li>Heart Health: Strengthens the heart muscle, allowing it to pump more blood with fewer beats.</li>
+            <li>Weight Management: Burns calories and helps maintain a healthy body composition.</li>
+            <li>Disease Prevention: Significantly reduces the risk of heart disease, stroke, type 2 diabetes, and
+              certain cancers.</li>
+            <li>Mental Health: Releases endorphins, which act as natural mood elevators, reducing stress and anxiety.
+            </li>
+            <li>Improved Stamina: Increases the capacity to perform daily tasks and physical activities without undue
+              fatigue.</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>Types of Cardio and Measuring Intensity</h2>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Common Types of Cardio</h3>
+              <ul>
+                <li>Low-Impact: Walking, cycling, swimming, elliptical training (Gentle on the joints).</li>
+                <li>High-Impact: Running, jumping rope, high-impact aerobics (Effective for bone density but higher risk
+                  of joint stress).</li>
+                <li>Interval Training (HIIT): Short bursts of intense exercise followed by brief rest periods (Highly
+                  efficient for calorie burn and fitness gains).</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Measuring Exercise Intensity</h3>
+              <p>Intensity is the most critical factor for improving cardiovascular fitness. Two common ways to measure
+                it:</p>
+              <ul>
+                <li>Target Heart Rate (THR): A specific range of heartbeats per minute (BPM) that should be maintained
+                  during exercise (typically 60–85% of Maximum Heart Rate).</li>
+                <li>Rate of Perceived Exertion (RPE): A subjective scale (1 to 10) of how hard you feel like you are
+                  working (A moderate intensity typically falls between RPE 4-6).</li>
+              </ul>
+              <p><em>Calculation Tip: Maximum Heart Rate (MHR) is estimated as 220 minus your age.</em></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>The FITT Principle for Cardio</h2>
+          <p>The FITT Principle is a foundational guideline used to create an effective and balanced fitness program. It
+            stands for Frequency, Intensity, Time, and Type.</p>
+
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Infographic explaining the FITT Principle for cardiovascular fitness
+            </div>
+          </div>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Definition</th>
+                <th>Cardio Recommendation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frequency</td>
+                <td>How often you exercise.</td>
+                <td>3–5 days per week.</td>
+              </tr>
+              <tr>
+                <td>Intensity</td>
+                <td>How hard you exercise.</td>
+                <td>Moderate (60–70% MHR) to Vigorous (70–85% MHR).</td>
+              </tr>
+              <tr>
+                <td>Time (Duration)</td>
+                <td>How long you exercise.</td>
+                <td>30–60 minutes per session (moderate); 20–30 minutes (vigorous).</td>
+              </tr>
+              <tr>
+                <td>Type</td>
+                <td>The specific mode of exercise.</td>
+                <td>Any continuous activity that uses large muscle groups (running, elliptical, dance).</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="content-section">
+          <h2>Practical Application: Structure of a Cardio Session</h2>
+          <p>A safe and productive cardio workout should always include three phases:</p>
+          <ul>
+            <li>Warm-up (5–10 minutes): Light exercise and dynamic stretching to gradually raise the heart rate and
+              prepare muscles.</li>
+            <li>Conditioning (20–60 minutes): The main activity performed within the target intensity zone (THR or RPE).
+            </li>
+            <li>Cool-down (5–10 minutes): Gradually lowering the heart rate through light activity followed by static
+              stretching to prevent soreness.</li>
+          </ul>
+          <p><em>Remember: Consistency is key to improving cardiovascular endurance. Start slow and gradually increase
+              duration and intensity.</em></p>
+        </section>
+
+        <section class="key-takeaways">
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>Cardio exercise strengthens the heart and lungs and is essential for overall health and well-being.
+              </li>
+              <li>Intensity can be monitored using your Target Heart Rate (THR) or the Rate of Perceived Exertion (RPE)
+                scale.</li>
+              <li>The FITT Principle (Frequency, Intensity, Time, Type) guides the design of all effective cardio
+                programs.</li>
+              <li>Examples include low-impact (swimming), high-impact (running), and highly efficient (HIIT).</li>
+              <li>A complete session includes a Warm-up, Conditioning phase, and a Cool-down.</li>
+            </ol>
+          </div>
+        </section>
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+          <p>You've completed the lesson on cardio workouts. Now it's time to assess your understanding
+            through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
+          <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+        </section>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTENT AREA -->
+
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
+          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
+          molestias error modi, iste qui aliquid?</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <p>PATHFIT 1: Movement competency Training</p>
+        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
+        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="../js/pathfit3.js"></script>
+  <script src="../../assets/js/main.js"> </script>
+  <!-- END: Copied from template -->
+
+</body>
+
+</html>

@@ -87,8 +87,11 @@ nav div {
 }
 .right-nav a:hover {
   transform: scale(1.2);
-  text-decoration: underline;
+
   color: #b11e23;
+  background-color: #b11e231a;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .input-container {
@@ -349,6 +352,17 @@ footer {
   padding-right: 20px;
 }
 
+.sub-main-footer a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  line-height: 1.7;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+
 .sub-main-footer:nth-child(3) {
   text-align: left;
 }
@@ -387,11 +401,7 @@ footer {
   color: #aaa;
 }
 
-/* 
---- Responsive Layout ---  
-HINDI KO GAWA TOH SORRY NA RENAN :( 
--gaw
-*/
+/* --- Responsive Layout ---   */
 @media (max-width: 800px) {
   .main-footer {
     flex-direction: column;
