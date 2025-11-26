@@ -160,6 +160,17 @@ main .sidebar .spacer {
   margin: 0;
   margin-top: 10%;
 }
+.mission-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.mission-logo img{
+  height: 100%;
+  width: 100%;
+
+}
 
 .lesson-tab-container {
   margin-top: 10px;

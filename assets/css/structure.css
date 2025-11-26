@@ -360,21 +360,125 @@ main {
 .mission-logo{
   height: 90%;
   width: 30%;
-  background-color: red;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.mission-logo img{
+  height: 100%;
+  margin: 0;
 }
 
 .text-main{
  
   height: 100%;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.text-main h1{
+.text-main p{
   font-family: arial;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 
+}
+
+.mission-list{
+
+  height: 73%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+
+
+}
+.mission-item h1, .mission-item p{
+  margin: 0;
+}
+.mission-item p{
+  font-size: 0.9rem;
+  
+  transition: all ease-in-out 0.2s;
+  display: none;
+  
+
+}
+.mission-item h1{
+  transform: translateY(20%);
+  transition: all ease-in-out 0.2s;
+
+}
+
+
+.mission-item:hover p{
+  display: flex;
+}
+.mission-item:hover h1{
+  transform: translateY(0px);
+  color: #b11e23;
+
+}
+.mission-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  gap: 5px;
+
+}
+
+.values-box{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.values-item{
+  height: 14.25%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+.values-item p{
+  position: absolute;
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
+
+
+}
+.values-item h1{
+  transition: all ease-in-out 0.2s;
+
+}
+.values-item:hover p{
+  opacity: 1;
+  font-weight: bold;
+  transform: scale(1.1);
+  color: #b11e23;
+}
+.values-item:hover h1{
+  display: none;
+}
+  
+
+
+
+.mission-item:hover, .values-item:hover{
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: rgba(128, 128, 128, 0.097);
+   
 }
 .bottom-container {
   height: 70%;
