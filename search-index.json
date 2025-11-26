@@ -1,117 +1,252 @@
 [
   {
-    "snippet": "LPU FitSpace Search Home PATHFIT 1 PATHFIT 2 PATHFIT 3 & 4 Mission & Vision About FitSpace Welcome to LPU FITSPACE PATHF",
-    "title": "FitSpace - Home",
-    "path": "home_page.html"
+    "Title": "Basic Locomotor and Non-Locomotor - FitSpace",
+    "Snippet": "Movement is the act of maintaining or changing the position(s) of body part(s). Some movements are simple (e.g. walking) while others are complex (e.g",
+    "Path": "pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html"
   },
   {
-    "snippet": "LPU Fit Space A learning hub for PathFit 1-4, empowering Lyceans to stay active, healthy, and informed Lorem ipsum dolor",
-    "title": "Landing Page",
-    "path": "index.html"
+    "Title": "Definition of Exercise - FitSpace",
+    "Snippet": "Exercise is a planned, structured, and repetitive physical activity designed to maintain or improve one or more components of physical fitness. Unlike",
+    "Path": "pathfit2/lesson5_definition_of_exercise.html"
   },
   {
-    "snippet": "Welcome to LPU FitSpace <img src=\"/assets/images/table_of_index/LPU_landscape_reddish.svg\" alt=\"LPU Campus Grounds\" clas",
-    "title": "LPU FitSpace - PathFit 1 Lesson",
-    "path": "list_view/home_tab.html"
+    "Title": "Definition of Fitness - FitSpace",
+    "Snippet": "Fitness is a comprehensive state of well-being that encompasses physical, mental, and social dimensions. This lesson explores how fitness extends beyo",
+    "Path": "pathfit2/lesson3_definition_of_fitness.html"
   },
   {
-    "snippet": "PATHFIT - 1: MOVEMENT COMPETENCY TRAINING <img src=\"/assets/images/table_of_index/LPU_landscape_reddish.svg\" alt=\"LPU Ca",
-    "title": "FitSpace - PathFit 1",
-    "path": "list_view/pathfit1_list_view.html"
+    "Title": "Definition of Physical Activity - FitSpace",
+    "Snippet": "Physical activity encompasses any bodily movement produced by skeletal muscles that requires energy expenditure. Understanding what constitutes physic",
+    "Path": "pathfit2/lesson2_definition_of_physical_activity.html"
   },
   {
-    "snippet": "PATHFIT - 2: EXERCISE-BASED FITNESS ACTIVITIES <img src=\"/assets/images/table_of_index/LPU_landscape_reddish.svg\" alt=\"L",
-    "title": "FitSpace - PathFit 1",
-    "path": "list_view/pathfit2_list_view..html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Team building and recreational games are structured activities used to enhance group dynamics, improve interpersonal skills, and provide enjoyable phy",
+    "Path": "pathfit3/lesson15_team_building_and_recreational_games.html"
   },
   {
-    "snippet": "LPU FITSPACE Search HOME PATHFIT 1 PATHFIT 2 PATHFIT 3 PATHFIT 4 ABOUT US CONTACT US Welcome to LPU FitSpace LPU FitSpac",
-    "title": "LPU FitSpace - PathFit 1 Topics",
-    "path": "pathfit1/index.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Folk dance is an expressive form of cultural art that reflects the traditions, values, and history of a community. It is performed for celebration, st",
+    "Path": "pathfit3/pf3_dance_act/lesson1_folk_dance.html"
   },
   {
-    "snippet": "LPU FITSPACE PathFit Courses PATHFIT 1 ▼ Introduction to Physical Education What is Physical Education? Objectives of Ph",
-    "title": "LPU FitSpace - PathFit 1 Lesson",
-    "path": "pathfit1/lesson1.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Hip Hop dance is a dynamic and expressive form of modern dance that originated from urban street culture. It emphasizes rhythm, creativity, individual",
+    "Path": "pathfit3/pf3_dance_act/lesson2_modern_dance_hip_hop.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Definition of Physical Fitness - FitSpace",
-    "path": "pathfit2/lesson1_definition_of_physical_fitness.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Swimming is an essential life skill, a low-impact full-body exercise, and a rewarding recreational activity. This lesson introduces the basic principl",
+    "Path": "pathfit3/pf3_sports_act/lesson9_swimming.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Sample Fitness Plan - FitSpace",
-    "path": "pathfit2/lesson10_sample_fitness_plan.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leis",
+    "Path": "pathfit2/lesson1_definition_of_physical_fitness.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "FITT Principle - PathFit",
-    "path": "pathfit2/lesson11_fitt_principle.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Cardiovascular exercise, commonly known as cardio or aerobic exercise, is any physical activity that raises your heart rate and respiration rate for a",
+    "Path": "pathfit3/pf3_group_exercises/lesson11_cardio_workouts.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Weight Management - PathFit",
-    "path": "pathfit2/lesson12_weight_management.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Zumba is a high-energy aerobic fitness program inspired by various Latin American dance styles. It combines choreographed dance movements with upbeat ",
+    "Path": "pathfit3/pf3_dance_act/lesson3_zumba_dance.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Physical Fitness Test - PathFit",
-    "path": "pathfit2/lesson13_physical_fitness_test.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leis",
+    "Path": "pathfit3/lesson1_Introduction_to_applied_physical_activities.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Developing a Personal Fitness Plan - PathFit",
-    "path": "pathfit2/lesson14_developing_a_personal_fitness_plan.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Outdoor and adventure activities involve physical engagement in natural settings, often encompassing an element of risk, challenge, and exploration. T",
+    "Path": "pathfit3/pf3_group_exercises/lesson13_outdoor_and_adventure.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Definition of",
-    "title": "Definition of Physical Activity - FitSpace",
-    "path": "pathfit2/lesson2_definition_of_physical_activity.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Hiking and trekking are popular, accessible outdoor activities that provide significant physical and mental benefits. Both involve walking on trails, ",
+    "Path": "pathfit3/pf3_group_exercises/lesson14_hiking_and_trekking.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Definition of Fitness - FitSpace",
-    "path": "pathfit2/lesson3_definition_of_fitness.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Basketball is a fast-paced team sport that develops endurance, agility, coordination, and teamwork. This course introduces the fundamental skills, rul",
+    "Path": "pathfit3/pf3_sports_act/lesson4_basketball.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Fundamentals of Fitness - FitSpace",
-    "path": "pathfit2/lesson4_fundamentals_of_fitness.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Volleyball is a dynamic team sport that develops agility, coordination, endurance, and teamwork. This course introduces the fundamental skills, rules,",
+    "Path": "pathfit3/pf3_sports_act/lesson5_volleyball.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Definition of Exercise - FitSpace",
-    "path": "pathfit2/lesson5_definition_of_exercise.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Pickleball is a paddle sport that combines elements of tennis, badminton, and table tennis. This course introduces the fundamentals of pickleball, inc",
+    "Path": "pathfit3/pf3_sports_act/lesson6_pickleball.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Definition of Training - FitSpace",
-    "path": "pathfit2/lesson6_benefits_of_regular_exercise.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "This course offers a dynamic and engaging learning experience. It involves the fundamental skills that include shuttle control, footwork, defense, and",
+    "Path": "pathfit3/pf3_sports_act/lesson7_badminton.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Definition of Training - PathFit",
-    "path": "pathfit2/lesson7_definition_of_training.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Table tennis, also known as Ping-Pong, is a fast-paced sport played by either two (singles) or four (doubles) players. It is a sport of finesse, speed",
+    "Path": "pathfit3/pf3_sports_act/lesson8_table_tennis.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Types of Fitness Training - PathFit",
-    "path": "pathfit2/lesson8_types_of_fitness_training.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "This lesson explores two effective and complementary training methods: Core Training, which focuses on strengthening the stabilizing muscles of the tr",
+    "Path": "pathfit3/pf3_group_exercises/lesson12_core_and_circuit_training.html"
   },
   {
-    "snippet": "LPU FitSpace Mission & Vision Department Overview About FitSpace Search COURSES: PATHFIT 1 arrow_drop_down Introduction ",
-    "title": "Fitness Program: 5 Steps to Get Started - PathFit",
-    "path": "pathfit2/lesson9_fitness_program_5_steps.html"
+    "Title": "Definition of Physical Fitness - FitSpace",
+    "Snippet": "Arnis, also known as Eskrima or Kali, is the national martial art and sport of the Philippines. It is a complete martial arts system emphasizing weapo",
+    "Path": "pathfit3/lesson10_arnis.html"
   },
   {
-    "snippet": "← Back to PathFit 2 Index Quiz (Sample) This is a placeholder quiz page. Replace with actual questions when ready.",
-    "title": "PathFit 2 — Quiz",
-    "path": "pathfit2/quiz/quiz.html"
+    "Title": "Definition of Training - FitSpace",
+    "Snippet": "Training is a systematic process designed to improve physical performance and adaptation through planned and progressive exercise. This lesson explore",
+    "Path": "pathfit2/lesson6_benefits_of_regular_exercise.html"
   },
   {
-    "snippet": "",
-    "title": "PathFit 3",
-    "path": "pathfit3/index.html"
+    "Title": "Definition of Training - PathFit",
+    "Snippet": "Training is a systematic process designed to improve physical performance and adaptation through planned and progressive exercise. This lesson explore",
+    "Path": "pathfit2/lesson7_definition_of_training.html"
+  },
+  {
+    "Title": "Developing a Personal Fitness Plan - PathFit",
+    "Snippet": "Creating a personal fitness plan is the key to achieving long-term health and wellness. This lesson guides you through the steps of designing, impleme",
+    "Path": "pathfit2/lesson14_developing_a_personal_fitness_plan.html"
+  },
+  {
+    "Title": "Document",
+    "Snippet": "No description available",
+    "Path": "pathfit2/quiz/explanation.html"
+  },
+  {
+    "Title": "Eating Habits - FitSpace",
+    "Snippet": "No description available",
+    "Path": "pathfit1/lesson6_Eating_Habits.html"
+  },
+  {
+    "Title": "Fitness Program: 5 Steps to Get Started - PathFit",
+    "Snippet": "Starting a fitness program can seem overwhelming, but it doesn't have to be. This lesson breaks down the process into five manageable steps that will ",
+    "Path": "pathfit2/lesson9_fitness_program_5_steps.html"
+  },
+  {
+    "Title": "FitSpace - Home",
+    "Snippet": "No description available",
+    "Path": "home_page.html"
+  },
+  {
+    "Title": "FITT Principle - PathFit",
+    "Snippet": "The FITT Principle is a fundamental framework for designing effective exercise programs. It considers four key variables: Frequency, Intensity, Time, ",
+    "Path": "pathfit2/lesson11_fitt_principle.html"
+  },
+  {
+    "Title": "FMS Sheet- FitSpace",
+    "Snippet": "The Functional Movement Screen (FMS) is a screening tool used to evaluate fundamental movement patterns to identify limitations and asymmetries. It he",
+    "Path": "pathfit1/lesson5_Functional_Movement_Screen.html"
+  },
+  {
+    "Title": "Functional Movement Screen - FitSpace",
+    "Snippet": "The Functional Movement Screen (FMS) is a screening tool used to evaluate seven fundamental movement patterns in individuals with no current pain or m",
+    "Path": "pathfit1/lesson4_fms_lecture.html"
+  },
+  {
+    "Title": "Fundamentals of Fitness - FitSpace",
+    "Snippet": "Understanding the fundamental principles of fitness is crucial for developing an effective exercise program. These principles guide how we should stru",
+    "Path": "pathfit2/lesson4_fundamentals_of_fitness.html"
+  },
+  {
+    "Title": "Introduction to Movement Enhancement - FitSpace",
+    "Snippet": "Article 1, International Charter of Physical Education and Sports, UNESCO, Paris, 1978 and Recommendation 1, Brisbane, 1982 states:",
+    "Path": "pathfit1/lesson3_Introduction_to_movement_enhancement.html"
+  },
+  {
+    "Title": "Introduction to Physical Education - FitSpace",
+    "Snippet": "Physical Education is part of the educational program designed to promote the optimum development of an individual through total body movement in the ",
+    "Path": "pathfit1/lesson1_introduction_to_physical_education.html"
+  },
+  {
+    "Title": "Landing Page",
+    "Snippet": "No description available",
+    "Path": "index.html"
+  },
+  {
+    "Title": "Locomotor and Non-Locomotor - FitSpace",
+    "Snippet": "Movement is the act of maintaining or changing the position(s) of body part(s). Some movements are simple (e.g. walking) while others are complex (e.g",
+    "Path": "pathfit1/lesson7_Locomotor_and_Non_Locomotor.html"
+  },
+  {
+    "Title": "OK DANCE - Full Video - FitSpace",
+    "Snippet": "No description available",
+    "Path": "pathfit1/lesson9_OK_DANCE_FULLVIDEO.html"
+  },
+  {
+    "Title": "PAR Q - FitSpace",
+    "Snippet": "Physical Activity Readiness Questionnaire, a tool used to assess if an individual is healthy enough to start or increase their physical activity. It i",
+    "Path": "pathfit1/lesson2_PARQ.html"
+  },
+  {
+    "Title": "PathFit 3 & 4 — Quiz",
+    "Snippet": "No description available",
+    "Path": "pathfit3/quiz/quiz.html"
+  },
+  {
+    "Title": "Pathfit Quiz",
+    "Snippet": "No description available",
+    "Path": "pathfit2/quiz/quiz.html"
+  },
+  {
+    "Title": "Physical Fitness Test - PathFit",
+    "Snippet": "Physical fitness tests are essential tools for assessing your current fitness level and tracking progress over time. This lesson covers the main types",
+    "Path": "pathfit2/lesson13_physical_fitness_test.html"
+  },
+  {
+    "Title": "Sample Fitness Plan - FitSpace",
+    "Snippet": "A well-structured fitness plan is essential for achieving your health and fitness goals. This lesson provides a comprehensive sample plan that you can",
+    "Path": "pathfit2/lesson10_sample_fitness_plan.html"
+  },
+  {
+    "Title": "Search Functionality Demo",
+    "Snippet": "No description available",
+    "Path": "saerch.html"
+  },
+  {
+    "Title": "Types of Fitness Training - PathFit",
+    "Snippet": "Understanding different types of fitness training is essential for developing a well-rounded exercise program. Each type of training serves specific p",
+    "Path": "pathfit2/lesson8_types_of_fitness_training.html"
+  },
+  {
+    "Title": "Weight Management - PathFit",
+    "Snippet": "Weight management is a crucial aspect of overall health and fitness. This lesson explores the principles of maintaining a healthy weight through prope",
+    "Path": "pathfit2/lesson12_weight_management.html"
+  },
+  {
+    "Title": "PATHFIT 1: Physical Education and Movement Competency",
+    "Snippet": "Introduction to Physical Education and Movement Competency.",
+    "Path": "#pathfit1"
+  },
+  {
+    "Title": "PATHFIT 2: Fitness Activities",
+    "Snippet": "Exercise-based fitness activities and training principles.",
+    "Path": "#pathfit2"
+  },
+  {
+    "Title": "PATHFIT 3 & 4: Dance Activities",
+    "Snippet": "Dance, sports, and group fitness activities.",
+    "Path": "#pathfit3"
+  },
+  {
+    "Title": "Mission & Vision",
+    "Snippet": "LPU's mission, vision, and core values.",
+    "Path": "#mission"
+  },
+  {
+    "Title": "About FitSpace",
+    "Snippet": "Learn about the FitSpace project and team.",
+    "Path": "#aboutUs"
   }
 ]

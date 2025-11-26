@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Functionality Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset and Base Styles */
         * {
@@ -100,63 +101,76 @@
         .search-wrapper {
             display: flex;
             align-items: center;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-end;
         }
 
         .search-button {
-            padding: 0.5rem 1rem;
+            padding: 0.5rem;
             border: none;
-            background-color: #b11e23;
-            color: white;
-            font-weight: bold;
-            border-radius: 25px;
+            background: none;
+            color: #555;
+            font-size: 1.2rem;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .search-button:hover {
-            background-color: #9a1a1a;
+            color: #b11e23;
+            background-color: rgba(177, 30, 35, 0.1);
         }
 
         .search-box {
-            display: none;
-            margin-left: 0.5rem;
-            transition: all 0.3s;
-            position: relative;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+            width: 0;
+            z-index: 1001;
         }
 
         .search-box.visible {
-            display: block;
+            transform: scaleX(1);
+            width: 300px;
         }
 
         .search-input {
             padding: 0.5rem 1rem;
-            border: 2px solid #ddd;
-            border-radius: 25px;
+            border: none;
             outline: none;
-            width: 250px;
             font-size: 1rem;
-        }
-
-        .search-input:focus {
-            border-color: #b11e23;
+            width: 100%;
         }
 
         /* Search Results Dropdown */
         .search-results {
             position: absolute;
-            top: 100%;
-            left: 0;
+            top: 40px;
             right: 0;
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 0 0 10px 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: none;
-            z-index: 1001;
+            z-index: 1000;
             max-height: 300px;
             overflow-y: auto;
-            width: 100%;
-            min-width: 360px;
+            width: 300px;
         }
 
         .search-results.show {
@@ -211,18 +225,20 @@
                 <button class="nav-button active">About FitSpace</button>
             </nav>
             <div class="search-wrapper">
-                <button class="search-button">Search</button>
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
                 <div class="search-box">
                     <input type="text" class="search-input" placeholder="Search Lessons...">
-                    <div class="search-results"></div>
                 </div>
+                <div class="search-results"></div>
             </div>
         </div>
     </header>
 
     <div class="demo-content">
         <h1>Search Functionality Demo</h1>
-        <p>Click the "Search" button, type a query, and see the dropdown results.</p>
+        <p>Click the search icon, type a query, and see the dropdown results.</p>
     </div>
 
     <script>
@@ -233,9 +249,14 @@
             const searchResults = document.querySelector('.search-results');
             let searchIndex = [];
 
-            // Load search-index.json once
-            fetch('../../search-index.json')
-                .then(response => response.json())
+            // Load search-index.json
+            fetch('search-index.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load search-index.json');
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     searchIndex = data;
                 })
@@ -243,7 +264,7 @@
                     console.error('Error loading search-index.json:', error);
                 });
 
-            // Toggle search box visibility
+            // Toggle search box visibility with animation
             searchButton.addEventListener('click', function (e) {
                 e.stopPropagation();
                 searchBox.classList.toggle('visible');
@@ -259,10 +280,14 @@
             searchInput.addEventListener('input', function () {
                 const query = this.value.trim().toLowerCase();
                 if (query.length > 0 && searchIndex.length > 0) {
-                    const results = searchIndex.filter(item =>
-                        item.title.toLowerCase().includes(query) ||
-                        item.snippet.toLowerCase().includes(query)
-                    );
+                    const results = searchIndex.filter(item => {
+                        const title = item.Title || "";
+                        const snippet = item.Snippet || "";
+                        return (
+                            title.toLowerCase().includes(query) ||
+                            snippet.toLowerCase().includes(query)
+                        );
+                    });
                     displayResults(results, query);
                     searchResults.classList.add('show');
                 } else {
@@ -289,12 +314,14 @@
                     results.forEach(result => {
                         const resultItem = document.createElement('div');
                         resultItem.className = 'search-result-item';
+                        const title = result.Title || "Untitled";
+                        const snippet = result.Snippet || "No description available";
                         resultItem.innerHTML = `
-                            <strong>${highlight(result.title, query)}</strong>
-                            <div>${highlight(result.snippet, query)}</div>
-                        `;
+                        <strong>${highlight(title, query)}</strong>
+                        <div>${highlight(snippet, query)}</div>
+                    `;
                         resultItem.addEventListener('click', function () {
-                            window.location.href = '../../' + result.path;
+                            window.location.href = result.Path;
                         });
                         searchResults.appendChild(resultItem);
                     });
@@ -310,6 +337,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

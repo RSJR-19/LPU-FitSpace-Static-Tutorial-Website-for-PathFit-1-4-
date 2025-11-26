@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Reader</title>
+    <title>PDF Viewer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <style>
         * {
@@ -11,275 +12,192 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            font-family: 'Segoe UI';
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
         }
-
-        .wrapper {
+        .container {
             max-width: 900px;
             margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-
-        .pdf-section {
             background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
         }
-
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
         .controls {
             display: flex;
-            gap: 15px;
-            align-items: center;
             justify-content: center;
-            margin-bottom: 30px;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
             flex-wrap: wrap;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
         }
-
         button {
-            padding: 10px 20px;
-            background-color: #667eea;
+            padding: 10px 16px;
+            background: #007bff;
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
-
         button:hover:not(:disabled) {
-            background-color: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            background: #0056b3;
         }
-
         button:disabled {
-            background-color: #ccc;
+            background: #ccc;
             cursor: not-allowed;
-            opacity: 0.6;
         }
-
-        .page-info {
-            font-size: 16px;
-            color: #333;
+        button.zoom-btn {
+            width: 36px;
+            padding: 8px;
+        }
+        button.download-btn {
+            background: #28a745;
+        }
+        button.download-btn:hover {
+            background: #218838;
+        }
+        button.print-btn {
+            background: #6c757d;
+        }
+        button.print-btn:hover {
+            background: #5a6268;
+        }
+        .info {
+            font-size: 14px;
+            color: #666;
             font-weight: 600;
-            min-width: 120px;
+        }
+        .zoom-info {
+            background: #f9f9f9;
+            padding: 6px 12px;
+            border-radius: 4px;
+            min-width: 70px;
             text-align: center;
         }
-
         #pdf-container {
             text-align: center;
-            border: 2px solid #f0f0f0;
-            border-radius: 8px;
-            padding: 30px;
-            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            background: #fafafa;
             min-height: 500px;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            overflow: auto;
         }
-
         canvas {
             max-width: 100%;
             height: auto;
-            display: inline-block;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
-        .content-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .content-section h2 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.8em;
-        }
-
-        .content-section p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 15px;
-            font-size: 1.05em;
-        }
-
-        .content-section ul {
-            margin-left: 20px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .content-section li {
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            background-color: #fef3c7;
-            padding: 20px;
-            border-left: 4px solid #667eea;
-            border-radius: 4px;
-            margin: 20px 0;
-        }
-
         .error {
-            color: #dc3545;
-            padding: 20px;
-            background-color: #f8d7da;
-            border-radius: 6px;
-            border: 1px solid #f5c6cb;
+            color: red;
+            padding: 15px;
+            background: #ffe6e6;
+            border-radius: 5px;
         }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
             }
-
-            .pdf-section,
-            .content-section {
-                padding: 20px;
-            }
-
             .controls {
                 gap: 10px;
             }
-
             button {
-                padding: 8px 16px;
+                padding: 8px 12px;
                 font-size: 13px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>📄 PDF Viewer</h1>
-            <p>View and navigate your documents seamlessly</p>
-        </header>
-
-        <div class="pdf-section">
-            <div class="controls">
-                <button id="prev-btn" onclick="prevPage()">← Previous</button>
-                <span class="page-info">
-                    Page <span id="current-page">1</span> of <span id="total-pages">0</span>
-                </span>
-                <button id="next-btn" onclick="nextPage()">Next →</button>
-            </div>
-
-            <div id="pdf-container">
-                <canvas id="pdf-canvas"></canvas>
-            </div>
+    <div class="container">
+        <h1><i class="material-icons" style="font-size: 28px; vertical-align: middle;">picture_as_pdf</i> PDF Viewer</h1>
+        <div class="controls">
+            <button id="prev" onclick="prevPage()"><i class="material-icons" style="font-size: 16px;">arrow_back</i></button>
+            <span class="info">Page <span id="page">1</span> / <span id="pages">0</span></span>
+            <button id="next" onclick="nextPage()"><i class="material-icons" style="font-size: 16px;">arrow_forward</i></button>
+            <button class="zoom-btn" onclick="zoomOut()"><i class="material-icons" style="font-size: 16px;">zoom_out</i></button>
+            <span class="zoom-info"><span id="zoom">100</span>%</span>
+            <button class="zoom-btn" onclick="zoomIn()"><i class="material-icons" style="font-size: 16px;">zoom_in</i></button>
+            <button class="zoom-btn" onclick="resetZoom()"><i class="material-icons" style="font-size: 16px;">zoom_out_map</i></button>
+            <button class="download-btn" onclick="download()"><i class="material-icons" style="font-size: 16px;">download</i></button>
+            <button class="print-btn" onclick="print()"><i class="material-icons" style="font-size: 16px;">print</i></button>
         </div>
-
-        <div class="content-section">
-            <h2>About This Document</h2>
-            <p>
-                This PDF viewer is built using PDF.js, a powerful JavaScript library that enables seamless PDF rendering in web browsers. It provides an intuitive interface for viewing and navigating through multi-page documents directly on your website.
-            </p>
-
-            <div class="highlight">
-                <strong>💡 Pro Tip:</strong> Use the Previous and Next buttons to navigate through the document, or you can enhance this viewer with keyboard shortcuts for faster navigation.
-            </div>
-
-            <h2>Key Features</h2>
-            <ul>
-                <li><strong>Page Navigation:</strong> Easily move between pages using the navigation buttons</li>
-                <li><strong>Responsive Design:</strong> Works perfectly on desktop, tablet, and mobile devices</li>
-                <li><strong>Smooth Rendering:</strong> High-quality PDF rendering with smooth scrolling</li>
-                <li><strong>Lightweight:</strong> Uses a CDN-hosted library for fast loading</li>
-                <li><strong>Accessible:</strong> Built with accessibility standards in mind</li>
-            </ul>
-
-            <h2>How to Use</h2>
-            <p>
-                To use this PDF viewer on your website, simply place your PDF file in a <code>resources</code> folder relative to your HTML file, and update the file path in the JavaScript code. The viewer will automatically load and display your document with all navigation controls ready to use.
-            </p>
+        <div id="pdf-container">
+            <canvas id="canvas"></canvas>
         </div>
     </div>
-
     <script>
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-
-        let pdfDoc = null;
-        let currentPage = 1;
-
+        let pdf = null;
+        let page = 1;
+        let zoom = 100;
         async function loadPDF() {
             try {
-                pdfDoc = await pdfjsLib.getDocument('/assets/pdf/FMS_sheet.pdf').promise;
-                document.getElementById('total-pages').textContent = pdfDoc.numPages;
-                renderPage(1);
-            } catch (error) {
-                console.error('Error loading PDF:', error);
-                document.getElementById('pdf-container').innerHTML = '<div class="error"><strong>Error loading PDF.</strong> Make sure the file exists at <code>./resources/sample.pdf</code></div>';
+                pdf = await pdfjsLib.getDocument('/assets/pdf/FMS_sheet.pdf').promise;
+                document.getElementById('pages').textContent = pdf.numPages;
+                document.getElementById('next').style.display = pdf.numPages > 1 ? 'block' : 'none';
+                render();
+            } catch (e) {
+                document.getElementById('pdf-container').innerHTML = '<div class="error">Error loading PDF. Check file path.</div>';
             }
         }
+        async function render() {
+            if (!pdf) return;
+            const p = await pdf.getPage(page);
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const viewport = p.getViewport({ scale: zoom / 100 });
 
-        async function renderPage(pageNum) {
-            if (pdfDoc === null) return;
-            
-            try {
-                const page = await pdfDoc.getPage(pageNum);
-                const canvas = document.getElementById('pdf-canvas');
-                const context = canvas.getContext('2d');
-                
-                const scale = 1.5;
-                const viewport = page.getViewport({ scale: scale });
-                
-                canvas.width = viewport.width;
-                canvas.height = viewport.height;
-                
-                await page.render({
-                    canvasContext: context,
-                    viewport: viewport
-                }).promise;
-                
-                currentPage = pageNum;
-                document.getElementById('current-page').textContent = pageNum;
-                
-                document.getElementById('prev-btn').disabled = pageNum === 1;
-                document.getElementById('next-btn').disabled = pageNum === pdfDoc.numPages;
-            } catch (error) {
-                console.error('Error rendering page:', error);
-            }
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+
+            await p.render({ canvasContext: ctx, viewport }).promise;
+
+            document.getElementById('page').textContent = page;
+            document.getElementById('prev').disabled = page === 1;
+            document.getElementById('next').disabled = page === pdf.numPages;
         }
-
-        function nextPage() {
-            if (currentPage < pdfDoc.numPages) {
-                renderPage(currentPage + 1);
-            }
-        }
-
         function prevPage() {
-            if (currentPage > 1) {
-                renderPage(currentPage - 1);
-            }
+            if (page > 1) { page--; render(); }
         }
-
+        function nextPage() {
+            if (page < pdf.numPages) { page++; render(); }
+        }
+        function zoomIn() {
+            if (zoom < 300) { zoom += 25; document.getElementById('zoom').textContent = zoom; render(); }
+        }
+        function zoomOut() {
+            if (zoom > 50) { zoom -= 25; document.getElementById('zoom').textContent = zoom; render(); }
+        }
+        function resetZoom() {
+            zoom = 100;
+            document.getElementById('zoom').textContent = zoom;
+            render();
+        }
+        function download() {
+            const a = document.createElement('a');
+            a.href = '/assets/pdf/FMS_sheet.pdf';
+            a.download = 'FMS_sheet.pdf';
+            a.click();
+        }
+        function print() {
+            window.print();
+        }
         window.addEventListener('load', loadPDF);
     </script>
 </body>
