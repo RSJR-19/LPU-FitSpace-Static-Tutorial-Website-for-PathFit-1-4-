@@ -8,17 +8,48 @@ let searchIndex = [];
 // Try several relative locations for search-index.json (works from root and subfolders)
 function loadSearchIndex() {
 // the json file is located in the assets folder
-	const candidates = ['./assets/search-index.json'];
+	const candidates = [
+		'./assets/search-index.json',
+		'assets/search-index.json',
+		'../assets/search-index.json',
+		'../../assets/search-index.json'
+	];
 	let tried = 0;
 
 	// sequentially try candidates until one works
 	(async () => {
+		// Get base path from current page location (works for GitHub Pages)
+		try {
+			const currentPath = window.location.pathname;
+			// For GitHub Pages project sites: /repo-name/page.html -> /repo-name/
+			// For root sites: /page.html -> /
+			const basePath = currentPath.substring(0, currentPath.lastIndexOf('/') + 1);
+			if (basePath && basePath !== '/') {
+				candidates.unshift(basePath + 'assets/search-index.json');
+			}
+			// Also try root
+			candidates.unshift('/assets/search-index.json');
+		} catch (e) {
+			// ignore
+		}
+
 		// also try path relative to script location (helps when search.js is included from different folders)
 		try {
 			const script = document.querySelector('script[src$="search.js"]') || document.currentScript;
 			if (script && script.src) {
-				const scriptDir = script.src.replace(/\/[^\/]*$/, '');
-				candidates.unshift(scriptDir + '/search-index.json');
+				try {
+					const scriptUrl = new URL(script.src, window.location.href);
+					const scriptPath = scriptUrl.pathname.replace(/\/[^\/]*$/, '');
+					if (scriptPath) {
+						candidates.unshift(scriptPath + '/assets/search-index.json');
+					}
+				} catch (e) {
+					// Fallback: extract path from script src string
+					const match = script.src.match(/^(https?:\/\/[^\/]+)(\/.*\/)[^\/]*$/);
+					if (match && match[2]) {
+						candidates.unshift(match[2] + 'assets/search-index.json');
+					}
+				}
 			}
 		} catch (e) {
 			// ignore
@@ -29,7 +60,7 @@ function loadSearchIndex() {
 			tried++;
 			if (ok) return;
 		}
-		console.error('Error loading search-index.json: tried', tried, 'paths');
+		console.error('Error loading search-index.json: tried', tried, 'paths:', candidates.slice(0, 5));
 	})();
 }
 

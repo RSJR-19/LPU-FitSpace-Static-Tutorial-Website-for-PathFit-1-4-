@@ -7,11 +7,22 @@ const pathfit3Page = document.getElementById("pathfit3");
 const missionPage = document.getElementById("mission");
 const aboutUsPage = document.getElementById("aboutUs");
 
-// Track current page
-let initial = null;
+// Track current page - initialize to null, will be set in initializeSections
+var initial = null;
 
 // Navigate to Page
 function gotoPage(targetPage) {
+  // Safety check: ensure targetPage exists
+  if (!targetPage) {
+    console.error('gotoPage: targetPage is null or undefined');
+    return;
+  }
+  
+  // Initialize if not already done
+  if (typeof initial === 'undefined' || initial === null) {
+    initializeSections();
+  }
+  
   if (initial !== targetPage) {
     if (initial) {
       initial.style.display = "none";
