@@ -157,7 +157,8 @@ function displayResults(results, query) {
 				<div>${highlight(snippet, normQuery)}</div>
 			`;
 			resultItem.addEventListener("click", function() {
-				handleNavigation(result.Path);
+				// use smart navigation that checks which candidate URL exists
+				navigateToPath(result.Path);
 			});
 			searchResults.appendChild(resultItem);
 		});
@@ -201,6 +202,25 @@ function resolveNavigationPath(path) {
 		if (meta && meta.content) siteBase = meta.content;
 	}
 
+	// If no explicit base, try to infer base from the script's location (handles GitHub Pages project sites)
+	if (!siteBase) {
+		try {
+			const script = document.querySelector('script[src$="search.js"]') || document.currentScript;
+			if (script && script.src) {
+				const scriptUrl = new URL(script.src, window.location.href);
+				// look for '/assets/' segment and use everything before it as site base
+				const p = scriptUrl.pathname;
+				const idx = p.indexOf('/assets/');
+				if (idx !== -1) {
+					const prefix = p.substring(0, idx); // may be '' or '/repo-name'
+					siteBase = scriptUrl.origin + (prefix === '' ? '' : prefix);
+				}
+			}
+		} catch (e) {
+			// ignore
+		}
+	}
+
 	// normalize siteBase to an absolute origin+path (no trailing slash)
 	if (!siteBase) {
 		siteBase = window.location.origin;
@@ -221,7 +241,73 @@ function resolveNavigationPath(path) {
 
 	// For plain relative-looking paths like "pathfit3/...", treat them as site-root-relative
 	// so searching from any folder goes to the canonical location under the site base.
-	return siteBase.replace(/\/$/, '') + '/' + path.replace(/^\//, '');
+	const final = siteBase.replace(/\/$/, '') + '/' + path.replace(/^\//, '');
+	// debug: show resolved base and final path
+	if (window && window.console && typeof window.console.debug === 'function') {
+		console.debug('[search] siteBase=', siteBase, 'resolved=', final);
+	}
+	return final;
+}
+
+// Check URL existence with HEAD (fallback to GET on failure). Returns true if reachable (status 200-399).
+async function checkUrlExists(url) {
+	try {
+		const resp = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+		if (resp && resp.ok) return true;
+		// Some servers don't support HEAD; try GET but do not download body
+		const resp2 = await fetch(url, { method: 'GET', cache: 'no-store' });
+		return resp2 && resp2.ok;
+	} catch (e) {
+		return false;
+	}
+}
+
+// Smart navigation: try candidates (resolved, ./path, sibling) by checking which exists first.
+async function navigateToPath(path) {
+	if (!path) return;
+	// If hash navigation
+	if (path.startsWith('#')) {
+		window.location.hash = path;
+		return;
+	}
+
+	const resolved = resolveNavigationPath(path);
+	const candidates = [resolved];
+
+	// also try relative to current page
+	candidates.push(new URL('./' + path, window.location.href).href);
+	candidates.push(new URL('../' + path, window.location.href).href);
+
+	// if path includes a leading folder, try stripping the first segment (sibling)
+	const segs = path.split('/');
+	if (segs.length > 1) {
+		const withoutFirst = './' + segs.slice(1).join('/');
+		candidates.push(new URL(withoutFirst, window.location.href).href);
+	}
+
+	// dedupe
+	const seen = new Set();
+	const uniq = candidates.filter(u => {
+		if (!u) return false;
+		if (seen.has(u)) return false;
+		seen.add(u);
+		return true;
+	});
+
+	if (window && window.console && typeof window.console.debug === 'function') {
+		console.debug('[search] navigation candidates=', uniq);
+	}
+
+	for (const c of uniq) {
+		const ok = await checkUrlExists(c);
+		if (ok) {
+			window.location.href = c;
+			return;
+		}
+	}
+
+	// fallback: navigate to resolved (even if check failed)
+	window.location.href = resolved;
 }
 
 // Close Search Results When Clicking Outside
