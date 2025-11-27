@@ -10,31 +10,31 @@
     <link rel="stylesheet" href="assets/css/landing_page.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+  <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
     <div class="main-landing-page-content">
         <section class="hero-section">
+            <video autoplay muted loop playsinline class="hero-video-bg" src="assets/videos/Banner-Video.webm"></video>
+            <div class="hero-overlay"></div>
+
             <div class="hero-container">
-
                 <div class="left-section">
-                    <h1>LPU Fit Space</h1>
-
+                    <div class="title-with-circle">
+                        <div class="hero-circle">
+                            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+                        </div>
+                        <h1>LPU Fit Space</h1>
+                    </div>
                     <p class="red-body-sub-text">
                         A learning hub for PathFit 1-4, empowering Lyceans to stay active,
                         healthy, and informed</p>
 
-                    <button class="start-button">
+                    <button class="start-button" onclick="location.href='./home_page.html'">
                         <a href="./home_page.html">Start Learning</a>
                     </button>
                 </div>
-
-                <div class="right-section">
-                    <div class="graphics-box">
-                        <h2>GRAPHICS</h2>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -47,28 +47,32 @@
                     </div>
                     <h3>PathFit 1</h3>
                     <h4>Movement Competency Training</h4>
-                    <p>Learn the  foundational PE principles, movement skills, and body control.</p>
-                    <button class="explore-button">
+                    <p>Learn the foundational PE principles, movement skills, and body control.</p>
+                    <button class="explore-button" onclick="location.href='./home_page.html#pathfit1'">
                         <a href="./home_page.html#pathfit1">Explore Module</a>
                     </button>
                 </div>
 
                 <div class="card-module">
-                    <div class="card-icon"> <!-- image here --> </div>
+                    <div class="card-icon">
+                        <img src="assets/images/pathfit2/running_shadow.png">
+                    </div>
                     <h3>PathFit 2</h3>
                     <h4> Exercise-based Fitness Activities</h4>
                     <p> Physical training, exercise planning, and fitness measurement.</p>
-                    <button class="explore-button">
+                    <button class="explore-button" onclick="location.href='./home_page.html#pathfit2'">
                         <a href="./home_page.html#pathfit2">Explore Module</a>
                     </button>
                 </div>
 
                 <div class="card-module">
-                    <div class="card-icon"> <!-- image here --> </div>
+                    <div class="card-icon">
+                        <img src="assets/images/pathfit3/sports.svg">
+                    </div>
                     <h3>PathFit 3 & 4</h3>
                     <h4>Applied Physical Activities</h4>
                     <p>Performance-based and recreational activities for testing effective skill application.</p>
-                    <button class="explore-button">
+                    <button class="explore-button" onclick="location.href='./home_page.html#pathfit3'">
                         <a href="./home_page.html#pathfit3">Explore Module</a>
                     </button>
                 </div>
@@ -82,53 +86,57 @@
                 fitness, discipline, and holistic wellness among Lyceans. It manages the PathFit 1–4 programs, promoting
                 active living through academic and practical experiences.</p>
 
-            <button class="about-pe-btn">
+            <button class="about-pe-btn" onclick="location.href='./home_page.html#aboutUs'">
                 <a href="./home_page.html#aboutUs"> About FitSpace</a>
             </button>
         </section>
     </div>
 
     <footer>
-        <section class="main-footer">
-            <div class="sub-main-footer">
+    <section class="main-footer">
+      <div class="sub-main-footer">
 
-                <div class="footer-logo">
-                    <div class="logo-circle"> <!-- insert logo image here --> </div>
-                    <h1>LPU Fit Space</h1>
-                </div>
-
-                <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement classroom learning and support holistic student growth.</p>
-            </div>
-
-            <div class="sub-main-footer">
-                <h1>Courses:</h1>
-                <a href="./home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
-                <a href="./home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
-                <a href="./home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</a>
-            </div>
-            <div class="sub-main-footer">
-                <h1>Contact:</h1>
-
-                <div class="contact-item">
-                    <span class="material-symbols-outlined">location_on</span>
-                    <p>LPU Cavite</p>
-                </div>
-                <div class="contact-item">
-                    <span class="material-symbols-outlined">call</span>
-                    <p>(639) 158-3558</p>
-                </div>
-                <div class="contact-item">
-                    <span class="material-symbols-outlined">mail</span>
-                    <p>fitspace@lpu.edu.ph</p>
-                </div>
-
-            </div>
-        </section>
-        <div class="bottom-footer">
-            <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+          </div>
+          <h1>LPU Fit Space</h1>
         </div>
 
-    </footer>
+        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
+          classroom learning and support holistic student growth.</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <a href="home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+        <a href="home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+        <a href="home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+          Activities</a>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
 
 </body>
 

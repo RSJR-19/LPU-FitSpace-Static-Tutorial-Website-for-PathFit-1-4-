@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../../assets/css/main.css">
   <link rel="stylesheet" href="../css/pathfit2.css">
 
+  <link rel="stylesheet" href="../../assets/css/footer.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     if (loadingEl) loadingEl.style.display = 'block';
 
     // Load and start quiz with random questions
-    loadQuiz('../data/pathfit1-data.json')
+    loadQuiz('../assets/data/pathfit1-data.json')
       .catch(err => {
         console.error('Quiz loading error:', err);
         const container = document.getElementById('quiz-container');

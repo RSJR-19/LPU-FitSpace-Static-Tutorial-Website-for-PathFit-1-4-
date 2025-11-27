@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Fit Space - Hero Slideshow</title>
+
+    <style>
+   
+        /* SLIDESHOW */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            /* height: 400px; */
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            background: #1f2937;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: scale(1);
+            z-index: 5;
+        }
+
+        .slide.exit {
+            opacity: 0;
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .slide-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Higher opacity overlay for readability */
+        .slide-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        /* TEXT INSIDE SLIDE */
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 10;
+            padding: 0 20px;
+        }
+
+        .slide-content h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            opacity: 0;
+            animation: slideInUp .5s ease .3s forwards;
+        }
+
+        .slide-content p {
+            font-size: 1.125rem;
+            opacity: 0;
+            animation: slideInUp .5s ease .45s forwards;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* PROGRESS BAR */
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background: #dc2626;
+            width: 0%;
+            animation: progress 4s linear;
+        }
+
+        @keyframes progress {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /* INDICATORS */
+        .slide-indicators {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 20;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .indicator.active {
+            background: #dc2626;
+            width: 26px;
+            border-radius: 6px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .slideshow-container {
+                height: 300px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+  <link rel="stylesheet" href="../../assets/css/footer.css">
+</head>
+
+<body>
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container" id="slideshow" role="region" aria-label="FitSpace Activities Slideshow"></div>
+
+
+    <script>
+        // ACTIVITY SLIDES (replace images later)
+        const activities = [
+            {
+                title: "Movement Competency Training",
+                category: "PathFit 1",
+                imageUrl: "https://images.unsplash.com/photo-1485727749690-d091e8284ef3?q=80&w=1080"
+            },
+            {
+                title: "Group Fitness Training",
+                category: "PathFit 2",
+                imageUrl: "https://images.unsplash.com/photo-1630415188550-9e454489ce3a?q=80&w=1080"
+            },
+            {
+                title: "Applied Physical Activities",
+                category: "PathFit 3 & 4",
+                imageUrl: "https://images.unsplash.com/photo-1760879946121-893199733851?q=80&w=1080"
+            },
+            {
+                title: "Healthy Lifestyle Education",
+                category: "All PathFit Levels",
+                imageUrl: "https://images.unsplash.com/photo-1660789983911-9473f197be9c?q=80&w=1080"
+            },
+            {
+                title: "LPU Cavite Campus",
+                category: "All PathFit Modules from LPU-Cavite",
+                imageUrl: ""
+            }
+        ];
+
+        const slideshow = document.getElementById("slideshow");
+        let currentIndex = 0;
+        let intervalId;
+
+        // Create slides dynamically
+        activities.forEach((activity, i) => {
+            const slide = document.createElement("div");
+            slide.className = `slide ${i === 0 ? "active" : ""}`;
+            slide.innerHTML = `
+                <img src="${activity.imageUrl}" alt="${activity.title}" class="slide-image">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h3>${activity.title}</h3>
+                    <p>${activity.category}</p>
+                </div>
+                <div class="progress-bar"></div>
+            `;
+            slideshow.appendChild(slide);
+        });
+
+        // Indicators
+        const indicatorsContainer = document.createElement("div");
+        indicatorsContainer.className = "slide-indicators";
+        slideshow.appendChild(indicatorsContainer);
+
+        activities.forEach((_, i) => {
+            const indicator = document.createElement("div");
+            indicator.className = `indicator ${i === 0 ? "active" : ""}`;
+            indicator.onclick = () => goToSlide(i);
+            indicatorsContainer.appendChild(indicator);
+        });
+
+        const slides = document.querySelectorAll(".slide");
+        const indicators = document.querySelectorAll(".indicator");
+
+        function goToSlide(i) {
+            slides[currentIndex].classList.remove("active");
+            slides[currentIndex].classList.add("exit");
+            indicators[currentIndex].classList.remove("active");
+
+            currentIndex = i;
+
+            slides[currentIndex].classList.add("active");
+            slides[currentIndex].classList.remove("exit");
+            indicators[currentIndex].classList.add("active");
+
+            // Reset progress bar
+            const bar = slides[currentIndex].querySelector(".progress-bar");
+            bar.style.animation = "none";
+            bar.offsetHeight; // forces reflow (fixes animation reset)
+            bar.style.animation = "progress 4s linear";
+
+            clearInterval(intervalId);
+            startAutoSlide();
+        }
+
+        function nextSlide() {
+            goToSlide((currentIndex + 1) % activities.length);
+        }
+
+        function startAutoSlide() {
+            intervalId = setInterval(nextSlide, 4000);
+        }
+
+        startAutoSlide();
+    </script>
+<footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+          </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
+          classroom learning and support holistic student growth.</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <a href="../../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+        <a href="../../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+        <a href="../../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+          Activities</a>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+</body>
+
+</html>

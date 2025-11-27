@@ -1,51 +1,95 @@
+/* ===== HERO SECTION ===== */
 .hero-section {
-  margin: 0;
-  background-color: #c00000;
-  padding-top: 10px;
-  /* TOP Margin, RIGHT, BOTTOM, LEFT */
-  padding: 40px auto 0 auto;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .hero-container {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .left-section {
-  flex: 1;
-  margin: 10px;
-  color: white;
+    flex: 1;
+    color: white;
 }
+
+.title-with-circle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-circle {
+    width: 15%;
+    height: 15%;
+    min-width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(177, 30, 35, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .left-section h1 {
-  font-size: 3.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .red-body-sub-text {
-  font-size: 1.1em;
-  line-height: 1.5;
-  margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 .start-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .start-button a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 .right-section {

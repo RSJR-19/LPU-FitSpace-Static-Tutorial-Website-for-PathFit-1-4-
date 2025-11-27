@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="css/pathfit2.css">
+  <link rel="stylesheet" href="../assets/css/search.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 
 <body>
@@ -28,10 +30,15 @@
       <div class="right-nav">
         <a onclick="gotoPage(missionPage)">Mission & Vision</a>
         <a onclick="gotoPage(aboutUsPage)">About FitSpace</a>
-        <div class="input-container">
-          <input type="text" placeholder=" Search Lessons...">
-          <button>Search</button>
+
+
+          <div class="search-box">
+            <a onclick="displaySearch()" id="search">Search</a>
+            <input type="text" id="input-bar" placeholder="Lessons...">
+          </div>
+          <div class="search-results" id="search-results"></div>
         </div>
+
       </div>
       <div class="spacer"></div>
     </nav>
@@ -55,11 +62,9 @@
             <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
               Enhancement</a>
             <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
-            <a href="../pathfit1/lesson5_Functional Movement Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson5_Functional_Movement_Screen.html">Functional Movement Screen</a>
             <a href="../pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
             <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
-            <a href="../pathfit1/lesson8_Basic_locomotor_and_Non_Locomotor_Dance.html">Basic locomotor and Non Locomotor
-              Dance</a>
             <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
           </div>
 
@@ -151,7 +156,7 @@
     <!-- MAIN CONTENT AREA -->
     <section class="main-content-container">
       <div class="main-content">
-          <!-- Back Link -->
+        <!-- Back Link -->
         <a href="#" class="back-link">Back to PathFit 2 Index</a>
 
         <!-- Main Header -->
@@ -159,118 +164,223 @@
 
         <!-- Banner Image Placeholder -->
         <div class="image-placeholder">
-            <div class="image-placeholder-icon"></div>
-            <div class="image-placeholder-text">Physical Fitness Overview</div>
-            <div class="image-placeholder-subtext">Visual representation of physical fitness components</div>
+          <div class="image-placeholder-icon"></div>
+          <div class="image-placeholder-text">Physical Fitness Overview</div>
+          <div class="image-placeholder-subtext">Visual representation of physical fitness components</div>
         </div>
 
         <!-- Lesson Overview -->
         <section class="content-section">
-            <h2>Lesson Overview</h2>
-            <p>Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leisure and emergency situations. It is not limited to sports or athletic performance—it is an essential part of overall wellness and quality of life.</p>
+          <h2>Lesson Overview</h2>
+          <p>Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue
+            fatigue, and with enough energy left for leisure and emergency situations. It is not limited to sports or
+            athletic performance—it is an essential part of overall wellness and quality of life.</p>
 
-            <p>In the PathFit program, developing physical fitness means improving both health-related and skill-related capacities to promote lifelong movement competency and an active lifestyle.</p>
+          <p>In the PathFit program, developing physical fitness means improving both health-related and skill-related
+            capacities to promote lifelong movement competency and an active lifestyle.</p>
         </section>
 
         <!-- Main Discussion -->
         <section class="content-section">
-            <h2>What is Physical Fitness?</h2>
-            <p>Physical fitness refers to a state of well-being in which an individual possesses sufficient energy and vitality to carry out everyday responsibilities and enjoy recreational pursuits. It reflects how efficiently the heart, lungs, muscles, and body systems work together.</p>
+          <h2>What is Physical Fitness?</h2>
+          <p>Physical fitness refers to a state of well-being in which an individual possesses sufficient energy and
+            vitality to carry out everyday responsibilities and enjoy recreational pursuits. It reflects how efficiently
+            the heart, lungs, muscles, and body systems work together.</p>
 
-            <p>Researchers commonly classify physical fitness into two categories:</p>
-            <ul>
-                <li>Health-Related Components – contribute directly to disease prevention and overall wellness.</li>
-                <li>Skill-Related Components – enhance athletic ability and performance in physical activities.</li>
-            </ul>
+          <p>Researchers commonly classify physical fitness into two categories:</p>
+          <ul>
+            <li>Health-Related Components – contribute directly to disease prevention and overall wellness.</li>
+            <li>Skill-Related Components – enhance athletic ability and performance in physical activities.</li>
+          </ul>
         </section>
 
         <!-- Components of Physical Fitness -->
         <section class="content-section">
-            <h2>Components of Physical Fitness</h2>
-            
-            <div class="components-grid">
-                <div class="component-box">
-                    <h3>Health-Related Components</h3>
-                    <ul>
-                        <li>Cardiovascular Endurance - Ability of the heart and lungs to deliver oxygen</li>
-                        <li>Muscular Strength - Maximum force a muscle can exert in a single effort</li>
-                        <li>Muscular Endurance - Ability to sustain repeated contractions</li>
-                        <li>Flexibility - Range of motion available at a joint</li>
-                        <li>Body Composition - Ratio of fat mass to fat-free mass</li>
-                    </ul>
-                </div>
+          <h2>Components of Physical Fitness</h2>
+          <p>Physical fitness is composed of multiple components that work together to create overall wellness.
+            Understanding each component helps you develop a balanced fitness program that addresses all aspects of
+            health and performance.</p>
 
-                <div class="component-box">
-                    <h3>Skill-Related Components</h3>
-                    <ul>
-                        <li>Agility - Quick directional changes with control</li>
-                        <li>Balance - Maintaining equilibrium while stationary or moving</li>
-                        <li>Coordination - Smooth, efficient movement integration</li>
-                        <li>Power - Combination of strength and speed</li>
-                        <li>Reaction Time - Speed of response to stimuli</li>
-                        <li>Speed - Rapid movement from point to point</li>
-                    </ul>
-                </div>
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Health-Related Components</h3>
+              <p>These components directly impact your health and reduce the risk of chronic diseases. They are
+                essential for everyone, regardless of athletic ability.</p>
+              <ul>
+                <li><strong>Cardiovascular Endurance</strong> - This is the ability of your heart, lungs, and
+                  circulatory system to deliver oxygen-rich blood to working muscles during sustained physical activity.
+                  When you have good cardiovascular endurance, you can perform activities like running, swimming, or
+                  cycling for extended periods without becoming excessively tired. Your heart becomes stronger and more
+                  efficient, pumping more blood with each beat. This reduces your risk of heart disease, stroke, and
+                  high blood pressure.</li>
+                <li><strong>Muscular Strength</strong> - This refers to the maximum amount of force a muscle or muscle
+                  group can generate in a single maximal effort. For example, how much weight you can lift once (your
+                  one-rep max) or how hard you can push against resistance. Building muscular strength helps you perform
+                  daily tasks more easily, prevents injuries, improves bone density, and increases your metabolism.
+                  Activities like weightlifting, resistance training, and bodyweight exercises develop this component.
+                </li>
+                <li><strong>Muscular Endurance</strong> - Unlike strength (which is about maximum force), endurance is
+                  the ability of muscles to perform repeated contractions or sustain a contraction over time without
+                  fatigue. For instance, how many push-ups you can do or how long you can hold a plank position. Good
+                  muscular endurance allows you to perform repetitive tasks without getting tired quickly, which is
+                  important for both daily activities and sports performance.</li>
+                <li><strong>Flexibility</strong> - This is the range of motion available at a joint or group of joints.
+                  It determines how far you can stretch or move your body parts. Good flexibility helps prevent
+                  injuries, improves posture, reduces muscle tension, and enhances performance in physical activities.
+                  Flexibility can be improved through regular stretching exercises, yoga, and activities that take
+                  joints through their full range of motion.</li>
+                <li><strong>Body Composition</strong> - This refers to the ratio of fat mass to fat-free mass (muscle,
+                  bone, organs, water) in your body. It's not just about weight, but about what your body is made of. A
+                  healthy body composition means having an appropriate amount of body fat relative to lean tissue. This
+                  is important because excess body fat increases the risk of various health problems, while adequate
+                  muscle mass supports metabolism and functional capacity.</li>
+              </ul>
             </div>
+
+            <div class="component-box">
+              <h3>Skill-Related Components</h3>
+              <p>These components enhance your ability to perform in sports and physical activities. While not directly
+                related to health, they improve your athletic performance and movement quality.</p>
+              <ul>
+                <li><strong>Agility</strong> - This is the ability to change direction quickly and efficiently while
+                  maintaining control of your body. It combines speed, balance, coordination, and reaction time. Agility
+                  is crucial in sports like basketball, soccer, and tennis where you need to quickly change direction to
+                  avoid opponents or respond to game situations. Agility training involves drills that require rapid
+                  directional changes, such as ladder drills, cone drills, and shuttle runs.</li>
+                <li><strong>Balance</strong> - This is the ability to maintain your body's equilibrium (stability)
+                  whether you're stationary (static balance) or moving (dynamic balance). Good balance prevents falls,
+                  improves coordination, and is essential for activities like gymnastics, martial arts, and even
+                  everyday tasks like walking on uneven surfaces. Balance can be improved through exercises like
+                  standing on one leg, using balance boards, or practicing yoga poses.</li>
+                <li><strong>Coordination</strong> - This is the ability to use different parts of your body together
+                  smoothly and efficiently to perform movements. It involves the integration of your senses (especially
+                  vision and proprioception) with your muscles and nervous system. Good coordination allows you to
+                  perform complex movements like dribbling a basketball while running, or hitting a tennis ball.
+                  Activities that improve coordination include dancing, martial arts, and sports that require hand-eye
+                  or foot-eye coordination.</li>
+                <li><strong>Power</strong> - This is the combination of strength and speed - the ability to exert
+                  maximum force in the shortest amount of time. Power is what allows you to jump high, sprint fast, or
+                  throw an object far. It's different from strength alone because it requires both force production and
+                  speed of movement. Power training involves explosive movements like plyometrics, Olympic lifts, and
+                  sprinting.</li>
+                <li><strong>Reaction Time</strong> - This is the time it takes you to respond to a stimulus. In sports,
+                  this might be reacting to a starting gun, a ball coming toward you, or an opponent's movement. Good
+                  reaction time can be the difference between success and failure in many activities. Reaction time can
+                  be improved through specific drills that require quick responses to visual, auditory, or tactile cues.
+                </li>
+                <li><strong>Speed</strong> - This is the ability to move your body or parts of your body rapidly from
+                  one point to another. Speed is important in many sports and activities, from sprinting to quickly
+                  moving your hands in volleyball. Speed training involves practicing movements at high velocity, sprint
+                  drills, and exercises that improve the rate of muscle contraction.</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <!-- Health Benefits -->
         <section class="content-section">
-            <h2>Health Benefits of Physical Fitness</h2>
-            <p>Regular participation in physical activities has wide-ranging effects on the human body and mind:</p>
+          <h2>Health Benefits of Physical Fitness</h2>
+          <p>Regular participation in physical activities has wide-ranging effects on the human body and mind. The
+            benefits extend far beyond just looking good - they impact every system in your body and improve your
+            quality of life in numerous ways.</p>
 
-            <div class="image-placeholder">
-                <div class="image-placeholder-icon"></div>
-                <div class="image-placeholder-text">Health Benefits Infographic</div>
-            </div>
+          <div class="image-placeholder">
+            <div class="image-placeholder-icon"></div>
+            <div class="image-placeholder-text">Health Benefits Infographic</div>
+          </div>
 
+          <div class="takeaways-box">
+            <h3>Physical Health Benefits</h3>
             <ul>
-                <li>Strengthens the heart, lungs, and muscular system</li>
-                <li>Helps maintain healthy weight and body composition</li>
-                <li>Reduces risk of non-communicable diseases</li>
-                <li>Improves mental health and reduces stress</li>
-                <li>Enhances self-esteem, focus, and academic performance</li>
-                <li>Promotes social interaction and teamwork</li>
+              <li><strong>Strengthens the Heart, Lungs, and Muscular System</strong> - Regular exercise makes your heart
+                muscle stronger, allowing it to pump blood more efficiently with less effort. Your resting heart rate
+                decreases, meaning your heart doesn't have to work as hard when you're at rest. Your lungs become more
+                efficient at taking in oxygen and removing carbon dioxide. Your muscles become stronger and more toned,
+                which helps with daily activities and prevents age-related muscle loss (sarcopenia).</li>
+              <li><strong>Helps Maintain Healthy Weight and Body Composition</strong> - Physical activity burns calories
+                and helps create a calorie deficit when combined with proper nutrition. It also increases your
+                metabolism, even after you finish exercising (this is called the "afterburn effect" or excess
+                post-exercise oxygen consumption). Regular exercise helps build and maintain muscle mass, which burns
+                more calories at rest than fat tissue does. This makes it easier to maintain a healthy weight long-term.
+              </li>
+              <li><strong>Reduces Risk of Non-Communicable Diseases</strong> - Regular physical activity significantly
+                lowers your risk of developing chronic diseases such as:
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                  <li>Type 2 Diabetes - Exercise improves insulin sensitivity, helping your body use glucose more
+                    effectively</li>
+                  <li>Cardiovascular Disease - Strengthens the heart and improves circulation, reducing risk of heart
+                    attack and stroke</li>
+                  <li>Certain Cancers - Studies show regular exercise reduces risk of colon, breast, and other cancers
+                  </li>
+                  <li>Osteoporosis - Weight-bearing exercise strengthens bones and reduces risk of fractures</li>
+                  <li>High Blood Pressure - Regular activity helps maintain healthy blood pressure levels</li>
+                </ul>
+              </li>
             </ul>
 
-            <div class="note-box">
-                <p><strong>Did you know?</strong> According to the World Health Organization (WHO), adults should engage in at least 150–300 minutes of moderate-intensity or 75–150 minutes of vigorous-intensity aerobic activity each week for optimal health.</p>
-            </div>
+            <h3>Mental and Emotional Benefits</h3>
+            <ul>
+              <li><strong>Improves Mental Health and Reduces Stress</strong> - Exercise triggers the release of
+                endorphins, which are natural mood elevators often called "feel-good" chemicals. It also reduces levels
+                of stress hormones like cortisol and adrenaline. Regular physical activity has been shown to be as
+                effective as medication for treating mild to moderate depression and anxiety. It improves sleep quality,
+                which further enhances mental well-being.</li>
+              <li><strong>Enhances Self-Esteem, Focus, and Academic Performance</strong> - Achieving fitness goals
+                builds confidence and self-esteem. Exercise increases blood flow to the brain, which improves cognitive
+                function, memory, and concentration. Studies consistently show that students who are physically active
+                perform better academically. Physical activity also helps with attention span and reduces symptoms of
+                ADHD.</li>
+              <li><strong>Promotes Social Interaction and Teamwork</strong> - Participating in group activities, sports,
+                or fitness classes provides opportunities to meet new people, build friendships, and develop social
+                skills. Team sports teach cooperation, communication, and leadership. These social connections
+                contribute to overall happiness and provide a support system that can help you maintain your fitness
+                routine.</li>
+            </ul>
+          </div>
+
+          <div class="note-box"
+            style="background-color: #f0f7ff; border-left: 4px solid #0066cc; padding: 20px; margin: 20px 0; border-radius: 4px;">
+            <p><strong>Did you know?</strong> According to the World Health Organization (WHO), adults should engage in
+              at least 150–300 minutes of moderate-intensity or 75–150 minutes of vigorous-intensity aerobic activity
+              each week for optimal health. Additionally, muscle-strengthening activities should be performed on 2 or
+              more days per week. This doesn't have to be done all at once - even 10-minute bouts of activity throughout
+              the day count toward your weekly goal!</p>
+          </div>
         </section>
 
         <!-- Practical Application -->
         <section class="content-section">
-            <h2>Practical Application</h2>
-            <p>Try integrating simple habits that promote daily fitness:</p>
-            <ul>
-                <li>Take the stairs instead of the elevator</li>
-                <li>Perform stretching exercises every morning</li>
-                <li>Engage in 30 minutes of brisk walking, cycling, or jogging</li>
-                <li>Join recreational sports or group fitness sessions</li>
-            </ul>
-            <p><em>Remember: Consistency is more important than intensity.</em></p>
+          <h2>Practical Application</h2>
+          <p>Try integrating simple habits that promote daily fitness:</p>
+          <ul>
+            <li>Take the stairs instead of the elevator</li>
+            <li>Perform stretching exercises every morning</li>
+            <li>Engage in 30 minutes of brisk walking, cycling, or jogging</li>
+            <li>Join recreational sports or group fitness sessions</li>
+          </ul>
+          <p><em>Remember: Consistency is more important than intensity.</em></p>
         </section>
 
         <!-- Key Takeaways -->
         <section class="key-takeaways">
-            <h2>Key Takeaways</h2>
-            <div class="takeaways-box">
-                <ol>
-                    <li>Physical fitness is vital for efficient daily functioning and overall well-being.</li>
-                    <li>It has two major categories — health-related and skill-related components.</li>
-                    <li>Regular physical activity prevents diseases and promotes mental and social health.</li>
-                    <li>Developing fitness is a lifelong process that requires consistency and balance.</li>
-                    <li>Physical fitness serves as the foundation for all PathFit courses.</li>
-                </ol>
-            </div>
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>Physical fitness is vital for efficient daily functioning and overall well-being.</li>
+              <li>It has two major categories — health-related and skill-related components.</li>
+              <li>Regular physical activity prevents diseases and promotes mental and social health.</li>
+              <li>Developing fitness is a lifelong process that requires consistency and balance.</li>
+              <li>Physical fitness serves as the foundation for all PathFit courses.</li>
+            </ol>
+          </div>
         </section>
 
         <!-- Quiz Section -->
         <section class="quiz-section">
-            <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
-            <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
-                through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
-            <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+          <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
+            through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
+          <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
         </section>
       </div>
     </section>
@@ -283,20 +393,22 @@
       <div class="sub-main-footer">
 
         <div class="footer-logo">
-          <div class="logo-circle"> <!-- insert logo image here --> </div>
+          <div class="logo-circle">
+            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+          </div>
           <h1>LPU Fit Space</h1>
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam velit autem quas
-          exercitationem? Optio minus, perspiciatis nobis, repellat dicta maiores repellendus saepe at
-          molestias error modi, iste qui aliquid?</p>
+        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
+          classroom learning and support holistic student growth.</p>
       </div>
 
       <div class="sub-main-footer">
         <h1>Courses:</h1>
-        <p>PATHFIT 1: Movement competency Training</p>
-        <p>PATHFIT 2: Exercise Based Fitness Activities</p>
-        <p>PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness Activities</p>
+        <a href="../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+        <a href="../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+        <a href="../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+          Activities</a>
       </div>
       <div class="sub-main-footer">
         <h1>Contact:</h1>
@@ -325,6 +437,7 @@
   <script src="js/pathfit2.js"></script>
   <script src="../assets/js/main.js"> </script>
   <script src="../assets/js/home_page.js"></script>
+  <script src="../assets/js/search.js"></script>
   <!-- END: Copied from template -->
 
 </body>

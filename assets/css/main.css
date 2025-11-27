@@ -1,4 +1,3 @@
-/* assets/css/main.css — global site styles (sidebar, navbar, footer) */
 * {
   box-sizing: border-box;
   font-size: 16px;
@@ -8,28 +7,40 @@
   scroll-behavior: smooth;
 }
 
+/* Base HTML and body styles */
 body,
 html {
   width: 100%;
   margin: 0;
   padding: 0;
 }
+
+/* Layout for the entire page */
 body {
   display: flex;
   flex-direction: column;
 }
 
+/* ============================================= */
+/* NAVBAR STYLES                                */
+/* ============================================= */
+
+/* Main navbar container */
 nav {
   height: 9dvh;
   flex-shrink: 0;
   background-color: white;
   display: flex;
 }
+
+/* Navbar inner divs */
 nav div {
   background-color: white;
   margin: 0;
   display: flex;
 }
+
+/* Left section of the navbar */
 .left-nav {
   display: flex;
   align-items: center;
@@ -37,20 +48,26 @@ nav div {
   background-color: white;
   gap: 5%;
 }
+
+/* FitSpace text and link */
 .fitspace-text {
   display: flex;
   transition: all 0.2s ease-in-out;
   gap: 3%;
 }
+
 .fitspace-text a {
   font-size: 2.2rem;
   font-weight: bold;
 }
+
 .fitspace-text:hover {
   text-decoration: underline;
   transform: scale(1.1);
   text-decoration: gray;
 }
+
+/* LPU logo container */
 .lpu-logo {
   height: 100%;
   width: 16%;
@@ -64,6 +81,7 @@ nav div {
   width: auto;
 }
 
+/* Spacer between elements */
 .spacer {
   width: 2%;
   height: 100%;
@@ -71,6 +89,7 @@ nav div {
   border: none;
 }
 
+/* Right section of the navbar */
 .right-nav {
   width: 66%;
   background-color: white;
@@ -82,18 +101,21 @@ nav div {
   color: rgb(95, 95, 95);
   font-weight: bold;
 }
+
+/* Right nav links */
 .right-nav a {
   transition: all 0.15s ease-in-out;
 }
+
 .right-nav a:hover {
   transform: scale(1.2);
-
   color: #b11e23;
   background-color: #b11e231a;
   padding: 10px;
   border-radius: 10px;
 }
 
+/* Search input container */
 .input-container {
   width: 24%;
   height: 100%;
@@ -114,12 +136,14 @@ nav div {
   position: relative;
   font-size: 0.9rem;
 }
+
 .input-container input::placeholder {
   text-align: left;
   font-style: italic;
   font-family: sans-serif;
   font-size: 0.9rem;
 }
+
 .input-container button {
   position: absolute;
   color: white;
@@ -131,27 +155,39 @@ nav div {
   font-size: 0.9em;
 }
 
+/* ============================================= */
+/* MAIN CONTENT LAYOUT                          */
+/* ============================================= */
+
+/* Main content container */
 main {
   height: 88dvh;
   background-color: white;
   display: flex;
 }
+
+/* Sidebar styles */
 main .sidebar {
   width: 20%;
   background-color: #b11e23;
   display: flex;
   border-top: 2px #b11e23 solid;
 }
+
+/* Sidebar spacer */
 main .sidebar .spacer {
   width: 8%;
   background-color: #b11e23;
 }
+
+/* Main sidebar content */
 .sidebar-main {
   width: 84%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .sidebar-main h1 {
   font-size: 1.5rem;
   text-align: start;
@@ -160,18 +196,20 @@ main .sidebar .spacer {
   margin: 0;
   margin-top: 10%;
 }
-.mission-logo{
+
+/* Mission logo container */
+.mission-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.mission-logo img{
+
+.mission-logo img {
   height: 100%;
   width: 100%;
-
 }
 
+/* Lesson tab container */
 .lesson-tab-container {
   margin-top: 10px;
   height: 85%;
@@ -180,9 +218,12 @@ main .sidebar .spacer {
   flex-direction: column;
   overflow-y: auto;
 }
+
 .lesson-tab-container::-webkit-scrollbar {
   display: none;
 }
+
+/* Lesson tab styles */
 .lesson-tab {
   background-color: #b11e23;
   height: 8%;
@@ -198,6 +239,7 @@ main .sidebar .spacer {
   border-radius: 10px;
   padding: 0px 10px;
 }
+
 .lesson-tab2 {
   font-size: 1rem;
   font-style: bolder;
@@ -210,6 +252,8 @@ main .sidebar .spacer {
   flex-shrink: 0;
   margin-bottom: 15px;
 }
+
+/* Active lesson tab */
 .lesson-tab.active,
 .lesson-tab2.active {
   background-color: white;
@@ -220,19 +264,8 @@ main .sidebar .spacer {
   background-color: #e4494e37;
   text-decoration: underline;
 }
-.lesson-tab.active {
-  background-color: white;
-  color: #b11e23;
-}
 
-.material-symbols-outlined {
-  right: 0;
-  position: absolute;
-}
-.material-symbols-outlined.active {
-  transform: rotate(180deg);
-}
-
+/* Dropdown menu styles */
 .dropdown {
   flex-direction: column;
   font-size: 0.8rem;
@@ -257,6 +290,7 @@ main .sidebar .spacer {
   display: none;
   flex-direction: column;
 }
+
 .dropdown2.active {
   display: flex;
 }
@@ -278,6 +312,17 @@ main .sidebar .spacer {
   transform: translateX(10px);
 }
 
+/* Material icons */
+.material-symbols-outlined {
+  right: 0;
+  position: absolute;
+}
+
+.material-symbols-outlined.active {
+  transform: rotate(180deg);
+}
+
+/* Main content container */
 .main-content-container {
   background-color: rgba(128, 128, 128, 0.09);
   width: 80%;
@@ -286,6 +331,7 @@ main .sidebar .spacer {
   align-items: center;
 }
 
+/* Main content styles */
 .main-content {
   height: 95%;
   width: 97%;
@@ -296,123 +342,20 @@ main .sidebar .spacer {
   flex-direction: column;
   overflow-y: auto;
 }
+
 .main-content > * {
   flex-shrink: 0;
 }
+
 .main-content::-webkit-scrollbar {
   display: none;
 }
 
-footer {
-  height: auto;
-  background: linear-gradient(
-    135deg,
-    rgb(17, 17, 17) 0%,
-    rgb(34, 34, 34) 50%,
-    rgb(43, 43, 43) 100%
-  );
-  padding: 30px 0 0 0;
-  font-family: sans-serif;
-  display: block;
-}
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
+/* ============================================= */
+/* RESPONSIVE LAYOUT                            */
+/* ============================================= */
 
-  max-width: 1200px;
-  margin: 0 auto;
-
-  padding: 0 20px 30px 20px;
-}
-
-.sub-main-footer {
-  flex: 1;
-  max-width: 380px;
-  padding: 0 10px;
-  line-height: 1.6;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.logo-circle {
-  width: 30px;
-  height: 30px;
-  background-color: #00bcd4;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.sub-main-footer h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.sub-main-footer p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin: 5px 0;
-  line-height: 1.7;
-  text-align: justify;
-  padding-right: 20px;
-}
-
-.sub-main-footer a {
-  text-decoration: none;
-  color: #ccc;
-  font-size: 0.9rem;
-  margin: 5px 0;
-  line-height: 1.7;
-  text-align: justify;
-  padding-right: 20px;
-}
-
-
-.sub-main-footer:nth-child(3) {
-  text-align: left;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.contact-item .material-symbols-outlined {
-  font-size: 1.2rem;
-  margin-right: 8px;
-  color: #ccc;
-  position: static;
-}
-
-.contact-item p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin: 0;
-  text-align: left;
-  line-height: 1.2;
-  padding-right: 0;
-}
-
-.bottom-footer {
-  text-align: center;
-  padding: 15px 20px;
-  border-top: 1px solid #333;
-  background-color: #1a1a1a;
-}
-
-.bottom-footer p {
-  font-size: 0.85rem;
-  margin: 0;
-  color: #aaa;
-}
-
-/* --- Responsive Layout ---   */
+/* Mobile and tablet responsiveness */
 @media (max-width: 800px) {
   .main-footer {
     flex-direction: column;
