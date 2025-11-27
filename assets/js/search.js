@@ -7,22 +7,9 @@ let searchIndex = [];
 
 // Try several relative locations for search-index.json (works from root and subfolders)
 function loadSearchIndex() {
-	// candidate paths to try for the index. We'll add the script folder dynamically below.
-	const candidates = ['./search-index.json', '../search-index.json', '/search-index.json'];
+// the json file is located in the assets folder
+	const candidates = ['./assets/search-index.json'];
 	let tried = 0;
-
-	function tryPath(path) {
-		return fetch(path)
-			.then(response => {
-				if (!response.ok) throw new Error('no');
-				return response.json();
-			})
-			.then(data => {
-				searchIndex = data;
-				return true;
-			})
-			.catch(() => false);
-	}
 
 	// sequentially try candidates until one works
 	(async () => {

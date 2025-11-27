@@ -7,15 +7,28 @@ const pathfit3Page = document.getElementById("pathfit3");
 const missionPage = document.getElementById("mission");
 const aboutUsPage = document.getElementById("aboutUs");
 
+// Track current page
+let initial = null;
+
 // Navigate to Page
 function gotoPage(targetPage) {
   if (initial !== targetPage) {
-    initial.style.display = "none";
+    if (initial) {
+      initial.style.display = "none";
+    }
     initial = targetPage;
     initial.style.display = "flex";
-    searchButton.classList.remove("active");
-    inputBar.classList.remove("active");
-    searchResults.classList.remove("show");
+    
+    // Close search if open
+    if (typeof searchButton !== 'undefined' && searchButton) {
+      searchButton.classList.remove("active");
+    }
+    if (typeof inputBar !== 'undefined' && inputBar) {
+      inputBar.classList.remove("active");
+    }
+    if (typeof searchResults !== 'undefined' && searchResults) {
+      searchResults.classList.remove("show");
+    }
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -37,14 +50,34 @@ function gotoPage(targetPage) {
       history.replaceState(null, "", " ");
     }
   }
-  if (targetPage === missionPage) resetText();
+  if (targetPage === missionPage && typeof resetText === 'function') {
+    resetText();
+  }
 }
 
 
 
 
+// Initialize all sections - hide all except home
+function initializeSections() {
+  const allSections = [pathfit1Page, pathfit2Page, pathfit3Page, missionPage, aboutUsPage];
+  allSections.forEach(section => {
+    if (section) {
+      section.style.display = "none";
+    }
+  });
+  // Show home page by default
+  if (homePage) {
+    homePage.style.display = "flex";
+    initial = homePage;
+  }
+}
+
 // URL Hash Navigation Support
 window.addEventListener("DOMContentLoaded", () => {
+  // Initialize all sections first
+  initializeSections();
+  
   const target = window.location.hash.substring(1);
   const mapping = {
     home: homePage,
@@ -57,8 +90,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const selected = mapping[target];
   if (selected) {
     gotoPage(selected);
-  } else {
-    gotoPage(homePage);
   }
 });
 

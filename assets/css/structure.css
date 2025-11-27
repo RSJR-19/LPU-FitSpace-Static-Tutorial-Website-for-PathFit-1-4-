@@ -164,7 +164,7 @@ nav {
 
 /* ========== MAIN CONTENT STYLES ========== */
 main {
-  background: url(/assets/images/logo/campus_background.svg);
+  background: url(../images/logo/campus_background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
