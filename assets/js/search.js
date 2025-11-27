@@ -5,6 +5,22 @@ const searchResults = document.getElementById("search-results");
 
 let searchIndex = [];
 
+// Try to fetch a candidate index path. Returns true on success.
+async function tryPath(path) {
+	try {
+		const resp = await fetch(path, {cache: 'no-store'});
+		if (!resp.ok) return false;
+		const data = await resp.json();
+		if (Array.isArray(data) || typeof data === 'object') {
+			searchIndex = data;
+			return true;
+		}
+		return false;
+	} catch (e) {
+		return false;
+	}
+}
+
 // Try several relative locations for search-index.json (works from root and subfolders)
 function loadSearchIndex() {
 // the json file is located in the assets folder
