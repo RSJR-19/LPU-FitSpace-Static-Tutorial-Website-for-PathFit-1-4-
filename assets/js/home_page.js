@@ -10,33 +10,7 @@ const searchButton = document.getElementById("search");
 const inputBar = document.getElementById("input-bar");
 const searchResults = document.getElementById("search-results");
 
-// Mission and Values Data
-const missionTitle = [
-  "INSTRUCTION",
-  "RESEARCH",
-  "COMMUNITY ENGAGEMENT",
-  "INSTITUTIONAL DEVELOPMENT",
-  "SUSTAINABILITY"
-];
-const missionMeaning = [
-  "Provide industry-based knowledge and skills.",
-  "Undertake multi-disciplinary research.",
-  "Support community engagement and social responsibility.",
-  "Establish local and international linkages.",
-  "Produce sustainability advocates for global action."
-];
-const LPUNJPL = [
-  "L - Love of God",
-  "P - Probity",
-  "U - Unity",
-  "N - Nationalism",
-  "J - Justice",
-  "P - Pro Environment",
-  "L - Leadership"
-];
-const valuesDetail = document.getElementById("valuesDetail");
-const missionHead = document.getElementById("missionHead");
-const missionDetail = document.getElementById("missionDetail");
+
 
 // Initial Page
 let initial = homePage;
@@ -185,23 +159,8 @@ function gotoPage(targetPage) {
   if (targetPage === missionPage) resetText();
 }
 
-// Mission Text Rotation
-let missionInterval = null;
-function resetText() {
-  if (missionInterval !== null) clearInterval(missionInterval);
-  let index = 0;
-  let counter = 0;
-  missionHead.innerHTML = missionTitle[index];
-  missionDetail.innerHTML = missionMeaning[index];
-  valuesDetail.innerHTML = LPUNJPL[counter];
-  missionInterval = setInterval(() => {
-    index = (index + 1) % missionTitle.length;
-    counter = (counter + 1) % LPUNJPL.length;
-    missionHead.innerHTML = missionTitle[index];
-    missionDetail.innerHTML = missionMeaning[index];
-    valuesDetail.innerHTML = LPUNJPL[counter];
-  }, 1500);
-}
+
+
 
 // URL Hash Navigation Support
 window.addEventListener("DOMContentLoaded", () => {

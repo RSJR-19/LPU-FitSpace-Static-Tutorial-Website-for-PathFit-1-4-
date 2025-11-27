@@ -180,6 +180,8 @@ function startQuiz(questions) {
                     <span class="grade">Grade ${grade}</span>
                 </div>
                 <h3>Score: ${score} out of ${questions.length}</h3>
+
+                
                 <div class="restart-button">
                     <button onclick="location.reload()">
                         <i class="material-icons">refresh</i> Try Again
