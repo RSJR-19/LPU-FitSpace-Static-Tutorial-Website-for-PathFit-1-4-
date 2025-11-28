@@ -10,6 +10,12 @@ const aboutUsPage = document.getElementById("aboutUs");
 // Track current page - initialize to null, will be set in initializeSections
 var initial = null;
 
+function toTop() {window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
 // Navigate to Page
 function gotoPage(targetPage) {
   // Safety check: ensure targetPage exists

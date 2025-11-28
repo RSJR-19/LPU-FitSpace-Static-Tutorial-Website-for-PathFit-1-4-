@@ -54,3 +54,4 @@ function openTab(targetTab, targetArrow, targetDropdown) {
     campingTab.classList.remove("active");
   }
 }
+

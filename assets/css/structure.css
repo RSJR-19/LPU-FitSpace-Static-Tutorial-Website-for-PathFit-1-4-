@@ -3,6 +3,7 @@
   font-size: 16px;
   font-family: sans-serif;
   scroll-behavior: smooth;
+  
 }
 
 body,
@@ -29,6 +30,7 @@ header {
   width: 100%;
   background-color: white;
   z-index: 99999;
+  
 }
 
 nav {
@@ -100,6 +102,7 @@ nav {
   padding: 10px 12px;
   border-radius: 10px;
   transition: all ease-in-out 0.2s;
+  
 }
 
 .navbar a:hover {
@@ -186,26 +189,35 @@ main {
 #home {
   height: 75dvh;
   display: flex;
+  flex-shrink: 0;
 }
 
 #pathfit1 {
-  height: 195dvh;
+  max-height: 180dvh;
+  min-height: 120dvh;
+  flex-shrink: 0;
 }
 
 #pathfit2 {
-  height: 230dvh;
+  min-height: 160dvh ;
+  flex-shrink: 0;
+  max-height: 230dvh;
 }
 
 #pathfit3 {
-  height: 300dvh;
+  height: 220dvh;
+  max-height: 300dvh;
+  flex-shrink: 0;
 }
 
 #mission {
   height: 90dvh;
+  flex-shrink: 0;
 }
 
 #aboutUs {
   min-height: 100dvh;
+  flex-shrink: 0;
 }
 
 .main-spacer {

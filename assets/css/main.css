@@ -59,6 +59,7 @@ nav div {
 .fitspace-text a {
   font-size: 2.2rem;
   font-weight: bold;
+  user-select: none;
 }
 
 .fitspace-text:hover {
@@ -105,6 +106,9 @@ nav div {
 /* Right nav links */
 .right-nav a {
   transition: all 0.15s ease-in-out;
+  user-select: none;
+  color: #b11e23;
+  text-decoration: none;
 }
 
 .right-nav a:hover {
@@ -172,6 +176,7 @@ main .sidebar {
   background-color: #b11e23;
   display: flex;
   border-top: 2px #b11e23 solid;
+  user-select: none;
 }
 
 /* Sidebar spacer */
