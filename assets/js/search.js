@@ -57,13 +57,21 @@ function loadSearchIndex() {
 					const scriptUrl = new URL(script.src, window.location.href);
 					const scriptPath = scriptUrl.pathname.replace(/\/[^\/]*$/, '');
 					if (scriptPath) {
-						candidates.unshift(scriptPath + '/assets/search-index.json');
+						// Get the parent directory of script path (e.g., /assets from /assets/js)
+						const parentPath = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
+						if (parentPath) {
+							candidates.unshift(parentPath + '/search-index.json');
+						}
 					}
 				} catch (e) {
 					// Fallback: extract path from script src string
 					const match = script.src.match(/^(https?:\/\/[^\/]+)(\/.*\/)[^\/]*$/);
 					if (match && match[2]) {
-						candidates.unshift(match[2] + 'assets/search-index.json');
+						// Get parent directory
+						const parentPath = match[2].substring(0, match[2].lastIndexOf('/'));
+						if (parentPath) {
+							candidates.unshift(parentPath + '/search-index.json');
+						}
 					}
 				}
 			}

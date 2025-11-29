@@ -20,30 +20,30 @@ function toTop() {window.scrollTo({
 function gotoPage(targetPage) {
   // Safety check: ensure targetPage exists
   if (!targetPage) {
-    console.error('gotoPage: targetPage is null or undefined');
+    console.error("gotoPage: targetPage is null or undefined");
     return;
   }
-  
+
   // Initialize if not already done
-  if (typeof initial === 'undefined' || initial === null) {
+  if (typeof initial === "undefined" || initial === null) {
     initializeSections();
   }
-  
+
   if (initial !== targetPage) {
     if (initial) {
       initial.style.display = "none";
     }
     initial = targetPage;
     initial.style.display = "flex";
-    
+
     // Close search if open
-    if (typeof searchButton !== 'undefined' && searchButton) {
+    if (typeof searchButton !== "undefined" && searchButton) {
       searchButton.classList.remove("active");
     }
-    if (typeof inputBar !== 'undefined' && inputBar) {
+    if (typeof inputBar !== "undefined" && inputBar) {
       inputBar.classList.remove("active");
     }
-    if (typeof searchResults !== 'undefined' && searchResults) {
+    if (typeof searchResults !== "undefined" && searchResults) {
       searchResults.classList.remove("show");
     }
     window.scrollTo({
@@ -67,18 +67,18 @@ function gotoPage(targetPage) {
       history.replaceState(null, "", " ");
     }
   }
-  if (targetPage === missionPage && typeof resetText === 'function') {
-    resetText();
-  }
 }
-
-
-
 
 // Initialize all sections - hide all except home
 function initializeSections() {
-  const allSections = [pathfit1Page, pathfit2Page, pathfit3Page, missionPage, aboutUsPage];
-  allSections.forEach(section => {
+  const allSections = [
+    pathfit1Page,
+    pathfit2Page,
+    pathfit3Page,
+    missionPage,
+    aboutUsPage,
+  ];
+  allSections.forEach((section) => {
     if (section) {
       section.style.display = "none";
     }
@@ -94,7 +94,7 @@ function initializeSections() {
 window.addEventListener("DOMContentLoaded", () => {
   // Initialize all sections first
   initializeSections();
-  
+
   const target = window.location.hash.substring(1);
   const mapping = {
     home: homePage,
