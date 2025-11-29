@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Which of the following is one identified cause of eating disorders?",
+    "options": [
+      "Poor handwriting skills",
+      "Genetic factors affecting personality traits",
+      "Excessive physical exercise",
+      "Lack of interest in cooking"
+    ],
+    "answer": 1,
+    "explanation": "Eating disorders have been linked to genetic influences, where certain genes affect personality traits that increase vulnerability to these conditions. These genes may influence mood, self-control, and reward processing, contributing to disordered eating behaviors."
+  },
+  {
+    "question": "What characterizes anorexia nervosa?",
+    "options": [
+      "Eating large amounts of food without control",
+      "Distaste for specific food textures",
+      "Viewing oneself as overweight despite being underweight",
+      "Eating while distracted without awareness"
+    ],
+    "answer": 2,
+    "explanation": "Individuals with anorexia nervosa typically perceive themselves as overweight even when medically underweight. They engage in strict calorie restriction, avoid certain foods, and constantly monitor their weight. This distorted body image and severe restriction make C the accurate description."
+  },
+  {
+    "question": "Which eating disorder involves consuming unusually large amounts of food in short periods followed by compensatory behaviors such as purging?",
+    "options": [
+      "ARFID",
+      "Bulimia nervosa",
+      "Fuel eating",
+      "Binge eating disorder"
+    ],
+    "answer": 1,
+    "explanation": "Bulimia nervosa is characterized by episodes of eating unusually large quantities of food within specific timeframes, followed by compensatory behaviors like vomiting or excessive exercise. Although binge eating also involves large food intake, bulimia specifically includes these purging behaviors."
+  },
+  {
+    "question": "What distinguishes Avoidant/Restrictive Food Intake Disorder (ARFID) from other eating disorders?",
+    "options": [
+      "It is caused by binge eating episodes",
+      "It involves disturbed eating due to sensory sensitivities or lack of interest in food",
+      "It always occurs with extreme body weight changes",
+      "It only affects adults"
+    ],
+    "answer": 1,
+    "explanation": "ARFID is unique because it is not driven by body image concerns. Individuals avoid or restrict food due to sensory issues like taste, texture, smell, or temperature, or simply due to lack of interest in eating. Unlike anorexia or bulimia, ARFID is rooted in sensory or behavioral responses to food."
+  },
+  {
+    "question": "What type of eating occurs when a person eats mindlessly, such as finishing a bag of chips without noticing?",
+    "options": [
+      "Fuel eating",
+      "Joy eating",
+      "Fog eating",
+      "Storm eating"
+    ],
+    "answer": 2,
+    "explanation": "Fog eating happens when someone eats without awareness—often while distracted, such as watching television. They may not realize how much they’ve consumed until afterward. This unconscious eating pattern is best described by C, which matches the definition."
+  }
+]

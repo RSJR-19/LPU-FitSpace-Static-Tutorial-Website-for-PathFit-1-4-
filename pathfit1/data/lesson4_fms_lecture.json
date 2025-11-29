@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is the main purpose of the Functional Movement Screen (FMS)?",
+    "options": [
+      "To diagnose orthopedic injuries",
+      "To evaluate seven fundamental movement patterns",
+      "To measure cardiovascular endurance",
+      "To identify muscle size and strength"
+    ],
+    "answer": 1,
+    "explanation": "The Functional Movement Screen evaluates seven fundamental movement patterns in individuals without pain or injury. It is not meant to diagnose medical problems but to identify opportunities for improving movement quality."
+  },
+  {
+    "question": "What does a score of zero (0) indicate in any FMS test?",
+    "options": [
+      "Perfect movement execution",
+      "Poor balance only",
+      "Pain during any portion of the test",
+      "Inability to understand instructions"
+    ],
+    "answer": 2,
+    "explanation": "In the FMS scoring system, a zero is automatically given when pain is felt during any part of a movement. This indicates that the participant must stop and be evaluated by a medical professional."
+  },
+  {
+    "question": "Which movement pattern challenges total body mechanics and requires proper torso alignment, ankle dorsiflexion, and hip/knee mobility?",
+    "options": [
+      "Hurdle Step",
+      "Deep Squat",
+      "Inline Lunge",
+      "Rotary Stability"
+    ],
+    "answer": 1,
+    "explanation": "The Deep Squat is designed to assess full-body mechanics, including upper-body mobility, trunk stability, and lower-body flexibility. Proper dorsiflexion of the ankles, hip flexion, and knee flexion are crucial to performing the movement correctly."
+  },
+  {
+    "question": "In the Hurdle Step test, which of the following indicates a high-quality movement (score of 3)?",
+    "options": [
+      "Loss of balance while stepping",
+      "Hips, knees, and ankles remain aligned in the sagittal plane",
+      "Lumbar spine shows noticeable movement",
+      "Foot catches on the hurdle"
+    ],
+    "answer": 1,
+    "explanation": "A score of 3 in the Hurdle Step requires smooth alignment of the hips, knees, and ankles while keeping the torso stable and maintaining parallel orientation of the dowel and hurdle. This demonstrates proper stride mechanics and single-leg stability."
+  },
+  {
+    "question": "What does the Rotary Stability test primarily evaluate?",
+    "options": [
+      "Upper-body strength only",
+      "Hip flexion range of motion",
+      "Multi-plane stability and neuromuscular coordination",
+      "Grip strength and shoulder power"
+    ],
+    "answer": 2,
+    "explanation": "The Rotary Stability test assesses how well the pelvis, core, and shoulder girdle maintain stability during a coordinated upper- and lower-extremity movement. It measures multi-plane control and neuromuscular coordination, which are essential for whole-body movement and injury prevention."
+  }
+]

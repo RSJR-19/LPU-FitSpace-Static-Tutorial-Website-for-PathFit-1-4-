@@ -1,53 +1,24 @@
 [
   {
-    "id": "basic_fitness_concepts",
-    "title": "Basic Fitness Concepts",
-    "description": "Understanding fundamental fitness terminology and concepts.",
-    "questions": [
-      {
-        "question": "What does 'aerobic exercise' primarily utilize?",
-        "options": [
-          "Anaerobic metabolism without oxygen",
-          "Oxygen to produce energy",
-          "Only muscle strength",
-          "Flexibility of joints"
-        ],
-        "answer": [1],
-        "explanation": "Aerobic exercise uses oxygen to produce energy and is sustained at a lower intensity."
-      },
-      {
-        "question": "Which of the following is an example of anaerobic exercise?",
-        "options": [
-          "Jogging for 30 minutes",
-          "Swimming steadily",
-          "Sprinting 100 meters",
-          "Walking at a moderate pace"
-        ],
-        "answer": [2],
-        "explanation": "Sprinting is anaerobic as it requires quick bursts of energy without relying on oxygen."
-      },
-      {
-        "question": "What is cardiovascular fitness?",
-        "options": [
-          "The ability of your heart and lungs to supply oxygen during exercise",
-          "The strength of your muscles",
-          "The flexibility of your joints",
-          "The balance of your body"
-        ],
-        "answer": [0],
-        "explanation": "Cardiovascular fitness is the ability of the heart and lungs to deliver oxygen efficiently."
-      },
-      {
-        "question": "What is the primary benefit of strength training?",
-        "options": [
-          "Increased flexibility",
-          "Building muscle and bone density",
-          "Improved endurance",
-          "Better balance"
-        ],
-        "answer": [1],
-        "explanation": "Strength training builds muscle mass and increases bone density."
-      }
-    ]
+    "question": "What does 'aerobic exercise' primarily utilize?",
+    "options": [
+      "Anaerobic metabolism without oxygen",
+      "Oxygen to produce energy",
+      "Only muscle strength",
+      "Flexibility of joints"
+    ],
+    "answer": 1,
+    "explanation": "Aerobic exercise uses oxygen to produce energy and is sustained at a lower intensity."
+  },
+  {
+    "question": "Which of the following is an example of anaerobic exercise?",
+    "options": [
+      "Jogging for 30 minutes",
+      "Swimming steadily",
+      "Sprinting 100 meters",
+      "Walking at a moderate pace"
+    ],
+    "answer": 2,
+    "explanation": "Sprinting is anaerobic as it requires quick bursts of energy without relying on oxygen."
   }
 ]

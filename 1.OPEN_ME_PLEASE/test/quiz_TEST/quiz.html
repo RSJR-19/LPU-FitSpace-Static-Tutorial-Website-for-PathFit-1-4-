@@ -1,335 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pathfit Quiz</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Simple Quiz</title>
     <style>
         body {
-            font-family: "Segoe UI";
-            background: #f5f7fa;
-            margin: 0;
+            font-family: Arial;
             padding: 20px;
-            color: #333;
-            text-align: center;
-        }
-
-        #loading-message {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            border-top: 4px solid #007bff;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin-bottom: 10px;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        #quiz-container {
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-            text-align: center;
+            background: #f9f9f9;
         }
 
-        .progress-bar {
-            background: #e9ecef;
-            border-radius: 8px;
-            height: 12px;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .progress-bar-fill {
-            background: #007bff;
-            height: 100%;
-            width: 0%;
-            transition: width 0.3s ease;
-        }
-
-        .question-card {
-            background: white;
-            border-radius: 8px;
-            padding: 25px;
-            margin-top: 15px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .question-header {
-            margin-bottom: 15px;
-        }
-
-        .unit-tag {
-            display: inline-block;
-            background: #e3f2fd;
-            color: #1976d2;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            margin-bottom: 8px;
-        }
-
-        .question-text {
-            font-size: 1.2em;
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        .options-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
-            margin: 20px 0;
-            width: 100%;
-        }
-
-        .option-button {
-            background: white;
-            color: #333;
+        .option {
+            display: block;
+            margin: 8px 0;
+            padding: 10px;
             border: 1px solid #ddd;
-            padding: 14px;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 1em;
-            transition: all 0.2s;
-            text-align: left;
-            display: flex;
-            align-items: center;
+            background: white;
         }
 
-        .option-button:hover {
-            background: #f8f9fa;
+        .option:hover {
+            background: #f0f0f0;
         }
 
-        .option-button:disabled {
-            opacity: 0.7;
-            cursor: default;
-        }
-
-        .option-button i {
-            margin-right: 8px;
-        }
-
-        .correct-answer {
+        .correct {
             background: #d4edda !important;
             border-left: 4px solid #28a745;
         }
 
-        .wrong-answer {
+        .wrong {
             background: #f8d7da !important;
             border-left: 4px solid #dc3545;
         }
 
-        .answer-feedback {
+        button {
             margin-top: 20px;
-            padding: 15px;
-            border-radius: 6px;
-            background: #f8f9fa;
-            border-left: 4px solid #007bff;
-            text-align: left;
-        }
-
-        .answer-feedback h4 {
-            margin: 0 0 8px 0;
-            font-size: 1em;
-            display: flex;
-            align-items: center;
-        }
-
-        .answer-feedback h4 i {
-            margin-right: 6px;
-        }
-
-        .answer-feedback p {
-            margin: 8px 0 0 0;
-            font-size: 0.95em;
-            line-height: 1.5;
-        }
-
-        .next-button {
+            padding: 10px 20px;
             background: #007bff;
             color: white;
             border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 1em;
-            margin-top: 15px;
-            display: inline-flex;
-            align-items: center;
         }
 
-        .next-button:hover {
+        button:hover {
             background: #0056b3;
         }
-
-        .next-button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-
-        .next-button i {
-            margin-right: 6px;
-        }
-
-        .results-container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .score-circle {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .score-circle.a {
-            background: #28a745;
-        }
-
-        .score-circle.b {
-            background: #17a2b8;
-        }
-
-        .score-circle.c {
-            background: #ffc107;
-            color: #333;
-        }
-
-        .score-circle.d {
-            background: #fd7e14;
-        }
-
-        .score-circle.f {
-            background: #dc3545;
-        }
-
-        .percentage {
-            font-size: 2em;
-            margin-bottom: 5px;
-        }
-
-        .grade {
-            font-size: 1.1em;
-        }
-
-        .restart-button button {
-            background: #6c757d;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 20px;
-        }
-
-        .restart-button button:hover {
-            background: #5a6268;
-        }
-
     </style>
-  <link rel="stylesheet" href="../../../assets/css/footer.css">
 </head>
 
 <body>
-    <h1>Pathfit Quiz</h1>
-    <div id="loading-message">
-        <div class="spinner"></div>
-        <p>Loading Quiz...</p>
-    </div>
-    <div id="quiz-container"></div>
-    <script src="quiz.js"></script>
+    <h1 id="title">Loading Quiz...</h1>
+    <div id="quiz"></div>
     <script>
-        loadQuiz('pathfit1-data.json');
+        let questions = [];
+        let currentIndex = 0;
+        let score = 0;
+
+        // Load quiz from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const quizFile = urlParams.get("quiz");
+
+        // Load and start quiz
+        fetch(quizFile)
+            .then((response) => response.json())
+            .then((data) => {
+                questions = data;
+                showQuestion();
+            })
+            .catch((error) => {
+                document.getElementById("quiz").innerHTML = `
+                    <div style="color:red;">Failed to load quiz. Please try again.</div>
+                `;
+            });
+
+        // Show current question
+        function showQuestion() {
+            const question = questions[currentIndex];
+            document.getElementById("title").textContent = `Question ${currentIndex + 1}`;
+            let html = `<h3>${question.question}</h3>`;
+            question.options.forEach((option, index) => {
+                html += `<div class="option" onclick="checkAnswer(${index})">${option}</div>`;
+            });
+            document.getElementById("quiz").innerHTML = html;
+        }
+
+        // Check user's answer
+        function checkAnswer(selectedIndex) {
+            const question = questions[currentIndex];
+            const options = document.querySelectorAll(".option");
+            options.forEach((option, index) => {
+                option.style.pointerEvents = "none"; // Disable clicking
+                if (index === question.answer) option.classList.add("correct");
+                if (index === selectedIndex && index !== question.answer)
+                    option.classList.add("wrong");
+            });
+
+            if (selectedIndex === question.answer) score++;
+
+            document.getElementById("quiz").innerHTML += `
+                <p><strong>${selectedIndex === question.answer ? "Correct!" : "Wrong!"
+                }</strong></p>
+                <p>${question.explanation || "No explanation provided."}</p>
+                <button onclick="nextQuestion()">Next</button>
+            `;
+        }
+
+        // Move to next question or show results
+        function nextQuestion() {
+            currentIndex++;
+            if (currentIndex < questions.length) showQuestion();
+            else showResults();
+        }
+
+        // Show quiz results
+        function showResults() {
+            const percentage = (score / questions.length) * 100;
+            const grade =
+                percentage >= 90
+                    ? "A"
+                    : percentage >= 80
+                        ? "B"
+                        : percentage >= 70
+                            ? "C"
+                            : percentage >= 60
+                                ? "D"
+                                : "F";
+            document.getElementById("title").textContent = "Quiz Complete!";
+            document.getElementById("quiz").innerHTML = `
+                <h2>Your Score: ${score} / ${questions.length}</h2>
+                <div class="score-circle">
+                    <span class="percentage">${percentage.toFixed(1)}%</span>
+                    <span class="grade">Grade: ${grade}</span>
+                </div>
+                <button onclick="location.reload()">Try Again</button>
+            `;
+        }
+
     </script>
-<footer>
-    <section class="main-footer">
-      <div class="sub-main-footer">
-
-        <div class="footer-logo">
-          <div class="logo-circle">
-            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
-          </div>
-          <h1>LPU Fit Space</h1>
-        </div>
-
-        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
-          classroom learning and support holistic student growth.</p>
-      </div>
-
-      <div class="sub-main-footer">
-        <h1>Courses:</h1>
-        <a href="../../../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
-        <a href="../../../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
-        <a href="../../../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
-          Activities</a>
-      </div>
-      <div class="sub-main-footer">
-        <h1>Contact:</h1>
-
-        <div class="contact-item">
-          <span class="material-symbols-outlined">location_on</span>
-          <p>LPU Cavite</p>
-        </div>
-        <div class="contact-item">
-          <span class="material-symbols-outlined">call</span>
-          <p>(639) 158-3558</p>
-        </div>
-        <div class="contact-item">
-          <span class="material-symbols-outlined">mail</span>
-          <p>fitspace@lpu.edu.ph</p>
-        </div>
-
-      </div>
-    </section>
-    <div class="bottom-footer">
-      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
-    </div>
-
-  </footer>
 </body>
 
 </html>

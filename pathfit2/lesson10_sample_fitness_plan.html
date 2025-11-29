@@ -13,31 +13,35 @@
 <body>
     <!-- START: Copied from template -->
     <!-- header + sidebar from template -->
-    <header>
-        <div style="height: 1dvh;background-color: white;"></div>
-        <nav>
-            <div class="spacer"></div>
-            <div class="left-nav">
-                <div class="lpu-logo">
-                    <img src="../assets/images/logo/LPU-logo.svg" alt="lpu logo">
-                </div>
-                <div class="fitspace-text">
-                    <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
-                </div>
-            </div>
-            <div class="right-nav">
-                <a>Mission & Vision</a>
-                <a>Department Overview</a>
-                <a>About FitSpace</a>
-                <div class="input-container">
-                    <input type="text" placeholder=" Search Lessons...">
-                    <button>Search</button>
-                </div>
-            </div>
-            <div class="spacer"></div>
-        </nav>
-        <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
-    </header>
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a href="../home_page.html#mission">Mission & Vision</a>
+        <a href="../home_page.html#aboutUs">About FitSpace</a>
+
+        <div class="search-box">
+          <a onclick="displaySearch()" id="search">Search</a>
+          <input type="text" id="input-bar" placeholder="Lessons...">
+        </div>
+        <div class="search-results" id="search-results"></div>
+        
+      </div>
+
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
 
     <main>
         <section class="sidebar">

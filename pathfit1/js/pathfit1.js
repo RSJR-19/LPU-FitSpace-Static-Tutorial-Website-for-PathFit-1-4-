@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   tab2.classList.add("active");
 });
 
-function takeQuiz() {
-  alert("Quz");
+function takeQuiz(btn) {
+  const file = btn.dataset.quiz;
+  window.location.href = "/quiz/quiz.html?quiz=" + file;
 }
 
 function downloadPDF(pdfUrl, downloadName) {

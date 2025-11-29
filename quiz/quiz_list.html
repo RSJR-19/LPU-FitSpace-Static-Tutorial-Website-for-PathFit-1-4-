@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select a Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body>
+
+    <h1>Available Quizzes</h1>
+
+    <div class="quiz-container">
+
+        <!-- PathFit 1 -->
+        <div class="quiz-item" onclick="openQuiz('../pathfit1/pathfit1-data.json')">
+            <div class="quiz-title">PathFit 1: Movement Competency</div>
+            <div class="quiz-desc">Covers Introduction to PE, PAR-Q, BMI, Movement Skills</div>
+        </div>
+
+        <!-- PathFit 2 -->
+        <div class="quiz-item" onclick="openQuiz('../pathfit2/pathfit2-data.json')">
+            <div class="quiz-title">PathFit 2: Exercise-Based Fitness Training</div>
+            <div class="quiz-desc">Principles of Training, FITT, Exercise Types</div>
+        </div>
+
+        <!-- PathFit 3 -->
+        <div class="quiz-item" onclick="openQuiz('../pathfit3/pathfit3-data.json')">
+            <div class="quiz-title">PathFit 3 & 4: Individual & Dual Activities</div>
+            <div class="quiz-desc">Dance, Aerobic Exercise, Cardio, Sports Skills</div>
+        </div>
+    </div>
+
+    <script>
+        function openQuiz(file) {
+            window.location.href = `quiz.html?quiz=${file}`;
+        }
+    </script>
+
+</body>
+
+</html>

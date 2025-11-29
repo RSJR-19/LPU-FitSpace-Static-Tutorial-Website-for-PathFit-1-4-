@@ -1,0 +1,57 @@
+[
+  {
+    "question": "According to the International Charter of Physical Education and Sports (UNESCO, 1978), what is the status of physical education and sport?",
+    "options": [
+      "A privilege granted only to students",
+      "A recreational activity for athletes",
+      "A fundamental right of all",
+      "A voluntary hobby for the community"
+    ],
+    "answer": 2,
+    "explanation": "The UNESCO Charter clearly states that 'the practice of physical education and sport is a fundamental right of all'. This means PE is as essential as basic human rights and should not be viewed merely as a recreational activity."
+  },
+  {
+    "question": "Article XIV, Section 19 of the 1987 Philippine Constitution emphasizes that the state must promote physical education to achieve what purpose?",
+    "options": [
+      "To improve only academic performance",
+      "To foster self-discipline, teamwork, and excellence",
+      "To prepare for entertainment events",
+      "To create more jobs in sports management"
+    ],
+    "answer": 1,
+    "explanation": "The Constitution states that PE and sports programs help develop a healthy and alert citizenry by promoting self-discipline, teamwork, and excellence, making this the most accurate answer."
+  },
+  {
+    "question": "Jesse Feiring Williams (1977) described physical education as:",
+    "options": [
+      "Training for high-level competition",
+      "Education through the physical",
+      "Education for professional athletes",
+      "A form of entertainment"
+    ],
+    "answer": 1,
+    "explanation": "Williams’ definition highlights that PE uses movement and physical activity as tools for education, helping develop the whole person—physically, mentally, emotionally, and socially."
+  },
+  {
+    "question": "Which objective of physical education focuses on learning rules, strategies, and principles of games and sports?",
+    "options": [
+      "Physical Development",
+      "Cognitive Development",
+      "Emotional Development",
+      "Social Development"
+    ],
+    "answer": 1,
+    "explanation": "Cognitive development involves improving mental capacities as individuals learn rules, strategies, and principles related to movement and sports."
+  },
+  {
+    "question": "Which objective of physical education is best described as promoting self-esteem and helping individuals cope with daily stresses?",
+    "options": [
+      "Emotional Development",
+      "Social Development",
+      "Physical Development",
+      "Cognitive Development"
+    ],
+    "answer": 0,
+    "explanation": "Emotional development in PE gives students opportunities to build self-confidence, self-regulation, and stress coping skills, making this the correct choice."
+  }
+]

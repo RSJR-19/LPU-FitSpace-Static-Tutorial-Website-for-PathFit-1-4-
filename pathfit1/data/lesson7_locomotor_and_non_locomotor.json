@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What are Fundamental Movements (FM)?",
+    "options": [
+      "Complex skills used in advanced sports only",
+      "Simple and basic movements used in various physical activities",
+      "Movements done only with equipment",
+      "Movements performed only while standing"
+    ],
+    "answer": 1,
+    "explanation": "Fundamental Movements are simple, basic movement patterns that serve as the foundation for participating in different physical activities, such as walking, running, and jumping. These movements form the basis for more complex skills."
+  },
+  {
+    "question": "Which of the following best describes Locomotor Skills?",
+    "options": [
+      "Skills used for controlling small objects",
+      "Skills performed in one spot without traveling",
+      "Skills done when moving the body from one place to another",
+      "Skills related to body posture only"
+    ],
+    "answer": 2,
+    "explanation": "Locomotor skills involve traveling from one place to another and include movements such as walking, hopping, running, and skipping. These skills help individuals move through space efficiently."
+  },
+  {
+    "question": "Catching, dribbling, and kicking are examples of what type of FM skill?",
+    "options": [
+      "Stability skills",
+      "Manipulative skills",
+      "Locomotor skills",
+      "Body awareness skills"
+    ],
+    "answer": 1,
+    "explanation": "Manipulative skills involve using the hands, feet, or other body parts to control objects such as balls. These include catching, kicking, throwing, dribbling, and striking. Because catching and kicking fall under object control, B is the correct answer."
+  },
+  {
+    "question": "What is the meaning of Correct Posture?",
+    "options": [
+      "The ability to jump and land properly",
+      "The proper alignment of body segments in different positions",
+      "The skill of controlling objects with the feet",
+      "The ability to move from one place to another efficiently"
+    ],
+    "answer": 1,
+    "explanation": "Correct posture refers to properly aligning the body’s segments—such as the head, spine, shoulders, and hips—so that the body maintains balance, reduces strain, and functions efficiently."
+  },
+  {
+    "question": "A student moves to catch a ball by running toward it, balancing while reaching, and grabbing it with their hands. This action demonstrates what concept?",
+    "options": [
+      "Manipulative skills only",
+      "Locomotor and stability skills only",
+      "Combining all three types of FM skills",
+      "Only stability and posture"
+    ],
+    "answer": 2,
+    "explanation": "The action described shows the student running (locomotor), maintaining balance (stability), and catching the ball (manipulative). This illustrates the concept of combining all three types of Fundamental Movement Skills."
+  }
+]

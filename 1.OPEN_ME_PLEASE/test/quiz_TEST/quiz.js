@@ -1,206 +1,115 @@
-// Load quiz data from JSON file
-async function loadQuiz(jsonPath) {
-  const loadingEl = document.getElementById("loading-message");
-  const container = document.getElementById("quiz-container");
-  loadingEl.style.display = "flex";
-  container.innerHTML = "";
+let questions = [];
+let currentIndex = 0;
+let score = 0;
 
-  try {
-    const res = await fetch(jsonPath);
-    const quizzes = await res.json();
-    const allQuestions = prepareQuestions(quizzes);
-    startQuiz(allQuestions);
-  } catch (err) {
-    console.error("Error loading quiz:", err);
-    container.innerHTML = `
-            <div style="color:#721c24;background:#f8d7da;padding:16px;border-radius:8px;">
-                Unable to load the quiz. Please try again later.
-            </div>
-        `;
-  } finally {
-    loadingEl.style.display = "none";
-  }
+// Load quiz from URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const quizFile = urlParams.get("quiz");
+
+// If no quiz file selected show list ELSE load quiz
+if (!quizFile) {
+  showQuizList();
+} else {
+  loadQuizFile(quizFile);
 }
 
-// Prepare questions: flatten and shuffle
-function prepareQuestions(quizzes) {
-  let allQuestions = [];
-  quizzes.forEach((unit) => {
-    unit.questions.forEach((q) => {
-      allQuestions.push({
-        ...q,
-        unit: unit.title || unit.id,
-      });
+function loadQuizFile(file) {
+  fetch(file)
+    .then((r) => r.json())
+    .then((data) => {
+      questions = data;
+      showQuestion();
+    })
+    .catch(() => {
+      document.getElementById(
+        "quiz"
+      ).innerHTML = `<div style="color:red;">Failed to load quiz "${file}".</div>`;
     });
+}
+
+function showQuizList() {
+  document.getElementById("title").textContent = "Select a Quiz";
+  document.getElementById("quiz").innerHTML = `
+        <p>No quiz selected. Choose one below:</p>
+        <button onclick="location.href='quiz.html?quiz=../pathfit1/pathfit1-data.json'">Pathfit 1 Quiz</button>
+        <button onclick="location.href='quiz.html?quiz=../pathfit2/pathfit2-data.json'">Pathfit 2 Quiz</button>
+        <button onclick="location.href='quiz.html?quiz=../pathfit3/pathfit3-data.json'">Pathfit 3 Quiz</button>
+    `;
+}
+
+// Load and start quiz
+fetch(quizFile)
+  .then((response) => response.json())
+  .then((data) => {
+    questions = data;
+    showQuestion();
+  })
+  .catch((error) => {
+    document.getElementById("quiz").innerHTML = `
+                    <div style="color:red;">Failed to load quiz. Please try again.</div>
+                `;
   });
-  return shuffleArray(allQuestions);
+
+// Show current question
+function showQuestion() {
+  const question = questions[currentIndex];
+  document.getElementById("title").textContent = `Question ${currentIndex + 1}`;
+  let html = `<h3>${question.question}</h3>`;
+  question.options.forEach((option, index) => {
+    html += `<div class="option" onclick="checkAnswer(${index})">${option}</div>`;
+  });
+  document.getElementById("quiz").innerHTML = html;
 }
 
-// Fisher-Yates shuffle algorithm
-function shuffleArray(arr) {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+// Check user's answer
+function checkAnswer(selectedIndex) {
+  const question = questions[currentIndex];
+  const options = document.querySelectorAll(".option");
+  options.forEach((option, index) => {
+    option.style.pointerEvents = "none"; // Disable clicking
+    if (index === question.answer) option.classList.add("correct");
+    if (index === selectedIndex && index !== question.answer)
+      option.classList.add("wrong");
+  });
+
+  if (selectedIndex === question.answer) score++;
+
+  document.getElementById("quiz").innerHTML += `
+                <p><strong>${
+                  selectedIndex === question.answer ? "Correct!" : "Wrong!"
+                }</strong></p>
+                <p>${question.explanation || "No explanation provided."}</p>
+                <button onclick="nextQuestion()">Next</button>
+            `;
 }
 
-// Start the quiz
-function startQuiz(questions) {
-  let currentQuestionIndex = 0;
-  let score = 0;
-  const container = document.getElementById("quiz-container");
-  container.innerHTML = "";
+// Move to next question or show results
+function nextQuestion() {
+  currentIndex++;
+  if (currentIndex < questions.length) showQuestion();
+  else showResults();
+}
 
-  showQuestion();
-
-  function showQuestion() {
-    const q = questions[currentQuestionIndex];
-    container.innerHTML = "";
-
-    // Progress bar
-    const progressBar = document.createElement("div");
-    progressBar.className = "progress-bar";
-    const progressFill = document.createElement("div");
-    progressFill.className = "progress-bar-fill";
-    progressFill.style.width = `${
-      ((currentQuestionIndex + 1) / questions.length) * 100
-    }%`;
-    progressBar.appendChild(progressFill);
-    container.appendChild(progressBar);
-
-    // Question card
-    const card = document.createElement("div");
-    card.className = "question-card";
-
-    const header = document.createElement("div");
-    header.className = "question-header";
-    header.innerHTML = `
-            <div class="unit-tag">${escapeHtml(q.unit)}</div>
-            <h3 class="question-text">Q${
-              currentQuestionIndex + 1
-            }: ${escapeHtml(q.question)}</h3>
-        `;
-
-    const optionsDiv = document.createElement("div");
-    optionsDiv.className = "options-grid";
-
-    q.options.forEach((opt, idx) => {
-      const btn = document.createElement("button");
-      btn.className = "option-button";
-      btn.innerHTML = `<span>${opt}</span>`;
-      btn.onclick = () => handleAnswer(idx, q);
-      optionsDiv.appendChild(btn);
-    });
-
-    card.appendChild(header);
-    card.appendChild(optionsDiv);
-    container.appendChild(card);
-  }
-
-  function handleAnswer(selectedIndex, q) {
-    const optionsDiv = document.querySelector(".options-grid");
-    const buttons = optionsDiv.querySelectorAll("button");
-    const correctIndex = Array.isArray(q.answer) ? q.answer[0] : q.answer;
-
-    // Disable all buttons
-    buttons.forEach((b, i) => {
-      b.disabled = true;
-      if (i === correctIndex) {
-        b.classList.add("correct-answer");
-        b.innerHTML = `<i class="material-icons" style="color: #28a745;">check_circle</i> ${b.textContent}`;
-      }
-      if (i === selectedIndex && i !== correctIndex) {
-        b.classList.add("wrong-answer");
-        b.innerHTML = `<i class="material-icons" style="color: #dc3545;">cancel</i> ${b.textContent}`;
-      }
-    });
-
-    // Show feedback
-    const feedbackDiv = document.createElement("div");
-    feedbackDiv.className = `answer-feedback ${
-      selectedIndex === correctIndex
-        ? "correct-explanation"
-        : "incorrect-explanation"
-    }`;
-    feedbackDiv.innerHTML = `
-            <h4>
-                ${
-                  selectedIndex === correctIndex
-                    ? `<i class="material-icons" style="color: #28a745;">check_circle</i> Correct!`
-                    : `<i class="material-icons" style="color: #dc3545;">cancel</i> Wrong!`
-                }
-            </h4>
-            <p><strong>Correct Answer:</strong> ${escapeHtml(
-              q.options[correctIndex]
-            )}</p>
-            <p><strong>Explanation:</strong> ${escapeHtml(
-              q.explanation || "No explanation provided."
-            )}</p>
-        `;
-    container.appendChild(feedbackDiv);
-
-    // Update score
-    if (selectedIndex === correctIndex) score++;
-
-    // Next button
-    const nextBtn = document.createElement("button");
-    nextBtn.className = "next-button";
-    nextBtn.innerHTML =
-      currentQuestionIndex < questions.length - 1
-        ? `<i class="material-icons">arrow_forward</i> Next Question`
-        : `<i class="material-icons">assessment</i> See Results`;
-    nextBtn.onclick = () => {
-      currentQuestionIndex++;
-      currentQuestionIndex < questions.length ? showQuestion() : showResults();
-    };
-    container.appendChild(nextBtn);
-  }
-
-  function showResults() {
-    container.innerHTML = "";
-    const percentage = (score / questions.length) * 100;
-    const grade =
-      percentage >= 90
-        ? "A"
-        : percentage >= 80
-        ? "B"
-        : percentage >= 70
-        ? "C"
-        : percentage >= 60
-        ? "D"
-        : "F";
-
-    container.innerHTML = `
-            <div class="results-container">
-                <h2>Quiz Complete!</h2>
-                <div class="score-circle ${grade.toLowerCase()}">
+// Show quiz results
+function showResults() {
+  const percentage = (score / questions.length) * 100;
+  const grade =
+    percentage >= 90
+      ? "A"
+      : percentage >= 80
+      ? "B"
+      : percentage >= 70
+      ? "C"
+      : percentage >= 60
+      ? "D"
+      : "F";
+  document.getElementById("title").textContent = "Quiz Complete!";
+  document.getElementById("quiz").innerHTML = `
+                <h2>Your Score: ${score} / ${questions.length}</h2>
+                <div class="score-circle">
                     <span class="percentage">${percentage.toFixed(1)}%</span>
-                    <span class="grade">Grade ${grade}</span>
+                    <span class="grade">Grade: ${grade}</span>
                 </div>
-                <h3>Score: ${score} out of ${questions.length}</h3>
-
-                
-                <div class="restart-button">
-                    <button onclick="location.reload()">
-                        <i class="material-icons">refresh</i> Try Again
-                    </button>
-                </div>
-            </div>
-        `;
-  }
-
-  function escapeHtml(s) {
-    if (!s && s !== 0) return "";
-    return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
+                <button onclick="location.reload()">Try Again</button>
+            `;
 }
-
-// Expose to global
-window.loadQuiz = loadQuiz;

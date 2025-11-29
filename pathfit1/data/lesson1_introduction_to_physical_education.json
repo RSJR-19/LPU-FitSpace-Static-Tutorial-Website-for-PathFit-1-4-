@@ -1,0 +1,55 @@
+[
+  {
+    "question": "Physical Education is designed to promote the optimum development of an individual through ________.",
+    "options": [
+      "memorization and academic tests",
+      "total body movement in selected physical activities",
+      "group competitions only",
+      "mental exercises"
+    ],
+    "answer": 1,
+    "explanation": "Physical Education promotes the optimum development of a person through total body movement in properly selected physical activities, making option B the correct definition."
+  },
+  {
+    "question": "Which objective of Physical Education focuses on learning principles, rules, and strategies of games and sports?",
+    "options": [
+      "Physical Development",
+      "Emotional Development",
+      "Mental Development",
+      "Social Development"
+    ],
+    "answer": 2,
+    "explanation": "Mental development involves learning mechanical principles, understanding movement, and knowing the rules and strategies of games and sports, which makes option C the correct answer."
+  },
+  {
+    "question": "PE helps individuals develop traits such as cooperation, leadership, honesty, and sportsmanship.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Physical Education provides opportunities for activities that build social traits like cooperation, leadership, honesty, respect, and sportsmanship, making the statement true."
+  },
+  {
+    "question": "Which international statement declared that Physical Education is a fundamental right for all?",
+    "options": [
+      "UN 2003 – Sport and Millennium Development Goals",
+      "Resolution 58/5 – International Year of Sport and PE",
+      "1978 UNESCO Declaration",
+      "Philippine Constitution, Article XIV"
+    ],
+    "answer": 2,
+    "explanation": "The 1978 UNESCO Declaration specifically states that Physical Education is a fundamental right for all, which makes option C the correct answer."
+  },
+  {
+    "question": "Which of the following BEST describes the overall purpose of Physical Education?",
+    "options": [
+      "To prepare students for competitive sports only",
+      "To develop the whole person physically, mentally, emotionally, and socially",
+      "To focus mainly on strength and conditioning training",
+      "To teach the history of sports exclusively"
+    ],
+    "answer": 1,
+    "explanation": "Physical Education aims to develop the whole person by improving physical fitness, mental understanding, emotional control, and social skills, making option B the most accurate purpose."
+  }
+]

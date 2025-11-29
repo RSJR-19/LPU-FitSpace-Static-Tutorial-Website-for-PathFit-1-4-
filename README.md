@@ -1,20 +1,9 @@
 # LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 A Static Tutoring Website for Physical Activity Towards Health and Fitness (PathFit 1 - 4)
 
+# HUH?
 
-## HEHE
-gamitin natin yung template ni renan nasa 
-```
- 1.OPEN_ME_PLEASE/template folder 
-```
-and yung test folder is for testing 
-
-below makikita yung "POSSIBLE" structure 
-example if assigned ka sa PathFit 2 lahat ng css and js files nun under/inside dapat sa pathfit 2 folder 
-and yung about sa images/videos nandun dapat yun sa assets folder
-
-
-## 🦢 Repository Structure
+## Sample Repository Structure 
 
 ```
 LPU-FitSpace/

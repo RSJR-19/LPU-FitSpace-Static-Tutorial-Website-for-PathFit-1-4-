@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,19 +6,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Locomotor and Non-Locomotor - FitSpace</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/footer.css">
-  <link rel="stylesheet" href="/pathfit1/css/pathfit1.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit1.css">
+  <link rel="stylesheet" href="../assets/css/search.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 
 <body>
   <!-- HEADER + SIDEBAR TEMPLATE -->
- <header>
+  <header>
     <div style="height: 1dvh;background-color: white;"></div>
     <nav>
       <div class="spacer"></div>
       <div class="left-nav">
-        <div class="lpu-logo"><img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo"></div>
+        <div class="lpu-logo">
+          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
         <div class="fitspace-text">
           <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
         </div>
@@ -26,10 +29,15 @@
       <div class="right-nav">
         <a href="../home_page.html#mission">Mission & Vision</a>
         <a href="../home_page.html#aboutUs">About FitSpace</a>
-        <div class="input-container">
-          <input type="text" placeholder=" Search Lessons...">
-          <button>Search</button>
+
+        <div class="search-box">
+          <a onclick="displaySearch()" id="search">Search</a>
+          <input type="text" id="input-bar" placeholder="Lessons...">
         </div>
+        <div class="search-results" id="search-results"></div>
+
+      </div>
+
       </div>
       <div class="spacer"></div>
     </nav>
@@ -37,7 +45,7 @@
   </header>
 
   <main>
-   <section class="sidebar">
+    <section class="sidebar">
       <div class="spacer"></div>
       <section class="sidebar-main">
         <h1>COURSES:</h1>
@@ -54,8 +62,9 @@
               Enhancement</a>
             <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
             <a href="../pathfit1/lesson5_Functional_Movement_Screen.html">Functional Movement Screen</a>
-            <a href="../pathfit1/lesson6_Eating_Habits.html" class="active">Eating Habits</a>
-            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html" class="active">Locomotor and Non
+              Locomotor</a>
             <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
           </div>
 
@@ -83,8 +92,6 @@
           </div>
 
         </div>
-
-
       </section>
       <div class="spacer"></div>
     </section>
@@ -97,8 +104,8 @@
         <h1>Locomotor and Non-Locomotor Skills</h1>
 
         <!-- Banner -->
-       <div style="height: 70%;" class="image-placeholder">
-          <img src="/assets/images/pathfit1/locomotor.png">
+        <div style="height: 70%;" class="image-placeholder">
+          <img src="../assets/images/pathfit1/locomotor.png">
         </div>
 
         <!-- Definition of Terms -->
@@ -112,7 +119,8 @@
           </p>
           <p>Physical Activity is defined as repetitive movements by the skeletal muscles that require energy and
             produce health benefits.</p>
-          <p>Physical Fitness is the body's capacity to adapt and respond favorably to physical effort. The physically fit person can move efficiently and effectively in meeting physical demands.</p>
+          <p>Physical Fitness is the body's capacity to adapt and respond favorably to physical effort. The physically
+            fit person can move efficiently and effectively in meeting physical demands.</p>
           <p>Locomotor skills are FM skills that we do when travelling from one place to another.</p>
           <p>Stability Skills are FM skills for maintaining balance on spot or when moving.</p>
           <p>Manipulative skills are FM skills for controlling small objects.</p>
@@ -191,9 +199,11 @@
         <!-- Body Awareness -->
         <section class="content-section">
           <h2>Body Awareness</h2>
-          <p>Awareness of one's body helps to understand its parts and identify possible movements for each segment. It recognizes the way the body or its parts can be controlled, moved and balanced.</p>
+          <p>Awareness of one's body helps to understand its parts and identify possible movements for each segment. It
+            recognizes the way the body or its parts can be controlled, moved and balanced.</p>
           <p><b>Posture and Body Mechanics</b></p>
-          <p><b>Correct Posture</b> - is the proper alignment of body segments in relation to different body positions.</p>
+          <p><b>Correct Posture</b> - is the proper alignment of body segments in relation to different body positions.
+          </p>
           <p><b>Body Mechanics</b> – exercises or movements intended to improve one's posture, stamina, and poise.</p>
         </section>
 
@@ -225,9 +235,9 @@
 
       <div class="sub-main-footer">
         <h1>Courses:</h1>
-        <a href="/home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
-        <a href="/home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
-        <a href="/home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+        <a href="../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+        <a href="../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+        <a href="../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
           Activities</a>
       </div>
       <div class="sub-main-footer">
@@ -254,8 +264,8 @@
 
   </footer>
 
-  <script src="/pathfit1/js/pathfit1.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="js/pathfit1.js"></script>
+  <script src="../assets/js/main.js"></script>
 
   <!-- END: Copied from template -->
 </body>
