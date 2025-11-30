@@ -1,0 +1,57 @@
+[
+  {
+    "question": "According to the lesson, physical fitness is best defined as:",
+    "options": [
+      "The ability to perform athletic activities at a professional level",
+      "The body's ability to perform daily tasks efficiently without undue fatigue, with energy for leisure and emergencies",
+      "Having a low body fat percentage and visible muscle definition",
+      "The capacity to lift heavy weights and run long distances"
+    ],
+    "answer": 1,
+    "explanation": "The lesson defines physical fitness as 'the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leisure and emergency situations.'"
+  },
+  {
+    "question": "Physical fitness is commonly classified into two major categories. Which pairing correctly identifies these categories?",
+    "options": [
+      "Athletic and Non-Athletic Components",
+      "Physical and Mental Components",
+      "Health-Related and Skill-Related Components",
+      "Indoor and Outdoor Components"
+    ],
+    "answer": 2,
+    "explanation": "The lesson explicitly states that 'Researchers commonly classify physical fitness into two categories: Health-Related Components and Skill-Related Components.'"
+  },
+  {
+    "question": "Which of the following is NOT listed as a Health-Related Component of physical fitness?",
+    "options": [
+      "Cardiovascular Endurance",
+      "Muscular Strength",
+      "Reaction Time",
+      "Body Composition"
+    ],
+    "answer": 2,
+    "explanation": "Reaction Time is listed under Skill-Related Components. The Health-Related Components are: Cardiovascular Endurance, Muscular Strength, Muscular Endurance, Flexibility, and Body Composition."
+  },
+  {
+    "question": "According to the World Health Organization (WHO) guidelines mentioned in the lesson, adults should engage in at least how many minutes of moderate-intensity aerobic activity each week?",
+    "options": [
+      "75-100 minutes",
+      "100-150 minutes",
+      "150-300 minutes",
+      "300-400 minutes"
+    ],
+    "answer": 2,
+    "explanation": "The lesson states: 'According to the World Health Organization (WHO), adults should engage in at least 150-300 minutes of moderate-intensity or 75-150 minutes of vigorous-intensity aerobic activity each week.'"
+  },
+  {
+    "question": "Which key takeaway emphasizes the long-term approach to developing physical fitness?",
+    "options": [
+      "Physical fitness prevents all diseases",
+      "Physical fitness is vital for efficient daily functioning",
+      "Developing fitness is a lifelong process requiring consistency and balance",
+      "Physical fitness only benefits athletes"
+    ],
+    "answer": 2,
+    "explanation": "The fourth key takeaway explicitly states: 'Developing fitness is a lifelong process that requires consistency and balance.'"
+  }
+]

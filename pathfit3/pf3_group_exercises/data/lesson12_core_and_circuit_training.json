@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is the primary function of the core muscles (abdomen, back, hips, pelvis) in relation to movement?",
+    "options": [
+      "Isolating the rectus abdominis for a six-pack aesthetic",
+      "Maximizing joint flexibility",
+      "Generating explosive power for jumping only",
+      "Stabilizing the spine and pelvis, acting as the center of gravity and power generation"
+    ],
+    "answer": 3,
+    "explanation": "The lesson defines the core's primary role as working together to stabilize the spine and pelvis, which serves as the body's center of gravity and power generation for all movement."
+  },
+  {
+    "question": "Which deep core muscle group acts like a corset, drawing the navel toward the spine for deep stabilization (e.g., during the drawing-in maneuver)?",
+    "options": [
+      "Rectus Abdominis",
+      "Obliques",
+      "Erector Spinae",
+      "Transversus Abdominis"
+    ],
+    "answer": 3,
+    "explanation": "The Transversus Abdominis is the deep muscle group that acts like a corset, drawing the navel inward for deep stabilization, which is separate from the Rectus Abdominis (flexion) or Obliques (rotation)."
+  },
+  {
+    "question": "In the structure of a circuit, what is the recommended duration and timing for the minimal rest period?",
+    "options": [
+      "15-30 seconds of rest taken before moving to the next station",
+      "1-2 minutes of rest taken after completing all stations (one circuit round)",
+      "5 minutes of rest taken after the warm-up",
+      "45 seconds of rest taken during the middle of a station"
+    ],
+    "answer": 0,
+    "explanation": "Circuit training uses minimal rest (15-30 seconds) between stations to keep the heart rate elevated, whereas the 1-2 minutes of rest is for Recovery after a full circuit round."
+  },
+  {
+    "question": "Circuit training is highly effective because it helps improve both muscular endurance and cardiovascular fitness simultaneously. This is listed as an advantage due to its ability to maximize exercise time by reducing rest periods, making it highly valued for:",
+    "options": [
+      "Variability",
+      "Metabolic Boost",
+      "Time Efficiency",
+      "Full-Body Workout"
+    ],
+    "answer": 2,
+    "explanation": "The advantage of circuit training that focuses on maximizing exercise time by reducing rest periods is called Time Efficiency. The other options are also advantages but do not relate directly to the management of rest time."
+  },
+  {
+    "question": "Based on the sample core circuit provided in the lesson, which exercise is specifically listed as focusing on Core Stabilization/Endurance?",
+    "options": [
+      "Glute Bridges",
+      "Squats",
+      "Jumping Jacks",
+      "Plank Hold"
+    ],
+    "answer": 3,
+    "explanation": "The sample circuit table specifies that the Plank Hold (Station 3) is the exercise with the focus on Core Stabilization/Endurance. Glute Bridges focus on the lower back/glutes, and Squats focus on lower body strength."
+  }
+]

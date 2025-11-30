@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is the primary goal of Recreational Games, as distinguished from Team Building activities?",
+    "options": [
+      "Developing specific skills like leadership and conflict resolution",
+      "Analyzing the group process through formal debriefing",
+      "Fun, stress relief, socialization, and general fitness",
+      "Improving academic or athletic performance"
+    ],
+    "answer": 2,
+    "explanation": "The lesson defines the primary goal of Recreational Games as being for pleasure, relaxation, and physical exercise (fun, stress relief, socialization), without a required formal learning outcome."
+  },
+  {
+    "question": "Team Building activities, which are designed with specific learning objectives, place their primary Focus on what aspect?",
+    "options": [
+      "Simple rules and maximizing participation",
+      "Group process and debriefing (analyzing how the group worked together)",
+      "Physical competition and simple enjoyment",
+      "Lawn games and charades"
+    ],
+    "answer": 1,
+    "explanation": "The focus of Team Building is on the Group process and debriefing, which involves analyzing how the group worked together to achieve a specific learning objective."
+  },
+  {
+    "question": "According to Tuckman's Stages of Group Development, in which stage do team building challenges most effectively help groups by bringing conflict and differences in style to the surface?",
+    "options": [
+      "Forming",
+      "Storming",
+      "Norming",
+      "Performing"
+    ],
+    "answer": 1,
+    "explanation": "The lesson states that team building challenges help groups move through the Storming stage, where they deal with conflict and differences in style."
+  },
+  {
+    "question": "Which specific skill set is enhanced by Communication Games, such as a blindfolded obstacle course?",
+    "options": [
+      "Strategic Thinking and Resource Management",
+      "Vulnerability and Reliance",
+      "Listening and Non-Verbal Cues",
+      "Familiarity and Quick Focus"
+    ],
+    "answer": 2,
+    "explanation": "The table in the Practical Application section lists Communication Games as enhancing Listening [and] Non-Verbal Cues, using the blindfolded obstacle course as an example."
+  },
+  {
+    "question": "According to the Key Takeaways, what is a crucial component of effective implementation for team building activities, specifically used to apply learned insights?",
+    "options": [
+      "Strict adherence to only two participants per activity",
+      "Using only games with simple rules, like Charades",
+      "Limiting the activity to 15 minutes or less",
+      "A crucial debriefing session"
+    ],
+    "answer": 3,
+    "explanation": "The key takeaway states that effective implementation includes clear instructions and, for team building, a crucial debriefing session to apply learned insights."
+  }
+]

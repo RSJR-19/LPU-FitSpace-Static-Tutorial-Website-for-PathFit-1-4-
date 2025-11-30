@@ -1,0 +1,57 @@
+[
+  {
+    "question": "In what year was pickleball invented?",
+    "options": [
+      "1955",
+      "1965",
+      "1975",
+      "1985"
+    ],
+    "answer": 1,
+    "explanation": "The lesson states: 'Pickleball was invented in 1965 by Joel Pritchard, Bill Bell, and Barney McCallum in Bainbridge Island, Washington.'"
+  },
+  {
+    "question": "Pickleball combines elements of which three sports?",
+    "options": [
+      "Basketball, soccer, and baseball",
+      "Tennis, badminton, and table tennis",
+      "Volleyball, tennis, and squash",
+      "Golf, croquet, and bowling"
+    ],
+    "answer": 1,
+    "explanation": "The lesson describes pickleball as 'a paddle sport that combines elements of tennis, badminton, and table tennis.'"
+  },
+  {
+    "question": "What are the dimensions of a pickleball court?",
+    "options": [
+      "15 by 30 feet",
+      "18 by 36 feet",
+      "20 by 44 feet",
+      "25 by 50 feet"
+    ],
+    "answer": 2,
+    "explanation": "The lesson states: 'The court measures 20 by 44 feet for both singles and doubles.'"
+  },
+  {
+    "question": "What is the non-volley zone in pickleball commonly called?",
+    "options": [
+      "The serving box",
+      "The kitchen",
+      "The safety zone",
+      "The baseline area"
+    ],
+    "answer": 1,
+    "explanation": "The lesson mentions 'a non-volley zone ('kitchen') near the net to prevent smashes too close to the net.'"
+  },
+  {
+    "question": "How must the serve be delivered in pickleball?",
+    "options": [
+      "Overhand from the baseline",
+      "Underhand from behind the baseline",
+      "From the center of the court",
+      "From inside the non-volley zone"
+    ],
+    "answer": 1,
+    "explanation": "The rules section states: 'The serve must be underhand and land in the diagonal service court.'"
+  }
+]

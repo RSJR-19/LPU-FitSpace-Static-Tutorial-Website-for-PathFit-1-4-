@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is the primary cultural purpose of folk dance as described in the lesson?",
+    "options": [
+      "Professional entertainment and monetary gain",
+      "Physical fitness and weight loss",
+      "Cultural expression, preservation, and storytelling",
+      "Competition and winning awards"
+    ],
+    "answer": 2,
+    "explanation": "The lesson states that folk dance 'reflects the traditions, values, and history of a community' and is 'performed for celebration, storytelling, and cultural preservation.'"
+  },
+  {
+    "question": "Researchers commonly classify folk dances into which two categories?",
+    "options": [
+      "Traditional and Modern Dances",
+      "Ethnic Dances and Regional or Local Dances",
+      "Solo and Group Dances",
+      "Religious and Secular Dances"
+    ],
+    "answer": 1,
+    "explanation": "The lesson explicitly states: 'Researchers commonly classify folk dances into two categories: Ethnic Dances and Regional or Local Dances.'"
+  },
+  {
+    "question": "Which of the following is NOT listed as a basic element of folk dance?",
+    "options": [
+      "Movement",
+      "Music",
+      "Competition Scoring",
+      "Costume"
+    ],
+    "answer": 2,
+    "explanation": "The basic elements listed are: Movement, Music, Costume, Props, and Formation. Competition scoring is not mentioned as a basic element."
+  },
+  {
+    "question": "Which physical benefit is specifically mentioned as being improved through folk dancing?",
+    "options": [
+      "Maximum muscle strength",
+      "Coordination, balance, and rhythm",
+      "Sprint speed",
+      "Weightlifting capacity"
+    ],
+    "answer": 1,
+    "explanation": "The lesson states that folk dancing 'Improves coordination, balance, and rhythm' as one of its benefits."
+  },
+  {
+    "question": "According to the Key Takeaways, how does folk dance support the PathFit program?",
+    "options": [
+      "It replaces all other physical activities",
+      "It focuses only on competitive dance",
+      "It supports both cultural and physical development",
+      "It is optional and not integrated into the curriculum"
+    ],
+    "answer": 2,
+    "explanation": "The fifth key takeaway states: 'Folk dance is an important component of the PathFit program, supporting both cultural and physical development.'"
+  }
+]

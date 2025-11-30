@@ -1,0 +1,57 @@
+[
+  {
+    "question": "In the FITT Principle, which element determines 'How hard you exercise'?",
+    "options": [
+      "Frequency",
+      "Type",
+      "Time (Duration)",
+      "Intensity"
+    ],
+    "answer": 3,
+    "explanation": "The FITT Principle table defines Intensity as determining 'How hard you exercise', with recommendations ranging from moderate to vigorous MHR percentages."
+  },
+  {
+    "question": "Which of the following activities is specifically listed as a low-impact type of cardio that is gentle on the joints?",
+    "options": [
+      "Running",
+      "Jumping rope",
+      "High-impact aerobics",
+      "Swimming"
+    ],
+    "answer": 3,
+    "explanation": "The lesson lists low-impact cardio examples, including walking, cycling, elliptical training, and swimming, which is gentle on the joints."
+  },
+  {
+    "question": "What is the recommended duration for the Cool-down phase of a cardio workout?",
+    "options": [
+      "20-60 minutes",
+      "30-60 minutes",
+      "5-10 minutes",
+      "15-20 minutes"
+    ],
+    "answer": 2,
+    "explanation": "The Practical Application: Structure of a Cardio Session section lists the Cool-down phase as requiring a duration of 5-10 minutes, focusing on gradually lowering the heart rate."
+  },
+  {
+    "question": "What is the primary function of the core muscles (abdomen, back, hips, pelvis) in relation to movement?",
+    "options": [
+      "Isolating the rectus abdominis for a six-pack aesthetic",
+      "Maximizing joint flexibility",
+      "Generating explosive power for jumping only",
+      "Stabilizing the spine and pelvis, acting as the center of gravity and power generation"
+    ],
+    "answer": 3,
+    "explanation": "The lesson defines the core's primary role as working together to stabilize the spine and pelvis, which serves as the body's center of gravity and power generation for all movement."
+  },
+  {
+    "question": "Which deep core muscle group acts like a corset, drawing the navel toward the spine for deep stabilization?",
+    "options": [
+      "Rectus Abdominis",
+      "Obliques",
+      "Erector Spinae",
+      "Transversus Abdominis"
+    ],
+    "answer": 3,
+    "explanation": "The Transversus Abdominis is the deep muscle group that acts like a corset, drawing the navel inward for deep stabilization, which is separate from the Rectus Abdominis (flexion) or Obliques (rotation)."
+  }
+]

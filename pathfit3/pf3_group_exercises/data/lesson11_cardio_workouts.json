@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is the primary purpose of cardiovascular exercise, as defined in the lesson overview?",
+    "options": [
+      "To build maximum muscle mass",
+      "To strengthen the body's digestive system",
+      "To increase flexibility and range of motion",
+      "To strengthen the heart and lungs, making the body more efficient at delivering oxygen"
+    ],
+    "answer": 3,
+    "explanation": "The lesson defines the primary purpose of cardio as being to strengthen the heart and lungs, thereby improving the body's efficiency in delivering oxygen."
+  },
+  {
+    "question": "According to the lesson, the Target Heart Rate (THR) should typically be maintained within what percentage range of an individual's Maximum Heart Rate (MHR)?",
+    "options": [
+      "40-50% MHR",
+      "60-85% MHR",
+      "85-100% MHR",
+      "20-30% MHR"
+    ],
+    "answer": 1,
+    "explanation": "The Measuring Exercise Intensity section specifies that the Target Heart Rate (THR) should typically be maintained in the range of 60-85% of the Maximum Heart Rate (MHR)."
+  },
+  {
+    "question": "In the FITT Principle, which element determines 'How hard you exercise'?",
+    "options": [
+      "Frequency",
+      "Type",
+      "Time (Duration)",
+      "Intensity"
+    ],
+    "answer": 3,
+    "explanation": "The FITT Principle table defines Intensity as determining 'How hard you exercise', with recommendations ranging from moderate to vigorous MHR percentages."
+  },
+  {
+    "question": "Which of the following activities is specifically listed as a low-impact type of cardio that is gentle on the joints?",
+    "options": [
+      "Running",
+      "Jumping rope",
+      "High-impact aerobics",
+      "Swimming"
+    ],
+    "answer": 3,
+    "explanation": "The lesson lists low-impact cardio examples, including walking, cycling, elliptical training, and swimming, which is gentle on the joints."
+  },
+  {
+    "question": "What is the recommended duration for the Cool-down phase of a cardio workout?",
+    "options": [
+      "20-60 minutes",
+      "30-60 minutes",
+      "5-10 minutes",
+      "15-20 minutes"
+    ],
+    "answer": 2,
+    "explanation": "The Practical Application: Structure of a Cardio Session section lists the Cool-down phase as requiring a duration of 5-10 minutes, focusing on gradually lowering the heart rate."
+  }
+]

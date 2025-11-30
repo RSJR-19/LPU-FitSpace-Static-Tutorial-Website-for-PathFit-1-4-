@@ -1,0 +1,57 @@
+[
+  {
+    "question": "In what year did Table Tennis become an official Olympic sport?",
+    "options": [
+      "1992",
+      "1988",
+      "2000",
+      "1976"
+    ],
+    "answer": 1,
+    "explanation": "The lesson states that table tennis became an Olympic sport in 1988 at the Seoul, South Korea Games, initially featuring singles and doubles competitions."
+  },
+  {
+    "question": "Which major rule change was implemented in September 2001 to achieve faster-paced, more exciting matches?",
+    "options": [
+      "The ball size was increased from 38 mm to 40 mm",
+      "The minimum service toss height was set at 16 cm",
+      "The scoring system was changed from 21 points to 11 points",
+      "The doubles event was replaced by the team event"
+    ],
+    "answer": 2,
+    "explanation": "The game was officially changed from a 21-point system to an 11-point scoring system (effective September 2001) to increase the pace and excitement of the matches."
+  },
+  {
+    "question": "According to ITTF specifications, what is the required height of the net assembly for a table tennis table?",
+    "options": [
+      "76 cm",
+      "16 cm",
+      "15.25 cm",
+      "23 cm"
+    ],
+    "answer": 2,
+    "explanation": "The Equipment Specifications table explicitly lists the net assembly height as 15.25 cm. (76 cm is the table height, 16 cm is the minimum service toss height.)"
+  },
+  {
+    "question": "What is the term for a rally of which the result is not scored, such as when the ball touches the net during a legal serve?",
+    "options": [
+      "POINT",
+      "FAULT",
+      "DEAD BALL",
+      "LET"
+    ],
+    "answer": 3,
+    "explanation": "The Key Terminologies define a LET as a rally of which the result is not scored, specifically citing the example of the ball touching the net during a legal serve."
+  },
+  {
+    "question": "Which offensive stroke is characterized by generating high topspin, causing the ball to curve and dip quickly on the opponent's side of the table?",
+    "options": [
+      "SMASH",
+      "CHOP",
+      "BLOCK",
+      "LOOP"
+    ],
+    "answer": 3,
+    "explanation": "The Types of Strokes section defines the LOOP as the stroke that 'Generates high topspin, causing the ball to dip quickly on the opponent's side.'"
+  }
+]

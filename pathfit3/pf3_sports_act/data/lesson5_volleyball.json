@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Who invented volleyball and in what year?",
+    "options": [
+      "Dr. James Naismith in 1891",
+      "William G. Morgan in 1895",
+      "Joel Pritchard in 1965",
+      "George Hancock in 1887"
+    ],
+    "answer": 1,
+    "explanation": "The lesson states: 'Volleyball was invented in 1895 by William G. Morgan in Holyoke, Massachusetts.'"
+  },
+  {
+    "question": "Volleyball was originally created as a combination of several sports to achieve what goal?",
+    "options": [
+      "To create a more physically demanding sport",
+      "To create a less strenuous sport",
+      "To replace basketball entirely",
+      "To be played only outdoors"
+    ],
+    "answer": 1,
+    "explanation": "The lesson explains volleyball was created 'as a combination of basketball, baseball, tennis, and handball to create a less strenuous sport.'"
+  },
+  {
+    "question": "What are the dimensions of a volleyball court?",
+    "options": [
+      "15m by 7m",
+      "16m by 8m",
+      "18m by 9m",
+      "20m by 10m"
+    ],
+    "answer": 2,
+    "explanation": "The lesson states: 'The court is rectangular, measuring 18m by 9m, divided by a net.'"
+  },
+  {
+    "question": "To win a set in volleyball, a team must:",
+    "options": [
+      "Reach exactly 25 points",
+      "Reach 25 points with at least a 2-point lead",
+      "Score 30 points",
+      "Win 3 consecutive rallies"
+    ],
+    "answer": 1,
+    "explanation": "The rules section states: 'A team must win a set by at least 2 points.'"
+  },
+  {
+    "question": "How many times can each team hit the ball before sending it over the net?",
+    "options": [
+      "Two times",
+      "Three times",
+      "Four times",
+      "Unlimited times"
+    ],
+    "answer": 1,
+    "explanation": "The rules state: 'Each team can hit the ball up to three times before sending it over the net.'"
+  }
+]

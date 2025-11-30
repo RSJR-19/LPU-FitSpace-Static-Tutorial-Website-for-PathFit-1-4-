@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Swimming is a low-impact exercise, yet it's highly effective for muscle development. According to the lesson, what property of water supports this high effectiveness without the impact forces of land-based exercise?",
+    "options": [
+      "The water temperature cools the muscles",
+      "Swimming is a full-body workout",
+      "The rhythmic nature of swimming reduces stress",
+      "Water is about 800 times denser than air, providing greater resistance"
+    ],
+    "answer": 3,
+    "explanation": "The lesson notes that water is about 800 times denser than air, which provides greater resistance for muscle development without the high-impact forces of land-based exercise."
+  },
+  {
+    "question": "What is identified in the Acclimation Techniques section as the essential skill for basic Breathing Control?",
+    "options": [
+      "Holding your breath for as long as possible",
+      "Taking fast, shallow breaths above the surface",
+      "Exhaling underwater (blowing bubbles) and rhythmic breathing",
+      "Only breathing out when turning your head to the side"
+    ],
+    "answer": 2,
+    "explanation": "The lesson lists Breathing Control as an acclimation technique, defined specifically as 'Exhaling underwater (blowing bubbles) and rhythmic breathing.'"
+  },
+  {
+    "question": "Which Key Movement Principle involves achieving an optimal, hydrodynamic body shape for maximum efficiency and minimal effort in the water?",
+    "options": [
+      "Propulsion",
+      "Treading Water",
+      "Rhythm and Timing",
+      "Streamline"
+    ],
+    "answer": 3,
+    "explanation": "Streamline is defined as achieving an optimal, hydrodynamic body shape for efficiency, which is key to moving through the water with minimal effort."
+  },
+  {
+    "question": "What is the primary mechanical reason, mentioned in the Key Movement Principles, for keeping the body flat and near the surface of the water?",
+    "options": [
+      "To make it easier to tread water",
+      "To facilitate better sculling (hand movements)",
+      "To help keep the lungs full of air",
+      "To reduce drag"
+    ],
+    "answer": 3,
+    "explanation": "The lesson states that Body Position involves 'Keeping the body flat and near the surface of the water to reduce drag,' which ensures efficient movement."
+  },
+  {
+    "question": "The lesson emphasizes the ability to float as a fundamental skill. What specific technique is listed as the key to buoyancy while performing the 'Starfish Float'?",
+    "options": [
+      "Tensing the abdominal muscles",
+      "Focusing on slow, deep breaths to help keep your lungs full of air",
+      "Using continuous, small hand movements (sculling)",
+      "Keeping your head completely out of the water"
+    ],
+    "answer": 1,
+    "explanation": "The Practical Application: Mastering the Float section advises to 'Focus on slow, deep breaths to help keep your lungs full of air, which is the key to buoyancy.'"
+  }
+]

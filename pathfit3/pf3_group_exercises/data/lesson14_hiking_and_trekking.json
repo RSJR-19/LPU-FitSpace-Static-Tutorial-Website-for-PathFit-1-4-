@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is the primary difference in duration between Hiking and Trekking, according to the lesson?",
+    "options": [
+      "Hiking lasts 20-30 minutes, and Trekking lasts 60 minutes",
+      "Hiking is typically a single-day journey, while Trekking is a multi-day excursion",
+      "Hiking is always done on paved paths, while Trekking is always done on rough terrain",
+      "Hiking requires a large backpack, while Trekking requires only a daypack"
+    ],
+    "answer": 1,
+    "explanation": "The lesson defines Hiking as typically a single-day journey and Trekking as multi-day excursions spanning weeks or months, which is the core difference in duration."
+  },
+  {
+    "question": "For a Trekking (Multi-day) Trip, which of the following is an essential gear requirement that is typically not necessary for a single-day hike?",
+    "options": [
+      "Daypack with water and snacks",
+      "Appropriate footwear",
+      "Tent/Shelter and sleeping system",
+      "First aid kit"
+    ],
+    "answer": 2,
+    "explanation": "Trekking requires planning for and carrying overnight shelter and supplies, such as a Tent/Shelter and sleeping system, which is essential for multi-day trips but not typically needed for single-day hiking."
+  },
+  {
+    "question": "Walking on uneven and varied terrain, as opposed to pavement, provides superior benefits for Balance and Coordination by achieving which of the following?",
+    "options": [
+      "Greatly increasing cardiovascular conditioning",
+      "Building stronger leg and glute strength only",
+      "Continuously adjusting to rocks, roots, and slippery spots to sharpen proprioception and ankle stability",
+      "Reducing symptoms of depression"
+    ],
+    "answer": 2,
+    "explanation": "The lesson explains that navigating uneven terrain continuously adjusts the body to obstacles, which sharpens proprioception and ankle stability, thus improving Balance and Coordination."
+  },
+  {
+    "question": "According to the Safety Note and Preparation Checklist, what crucial step should be taken before starting any remote hike or trek?",
+    "options": [
+      "Always pack exactly 10 pounds of food and water",
+      "Inform a reliable contact person of your specific route and expected return time",
+      "Engage only in strength training, not cardio",
+      "Only use digital maps (no paper maps)"
+    ],
+    "answer": 1,
+    "explanation": "The Safety Note emphasizes that you should never hike or trek alone in remote areas without informing a reliable contact person of your specific route and expected return time."
+  },
+  {
+    "question": "To minimize trail widening and trampling vegetation, the LNT principle of Stay on the Trail mandates which specific action, even when the trail is muddy?",
+    "options": [
+      "Always walk side-by-side with your partner",
+      "Walk single file down the center of the trail",
+      "Step off the trail around muddy sections to find dry ground",
+      "Throw fruit peels off the trail so they decompose naturally"
+    ],
+    "answer": 1,
+    "explanation": "The LNT principle Stay on the Trail specifically instructs users to Walk single file down the center of the trail, even when muddy, to prevent widening the path."
+  }
+]

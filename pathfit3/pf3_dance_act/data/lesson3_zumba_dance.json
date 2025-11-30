@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Zumba is best classified as what type of fitness program?",
+    "options": [
+      "A strength training program",
+      "A high-energy aerobic fitness program inspired by Latin American dance",
+      "A meditation and mindfulness program",
+      "A competitive sports program"
+    ],
+    "answer": 1,
+    "explanation": "The lesson defines Zumba as 'a high-energy aerobic fitness program inspired by various Latin American dance styles.'"
+  },
+  {
+    "question": "Zumba was created in which decade?",
+    "options": [
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s"
+    ],
+    "answer": 2,
+    "explanation": "The lesson states: 'Zumba is a dance fitness program created in the 1990s.'"
+  },
+  {
+    "question": "Which physical component involves sustained movement through dance routines in Zumba?",
+    "options": [
+      "Muscular Strength",
+      "Cardiovascular Endurance",
+      "Maximum Power",
+      "Static Flexibility"
+    ],
+    "answer": 1,
+    "explanation": "Under Physical Components, the lesson lists 'Cardiovascular Endurance - sustained movement through dance routines.'"
+  },
+  {
+    "question": "According to the lesson, how many calories might a single Zumba session burn?",
+    "options": [
+      "100-200 calories",
+      "200-400 calories",
+      "300-900 calories",
+      "1000+ calories"
+    ],
+    "answer": 2,
+    "explanation": "The 'Did you know?' box states: 'A single Zumba session may burn between 300-900 calories depending on intensity, duration, and individual effort.'"
+  },
+  {
+    "question": "What makes Zumba accessible according to the Key Takeaways?",
+    "options": [
+      "It requires professional dance training",
+      "Its simple choreography makes it accessible to beginners and enjoyable for all",
+      "It is only for young people",
+      "It requires expensive equipment"
+    ],
+    "answer": 1,
+    "explanation": "The fourth key takeaway states: 'Its simple choreography makes it accessible to beginners and enjoyable for all.'"
+  }
+]

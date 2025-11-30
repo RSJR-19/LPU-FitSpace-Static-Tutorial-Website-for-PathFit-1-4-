@@ -1,0 +1,57 @@
+[
+  {
+    "question": "According to the lesson, which of the following is a direct mental benefit of overcoming challenges in unpredictable outdoor environments?",
+    "options": [
+      "Improved Cardiovascular Health",
+      "Lowering the risk of type 2 diabetes",
+      "Strengthening communication skills",
+      "Building confidence, problem-solving skills, and stress reduction"
+    ],
+    "answer": 3,
+    "explanation": "The lesson lists overcoming challenges in unpredictable environments as a benefit that builds confidence, problem-solving skills, and stress reduction, all of which fall under mental resilience."
+  },
+  {
+    "question": "Which of the following activities is classified under the Water-Based category of adventure activities?",
+    "options": [
+      "Rock climbing",
+      "Zip-lining",
+      "Mountain biking",
+      "White-water rafting"
+    ],
+    "answer": 3,
+    "explanation": "The lesson categorizes White-water rafting, along with kayaking, canoeing, and snorkeling, as a Water-Based activity. Rock climbing and mountain biking are Land-Based."
+  },
+  {
+    "question": "When applying the Adventure Triangle for risk management, assessing your own skills, fitness level, and emotional state primarily corresponds to which element?",
+    "options": [
+      "The Environment",
+      "The Activity",
+      "The Participant",
+      "Leave No Trace (LNT)"
+    ],
+    "answer": 2,
+    "explanation": "The Adventure Triangle involves balancing three elements. Assessing your own skills and fitness level directly relates to The Participant element."
+  },
+  {
+    "question": "To adhere to the LNT principle of Dispose of Waste Properly, what is the recommended depth for burying human waste?",
+    "options": [
+      "Bury it in a shallow hole, no more than 1 inch deep",
+      "Pack it out with all other trash",
+      "Bury it in a trash bin at the trail entrance",
+      "Bury human waste in catholes 6-8 inches deep"
+    ],
+    "answer": 3,
+    "explanation": "The LNT principle for Dispose of Waste Properly specifically mandates that human waste must be buried in catholes 6-8 inches deep."
+  },
+  {
+    "question": "The Ten Essentials are crucial for extended outdoor trips. According to the lesson, which essential item falls under the category of Navigation?",
+    "options": [
+      "First Aid (Basic Kit)",
+      "Sun Protection (Sunscreen, Hat, Sunglasses)",
+      "Emergency Blanket (Shelter)",
+      "Map, Compass, and GPS"
+    ],
+    "answer": 3,
+    "explanation": "The list of the Ten Essentials specifies that Map, Compass, [and] GPS are the gear items that fulfill the requirement for Navigation."
+  }
+]

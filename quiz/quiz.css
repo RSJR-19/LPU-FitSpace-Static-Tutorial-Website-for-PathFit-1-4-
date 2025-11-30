@@ -1,153 +1,143 @@
 /* GENERAL PAGE LAYOUT */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f9f9f9;
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* TITLE */
 h1 {
-    text-align: center;
-    color: #a10000; /* LPU red */
-    margin-bottom: 25px;
+  text-align: center;
+  color: #a10000;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
 }
 
-/* QUIZ LIST PAGE */
-.quiz-container {
-    width: 100%;
-    max-width: 700px;
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* PATHFIT GROUP STYLES (for quiz_list.html) */
+.pathfit-group {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* QUIZ ITEM */
+.pathfit-header {
+  background-color: #b11e23;
+  color: white;
+  padding: 15px 20px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quiz-list {
+  padding: 0;
+}
+
 .quiz-item {
-    padding: 18px;
-    margin: 14px 0;
-    border-radius: 10px;
-    cursor: pointer;
-    background: #ffffff;
-    border: 1px solid #e5e5e5;
-    transition: all 0.25s ease;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
 }
 
 .quiz-item:hover {
-    background: #fff4f4;
-    border-color: #c30000;
-    transform: translateY(-2px);
+  background-color: #f8f9fa;
 }
 
-.quiz-title {
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: #333;
+.quiz-item:last-child {
+  border-bottom: none;
 }
 
-.quiz-desc {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 6px;
-}
-
-/* QUESTION CARD */
-#quiz {
-    width: 100%;
-    max-width: 700px;
-    background: white;
-    border-radius: 14px;
-    padding: 25px;
-    margin-top: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* QUESTION TEXT */
+/* QUESTION CARD STYLES (for quiz.html) */
 #quiz h3 {
-    font-size: 1.2rem;
-    color: #222;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 20px;
 }
 
-/* OPTIONS */
 .option {
-    background: #fafafa;
-    padding: 14px;
-    border-radius: 10px;
-    border: 1px solid #e0e0e0;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: all 0.25s ease;
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
 .option:hover {
-    background: #fff4f4;
-    border-color: #d00000;
+  background: #fff4f4;
+  border-color: #d00000;
 }
 
 .correct {
-    background: #dff7e3 !important;
-    border-left: 5px solid #33a544;
+  background: #dff7e3 !important;
+  border-left: 5px solid #33a544;
 }
 
 .wrong {
-    background: #fde0e0 !important;
-    border-left: 5px solid #d60000;
+  background: #fde0e0 !important;
+  border-left: 5px solid #d60000;
 }
 
 /* BUTTONS */
 button {
-    background: #a10000;
-    color: white;
-    padding: 12px 26px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background 0.25s ease;
+  background: #a10000;
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 button:hover {
-    background: #870000;
+  background: #870000;
 }
 
 /* FINAL RESULT */
 .score-circle {
-    margin-top: 25px;
-    background: #fff4f4;
-    padding: 30px;
-    border-radius: 14px;
-    text-align: center;
-    border: 1px solid #ffcccc;
+  margin-top: 25px;
+  background: #fff4f4;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #ffcccc;
 }
 
 .percentage {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #a10000;
-    display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a10000;
+  display: block;
 }
 
 .grade {
-    color: #333;
-    margin-top: 8px;
-    font-weight: 600;
+  color: #333;
+  margin-top: 8px;
+  font-weight: 600;
 }
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
-    body {
-        padding: 20px 10px;
-    }
+  body {
+    padding: 20px 10px;
+  }
 
-    #quiz,
-    .quiz-container {
-        padding: 20px;
-    }
+  .container {
+    padding: 20px;
+  }
 }

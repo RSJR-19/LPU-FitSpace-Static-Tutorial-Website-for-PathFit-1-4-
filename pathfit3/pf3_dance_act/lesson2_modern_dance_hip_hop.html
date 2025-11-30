@@ -26,15 +26,18 @@
           <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
         </div>
       </div>
-      <div class="right-nav">
-        <a>Mission & Vision</a>
-        <a>Department Overview</a>
-        <a>About FitSpace</a>
-        <div class="input-container">
-          <input type="text" placeholder=" Search Lessons...">
-          <button>Search</button>
+          <div class="right-nav">
+        <a href="../home_page.html#mission">Mission & Vision</a>
+        <a href="../home_page.html#aboutUs">About FitSpace</a>
+
+        <div class="search-box">
+          <a onclick="displaySearch()" id="search">Search</a>
+          <input type="text" id="input-bar" placeholder="Lessons...">
         </div>
+        <div class="search-results" id="search-results"></div>
+
       </div>
+
       <div class="spacer"></div>
     </nav>
     <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
@@ -321,7 +324,9 @@
   </footer>
 
   <script src="/pathfit3/js/pathfit3.js"></script>
-  <script src="/assets/js/main.js"> </script>
+      <script src="../assets/js/main.js"> </script>
+  <script src="../assets/js/home_page.js"></script>
+  <script src="/assets/js/search.js"></script>
   <!-- END: Copied from template -->
 
 </body>

@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Who invented basketball and in what year?",
+    "options": [
+      "James Naismith in 1891",
+      "William Morgan in 1895",
+      "Michael Jordan in 1984",
+      "John Wooden in 1948"
+    ],
+    "answer": 0,
+    "explanation": "The lesson states: 'Basketball was invented in December 1891 by Dr. James Naismith in Springfield, Massachusetts.'"
+  },
+  {
+    "question": "What was used as the goal in the first basketball game?",
+    "options": [
+      "Metal hoops with nets",
+      "Wooden boxes",
+      "Peach baskets",
+      "Plastic buckets"
+    ],
+    "answer": 2,
+    "explanation": "The lesson mentions: 'The first game was played with a soccer ball and peach baskets as goals.'"
+  },
+  {
+    "question": "Which skill involves controlling and bouncing the ball while moving around the court?",
+    "options": [
+      "Shooting",
+      "Dribbling",
+      "Passing",
+      "Rebounding"
+    ],
+    "answer": 1,
+    "explanation": "The lesson defines dribbling as 'controlling and bouncing the ball while moving around the court.'"
+  },
+  {
+    "question": "How many points are awarded for a shot made beyond the three-point line?",
+    "options": [
+      "1 point",
+      "2 points",
+      "3 points",
+      "4 points"
+    ],
+    "answer": 2,
+    "explanation": "The rules section states: 'Teams score 2 points for regular field goals, 3 points for shots beyond the three-point line, and 1 point for free throws.'"
+  },
+  {
+    "question": "Which organization is the main international governing body for basketball?",
+    "options": [
+      "NBA (National Basketball Association)",
+      "FIBA (International Basketball Federation)",
+      "NCAA (National Collegiate Athletic Association)",
+      "PBA (Philippine Basketball Association)"
+    ],
+    "answer": 1,
+    "explanation": "The lesson states: 'The International Basketball Federation (FIBA) is recognized by the International Olympic Committee as the global governing body for basketball.'"
+  }
+]

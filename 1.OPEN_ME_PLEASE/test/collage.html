@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Collage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .collage-container {
+            width: 100%;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 1fr;
+            gap: 0;
+            padding: 0;
+            background: white;
+        }
+
+        .collage-item {
+            overflow: hidden;
+            position: relative;
+            cursor: move;
+            background: #f0f0f0;
+        }
+
+        .collage-item img {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            transition: transform 0.1s ease-out;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        /* Horizontal strip layout - equal width columns */
+        .item-1 { grid-column: 1 / 3; }
+        .item-2 { grid-column: 3 / 5; }
+        .item-3 { grid-column: 5 / 7; }
+        .item-4 { grid-column: 7 / 9; }
+        .item-5 { grid-column: 9 / 11; }
+
+        /* Position controls */
+        .controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 100;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .controls h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #c62828;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .control-group:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .slider-container span {
+            min-width: 80px;
+            color: #666;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: #ddd;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #c62828;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #c62828;
+            cursor: pointer;
+            border: none;
+        }
+
+        .value-display {
+            min-width: 40px;
+            text-align: right;
+            color: #c62828;
+            font-weight: bold;
+        }
+
+        button {
+            background: #c62828;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        button:hover {
+            background: #a02020;
+        }
+
+        .info {
+            margin-top: 10px;
+            padding: 8px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            font-size: 11px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <h3>🖼️ Image Position Controls</h3>
+        
+        <div class="control-group">
+            <label>Select Image:</label>
+            <select id="imageSelect">
+                <option value="0">Image 1 - Cardio</option>
+                <option value="1">Image 2 - Strength</option>
+                <option value="2">Image 3 - Flexibility</option>
+                <option value="3">Image 4 - Endurance</option>
+                <option value="4">Image 5 - Sports</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <div class="slider-container">
+                <span>Horizontal:</span>
+                <input type="range" id="xPos" min="-100" max="100" value="0">
+                <span class="value-display" id="xValue">0%</span>
+            </div>
+            <div class="slider-container">
+                <span>Vertical:</span>
+                <input type="range" id="yPos" min="-100" max="100" value="0">
+                <span class="value-display" id="yValue">0%</span>
+            </div>
+            <div class="slider-container">
+                <span>Zoom:</span>
+                <input type="range" id="zoom" min="50" max="200" value="100">
+                <span class="value-display" id="zoomValue">100%</span>
+            </div>
+        </div>
+
+        <button onclick="resetPosition()">Reset Position</button>
+        <button onclick="resetAll()">Reset All</button>
+        <button onclick="generateCode()">📋 Get Code</button>
+
+        <div class="info">
+            💡 Drag images or use sliders to reposition
+        </div>
+
+        <div id="codeOutput" style="display: none; margin-top: 15px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Copy this code:</label>
+            <textarea id="codeText" readonly style="width: 100%; height: 200px; font-family: monospace; font-size: 11px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
+            <button onclick="copyCode()" style="margin-top: 5px;">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <div class="collage-container">
+        <div class="collage-item item-1" data-index="0">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80" alt="Running" draggable="false">
+        </div>
+        <div class="collage-item item-2" data-index="1">
+            <img src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1200&q=80" alt="Weightlifting" draggable="false">
+        </div>
+        <div class="collage-item item-3" data-index="2">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80" alt="Yoga" draggable="false">
+        </div>
+        <div class="collage-item item-4" data-index="3">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200&q=80" alt="Cycling" draggable="false">
+        </div>
+        <div class="collage-item item-5" data-index="4">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&q=80" alt="Sports" draggable="false">
+        </div>
+    </div>
+
+    <script>
+        const positions = [
+            { x: 0, y: 0, zoom: 100 },
+            { x: 0, y: 0, zoom: 100 },
+            { x: 0, y: 0, zoom: 100 },
+            { x: 0, y: 0, zoom: 100 },
+            { x: 0, y: 0, zoom: 100 }
+        ];
+
+        let currentImageIndex = 0;
+        let isDragging = false;
+        let startX, startY;
+
+        const imageSelect = document.getElementById('imageSelect');
+        const xPosSlider = document.getElementById('xPos');
+        const yPosSlider = document.getElementById('yPos');
+        const zoomSlider = document.getElementById('zoom');
+        const xValue = document.getElementById('xValue');
+        const yValue = document.getElementById('yValue');
+        const zoomValue = document.getElementById('zoomValue');
+
+        function updateImage(index) {
+            const items = document.querySelectorAll('.collage-item');
+            const img = items[index].querySelector('img');
+            const pos = positions[index];
+            
+            img.style.transform = `translate(${pos.x}%, ${pos.y}%) scale(${pos.zoom / 100})`;
+        }
+
+        function updateSliders() {
+            const pos = positions[currentImageIndex];
+            xPosSlider.value = pos.x;
+            yPosSlider.value = pos.y;
+            zoomSlider.value = pos.zoom;
+            xValue.textContent = pos.x + '%';
+            yValue.textContent = pos.y + '%';
+            zoomValue.textContent = pos.zoom + '%';
+        }
+
+        imageSelect.addEventListener('change', (e) => {
+            currentImageIndex = parseInt(e.target.value);
+            updateSliders();
+        });
+
+        xPosSlider.addEventListener('input', (e) => {
+            positions[currentImageIndex].x = parseInt(e.target.value);
+            xValue.textContent = e.target.value + '%';
+            updateImage(currentImageIndex);
+        });
+
+        yPosSlider.addEventListener('input', (e) => {
+            positions[currentImageIndex].y = parseInt(e.target.value);
+            yValue.textContent = e.target.value + '%';
+            updateImage(currentImageIndex);
+        });
+
+        zoomSlider.addEventListener('input', (e) => {
+            positions[currentImageIndex].zoom = parseInt(e.target.value);
+            zoomValue.textContent = e.target.value + '%';
+            updateImage(currentImageIndex);
+        });
+
+        // Drag functionality
+        document.querySelectorAll('.collage-item').forEach((item, index) => {
+            item.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                currentImageIndex = index;
+                imageSelect.value = index;
+                startX = e.clientX;
+                startY = e.clientY;
+                updateSliders();
+            });
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const deltaX = (e.clientX - startX) / 2;
+            const deltaY = (e.clientY - startY) / 2;
+
+            positions[currentImageIndex].x = Math.max(-100, Math.min(100, positions[currentImageIndex].x + deltaX));
+            positions[currentImageIndex].y = Math.max(-100, Math.min(100, positions[currentImageIndex].y + deltaY));
+
+            updateImage(currentImageIndex);
+            updateSliders();
+
+            startX = e.clientX;
+            startY = e.clientY;
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        function resetPosition() {
+            positions[currentImageIndex] = { x: 0, y: 0, zoom: 100 };
+            updateImage(currentImageIndex);
+            updateSliders();
+        }
+
+        function resetAll() {
+            for (let i = 0; i < positions.length; i++) {
+                positions[i] = { x: 0, y: 0, zoom: 100 };
+                updateImage(i);
+            }
+            updateSliders();
+        }
+
+        function generateCode() {
+            const codeOutput = document.getElementById('codeOutput');
+            const codeText = document.getElementById('codeText');
+            
+            let code = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Collage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .collage-container {
+            width: 100%;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 1fr;
+            gap: 0;
+            padding: 0;
+            background: white;
+        }
+
+        .collage-item {
+            overflow: hidden;
+            position: relative;
+            background: #f0f0f0;
+        }
+
+        .collage-item img {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            user-select: none;
+        }
+
+        .item-1 { grid-column: 1 / 3; }
+        .item-2 { grid-column: 3 / 5; }
+        .item-3 { grid-column: 5 / 7; }
+        .item-4 { grid-column: 7 / 9; }
+        .item-5 { grid-column: 9 / 11; }
+`;
+
+            positions.forEach((pos, index) => {
+                code += `
+        .item-${index + 1} img {
+            transform: translate(${pos.x}%, ${pos.y}%) scale(${pos.zoom / 100});
+        }
+`;
+            });
+
+            code += `    </style>
+</head>
+<body>
+    <div class="collage-container">
+        <div class="collage-item item-1">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80" alt="Running">
+        </div>
+        <div class="collage-item item-2">
+            <img src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1200&q=80" alt="Weightlifting">
+        </div>
+        <div class="collage-item item-3">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80" alt="Yoga">
+        </div>
+        <div class="collage-item item-4">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200&q=80" alt="Cycling">
+        </div>
+        <div class="collage-item item-5">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&q=80" alt="Sports">
+        </div>
+    </div>
+</body>
+</html>`;
+
+            codeText.value = code;
+            codeOutput.style.display = 'block';
+        }
+
+        function copyCode() {
+            const codeText = document.getElementById('codeText');
+            codeText.select();
+            document.execCommand('copy');
+            alert('Code copied to clipboard!');
+        }
+
+        // Initialize all images
+        positions.forEach((_, index) => updateImage(index));
+    </script>
+</body>
+</html>

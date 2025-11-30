@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Select a Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSpace - Quiz Selection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="quiz.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1>FITSPACE QUIZ LIST</h1>
 
-    <h1>Available Quizzes</h1>
+        <div id="quiz">
+            <!-- PathFit 1 -->
+            <div class="pathfit-group">
+                <div class="pathfit-header">
+                    PathFit 1: Movement Competency Training
+                </div>
+                <div class="quiz-list">
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson1_introduction_to_physical_education.json')">
+                        Introduction to Physical Education
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson3_introduction_to_movement_enhancement.json')">
+                        Introduction to Movement Enhancement
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson4_fms_lecture.json')">
+                        Functional Movement Screen
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson6_eating_habits.json')">
+                        Eating Habits
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson7_locomotor_and_non_locomotor.json')">
+                        Locomotor and Non-Locomotor Skills
+                    </div>
+                </div>
+            </div>
 
-    <div class="quiz-container">
+            <!-- PathFit 2 -->
+            <div class="pathfit-group">
+                <div class="pathfit-header">
+                    PathFit 2: Exercise-Based Fitness Activities
+                </div>
+                <div class="quiz-list">
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson1_definition_of_physical_fitness.json')">
+                        Definition of Physical Fitness
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson2_definition_of_physical_activity.json')">
+                        Definition of Physical Activity
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson3_definition_of_fitness.json')">
+                        Definition of Fitness
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson4_fundamentals_of_fitness.json')">
+                        Fundamentals of Fitness
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson5_definition_of_exercise.json')">
+                        Definition of Exercise
+                    </div>
+                </div>
+            </div>
 
-        <!-- PathFit 1 -->
-        <div class="quiz-item" onclick="openQuiz('../pathfit1/pathfit1-data.json')">
-            <div class="quiz-title">PathFit 1: Movement Competency</div>
-            <div class="quiz-desc">Covers Introduction to PE, PAR-Q, BMI, Movement Skills</div>
-        </div>
-
-        <!-- PathFit 2 -->
-        <div class="quiz-item" onclick="openQuiz('../pathfit2/pathfit2-data.json')">
-            <div class="quiz-title">PathFit 2: Exercise-Based Fitness Training</div>
-            <div class="quiz-desc">Principles of Training, FITT, Exercise Types</div>
-        </div>
-
-        <!-- PathFit 3 -->
-        <div class="quiz-item" onclick="openQuiz('../pathfit3/pathfit3-data.json')">
-            <div class="quiz-title">PathFit 3 & 4: Individual & Dual Activities</div>
-            <div class="quiz-desc">Dance, Aerobic Exercise, Cardio, Sports Skills</div>
+            <!-- PathFit 3 -->
+            <div class="pathfit-group">
+                <div class="pathfit-header">
+                    PathFit 3 & 4: Dance, Sports, and Group Fitness
+                </div>
+                <div class="quiz-list">
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/data/lesson1_introduction_to_applied_physical_activities.json')">
+                        Introduction to Applied Physical Activities
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_dance_act/data/lesson1_folk_dance.json')">
+                        Folk Dance
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_dance_act/data/lesson2_modern_dance_hip_hop.json')">
+                        Modern Dance / Hip-Hop
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_dance_act/data/lesson3_zumba_dance.json')">
+                        Zumba Dance
+                    </div>
+                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_sports_act/data/lesson4_basketball.json')">
+                        Basketball
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        function openQuiz(file) {
-            window.location.href = `quiz.html?quiz=${file}`;
+        function takeQuiz(quizFile) {
+            window.location.href = `quiz.html?quiz=${quizFile}`;
         }
     </script>
-
 </body>
-
 </html>
