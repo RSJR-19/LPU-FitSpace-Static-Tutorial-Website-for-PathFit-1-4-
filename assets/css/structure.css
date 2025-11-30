@@ -173,6 +173,7 @@ main {
   background-attachment: fixed;
   background-position: center;
   display: flex;
+  flex: 1; /* allow main to expand and push footer down */
 }
 
 #home,
@@ -205,7 +206,7 @@ main {
 }
 
 #pathfit3 {
-  height: 220dvh;
+  min-height: 220dvh;
   max-height: 300dvh;
   flex-shrink: 0;
 }
