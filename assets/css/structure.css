@@ -635,12 +635,63 @@ main {
 }
 
 .graphic-box {
-  width: 100%;
+  width: 95%;
+  margin-left:2.5%;
   height: 350px;
   background-color: white;
   border-radius: 10px;
-  border: 2px black solid;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.pic-item{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: flex 0.3s ease;
+
+}
+
+.pic-item img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: flex 0.3s ease;
+  filter: brightness(70%) saturate(90%);
+}
+.pic-item h1{
+  position: absolute;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  
+}
+
+.pic-item:hover h1{
+  opacity: 0;
+
+
+}
+
+
+.pic-item:hover{
+  flex: 4;
+}
+
+
+
+
+
+
 
 #pathfit2 .graphic-box {
   height: 350px;
