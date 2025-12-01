@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitSpace - Quiz</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="quiz.css">
 </head>
+
 <body>
     <div class="container">
         <h1 id="title">Loading Quiz...</h1>
-        <div id="quiz"></div>
-        <div id="error" style="color:red; margin-top:20px;"></div>
-    </div>
 
+        <!-- COMBINED QUESTION + EXPLANATION SECTION -->
+        <section id="quiz-section">
+            <h3 id="question-text"></h3>
+            <div id="options"></div>
+            <div id="explanation-container" class="explanation-box">
+                <p id="result-message" class="result-message"></p>
+                <p id="explanation" class="explanation-text"></p>
+                <button id="next-btn" class="btn btn-next">Next Question</button>
+            </div>
+        </section>
+
+        <!-- FINAL RESULT SECTION -->
+        <section id="result-section" class="result-section">
+            <h2>Quiz Complete!</h2>
+            <h3>Your Score:</h3>
+            <div class="score-circle">
+                <span class="percentage" id="final-percent"></span>
+                <span class="grade" id="final-grade"></span>
+            </div>
+            <div class="button-group">
+                <button onclick="location.reload()" class="btn btn-retry">Try Again</button>
+                <button id="next-quiz-btn" onclick="goToNextQuiz()" class="btn btn-next-quiz">Next Quiz</button>
+                <button onclick="window.location.href='quiz_list.html'" class="btn btn-back">Back to Quiz List</button>
+            </div>
+        </section>
+
+        <div id="error" class="error-message"></div>
+    </div>
     <script src="quiz.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,11 +40,25 @@
         }
 
         /* Horizontal strip layout - equal width columns */
-        .item-1 { grid-column: 1 / 3; }
-        .item-2 { grid-column: 3 / 5; }
-        .item-3 { grid-column: 5 / 7; }
-        .item-4 { grid-column: 7 / 9; }
-        .item-5 { grid-column: 9 / 11; }
+        .item-1 {
+            grid-column: 1 / 3;
+        }
+
+        .item-2 {
+            grid-column: 3 / 5;
+        }
+
+        .item-3 {
+            grid-column: 5 / 7;
+        }
+
+        .item-4 {
+            grid-column: 7 / 9;
+        }
+
+        .item-5 {
+            grid-column: 9 / 11;
+        }
 
         /* Position controls */
         .controls {
@@ -53,16 +68,39 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             z-index: 100;
             font-family: Arial, sans-serif;
             font-size: 13px;
+            max-width: 350px;
+        }
+
+        .controls-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: move;
+            padding: 5px;
+            margin: -5px -5px 10px -5px;
+            border-radius: 4px;
+            user-select: none;
+        }
+
+        .controls-header:hover {
+            background: rgba(198, 40, 40, 0.1);
         }
 
         .controls h3 {
-            margin: 0 0 10px 0;
+            margin: 0;
             font-size: 14px;
             color: #c62828;
+        }
+
+        .drag-handle {
+            color: #999;
+            font-size: 18px;
+            cursor: move;
         }
 
         .control-group {
@@ -153,10 +191,14 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="controls">
-        <h3>🖼️ Image Position Controls</h3>
-        
+    <div class="controls" id="controls">
+        <div class="controls-header" id="controlsHeader">
+            <h3>🖼️ Image Position Controls</h3>
+            <span class="drag-handle">⋮⋮</span>
+        </div>
+
         <div class="control-group">
             <label>Select Image:</label>
             <select id="imageSelect">
@@ -196,26 +238,32 @@
 
         <div id="codeOutput" style="display: none; margin-top: 15px;">
             <label style="display: block; margin-bottom: 5px; font-weight: bold;">Copy this code:</label>
-            <textarea id="codeText" readonly style="width: 100%; height: 200px; font-family: monospace; font-size: 11px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
+            <textarea id="codeText" readonly
+                style="width: 100%; height: 200px; font-family: monospace; font-size: 11px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
             <button onclick="copyCode()" style="margin-top: 5px;">Copy to Clipboard</button>
         </div>
     </div>
 
     <div class="collage-container">
         <div class="collage-item item-1" data-index="0">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80" alt="Running" draggable="false">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80" alt="Running"
+                draggable="false">
         </div>
         <div class="collage-item item-2" data-index="1">
-            <img src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1200&q=80" alt="Weightlifting" draggable="false">
+            <img src="https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=1200&q=80" alt="Weightlifting"
+                draggable="false">
         </div>
         <div class="collage-item item-3" data-index="2">
-            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80" alt="Yoga" draggable="false">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80" alt="Yoga"
+                draggable="false">
         </div>
         <div class="collage-item item-4" data-index="3">
-            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200&q=80" alt="Cycling" draggable="false">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200&q=80" alt="Cycling"
+                draggable="false">
         </div>
         <div class="collage-item item-5" data-index="4">
-            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&q=80" alt="Sports" draggable="false">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&q=80" alt="Sports"
+                draggable="false">
         </div>
     </div>
 
@@ -230,7 +278,9 @@
 
         let currentImageIndex = 0;
         let isDragging = false;
+        let isDraggingControls = false;
         let startX, startY;
+        let controlsOffsetX = 0, controlsOffsetY = 0;
 
         const imageSelect = document.getElementById('imageSelect');
         const xPosSlider = document.getElementById('xPos');
@@ -239,12 +289,14 @@
         const xValue = document.getElementById('xValue');
         const yValue = document.getElementById('yValue');
         const zoomValue = document.getElementById('zoomValue');
+        const controls = document.getElementById('controls');
+        const controlsHeader = document.getElementById('controlsHeader');
 
         function updateImage(index) {
             const items = document.querySelectorAll('.collage-item');
             const img = items[index].querySelector('img');
             const pos = positions[index];
-            
+
             img.style.transform = `translate(${pos.x}%, ${pos.y}%) scale(${pos.zoom / 100})`;
         }
 
@@ -281,9 +333,10 @@
             updateImage(currentImageIndex);
         });
 
-        // Drag functionality
+        // Drag functionality for images
         document.querySelectorAll('.collage-item').forEach((item, index) => {
             item.addEventListener('mousedown', (e) => {
+                if (isDraggingControls) return;
                 isDragging = true;
                 currentImageIndex = index;
                 imageSelect.value = index;
@@ -293,7 +346,23 @@
             });
         });
 
+        // Drag functionality for controls panel
+        controlsHeader.addEventListener('mousedown', (e) => {
+            isDraggingControls = true;
+            const rect = controls.getBoundingClientRect();
+            controlsOffsetX = e.clientX - rect.left;
+            controlsOffsetY = e.clientY - rect.top;
+        });
+
         document.addEventListener('mousemove', (e) => {
+            if (isDraggingControls) {
+                const x = e.clientX - controlsOffsetX;
+                const y = e.clientY - controlsOffsetY;
+                controls.style.left = x + 'px';
+                controls.style.top = y + 'px';
+                return;
+            }
+
             if (!isDragging) return;
 
             const deltaX = (e.clientX - startX) / 2;
@@ -311,6 +380,7 @@
 
         document.addEventListener('mouseup', () => {
             isDragging = false;
+            isDraggingControls = false;
         });
 
         function resetPosition() {
@@ -330,7 +400,7 @@
         function generateCode() {
             const codeOutput = document.getElementById('codeOutput');
             const codeText = document.getElementById('codeText');
-            
+
             let code = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -421,4 +491,5 @@
         positions.forEach((_, index) => updateImage(index));
     </script>
 </body>
+
 </html>

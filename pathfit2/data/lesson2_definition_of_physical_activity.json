@@ -1,57 +1,55 @@
 [
   {
-    "question": "What is the primary cultural purpose of folk dance as described in the lesson?",
+    "question": "Physical activity is best defined as:",
     "options": [
-      "Professional entertainment and monetary gain",
-      "Physical fitness and weight loss",
-      "Cultural expression, preservation, and storytelling",
-      "Competition and winning awards"
+      "Any bodily movement produced by skeletal muscles that requires energy expenditure",
+      "Only competitive sports",
+      "Planned exercise programs only",
+      "Activities that make you sweat"
     ],
-    "answer": 2,
-    "explanation": "The lesson states that folk dance 'reflects the traditions, values, and history of a community' and is 'performed for celebration, storytelling, and cultural preservation.'"
+    "answer": 0,
+    "explanation": "Physical activity encompasses any movement produced by skeletal muscles that expends energy, including work, recreation, and structured exercise."
   },
   {
-    "question": "Researchers commonly classify folk dances into which two categories?",
+    "question": "Which of the following is an example of physical activity?",
     "options": [
-      "Traditional and Modern Dances",
-      "Ethnic Dances and Regional or Local Dances",
-      "Solo and Group Dances",
-      "Religious and Secular Dances"
+      "Walking to the store",
+      "Sitting and reading",
+      "Sleeping",
+      "Watching television"
+    ],
+    "answer": 0,
+    "explanation": "Walking to the store involves bodily movement and energy expenditure, making it physical activity. The other options are sedentary behaviors."
+  },
+  {
+    "question": "True or False: All physical activity is considered exercise.",
+    "options": [
+      "True",
+      "False"
     ],
     "answer": 1,
-    "explanation": "The lesson explicitly states: 'Researchers commonly classify folk dances into two categories: Ethnic Dances and Regional or Local Dances.'"
+    "explanation": "Physical activity is broader than exercise. While all exercise is physical activity, not all physical activity is exercise. Exercise is structured, planned, and goal-oriented physical activity."
   },
   {
-    "question": "Which of the following is NOT listed as a basic element of folk dance?",
+    "question": "How much physical activity do health guidelines recommend for adults per week?",
     "options": [
-      "Movement",
-      "Music",
-      "Competition Scoring",
-      "Costume"
+      "150 minutes of moderate-intensity or 75 minutes of vigorous-intensity aerobic activity",
+      "30 minutes per day",
+      "1 hour per day",
+      "As much as possible without rest"
     ],
-    "answer": 2,
-    "explanation": "The basic elements listed are: Movement, Music, Costume, Props, and Formation. Competition scoring is not mentioned as a basic element."
+    "answer": 0,
+    "explanation": "Most health organizations recommend at least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity aerobic activity per week for adults."
   },
   {
-    "question": "Which physical benefit is specifically mentioned as being improved through folk dancing?",
+    "question": "Physical activity contributes to which aspects of health?",
     "options": [
-      "Maximum muscle strength",
-      "Coordination, balance, and rhythm",
-      "Sprint speed",
-      "Weightlifting capacity"
+      "Physical, mental, and social well-being",
+      "Only physical health",
+      "Only mental health",
+      "No health benefits"
     ],
-    "answer": 1,
-    "explanation": "The lesson states that folk dancing 'Improves coordination, balance, and rhythm' as one of its benefits."
-  },
-  {
-    "question": "According to the Key Takeaways, how does folk dance support the PathFit program?",
-    "options": [
-      "It replaces all other physical activities",
-      "It focuses only on competitive dance",
-      "It supports both cultural and physical development",
-      "It is optional and not integrated into the curriculum"
-    ],
-    "answer": 2,
-    "explanation": "The fifth key takeaway states: 'Folk dance is an important component of the PathFit program, supporting both cultural and physical development.'"
+    "answer": 0,
+    "explanation": "Physical activity improves physical health (strength, endurance), mental health (mood, stress relief), and social health (community connection, relationships)."
   }
 ]

@@ -1,0 +1,55 @@
+[
+  {
+    "question": "Which fundamental principle requires gradually increasing training load to continue improving fitness?",
+    "options": [
+      "Progression",
+      "Regression",
+      "Reversibility",
+      "Randomization"
+    ],
+    "answer": 0,
+    "explanation": "The principle of progression requires gradually increasing exercise load (intensity, duration, frequency) to maintain fitness improvements and prevent plateaus."
+  },
+  {
+    "question": "What does the principle of specificity in training mean?",
+    "options": [
+      "Training must specifically target the fitness components you want to improve",
+      "You should do the same workout every day",
+      "Training should only be done in specific locations",
+      "You need specific equipment to train"
+    ],
+    "answer": 0,
+    "explanation": "Specificity means that training adaptations are specific to the type of training performed. If you want to improve cardiovascular endurance, you must do aerobic training."
+  },
+  {
+    "question": "Which principle states that fitness improvements stop if training stimulus is removed?",
+    "options": [
+      "Progression",
+      "Overload",
+      "Reversibility",
+      "Adaptation"
+    ],
+    "answer": 2,
+    "explanation": "Reversibility means that physical fitness improvements are reversible. If you stop training, you will lose fitness gains over time."
+  },
+  {
+    "question": "The principle of overload requires that you:",
+    "options": [
+      "Increase training demands beyond the normal level",
+      "Do the minimum amount of exercise",
+      "Avoid challenging yourself",
+      "Never change your routine"
+    ],
+    "answer": 0,
+    "explanation": "Overload means systematically increasing training demands (by increasing intensity, duration, or frequency) to continuously challenge the body and promote adaptation."
+  },
+  {
+    "question": "True or False: Individual differences mean that all people respond to training in the same way.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Individual differences mean that people respond differently to the same training stimulus due to genetics, age, fitness level, and other factors. Programs should be individualized."
+  }
+]

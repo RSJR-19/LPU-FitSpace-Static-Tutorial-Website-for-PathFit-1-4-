@@ -1,0 +1,55 @@
+[
+  {
+    "question": "Which test is commonly used to assess cardiovascular endurance?",
+    "options": [
+      "1.5-mile run or progressive beep test",
+      "Sit-and-reach test",
+      "Handgrip strength test",
+      "Flexibility test"
+    ],
+    "answer": 0,
+    "explanation": "The 1.5-mile run or beep test measure how long the heart and lungs can sustain aerobic effort, assessing cardiovascular endurance."
+  },
+  {
+    "question": "What does the sit-and-reach test measure?",
+    "options": [
+      "Lower body flexibility",
+      "Leg strength",
+      "Cardiovascular endurance",
+      "Muscle power"
+    ],
+    "answer": 0,
+    "explanation": "The sit-and-reach test measures flexibility of the hamstrings and lower back by measuring how far you can reach forward from a seated position."
+  },
+  {
+    "question": "Which test measures muscular strength?",
+    "options": [
+      "Handgrip strength test or 1-rep max lift",
+      "Push-up test",
+      "Sit-ups",
+      "Running test"
+    ],
+    "answer": 0,
+    "explanation": "Handgrip strength and one-repetition maximum lifts directly measure the maximum force muscles can produce."
+  },
+  {
+    "question": "True or False: Body mass index (BMI) is a direct measure of body fat percentage.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "BMI estimates body composition but doesn't directly measure fat. It can be inaccurate for athletes with high muscle mass or the elderly."
+  },
+  {
+    "question": "Why is baseline fitness testing important?",
+    "options": [
+      "To establish starting point and track progress toward fitness goals",
+      "To prove you're unfit",
+      "To compare yourself to others",
+      "To determine your maximum limits"
+    ],
+    "answer": 0,
+    "explanation": "Baseline testing provides data to compare against future tests, helping you track progress and adjust your training program as needed."
+  }
+]

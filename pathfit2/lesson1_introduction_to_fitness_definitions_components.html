@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Introduction to Fitness: Definitions and Components - FitSpace</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="css/pathfit2.css">
+    <link rel="stylesheet" href="../assets/css/search.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+</head>
+
+<body>
+    <header>
+        <div style="height: 1dvh;background-color: white;"></div>
+        <nav>
+            <div class="spacer"></div>
+            <div class="left-nav">
+                <div class="lpu-logo">
+                    <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+                </div>
+                <div class="fitspace-text">
+                    <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+                </div>
+            </div>
+            <div class="right-nav">
+                <a href="../home_page.html#mission">Mission & Vision</a>
+                <a href="../home_page.html#aboutUs">About FitSpace</a>
+                <div class="search-box">
+                    <a onclick="displaySearch()" id="search">Search</a>
+                    <input type="text" id="input-bar" placeholder="Lessons...">
+                </div>
+                <div class="search-results" id="search-results"></div>
+            </div>
+            </div>
+            <div class="spacer"></div>
+        </nav>
+        <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+    </header>
+    <main>
+        <section class="sidebar">
+            <div class="spacer"></div>
+            <section class="sidebar-main">
+                <h1>COURSES:</h1>
+                <div class="lesson-tab-container">
+                    <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+                        <b>PATHFIT 1</b>
+                        <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+                    </div>
+                    <div id="dropdown1" class="dropdown">
+                        <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical
+                            Education</a>
+                        <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+                        <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+                            Enhancement</a>
+                        <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+                        <a href="../pathfit1/lesson5_Functional_Movement_Screen.html">Functional Movement Screen</a>
+                        <a href="../pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
+                        <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+                        <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+                    </div>
+
+                    <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+                        <b>PATHFIT 2</b>
+                        <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+                    </div>
+                    <div id="dropdown2" class="dropdown">
+                        <a href="../pathfit2/lesson1_introduction_to_fitness_definitions_components.html" class="active">Introduction to Fitness: Definitions & Components</a>
+                        <a href="../pathfit2/lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT Principle</a>
+                        <a href="../pathfit2/lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
+                        <a href="../pathfit2/lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
+                        <a href="../pathfit2/lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
+                        <a href="../pathfit2/lesson6_weight_management.html">Weight Management</a>
+                        <a href="../pathfit2/lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness Program</a>
+                        <a href="../pathfit2/pathfit2_quiz_list.html">Quiz</a>
+                    </div>
+
+                    <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+                        <b>PATHFIT 3 & 4</b>
+                        <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+                    </div>
+                    <div id="dropdown3" class="dropdown">
+                        <a href="../lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+                            Physical Activities</a>
+                        <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+                            <b>Dance Activities</b>
+                            <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownDance" class="dropdown2">
+                            <a href="lesson1_folk_dance.html" class="active">Folk Dance</a>
+                            <a href="lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+                            <a href="lesson3_zumba_dance.html">Zumba Dance</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+                            <b>Sports Activities</b>
+                            <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownSports" class="dropdown2">
+                            <a href="../pf3_sports_act/lesson4_basketball.html">Basketball</a>
+                            <a href="../pf3_sports_act/lesson5_volleyball.html">Basketball</a>
+                            <a href="../pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
+                            <a href="../pf3_sports_act/lesson7_badminton.html">Badminton</a>
+                            <a href="../pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
+                            <a href="../pf3_sports_act/lesson9_swimming.html">Swimming</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+                            <b>Martial Arts</b>
+                            <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownMartial" class="dropdown2">
+                            <a href="../lesson10_arnis.html">Arnis</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+                            <b>Group Exercises</b>
+                            <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownGroup" class="dropdown2">
+                            <a href="../pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+                            <a href="../pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                                Training</a>
+                            <a href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and
+                                Adventure</a>
+                            <a href="../pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+                        </div>
+                        <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+                            <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+                            <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+                        </div>
+                        <div id="dropdownCamping" class="dropdown2">
+                            <a href="../lesson15_team_building_and_recreational_games.html">Team-Building and
+                                Recreational
+                                Games</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="spacer"></div>
+        </section>
+
+        <section class="main-content-container">
+            <div class="main-content">
+                <a href="/home_page.html#pathfit2" class="back-link">Back to PathFit 2 Index</a>
+                <h1>Introduction to Fitness: Definitions and Components</h1>
+                <div style="height: 60%;" class="image-placeholder">
+                    <img src="../assets/images/pathfit2/healthy_exercise.png"
+                        alt="Foundations of Fitness: Definitions and Components">
+                </div>
+
+                <!-- Jump to Section Menu
+                <div class="section-nav">
+                    <a href="#overview">Lesson Overview</a>
+                    <a href="#why-matters">Why This Matters</a>
+                    <a href="#fitness">Physical Fitness</a>
+                    <a href="#activity">Physical Activity</a>
+                    <a href="#exercise">Exercise</a>
+                    <a href="#components">Components of Fitness</a>
+                </div> -->
+
+                <!-- Lesson Overview -->
+                <section class="content-section" id="overview">
+                    <h2>Lesson Overview</h2>
+                    <p>
+                        This lesson introduces the <strong>core concepts</strong> that form the foundation of fitness,
+                        physical activity, and exercise.
+                        You'll learn how these ideas connect to your daily life, your health, and your ability to
+                        perform physical activities—whether for
+                        recreation, sports, or general well-being. By the end, you'll be able to:
+                    </p>
+                    <ul>
+                        <li>Define <strong>physical fitness</strong>, <strong>physical activity</strong>, and
+                            <strong>exercise</strong>—and explain how they differ.
+                        </li>
+                        <li>Identify the <strong>health-related</strong> and <strong>skill-related</strong> components
+                            of fitness.</li>
+                        <li>Apply these concepts to your own fitness goals and routines.</li>
+                    </ul>
+                </section>
+
+                <!-- Why This Matters -->
+                <section class="content-section" id="why-matters">
+                    <h2>Why This Matters</h2>
+                    <p>
+                        Understanding these foundational concepts isn't just academic—it's practical. Here's how it
+                        applies to you:
+                    </p>
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h4>For Everyday Life</h4>
+                            <ul>
+                                <li>Helps you make informed choices about how to stay active, even with a busy schedule.
+                                </li>
+                                <li>Shows you how small changes (like taking the stairs or walking more) add up to big
+                                    health benefits.</li>
+                            </ul>
+                        </div>
+                        <div class="component-box">
+                            <h4>For Fitness Goals</h4>
+                            <ul>
+                                <li>Guides you in setting realistic, science-backed goals (e.g., improving
+                                    cardiovascular endurance or muscular strength).</li>
+                                <li>Helps you design workouts that target the components <strong>you</strong> care about
+                                    most.</li>
+                            </ul>
+                        </div>
+                        <div class="component-box">
+                            <h4>For Long-Term Health</h4>
+                            <ul>
+                                <li>Reduces your risk of chronic diseases like heart disease, diabetes, and obesity.
+                                </li>
+                                <li>Improves mental health by reducing stress, anxiety, and depression.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Definition of Physical Fitness -->
+                <section class="content-section" id="fitness">
+                    <h2>What Is Physical Fitness?</h2>
+                    <p>
+                        <strong>Physical fitness</strong> is your body's ability to function efficiently and effectively
+                        in work, leisure, and emergency situations.
+                        It reflects how well your heart, lungs, muscles, and other systems work together to give you
+                        energy and stamina.
+                    </p>
+                    <p>
+                        Think of it as a <strong>measure of your body's readiness</strong> to handle physical
+                        challenges—whether that's climbing stairs,
+                        playing sports, or carrying groceries. Fitness isn't just for athletes; it's essential for
+                        <strong>everyone</strong> to maintain
+                        health and quality of life.
+                    </p>
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h4>Two Key Categories</h4>
+                            <ul>
+                                <li><strong>Health-Related Components</strong>: Directly impact your well-being and
+                                    disease prevention.</li>
+                                <li><strong>Skill-Related Components</strong>: Enhance your ability to perform physical
+                                    activities (e.g., sports, dance).</li>
+                            </ul>
+                        </div>
+                        <div class="component-box">
+                            <h4>PathFit Connection</h4>
+                            <p>
+                                In the PathFit program, we focus on <strong>both</strong> categories to help you build
+                                lifelong movement skills and
+                                maintain an active, healthy lifestyle.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Definition of Physical Activity -->
+                <section class="content-section" id="activity">
+                    <h2>What Is Physical Activity?</h2>
+                    <p>
+                        <strong>Physical activity</strong> is any movement your body makes that uses energy. This
+                        includes everything from
+                        structured exercise to everyday tasks like walking, cleaning, or gardening.
+                    </p>
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h4>Types of Physical Activity</h4>
+                            <ul>
+                                <li><strong>Daily Activities</strong>: Walking, chores, taking the stairs.</li>
+                                <li><strong>Occupational Activities</strong>: Jobs that involve physical labor or
+                                    standing.</li>
+                                <li><strong>Recreational Activities</strong>: Sports, dancing, hiking, or playing with
+                                    kids.</li>
+                                <li><strong>Structured Exercise</strong>: Gym workouts, fitness classes, or training
+                                    programs.</li>
+                            </ul>
+                        </div>
+                        <div class="component-box">
+                            <h4>Intensity Levels</h4>
+                            <ul>
+                                <li><strong>Light</strong>: Casual walking, stretching, or slow-paced activities.</li>
+                                <li><strong>Moderate</strong>: Brisk walking, cycling, or activities that raise your
+                                    heart rate.</li>
+                                <li><strong>Vigorous</strong>: Running, swimming laps, or high-intensity sports.</li>
+                                <li><strong>High-Intensity</strong>: Sprinting, HIIT, or power training (short bursts of
+                                    maximum effort).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        <strong>Key Idea</strong>: All physical activity counts! Even small amounts add up to health
+                        benefits.
+                    </p>
+                </section>
+
+                <!-- Definition of Exercise -->
+                <section class="content-section" id="exercise">
+                    <h2>What Is Exercise?</h2>
+                    <p>
+                        <strong>Exercise</strong> is a <strong>planned, structured, and repetitive</strong> form of
+                        physical activity with a specific goal:
+                        to improve or maintain one or more components of physical fitness.
+                    </p>
+                    <p>
+                        Unlike general physical activity, exercise is <strong>purposeful</strong>. It follows principles
+                        like progression,
+                        specificity, and overload to help you achieve measurable results.
+                    </p>
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h4>Characteristics of Exercise</h4>
+                            <ul>
+                                <li><strong>Planned</strong>: Designed in advance (e.g., a workout routine).</li>
+                                <li><strong>Structured</strong>: Follows a clear format (e.g., sets, reps, or time
+                                    intervals).</li>
+                                <li><strong>Goal-Oriented</strong>: Aims to achieve specific outcomes (e.g., strength,
+                                    endurance, flexibility).</li>
+                                <li><strong>Progressive</strong>: Gradually increases in challenge over time.</li>
+                                <li><strong>Measurable</strong>: Results can be tracked (e.g., weights lifted, time run,
+                                    flexibility gains).</li>
+                            </ul>
+                        </div>
+                        <div class="component-box">
+                            <h4>Common Categories</h4>
+                            <ul>
+                                <li><strong>Aerobic Exercise</strong>: Improves cardiovascular endurance (e.g., running,
+                                    cycling).</li>
+                                <li><strong>Strength Training</strong>: Builds muscular strength and endurance (e.g.,
+                                    weightlifting).</li>
+                                <li><strong>Flexibility Work</strong>: Enhances range of motion (e.g., stretching,
+                                    yoga).</li>
+                                <li><strong>Balance Training</strong>: Improves stability (e.g., tai chi, single-leg
+                                    stands).</li>
+                                <li><strong>Sports-Specific Training</strong>: Targets skills for a particular sport
+                                    (e.g., agility drills for basketball).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Components of Physical Fitness -->
+                <section class="content-section" id="components">
+                    <h2>Components of Physical Fitness</h2>
+                    <p>
+                        Physical fitness is made up of <strong>11 key components</strong>, divided into health-related
+                        and skill-related categories.
+                        Together, they create a complete picture of your overall fitness.
+                    </p>
+
+                    <div class="components-grid">
+                        <div class="component-box">
+                            <h3>Health-Related Components</h3>
+                            <p>
+                                These directly impact your health and reduce the risk of chronic diseases. They're
+                                essential for everyone,
+                                regardless of athletic ability.
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Cardiovascular Endurance</strong>: Your heart and lungs' ability to supply
+                                    oxygen during sustained activity.
+                                    <small>Example: Running a 5K without stopping.</small>
+                                </li>
+                                <li>
+                                    <strong>Muscular Strength</strong>: The maximum force your muscles can generate.
+                                    <small>Example: Lifting a heavy weight once.</small>
+                                </li>
+                                <li>
+                                    <strong>Muscular Endurance</strong>: Your muscles' ability to perform repeated
+                                    contractions.
+                                    <small>Example: Doing 20 push-ups in a row.</small>
+                                </li>
+                                <li>
+                                    <strong>Flexibility</strong>: The range of motion in your joints.
+                                    <small>Example: Touching your toes or doing a split.</small>
+                                </li>
+                                <li>
+                                    <strong>Body Composition</strong>: The ratio of fat to lean mass in your body.
+                                    <small>Example: Maintaining a healthy weight for your height.</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="component-box">
+                            <h3>Skill-Related Components</h3>
+                            <p>
+                                These enhance your ability to perform in sports and physical activities. While not
+                                directly tied to health,
+                                they improve athletic performance and movement quality.
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Agility</strong>: Quickly changing direction with control.
+                                    <small>Example: Dodging an opponent in basketball.</small>
+                                </li>
+                                <li>
+                                    <strong>Balance</strong>: Maintaining equilibrium, whether stationary or moving.
+                                    <small>Example: Standing on one leg or walking on a beam.</small>
+                                </li>
+                                <li>
+                                    <strong>Coordination</strong>: Using different body parts together smoothly.
+                                    <small>Example: Dribbling a basketball while running.</small>
+                                </li>
+                                <li>
+                                    <strong>Power</strong>: Combining strength and speed for explosive movements.
+                                    <small>Example: Jumping high or throwing a ball far.</small>
+                                </li>
+                                <li>
+                                    <strong>Reaction Time</strong>: How quickly you respond to a stimulus.
+                                    <small>Example: Reacting to a starting gun in a race.</small>
+                                </li>
+                                <li>
+                                    <strong>Speed</strong>: Moving your body or limbs rapidly.
+                                    <small>Example: Sprinting 100 meters.</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Key Takeaways -->
+                <section class="key-takeaways">
+                    <h2>Key Takeaways</h2>
+                    <div class="takeaways-box">
+                        <ol>
+                            <li>
+                                <strong>Physical fitness</strong> is your body's readiness to handle daily tasks and
+                                challenges.
+                                <strong>Physical activity</strong> is any movement that uses energy, while
+                                <strong>exercise</strong> is structured activity designed to improve fitness.
+                            </li>
+                            <li>
+                                Fitness includes <strong>11 components</strong>: 5 health-related (for well-being) and 6
+                                skill-related (for performance).
+                            </li>
+                            <li>
+                                All physical activity counts—even small amounts add up to health benefits.
+                                <strong>Exercise</strong> takes it further by following principles for measurable
+                                improvement.
+                            </li>
+                            <li>
+                                Understanding these foundations helps you design <strong>balanced fitness
+                                    programs</strong> tailored to your goals, whether for health, sports, or daily life.
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Quiz Section -->
+                <section class="quiz-section">
+                    <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+                    <p>
+                        You've completed the lesson on <strong>Introduction to Fitness: Definitions and
+                            Components</strong>.
+                        Now it's time to assess your understanding through our interactive quiz.
+                    </p>
+                    <button class="quiz-button"
+                        data-quiz="../pathfit2/data/lesson1_definition_of_physical_fitness.json"
+                        onclick="takeQuiz(this)">TAKE QUIZ</button>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="main-footer">
+            <div class="sub-main-footer">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+                    </div>
+                    <h1>LPU Fit Space</h1>
+                </div>
+                <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
+                    classroom learning and support holistic student growth.</p>
+            </div>
+            <div class="sub-main-footer">
+                <h1>Courses:</h1>
+                <a href="../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+                <a href="../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+                <a href="../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+                    Activities</a>
+            </div>
+            <div class="sub-main-footer">
+                <h1>Contact:</h1>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>LPU Cavite</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">call</span>
+                    <p>(639) 158-3558</p>
+                </div>
+                <div class="contact-item">
+                    <span class="material-symbols-outlined">mail</span>
+                    <p>fitspace@lpu.edu.ph</p>
+                </div>
+            </div>
+        </section>
+        <div class="bottom-footer">
+            <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+        </div>
+    </footer>
+    <script src="js/pathfit2.js"></script>
+    <script src="../assets/js/main.js"> </script>
+    <script src="../assets/js/search.js"></script>
+</body>
+
+</html>

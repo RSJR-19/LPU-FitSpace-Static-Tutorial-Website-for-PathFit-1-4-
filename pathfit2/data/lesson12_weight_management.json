@@ -1,0 +1,55 @@
+[
+  {
+    "question": "What is the primary driver of weight change?",
+    "options": [
+      "Caloric balance (calories in vs. calories out)",
+      "Shoe size",
+      "Time of day",
+      "Hair color"
+    ],
+    "answer": 0,
+    "explanation": "Weight is determined by the balance between calories consumed and calories expended. A caloric deficit leads to weight loss; a surplus leads to weight gain."
+  },
+  {
+    "question": "What is considered a healthy rate of weight loss per week?",
+    "options": [
+      "1-2 pounds per week",
+      "5-10 pounds per week",
+      "20 pounds per week",
+      "As much as possible"
+    ],
+    "answer": 0,
+    "explanation": "A sustainable rate of weight loss is 1-2 pounds per week. Faster weight loss often leads to muscle loss and is harder to maintain long-term."
+  },
+  {
+    "question": "Which factor is NOT directly related to weight management?",
+    "options": [
+      "Favorite movie genre",
+      "Nutrition and diet quality",
+      "Physical activity levels",
+      "Sleep quality and stress management"
+    ],
+    "answer": 0,
+    "explanation": "Weight management depends on nutrition, activity, sleep, stress, and hormones. Movie preferences don't directly affect weight."
+  },
+  {
+    "question": "True or False: Exercise alone without diet changes can effectively manage weight.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Effective weight management requires both diet and exercise. Combining caloric deficit through nutrition with physical activity provides the best results."
+  },
+  {
+    "question": "Which approach to weight management is most likely to be sustainable long-term?",
+    "options": [
+      "Gradual lifestyle changes combining healthy eating and regular activity",
+      "Extreme restrictive dieting",
+      "Skipping meals",
+      "Crash diets"
+    ],
+    "answer": 0,
+    "explanation": "Sustainable weight management comes from making gradual, permanent lifestyle changes rather than extreme measures that are difficult to maintain."
+  }
+]

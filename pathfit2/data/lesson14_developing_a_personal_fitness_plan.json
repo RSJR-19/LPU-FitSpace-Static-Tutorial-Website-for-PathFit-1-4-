@@ -1,0 +1,55 @@
+[
+  {
+    "question": "What does the 'S' in SMART goals stand for?",
+    "options": [
+      "Specific",
+      "Substantial",
+      "Simple",
+      "Sequential"
+    ],
+    "answer": 0,
+    "explanation": "SMART goals are Specific, Measurable, Achievable, Relevant, and Time-bound. Specific means clearly defined with details about what you want to achieve."
+  },
+  {
+    "question": "Which step comes first in developing a personal fitness program?",
+    "options": [
+      "Assess your current fitness level",
+      "Start intense workouts immediately",
+      "Buy expensive equipment",
+      "Follow a random workout plan"
+    ],
+    "answer": 0,
+    "explanation": "Fitness assessment (baseline testing) is the first step to understand your current fitness level and identify areas for improvement."
+  },
+  {
+    "question": "What should a fitness program include for comprehensive health?",
+    "options": [
+      "Aerobic exercise, strength training, flexibility work, and balance exercises",
+      "Only running",
+      "Only weightlifting",
+      "Only stretching"
+    ],
+    "answer": 0,
+    "explanation": "A comprehensive program addresses cardiovascular health, strength, flexibility, and balance to develop all components of fitness."
+  },
+  {
+    "question": "True or False: It's best to start a fitness program at maximum intensity to see quick results.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Starting too intensely increases injury risk and often leads to burnout. Programs should start at an appropriate level and progress gradually."
+  },
+  {
+    "question": "What is the recommended frequency for reassessing and modifying your fitness program?",
+    "options": [
+      "Every 4-6 weeks to track progress and adjust as needed",
+      "Never—stick to the same plan forever",
+      "Only if you get injured",
+      "Once per year"
+    ],
+    "answer": 0,
+    "explanation": "Regular reassessment (every 4-6 weeks) helps track progress, identify plateaus, and make adjustments to continue improving fitness."
+  }
+]

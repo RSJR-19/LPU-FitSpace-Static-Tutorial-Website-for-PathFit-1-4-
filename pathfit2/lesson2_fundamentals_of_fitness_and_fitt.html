@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundamentals of Fitness & FITT Principle - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit2.css">
+  <link rel="stylesheet" href="../assets/css/search.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+</head>
+
+<body>
+  <!-- START: Copied from template -->
+  <!-- header + sidebar from template -->
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a href="../home_page.html#mission">Mission & Vision</a>
+        <a href="../home_page.html#aboutUs">About FitSpace</a>
+
+        <div class="search-box">
+          <a onclick="displaySearch()" id="search">Search</a>
+          <input type="text" id="input-bar" placeholder="Lessons...">
+        </div>
+        <div class="search-results" id="search-results"></div>
+
+      </div>
+
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+              Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional_Movement_Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+            <a href="../pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_introduction_to_fitness_definitions_components.html"
+              class="active">Introduction to Fitness: Definitions & Components</a>
+            <a href="../pathfit2/lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
+              Principle</a>
+            <a href="../pathfit2/lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
+            <a href="../pathfit2/lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
+            <a href="../pathfit2/lesson6_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
+              Program</a>
+            <a href="../pathfit2/pathfit2_quiz_list.html">Quiz</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="./lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+              Physical Activities</a>
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="../pathfit3/pf3_dance_act/lesson1_folk_dance.html">Folk Dance</a>
+              <a href="../pathfit3/pf3_dance_act/lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+              <a href="../pathfit3/pf3_dance_act/lesson3_zumba_dance.html">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="../pathfit3/pf3_sports_act/lesson4_basketball.html">Basketball</a>
+              <a href="../pathfit3/pf3_sports_act/lesson5_volleyball.html">Volleyball</a>
+              <a href="../pathfit3/pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
+              <a href="../pathfit3/pf3_sports_act/lesson7_badminton.html">Badminton</a>
+              <a href="../pathfit3/pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
+              <a href="../pathfit3/pf3_sports_act/lesson9_swimming.html">Swimming</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="../pathfit3/lesson10_arnis.html">Arnis</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="../pathfit3/pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+              <a href="../pathfit3/pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                Training</a>
+              <a href="../pathfit3/pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
+              <a href="../pathfit3/pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="../pathfit3/lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
+                Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+
+    <section class="main-content-container">
+      <div class="main-content">
+        <a href="#" class="back-link">Back to PathFit 2 Index</a>
+        <h1>Fundamentals of Fitness</h1>
+
+        <div style="height: 70%;" class="image-placeholder">
+          <img src="../assets/images/pathfit2/exercise.png" alt="Fundamentals image">
+        </div>
+        <p>This lesson combines foundational training principles with the FITT principle framework to provide a complete
+          guide for designing effective exercise programs.</p>
+
+        <!-- Lesson Overview -->
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>Understanding the fundamental principles of fitness is crucial for developing an effective exercise
+            program. These principles guide how we should structure our workouts, progress over time, and achieve
+            optimal results safely and efficiently. The FITT Principle provides a practical framework for applying these
+            fundamentals.</p>
+        </section>
+
+        <!-- Core Principles -->
+        <section class="content-section">
+          <h2>Core Principles of Fitness Training</h2>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Training Principles</h3>
+              <ul>
+                <li><strong>Overload</strong> - Challenging the body beyond its normal level. To improve fitness, you
+                  must apply greater demands than the body is accustomed to.</li>
+                <li><strong>Progression</strong> - Gradually increasing demands. As your body adapts, you must continue
+                  to increase intensity, duration, or frequency to continue making improvements.</li>
+                <li><strong>Specificity</strong> - Training for specific goals. The adaptations your body makes are
+                  specific to the type of training you do.</li>
+                <li><strong>Reversibility</strong> - Use it or lose it. Fitness gains are reversible if you stop
+                  training or reduce training significantly.</li>
+                <li><strong>Individual Differences</strong> - Personal adaptation rates. People respond differently to
+                  training based on genetics, age, fitness level, and other factors.</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Program Variables</h3>
+              <ul>
+                <li><strong>Frequency</strong> - How often to train</li>
+                <li><strong>Intensity</strong> - How hard to train</li>
+                <li><strong>Time</strong> - Duration of training</li>
+                <li><strong>Type</strong> - Kind of exercise</li>
+                <li><strong>Volume</strong> - Total amount of work</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- FITT Principle -->
+        <section class="content-section">
+          <h2>The FITT Principle</h2>
+          <p>The FITT Principle is a fundamental framework for designing effective exercise programs. It considers four
+            key variables: Frequency, Intensity, Time, and Type. Understanding and applying these principles helps
+            create structured and effective workout plans.</p>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Frequency</h3>
+              <p>How often you exercise, typically measured in sessions per week.</p>
+              <ul>
+                <li><strong>Cardiovascular training:</strong> 3-5 days per week</li>
+                <li><strong>Strength training:</strong> 2-3 days per week (allowing for recovery)</li>
+                <li><strong>Flexibility:</strong> Daily or at least 3-4 days per week</li>
+                <li><strong>Beginners:</strong> Start with 2-3 days per week of any exercise</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Intensity</h3>
+              <p>How hard you work during exercise. Measured as percentage of max heart rate, perceived exertion, or
+                weight lifted.</p>
+              <ul>
+                <li><strong>Light:</strong> 50-60% max heart rate or RPE 2-4</li>
+                <li><strong>Moderate:</strong> 60-70% max heart rate or RPE 5-6</li>
+                <li><strong>Vigorous:</strong> 70-85% max heart rate or RPE 7-8</li>
+                <li><strong>For strength:</strong> 60-85% of one-rep maximum (1RM)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Time (Duration)</h3>
+              <p>How long each exercise session lasts.</p>
+              <ul>
+                <li><strong>Cardiovascular:</strong> 20-60 minutes of continuous activity, or accumulate 10-minute bouts
+                </li>
+                <li><strong>Strength training:</strong> 30-60 minutes per session</li>
+                <li><strong>Flexibility:</strong> 15-30 minutes</li>
+                <li><strong>Include:</strong> 5-10 minute warm-up and 5-10 minute cool-down in total session time</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Type (Mode)</h3>
+              <p>The kind of exercise you do. Type should match your goals, preferences, and available resources.</p>
+              <ul>
+                <li><strong>Cardiovascular:</strong> Running, cycling, swimming, rowing, dancing</li>
+                <li><strong>Strength:</strong> Free weights, machines, resistance bands, bodyweight exercises</li>
+                <li><strong>Flexibility:</strong> Static stretching, yoga, dynamic stretching</li>
+                <li><strong>Choose activities you enjoy</strong> to improve long-term adherence</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Application -->
+        <section class="content-section">
+          <h2>Applying FITT Principles by Goal</h2>
+
+          <div class="takeaways-box">
+            <h3>General Guidelines</h3>
+            <h4>Cardiovascular Endurance</h4>
+            <ul>
+              <li>Frequency: 3-5 days/week</li>
+              <li>Intensity: 60-80% max heart rate</li>
+              <li>Time: 20-60 minutes</li>
+              <li>Type: Running, cycling, swimming, aerobic classes</li>
+            </ul>
+
+            <h4>Strength Training</h4>
+            <ul>
+              <li>Frequency: 2-3 days/week</li>
+              <li>Intensity: 65-85% 1RM</li>
+              <li>Time: 45-60 minutes</li>
+              <li>Type: Resistance exercises (weights, bands, bodyweight)</li>
+            </ul>
+
+            <h4>Flexibility</h4>
+            <ul>
+              <li>Frequency: Daily or 3-4 days/week minimum</li>
+              <li>Intensity: Mild tension (no pain)</li>
+              <li>Time: 15-30 minutes</li>
+              <li>Type: Static stretching, yoga, dynamic stretching</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Safety and Form -->
+        <section class="content-section">
+          <h2>Safety and Proper Form</h2>
+          <p>Essential considerations for safe and effective training:</p>
+          <ul>
+            <li>Proper warm-up and cool-down</li>
+            <li>Correct exercise technique</li>
+            <li>Appropriate rest periods between exercises and sets</li>
+            <li>Injury prevention strategies</li>
+            <li>Recovery techniques and rest days</li>
+          </ul>
+        </section>
+
+        <!-- Key Takeaways -->
+        <section class="key-takeaways">
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>Fitness progress relies on fundamental training principles (overload, progression, specificity,
+                reversibility).</li>
+              <li>FITT provides a practical framework for program design.</li>
+              <li>Individual differences affect how people respond to training.</li>
+              <li>Proper application of FITT variables allows customization for different goals.</li>
+              <li>Safety, technique, and recovery are essential for long-term success.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+          <p>You've completed the lesson on Fundamentals of Fitness and FITT Principle. Now it's time to assess your
+            understanding through our interactive quiz.</p>
+          <button class="quiz-button" data-quiz="../pathfit2/data/lesson4_fundamentals_of_fitness.json"
+            onclick="takeQuiz(this)">TAKE QUIZ</button>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+          </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
+          classroom learning and support holistic student growth.</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <a href="../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+        <a href="../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+        <a href="../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+          Activities</a>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="js/pathfit2.js"></script>
+  <script src="../assets/js/main.js"> </script>
+  <script src="../assets/js/search.js"></script>
+</body>
+
+</html>

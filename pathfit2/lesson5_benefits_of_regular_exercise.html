@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Benefits of Regular Exercise - FitSpace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="css/pathfit2.css">
+  <link rel="stylesheet" href="../assets/css/search.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div style="height: 1dvh;background-color: white;"></div>
+    <nav>
+      <div class="spacer"></div>
+      <div class="left-nav">
+        <div class="lpu-logo">
+          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+        </div>
+        <div class="fitspace-text">
+          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a href="../home_page.html#mission">Mission & Vision</a>
+        <a href="../home_page.html#aboutUs">About FitSpace</a>
+
+        <div class="search-box">
+          <a onclick="displaySearch()" id="search">Search</a>
+          <input type="text" id="input-bar" placeholder="Lessons...">
+        </div>
+        <div class="search-results" id="search-results"></div>
+
+      </div>
+
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <div class="spacer"></div>
+      <section class="sidebar-main">
+        <h1>COURSES:</h1>
+        <div class="lesson-tab-container">
+
+          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
+            <b>PATHFIT 1</b>
+            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+          </div>
+          <div id="dropdown1" class="dropdown">
+            <a href="../pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
+            <a href="../pathfit1/lesson2_PARQ.html">PAR Q</a>
+            <a href="../pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
+              Enhancement</a>
+            <a href="../pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+            <a href="../pathfit1/lesson5_Functional_Movement_Screen.html">Functional Movement Screen</a>
+            <a href="../pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
+            <a href="../pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+
+          <div id="dropdown2" class="dropdown">
+            <a href="../pathfit2/lesson1_introduction_to_fitness_definitions_components.html">Introduction to Fitness:
+              Definitions & Components</a>
+            <a href="../pathfit2/lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
+              Principle</a>
+            <a href="../pathfit2/lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
+            <a href="../pathfit2/lesson5_benefits_of_regular_exercise.html" class="active">Benefits of Regular
+              Exercise</a>
+            <a href="../pathfit2/lesson6_weight_management.html">Weight Management</a>
+            <a href="../pathfit2/lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
+              Program</a>
+            <a href="../pathfit2/pathfit2_quiz_list.html">Quiz</a>
+          </div>
+
+          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
+            <b>PATHFIT 3 & 4</b>
+            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
+          </div>
+          <div id="dropdown3" class="dropdown">
+            <a href="./lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied Physical
+              Activities</a>
+            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
+              <b>Dance Activities</b>
+              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
+            </div>
+            <div id="dropdownDance" class="dropdown2">
+              <a href="../pathfit3/pf3_dance_act/lesson1_folk_dance.html">Folk Dance</a>
+              <a href="../pathfit3/pf3_dance_act/lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
+              <a href="../pathfit3/pf3_dance_act/lesson3_zumba_dance.html">Zumba Dance</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
+              <b>Sports Activities</b>
+              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
+            </div>
+            <div id="dropdownSports" class="dropdown2">
+              <a href="../pathfit3/pf3_sports_act/lesson4_basketball.html">Basketball</a>
+              <a href="../pathfit3/pf3_sports_act/lesson5_volleyball.html">Volleyball</a>
+              <a href="../pathfit3/pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
+              <a href="../pathfit3/pf3_sports_act/lesson7_badminton.html">Badminton</a>
+              <a href="../pathfit3/pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
+              <a href="../pathfit3/pf3_sports_act/lesson9_swimming.html">Swimming</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
+              <b>Martial Arts</b>
+              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
+            </div>
+            <div id="dropdownMartial" class="dropdown2">
+              <a href="../pathfit3/lesson10_arnis.html">Arnis</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
+              <b>Group Exercises</b>
+              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
+            </div>
+            <div id="dropdownGroup" class="dropdown2">
+              <a href="../pathfit3/pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
+              <a href="../pathfit3/pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
+                Training</a>
+              <a href="../pathfit3/pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
+              <a href="../pathfit3/pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
+            </div>
+            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
+              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
+              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
+            </div>
+            <div id="dropdownCamping" class="dropdown2">
+              <a href="../pathfit3/lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
+                Games</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </section>
+
+    <section class="main-content-container">
+      <div class="main-content">
+        <a href="#" class="back-link">Back to PathFit 2 Index</a>
+        <h1>Benefits of Regular Exercise</h1>
+
+        <div style="height: 60%;" class="image-placeholder">
+          <img src="../assets/images/pathfit2/running_shadow.png" alt="Benefits image">
+        </div>
+
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>Regular physical activity offers many benefits for the body and mind. This lesson summarizes the major
+            physical, mental, and social benefits of exercise, recommended activity guidelines, and practical tips to
+            include exercise in daily life.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>Physical Health Benefits</h2>
+          <div class="components-grid">
+            <div class="component-box">
+              <h3>Cardiovascular Health</h3>
+              <ul>
+                <li>Reduces risk of heart disease and stroke</li>
+                <li>Lowers resting blood pressure and improves circulation</li>
+                <li>Improves cholesterol profile (raises HDL, lowers LDL)</li>
+                <li>Strengthens heart muscle function</li>
+              </ul>
+            </div>
+
+            <div class="component-box">
+              <h3>Musculoskeletal Health</h3>
+              <ul>
+                <li>Strengthens muscles and bones</li>
+                <li>Improves balance, coordination, and flexibility</li>
+                <li>Reduces risk of osteoporosis and falls</li>
+                <li>Improves posture and reduces chronic pain</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>Mental & Cognitive Benefits</h2>
+          <ul>
+            <li>Reduces symptoms of anxiety and depression</li>
+            <li>Improves mood and self-esteem through endorphin release</li>
+            <li>Enhances sleep quality and stress resilience</li>
+            <li>Supports cognitive function and reduces age-related decline</li>
+            <li>Improves focus, memory, and concentration</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>Social & Lifestyle Benefits</h2>
+          <ul>
+            <li>Provides opportunities for social interaction and teamwork</li>
+            <li>Promotes healthy habits and better daily routine</li>
+            <li>Can support weight management and long-term healthy living</li>
+            <li>Builds confidence and improves self-efficacy</li>
+            <li>Creates a sense of community and belonging</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>Recommended Activity Guidelines</h2>
+          <p>General guidelines for most adults (aim for at least):</p>
+          <ul>
+            <li>150 minutes/week of moderate-intensity aerobic activity, or 75 minutes/week of vigorous activity</li>
+            <li>Plus muscle-strengthening activities on 2 or more days/week</li>
+            <li>Include balance and flexibility exercises as needed</li>
+            <li>Reduce sitting time and incorporate movement throughout the day</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>Practical Tips to Get Started</h2>
+          <ol>
+            <li>Start small: short bouts (10–15 minutes) add up throughout the day.</li>
+            <li>Choose activities you enjoy to improve adherence.</li>
+            <li>Set realistic goals and track progress.</li>
+            <li>Mix aerobic, strength, and flexibility training for balanced benefits.</li>
+            <li>Find an exercise partner or join a group for motivation and accountability.</li>
+            <li>Consult a healthcare professional if you have chronic conditions or concerns.</li>
+          </ol>
+        </section>
+
+        <section class="key-takeaways">
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>Regular exercise improves heart, muscle, and bone health.</li>
+              <li>Exercise benefits mental health, mood, and cognitive function.</li>
+              <li>Social and lifestyle advantages support long-term healthy habits.</li>
+              <li>Follow recommended activity guidelines and start gradually.</li>
+              <li>Consistency is more important than intensity for lasting benefits.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="quiz-section">
+          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+          <p>You've completed the lesson on Benefits of Regular Exercise. Now it's time to assess your understanding
+            through our interactive quiz.</p>
+          <button class="quiz-button" data-quiz="../pathfit2/data/lesson6_benefits_of_regular_exercise.json"
+            onclick="takeQuiz(this)">TAKE QUIZ</button>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="main-footer">
+      <div class="sub-main-footer">
+
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
+          </div>
+          <h1>LPU Fit Space</h1>
+        </div>
+
+        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
+          classroom learning and support holistic student growth.</p>
+      </div>
+
+      <div class="sub-main-footer">
+        <h1>Courses:</h1>
+        <a href="../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
+        <a href="../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
+        <a href="../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
+          Activities</a>
+      </div>
+      <div class="sub-main-footer">
+        <h1>Contact:</h1>
+
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>LPU Cavite</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <p>(639) 158-3558</p>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <p>fitspace@lpu.edu.ph</p>
+        </div>
+
+      </div>
+    </section>
+    <div class="bottom-footer">
+      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
+    </div>
+
+  </footer>
+
+  <script src="js/pathfit2.js"></script>
+  <script src="../assets/js/main.js"> </script>
+  <script src="../assets/js/search.js"></script>
+</body>
+
+</html>

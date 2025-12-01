@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="quiz.css">
 </head>
+
 <body>
     <div class="container">
         <h1>FITSPACE QUIZ LIST</h1>
@@ -18,21 +20,26 @@
                     PathFit 1: Movement Competency Training
                 </div>
                 <div class="quiz-list">
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson1_introduction_to_physical_education.json')">
+                    <a href="quiz.html?quiz=../pathfit1/data/lesson1_introduction_to_physical_education.json&next=../pathfit1/data/lesson3_introduction_to_movement_enhancement.json"
+                        class="quiz-item">
                         Introduction to Physical Education
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson3_introduction_to_movement_enhancement.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit1/data/lesson3_introduction_to_movement_enhancement.json&next=../pathfit1/data/lesson4_fms_lecture.json"
+                        class="quiz-item">
                         Introduction to Movement Enhancement
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson4_fms_lecture.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit1/data/lesson4_fms_lecture.json&next=../pathfit1/data/lesson6_eating_habits.json"
+                        class="quiz-item">
                         Functional Movement Screen
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson6_eating_habits.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit1/data/lesson6_eating_habits.json&next=../pathfit1/data/lesson7_locomotor_and_non_locomotor.json"
+                        class="quiz-item">
                         Eating Habits
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit1/data/lesson7_locomotor_and_non_locomotor.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit1/data/lesson7_locomotor_and_non_locomotor.json&next=../pathfit2/data/lesson1_definition_of_physical_fitness.json"
+                        class="quiz-item">
                         Locomotor and Non-Locomotor Skills
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -42,21 +49,34 @@
                     PathFit 2: Exercise-Based Fitness Activities
                 </div>
                 <div class="quiz-list">
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson1_definition_of_physical_fitness.json')">
-                        Definition of Physical Fitness
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson2_definition_of_physical_activity.json')">
-                        Definition of Physical Activity
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson3_definition_of_fitness.json')">
-                        Definition of Fitness
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson4_fundamentals_of_fitness.json')">
-                        Fundamentals of Fitness
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit2/data/lesson5_definition_of_exercise.json')">
-                        Definition of Exercise
-                    </div>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson1_definition_of_physical_fitness.json&next=../pathfit2/data/lesson4_fundamentals_of_fitness.json"
+                        class="quiz-item">
+                        Foundations: Definition of Physical Fitness
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson4_fundamentals_of_fitness.json&next=../pathfit2/data/lesson8_types_of_fitness_training.json"
+                        class="quiz-item">
+                        Fundamentals of Fitness & FITT
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson8_types_of_fitness_training.json&next=../pathfit2/data/lesson6_benefits_of_regular_exercise.json"
+                        class="quiz-item">
+                        Types of Fitness Training
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson6_benefits_of_regular_exercise.json&next=../pathfit2/data/lesson12_weight_management.json"
+                        class="quiz-item">
+                        Benefits of Regular Exercise
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson12_weight_management.json&next=../pathfit2/data/lesson13_physical_fitness_test.json"
+                        class="quiz-item">
+                        Weight Management
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson13_physical_fitness_test.json&next=../pathfit2/data/lesson14_developing_a_personal_fitness_plan.json"
+                        class="quiz-item">
+                        Physical Fitness Test (Assessment & Screening)
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit2/data/lesson14_developing_a_personal_fitness_plan.json&next=../pathfit3/data/lesson1_introduction_to_applied_physical_activities.json"
+                        class="quiz-item">
+                        Developing a Personal Fitness Program
+                    </a>
                 </div>
             </div>
 
@@ -66,30 +86,30 @@
                     PathFit 3 & 4: Dance, Sports, and Group Fitness
                 </div>
                 <div class="quiz-list">
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/data/lesson1_introduction_to_applied_physical_activities.json')">
+                    <a href="quiz.html?quiz=../pathfit3/data/lesson1_introduction_to_applied_physical_activities.json&next=../pathfit3/pf3_dance_act/data/lesson1_folk_dance.json"
+                        class="quiz-item">
                         Introduction to Applied Physical Activities
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_dance_act/data/lesson1_folk_dance.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit3/pf3_dance_act/data/lesson1_folk_dance.json&next=../pathfit3/pf3_dance_act/data/lesson2_modern_dance_hip_hop.json"
+                        class="quiz-item">
                         Folk Dance
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_dance_act/data/lesson2_modern_dance_hip_hop.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit3/pf3_dance_act/data/lesson2_modern_dance_hip_hop.json&next=../pathfit3/pf3_dance_act/data/lesson3_zumba_dance.json"
+                        class="quiz-item">
                         Modern Dance / Hip-Hop
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_dance_act/data/lesson3_zumba_dance.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit3/pf3_dance_act/data/lesson3_zumba_dance.json&next=../pathfit3/pf3_sports_act/data/lesson4_basketball.json"
+                        class="quiz-item">
                         Zumba Dance
-                    </div>
-                    <div class="quiz-item" onclick="takeQuiz('../pathfit3/pf3_sports_act/data/lesson4_basketball.json')">
+                    </a>
+                    <a href="quiz.html?quiz=../pathfit3/pf3_sports_act/data/lesson4_basketball.json" class="quiz-item">
                         Basketball
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        function takeQuiz(quizFile) {
-            window.location.href = `quiz.html?quiz=${quizFile}`;
-        }
-    </script>
 </body>
+
 </html>

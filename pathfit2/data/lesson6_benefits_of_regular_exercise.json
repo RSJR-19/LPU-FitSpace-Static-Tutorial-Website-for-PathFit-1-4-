@@ -1,0 +1,55 @@
+[
+  {
+    "question": "Which of the following is a primary cardiovascular benefit of regular exercise?",
+    "options": [
+      "Improved heart function and reduced blood pressure",
+      "Increased resting heart rate",
+      "Higher cholesterol levels",
+      "Increased risk of heart disease"
+    ],
+    "answer": 0,
+    "explanation": "Regular exercise strengthens the heart, improves circulation, lowers blood pressure, and reduces the risk of cardiovascular disease."
+  },
+  {
+    "question": "Regular exercise is associated with which mental health benefit?",
+    "options": [
+      "Improved mood, reduced stress and anxiety",
+      "Increased anxiety and depression",
+      "Memory loss",
+      "Sleep problems"
+    ],
+    "answer": 0,
+    "explanation": "Exercise releases endorphins (feel-good chemicals), reduces stress hormones, and improves overall mood and mental well-being."
+  },
+  {
+    "question": "Which benefit of regular exercise relates to bone health?",
+    "options": [
+      "Increased bone density and strength",
+      "Decreased bone density",
+      "Brittle bones",
+      "Calcium loss"
+    ],
+    "answer": 0,
+    "explanation": "Weight-bearing and resistance exercises increase bone density and strength, reducing the risk of osteoporosis and bone fractures."
+  },
+  {
+    "question": "True or False: Regular exercise improves cognitive function and memory.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Exercise improves blood flow to the brain, supports neuroplasticity, and enhances cognitive function, memory, and learning abilities."
+  },
+  {
+    "question": "Regular exercise contributes to better weight management by:",
+    "options": [
+      "Burning calories and increasing metabolic rate",
+      "Making you gain weight",
+      "Slowing metabolism",
+      "Increasing hunger only"
+    ],
+    "answer": 0,
+    "explanation": "Exercise burns calories during activity, increases resting metabolic rate, helps preserve muscle mass, and can help regulate appetite hormones."
+  }
+]

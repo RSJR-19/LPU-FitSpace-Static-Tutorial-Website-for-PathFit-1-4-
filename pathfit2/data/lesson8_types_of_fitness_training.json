@@ -1,57 +1,55 @@
 [
   {
-    "question": "In the FITT Principle, which element determines 'How hard you exercise'?",
+    "question": "Which training type primarily improves cardiovascular endurance?",
     "options": [
-      "Frequency",
-      "Type",
-      "Time (Duration)",
-      "Intensity"
+      "Aerobic training (running, cycling, swimming)",
+      "Static stretching",
+      "Isometric holds",
+      "Plyometrics"
     ],
-    "answer": 3,
-    "explanation": "The FITT Principle table defines Intensity as determining 'How hard you exercise', with recommendations ranging from moderate to vigorous MHR percentages."
+    "answer": 0,
+    "explanation": "Aerobic training uses oxygen to produce energy and improves heart and lung function. Examples include running, cycling, and swimming."
   },
   {
-    "question": "Which of the following activities is specifically listed as a low-impact type of cardio that is gentle on the joints?",
+    "question": "What is the primary focus of anaerobic training?",
     "options": [
-      "Running",
-      "Jumping rope",
-      "High-impact aerobics",
-      "Swimming"
+      "High-intensity efforts lasting seconds to minutes without oxygen",
+      "Long, steady-paced activities",
+      "Flexibility improvement",
+      "Balance and coordination"
     ],
-    "answer": 3,
-    "explanation": "The lesson lists low-impact cardio examples, including walking, cycling, elliptical training, and swimming, which is gentle on the joints."
+    "answer": 0,
+    "explanation": "Anaerobic training involves high-intensity efforts (sprints, weightlifting) that work without sufficient oxygen, building power and strength."
   },
   {
-    "question": "What is the recommended duration for the Cool-down phase of a cardio workout?",
+    "question": "Which training type uses resistance to build muscle strength and size?",
     "options": [
-      "20-60 minutes",
-      "30-60 minutes",
-      "5-10 minutes",
-      "15-20 minutes"
+      "Resistance or strength training",
+      "Aerobic training",
+      "Flexibility training",
+      "Balance training"
     ],
-    "answer": 2,
-    "explanation": "The Practical Application: Structure of a Cardio Session section lists the Cool-down phase as requiring a duration of 5-10 minutes, focusing on gradually lowering the heart rate."
+    "answer": 0,
+    "explanation": "Resistance training uses weights, bands, or bodyweight to create muscle tension, leading to increased strength and muscle development."
   },
   {
-    "question": "What is the primary function of the core muscles (abdomen, back, hips, pelvis) in relation to movement?",
+    "question": "True or False: A well-rounded fitness program should include only one type of training.",
     "options": [
-      "Isolating the rectus abdominis for a six-pack aesthetic",
-      "Maximizing joint flexibility",
-      "Generating explosive power for jumping only",
-      "Stabilizing the spine and pelvis, acting as the center of gravity and power generation"
+      "True",
+      "False"
     ],
-    "answer": 3,
-    "explanation": "The lesson defines the core's primary role as working together to stabilize the spine and pelvis, which serves as the body's center of gravity and power generation for all movement."
+    "answer": 1,
+    "explanation": "A well-rounded program includes aerobic training, strength training, flexibility training, and balance work to develop all fitness components."
   },
   {
-    "question": "Which deep core muscle group acts like a corset, drawing the navel toward the spine for deep stabilization?",
+    "question": "Which training type is most effective for improving range of motion and reducing stiffness?",
     "options": [
-      "Rectus Abdominis",
-      "Obliques",
-      "Erector Spinae",
-      "Transversus Abdominis"
+      "Flexibility training (stretching)",
+      "Aerobic training",
+      "Strength training",
+      "Power training"
     ],
-    "answer": 3,
-    "explanation": "The Transversus Abdominis is the deep muscle group that acts like a corset, drawing the navel inward for deep stabilization, which is separate from the Rectus Abdominis (flexion) or Obliques (rotation)."
+    "answer": 0,
+    "explanation": "Flexibility training using various stretching techniques improves range of motion, reduces muscle stiffness, and helps prevent injuries."
   }
 ]

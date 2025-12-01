@@ -4,30 +4,24 @@ const activities = [
     title: "Movement Competency Training",
     category: "PathFit 1",
     imageUrl:
-      "https://images.unsplash.com/photo-1485727749690-d091e8284ef3?q=80&w=1080",
+      "./assets/images/graphic-box/pf1B.png",
   },
   {
     title: "Group Fitness Training",
     category: "PathFit 2",
     imageUrl:
-      "https://images.unsplash.com/photo-1630415188550-9e454489ce3a?q=80&w=1080",
+      "./assets/images/graphic-box/pf2D.png",
   },
   {
     title: "Applied Physical Activities",
     category: "PathFit 3 & 4",
     imageUrl:
-      "https://images.unsplash.com/photo-1760879946121-893199733851?q=80&w=1080",
-  },
-  {
-    title: "Healthy Lifestyle Education",
-    category: "All PathFit Levels",
-    imageUrl:
-      "https://images.unsplash.com/photo-1660789983911-9473f197be9c?q=80&w=1080",
+      "./assets/images/graphic-box/pf3A.png",
   },
   {
     title: "LPU Cavite Campus",
-    category: "All PathFit Modules from LPU-Cavite",
-    imageUrl: "",
+    category: "PathFit Modules for LPU-Cavite",
+    imageUrl: "./assets/images/table_of_index/LPU_landscape.svg",
   },
 ];
 

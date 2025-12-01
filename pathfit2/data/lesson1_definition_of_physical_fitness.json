@@ -1,57 +1,55 @@
 [
   {
-    "question": "According to the lesson, physical fitness is best defined as:",
+    "question": "Physical fitness is best described as the ability to:",
     "options": [
-      "The ability to perform athletic activities at a professional level",
-      "The body's ability to perform daily tasks efficiently without undue fatigue, with energy for leisure and emergencies",
-      "Having a low body fat percentage and visible muscle definition",
-      "The capacity to lift heavy weights and run long distances"
+      "perform daily activities efficiently and effectively",
+      "play competitive sports only",
+      "achieve extreme muscle size",
+      "run marathons"
+    ],
+    "answer": 0,
+    "explanation": "Physical fitness is the ability to perform daily activities efficiently and effectively. It includes cardiovascular endurance, muscular strength, flexibility, and body composition."
+  },
+  {
+    "question": "Which of the following is a health-related component of fitness?",
+    "options": [
+      "Cardiovascular endurance",
+      "Agility",
+      "Balance",
+      "Reaction time"
+    ],
+    "answer": 0,
+    "explanation": "Cardiovascular endurance is a health-related component. The other options are skill-related components used in sports and athletic performance."
+  },
+  {
+    "question": "True or False: Physical fitness includes both health-related and skill-related components.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Physical fitness includes 5 health-related components (cardiovascular endurance, muscular strength, muscular endurance, flexibility, body composition) and 6 skill-related components (agility, balance, coordination, power, reaction time, speed)."
+  },
+  {
+    "question": "Which component of fitness refers to the ability of muscles to exert maximum force against resistance?",
+    "options": [
+      "Muscular endurance",
+      "Muscular strength",
+      "Flexibility",
+      "Cardiovascular endurance"
     ],
     "answer": 1,
-    "explanation": "The lesson defines physical fitness as 'the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leisure and emergency situations.'"
+    "explanation": "Muscular strength is the ability of muscles to exert maximum force against resistance. Muscular endurance is the ability to perform multiple repetitions."
   },
   {
-    "question": "Physical fitness is commonly classified into two major categories. Which pairing correctly identifies these categories?",
+    "question": "What is the primary benefit of maintaining good physical fitness?",
     "options": [
-      "Athletic and Non-Athletic Components",
-      "Physical and Mental Components",
-      "Health-Related and Skill-Related Components",
-      "Indoor and Outdoor Components"
+      "Improved overall health, reduced disease risk, and better quality of life",
+      "Winning at sports competitions",
+      "Achieving perfect body appearance",
+      "Never getting tired"
     ],
-    "answer": 2,
-    "explanation": "The lesson explicitly states that 'Researchers commonly classify physical fitness into two categories: Health-Related Components and Skill-Related Components.'"
-  },
-  {
-    "question": "Which of the following is NOT listed as a Health-Related Component of physical fitness?",
-    "options": [
-      "Cardiovascular Endurance",
-      "Muscular Strength",
-      "Reaction Time",
-      "Body Composition"
-    ],
-    "answer": 2,
-    "explanation": "Reaction Time is listed under Skill-Related Components. The Health-Related Components are: Cardiovascular Endurance, Muscular Strength, Muscular Endurance, Flexibility, and Body Composition."
-  },
-  {
-    "question": "According to the World Health Organization (WHO) guidelines mentioned in the lesson, adults should engage in at least how many minutes of moderate-intensity aerobic activity each week?",
-    "options": [
-      "75-100 minutes",
-      "100-150 minutes",
-      "150-300 minutes",
-      "300-400 minutes"
-    ],
-    "answer": 2,
-    "explanation": "The lesson states: 'According to the World Health Organization (WHO), adults should engage in at least 150-300 minutes of moderate-intensity or 75-150 minutes of vigorous-intensity aerobic activity each week.'"
-  },
-  {
-    "question": "Which key takeaway emphasizes the long-term approach to developing physical fitness?",
-    "options": [
-      "Physical fitness prevents all diseases",
-      "Physical fitness is vital for efficient daily functioning",
-      "Developing fitness is a lifelong process requiring consistency and balance",
-      "Physical fitness only benefits athletes"
-    ],
-    "answer": 2,
-    "explanation": "The fourth key takeaway explicitly states: 'Developing fitness is a lifelong process that requires consistency and balance.'"
+    "answer": 0,
+    "explanation": "The primary benefit of physical fitness is improved overall health, reduced risk of chronic diseases, better mental health, and enhanced quality of life."
   }
 ]
