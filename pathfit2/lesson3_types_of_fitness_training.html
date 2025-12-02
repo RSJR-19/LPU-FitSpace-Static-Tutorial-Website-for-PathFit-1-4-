@@ -12,8 +12,7 @@
   <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 
-<body>
-  <!-- START: Copied from template -->
+  <body>
   <!-- header + sidebar from template -->
   <header>
     <div style="height: 1dvh;background-color: white;"></div>
@@ -21,7 +20,7 @@
       <div class="spacer"></div>
       <div class="left-nav">
         <div class="lpu-logo">
-          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+          <img src="/assets/images/logo/fitspace_logo.svg" alt="fitspacelogo">
         </div>
         <div class="fitspace-text">
           <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
@@ -36,8 +35,6 @@
           <input type="text" id="input-bar" placeholder="Lessons...">
         </div>
         <div class="search-results" id="search-results"></div>
-
-      </div>
 
       </div>
       <div class="spacer"></div>
@@ -72,14 +69,13 @@
             <b>PATHFIT 2</b>
             <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
           </div>
-
+          
           <div id="dropdown2" class="dropdown">
-            <a href="../pathfit2/lesson1_introduction_to_fitness_definitions_components.html"
-              class="active">Introduction to Fitness: Definitions & Components</a>
-            <a href="../pathfit2/lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
+            <a href="../pathfit2/lesson1_introduction_to_fitness_definitions_components.html">Introduction to Fitness: Definitions &amp; Components</a>
+            <a href="../pathfit2/lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness &amp; FITT
               Principle</a>
-            <a href="../pathfit2/lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
-            <a href="../pathfit2/lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
+            <a href="../pathfit2/lesson3_types_of_fitness_training.html" class="active">Types of Fitness Training</a>
+            <a href="../pathfit2/lesson4_fitness_assessment_and_screening.html">Fitness Assessment &amp; Screening</a>
             <a href="../pathfit2/lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
             <a href="../pathfit2/lesson6_weight_management.html">Weight Management</a>
             <a href="../pathfit2/lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
@@ -88,11 +84,11 @@
           </div>
 
           <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
-            <b>PATHFIT 3 & 4</b>
+            <b>PATHFIT 3 &amp; 4</b>
             <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
           </div>
           <div id="dropdown3" class="dropdown">
-            <a href="./lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
+            <a href="../pathfit3/lesson1_Introduction_to_applied_physical_activities.html">Introduction to Applied
               Physical Activities</a>
             <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
               <b>Dance Activities</b>
@@ -279,7 +275,7 @@
           <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
           <p>You've completed the lesson on Types of Fitness Training. Now it's time to assess your understanding
             through our interactive quiz.</p>
-          <button class="quiz-button" data-quiz="../pathfit2/data/lesson8_types_of_fitness_training.json"
+          <button class="quiz-button" data-quiz="../pathfit2/data/lesson8_types_of_fitness_training.json" data-next="../pathfit2/data/lesson6_benefits_of_regular_exercise.json"
             onclick="takeQuiz(this)">TAKE QUIZ</button>
         </section>
 

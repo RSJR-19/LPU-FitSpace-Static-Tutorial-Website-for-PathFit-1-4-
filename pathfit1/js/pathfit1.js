@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function takeQuiz(btn) {
   const file = btn.dataset.quiz;
-  window.location.href = "/quiz/quiz.html?quiz=" + file;
+  const next = btn.dataset.next;
+  let url = "/quiz/quiz.html?quiz=" + encodeURIComponent(file);
+  if (next) url += "&next=" + encodeURIComponent(next);
+  window.location.href = url;
 }
 
 function downloadPDF(pdfUrl, downloadName) {

@@ -1,6 +1,5 @@
 # generate-project-structure.ps1
 # Generates a project_structure.md file with a tree diagram and file statistics
-
 param(
     [string]$RootPath = ".",
     [string]$OutputFile = "project_structure.md",
@@ -10,23 +9,23 @@ param(
 
 # Initialize statistics hashtable
 $script:stats = @{
-    '.html' = 0
-    '.css' = 0
-    '.js' = 0
-    '.json' = 0
-    '.md' = 0
-    '.ps1' = 0
-    '.pdf' = 0
-    '.png' = 0
-    '.jpg' = 0
-    '.jpeg' = 0
-    '.svg' = 0
-    '.gif' = 0
-    '.webm' = 0
-    '.mp4' = 0
-    '.txt' = 0
-    'other' = 0
-    'total_files' = 0
+    '.html'         = 0
+    '.css'          = 0
+    '.js'           = 0
+    '.json'         = 0
+    '.md'           = 0
+    '.ps1'          = 0
+    '.pdf'          = 0
+    '.png'          = 0
+    '.jpg'          = 0
+    '.jpeg'         = 0
+    '.svg'          = 0
+    '.gif'          = 0
+    '.webm'         = 0
+    '.mp4'          = 0
+    '.txt'          = 0
+    'other'         = 0
+    'total_files'   = 0
     'total_folders' = 0
 }
 
@@ -37,52 +36,55 @@ function Get-TreeStructure {
         [int]$CurrentDepth = 0,
         [bool]$IsLast = $true
     )
-    
+
     if ($CurrentDepth -ge $MaxDepth) {
         return
     }
-    
+
     $items = Get-ChildItem -Path $Path -Force | Where-Object {
         $_.Name -notin $ExcludeFolders
     } | Sort-Object { $_.PSIsContainer }, Name
-    
+
     $itemCount = $items.Count
     $currentIndex = 0
-    
+
     foreach ($item in $items) {
         $currentIndex++
         $isLastItem = ($currentIndex -eq $itemCount)
-        
+
         # Determine the tree characters
         if ($isLastItem) {
-            $branch = "└── "
+            $branch = "`u2514`u2500`u2500 "
             $extension = "    "
-        } else {
-            $branch = "├── "
-            $extension = "│   "
         }
-        
+        else {
+            $branch = "`u251C`u2500`u2500 "
+            $extension = "`u2502   "
+        }
+
         # Add trailing slash for directories
         $displayName = $item.Name
         if ($item.PSIsContainer) {
             $displayName += "/"
             $script:stats['total_folders']++
-        } else {
+        }
+        else {
             # Count file by extension
             $ext = $item.Extension.ToLower()
             $script:stats['total_files']++
-            
+
             if ($script:stats.ContainsKey($ext)) {
                 $script:stats[$ext]++
-            } else {
+            }
+            else {
                 $script:stats['other']++
             }
         }
-        
+
         # Output current item
         $output = "$Prefix$branch$displayName"
         $script:treeLines += $output
-        
+
         # Recurse into directories
         if ($item.PSIsContainer) {
             $newPrefix = $Prefix + $extension
@@ -98,7 +100,7 @@ function Format-Statistics {
     $output += ""
     $output += "### File Counts by Type"
     $output += ""
-    
+
     # Web files
     if ($script:stats['.html'] -gt 0 -or $script:stats['.css'] -gt 0 -or $script:stats['.js'] -gt 0) {
         $output += "**Web Files:**"
@@ -107,14 +109,14 @@ function Format-Statistics {
         if ($script:stats['.js'] -gt 0) { $output += "- JavaScript files: $($script:stats['.js'])" }
         $output += ""
     }
-    
+
     # Data files
     if ($script:stats['.json'] -gt 0) {
         $output += "**Data Files:**"
         $output += "- JSON files: $($script:stats['.json'])"
         $output += ""
     }
-    
+
     # Documentation
     if ($script:stats['.md'] -gt 0 -or $script:stats['.txt'] -gt 0 -or $script:stats['.pdf'] -gt 0) {
         $output += "**Documentation:**"
@@ -123,7 +125,7 @@ function Format-Statistics {
         if ($script:stats['.pdf'] -gt 0) { $output += "- PDF files: $($script:stats['.pdf'])" }
         $output += ""
     }
-    
+
     # Images
     $imageCount = $script:stats['.png'] + $script:stats['.jpg'] + $script:stats['.jpeg'] + $script:stats['.svg'] + $script:stats['.gif']
     if ($imageCount -gt 0) {
@@ -136,7 +138,7 @@ function Format-Statistics {
         $output += "- **Total images: $imageCount**"
         $output += ""
     }
-    
+
     # Videos
     $videoCount = $script:stats['.webm'] + $script:stats['.mp4']
     if ($videoCount -gt 0) {
@@ -146,31 +148,30 @@ function Format-Statistics {
         $output += "- **Total videos: $videoCount**"
         $output += ""
     }
-    
+
     # Scripts
     if ($script:stats['.ps1'] -gt 0) {
         $output += "**Scripts:**"
         $output += "- PowerShell scripts: $($script:stats['.ps1'])"
         $output += ""
     }
-    
+
     # Other files
     if ($script:stats['other'] -gt 0) {
         $output += "**Other Files:**"
         $output += "- Other file types: $($script:stats['other'])"
         $output += ""
     }
-    
+
     # Totals
     $output += "### Summary"
     $output += ""
     $output += "- **Total Files:** $($script:stats['total_files'])"
     $output += "- **Total Folders:** $($script:stats['total_folders'])"
     $output += "- **Total Items:** $($script:stats['total_files'] + $script:stats['total_folders'])"
-    
+
     return $output
 }
-
 # Main script execution
 Write-Host "Generating project structure..." -ForegroundColor Cyan
 
@@ -203,9 +204,10 @@ $script:treeLines | Out-File -FilePath $OutputFile -Encoding UTF8
 Write-Host "✓ Project structure saved to: $OutputFile" -ForegroundColor Green
 Write-Host ""
 Write-Host "Summary:" -ForegroundColor Cyan
-Write-Host "  HTML files: $($script:stats['.html'])" -ForegroundColor Gray
-Write-Host "  CSS files: $($script:stats['.css'])" -ForegroundColor Gray
-Write-Host "  JavaScript files: $($script:stats['.js'])" -ForegroundColor Gray
-Write-Host "  Images: $(($script:stats['.png'] + $script:stats['.jpg'] + $script:stats['.jpeg'] + $script:stats['.svg'] + $script:stats['.gif']))" -ForegroundColor Gray
-Write-Host "  Total files: $($script:stats['total_files'])" -ForegroundColor Gray
-Write-Host "  Total folders: $($script:stats['total_folders'])" -ForegroundColor Gray
+Write-Host ("  HTML files: {0}" -f $script:stats['.html']) -ForegroundColor Gray
+Write-Host ("  CSS files: {0}" -f $script:stats['.css']) -ForegroundColor Gray
+Write-Host ("  JavaScript files: {0}" -f $script:stats['.js']) -ForegroundColor Gray
+$imageSummary = $script:stats['.png'] + $script:stats['.jpg'] + $script:stats['.jpeg'] + $script:stats['.svg'] + $script:stats['.gif']
+Write-Host ("  Images: {0}" -f $imageSummary) -ForegroundColor Gray
+Write-Host ("  Total files: {0}" -f $script:stats['total_files']) -ForegroundColor Gray
+Write-Host ("  Total folders: {0}" -f $script:stats['total_folders']) -ForegroundColor Gray

@@ -43,13 +43,18 @@ function loadQuiz(path) {
       // Randomize question order
       questions = shuffleArray(data);
 
-      // Randomize options inside each question
+      // Randomize options inside each question and preserve correct answer
       questions.forEach((q) => {
-        q._originalAnswer = q.answer; // Save correct index
-        q.options = shuffleArray(q.options);
-
-        // Update the answer index after shuffling
-        q.answer = q.options.indexOf(q.options[q._originalAnswer]);
+        // If options exist and answer is an index, compute correct option value
+        if (Array.isArray(q.options) && Number.isInteger(q.answer)) {
+          const correctValue = q.options[q.answer];
+          q.options = shuffleArray(q.options);
+          // Find new index of the previously-correct value
+          q.answer = q.options.indexOf(correctValue);
+        } else {
+          // Fallback: just shuffle options
+          q.options = Array.isArray(q.options) ? shuffleArray(q.options) : q.options;
+        }
       });
 
       showQuestion();
@@ -188,11 +193,25 @@ function goToNextQuiz() {
     "../pathfit2/data/lesson13_physical_fitness_test.json",
     "../pathfit2/data/lesson14_developing_a_personal_fitness_plan.json",
 
+    // PathFit 3 sequence — include dance, sports, group exercises, and lesson15
     "../pathfit3/data/lesson1_introduction_to_applied_physical_activities.json",
     "../pathfit3/pf3_dance_act/data/lesson1_folk_dance.json",
     "../pathfit3/pf3_dance_act/data/lesson2_modern_dance_hip_hop.json",
     "../pathfit3/pf3_dance_act/data/lesson3_zumba_dance.json",
+
     "../pathfit3/pf3_sports_act/data/lesson4_basketball.json",
+    "../pathfit3/pf3_sports_act/data/lesson5_volleyball.json",
+    "../pathfit3/pf3_sports_act/data/lesson6_pickleball.json",
+    "../pathfit3/pf3_sports_act/data/lesson7_badminton.json",
+    "../pathfit3/pf3_sports_act/data/lesson8_table_tennis.json",
+    "../pathfit3/pf3_sports_act/data/lesson9_swimming.json",
+
+    "../pathfit3/pf3_group_exercises/data/lesson11_cardio_workouts.json",
+    "../pathfit3/pf3_group_exercises/data/lesson12_core_and_circuit_training.json",
+    "../pathfit3/pf3_group_exercises/data/lesson13_outdoor_and_adventure.json",
+    "../pathfit3/pf3_group_exercises/data/lesson14_hiking_and_trekking.json",
+
+    "../pathfit3/data/lesson15_team_building_and_recreational_games.json",
   ];
 
   // Get index of the next quiz

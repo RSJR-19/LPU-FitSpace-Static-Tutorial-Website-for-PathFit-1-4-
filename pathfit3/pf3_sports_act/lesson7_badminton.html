@@ -7,7 +7,7 @@
   <title>Badminton - FitSpace</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="../css/pathfit3.css">
+  <link rel="stylesheet" href="../css/pathfit3.css">
   <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 
@@ -64,22 +64,22 @@
           </div>
 
           <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
-                        <b>PATHFIT 2</b>
-                        <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
-                    </div>
-                    <div id="dropdown2" class="dropdown">
-                        <a href="lesson1_introduction_to_fitness_definitions_components.html" class="active">Introduction to
-                            Fitness: Definitions & Components</a>
-                        <a href="lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
-                            Principle</a>
-                        <a href="lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
-                        <a href="lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
-                        <a href="lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
-                        <a href="lesson6_weight_management.html">Weight Management</a>
-                        <a href="lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
-                            Program</a>
-                        <a href="pathfit2_quiz_list.html">Quiz</a>
-                    </div>
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="lesson1_introduction_to_fitness_definitions_components.html" class="active">Introduction to
+              Fitness: Definitions & Components</a>
+            <a href="lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
+              Principle</a>
+            <a href="lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
+            <a href="lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
+            <a href="lesson6_weight_management.html">Weight Management</a>
+            <a href="lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
+              Program</a>
+            <a href="pathfit2_quiz_list.html">Quiz</a>
+          </div>
 
           <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
             <b>PATHFIT 3 & 4</b>
@@ -147,7 +147,7 @@
     <section class="main-content-container">
       <div class="main-content">
         <!-- Back Link -->
-        <a href="#" class="back-link">Back to PathFit 3 Index</a>
+        <a href="/home_page.html#pathfit3" class="back-link">Back to PathFit 3 Index</a>
 
         <!-- Main Header -->
         <h1>BADMINTON</h1>
@@ -403,18 +403,22 @@
           <!-- Quiz Section -->
           <section class="quiz-section">
             <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
-            <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
-              through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.
+            <p>
+              You've completed the lesson on <strong>Badminton</strong>.
+              Now it's time to assess your understanding through our interactive quiz.
             </p>
-            <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+            <button class="quiz-button" data-quiz="../pathfit3/pf3_sports_act/data/lesson7_badminton.json"
+              data-next="../pathfit3/pf3_sports_act/data/lesson8_table_tennis.json" onclick="takeQuiz(this)">TAKE
+              QUIZ</button>
           </section>
+        </section>
       </div>
     </section>
     <!-- END OF MAIN CONTENT AREA -->
 
   </main>
 
- <footer>
+  <footer>
     <section class="main-footer">
       <div class="sub-main-footer">
 

@@ -150,7 +150,7 @@
     <section class="main-content-container">
       <div class="main-content">
         <!-- Back Link -->
-        <a href="#" class="back-link">Back to PathFit 3 Index</a>
+        <a href="/home_page.html#pathfit3" class="back-link">Back to PathFit 3 Index</a>
 
         <!-- Main Header -->
         <h1>ZUMBA</h1>
@@ -264,9 +264,14 @@
         <!-- Quiz Section -->
         <section class="quiz-section">
           <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
-          <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
-            through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
-          <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
+          <p>
+            You've completed the lesson on <strong>Zumba</strong>.
+            Now it's time to assess your understanding through our interactive quiz.
+          </p>
+          <button class="quiz-button"
+            data-quiz="../pathfit3/pf3_dance_act/data/lesson3_zumba_dance.json"
+            data-next="../pathfit3/pf3_sports_act/data/lesson4_basketball.json"
+            onclick="takeQuiz(this)">TAKE QUIZ</button>
         </section>
       </div>
     </section>

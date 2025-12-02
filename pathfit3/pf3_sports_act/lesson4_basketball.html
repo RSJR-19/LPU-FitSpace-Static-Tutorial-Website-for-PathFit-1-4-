@@ -1,363 +1,580 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Basketball - FitSpace</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="../css/pathfit3.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Basketball - FitSpace</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/footer.css">
-  <link rel="stylesheet" href="../css/pathfit3.css">
-</head>
-
-<body>
-  <!-- START: Copied from template -->
-  <!-- header + sidebar from template -->
- <header>
-    <div style="height: 1dvh;background-color: white;"></div>
-    <nav>
-      <div class="spacer"></div>
-      <div class="left-nav">
-        <div class="lpu-logo">
-          <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo">
-        </div>
-        <div class="fitspace-text">
-          <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
-        </div>
-      </div>
-      <div class="right-nav">
-        <a>Mission & Vision</a>
-        <a>Department Overview</a>
-        <a>About FitSpace</a>
-        <div class="input-container">
-          <input type="text" placeholder=" Search Lessons...">
-          <button>Search</button>
-        </div>
-      </div>
-      <div class="spacer"></div>
-    </nav>
-    <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
-  </header>
-
-  <main>
-    <section class="sidebar">
-      <div class="spacer"></div>
-      <section class="sidebar-main">
-        <h1>COURSES:</h1>
-        <div class="lesson-tab-container">
-
-          <div class="lesson-tab" onclick="openTab(pathfit1, arrow1, dropdown1)">
-            <b>PATHFIT 1</b>
-            <span class="material-symbols-outlined" id="arrow1">arrow_drop_down</span>
+  <body>
+    <!-- START: Copied from template -->
+    <!-- header + sidebar from template -->
+    <header>
+      <div style="height: 1dvh; background-color: white"></div>
+      <nav>
+        <div class="spacer"></div>
+        <div class="left-nav">
+          <div class="lpu-logo">
+            <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo" />
           </div>
-          <div id="dropdown1" class="dropdown">
-            <a href="/pathfit1/lesson1_introduction_to_physical_education.html">Introduction to Physical Education</a>
-            <a href="/pathfit1/lesson2_PARQ.html">PAR Q</a>
-            <a href="/pathfit1/lesson3_Introduction_to_movement_enhancement.html">Introduction to Movement
-              Enhancement</a>
-            <a href="/pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
-            <a href="/pathfit1/lesson5_Functional_Movement_Screen.html">Functional Movement Screen</a>
-            <a href="/pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
-            <a href="/pathfit1/lesson7_Locomotor_and_Non_Locomotor.html">Locomotor and Non Locomotor</a>
-            <a href="/pathfit1/lesson9_OK_DANCE_FULLVIDEO.html">OK DANCE-FULLVIDEO</a>
+          <div class="fitspace-text">
+            <a style="color: #b11e23"
+              >LPU <a style="color: rgb(83, 83, 83)"> FitSpace</a></a
+            >
           </div>
-
-          <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
-                        <b>PATHFIT 2</b>
-                        <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
-                    </div>
-                    <div id="dropdown2" class="dropdown">
-                        <a href="lesson1_introduction_to_fitness_definitions_components.html" class="active">Introduction to
-                            Fitness: Definitions & Components</a>
-                        <a href="lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
-                            Principle</a>
-                        <a href="lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
-                        <a href="lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
-                        <a href="lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
-                        <a href="lesson6_weight_management.html">Weight Management</a>
-                        <a href="lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
-                            Program</a>
-                        <a href="pathfit2_quiz_list.html">Quiz</a>
-                    </div>
-
-          <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
-            <b>PATHFIT 3 & 4</b>
-            <span class="material-symbols-outlined" id="arrow3">arrow_drop_down</span>
-          </div>
-          <div id="dropdown3" class="dropdown">
-            <a href="../lesson1_introduction_to_applied_physical_activities.html">Introduction to Applied
-              Physical Activities</a>
-            <div class="lesson-tab2" onclick="openTab(danceTab, arrowDance, dropdownDance)">
-              <b>Dance Activities</b>
-              <span class="material-symbols-outlined" id="arrowDance">arrow_drop_down</span>
-            </div>
-            <div id="dropdownDance" class="dropdown2">
-              <a href="../pf3_dance_act/lesson1_folk_dance.html">Folk Dance</a>
-              <a href="../pf3_dance_act/lesson2_modern_dance_hip_hop.html">Modern Dance and Hip-Hop</a>
-              <a href="../pf3_dance_act/lesson3_zumba_dance.html">Zumba Dance</a>
-            </div>
-            <div class="lesson-tab2" onclick="openTab(sportsTab, arrowSports, dropdownSports)">
-              <b>Sports Activities</b>
-              <span class="material-symbols-outlined" id="arrowSports">arrow_drop_down</span>
-            </div>
-            <div id="dropdownSports" class="dropdown2">
-              <a href="lesson4_basketball.html" class="active">Basketball</a>
-              <a href="lesson5_volleyball.html">Basketball</a>
-              <a href="lesson6_pickleball.html">Pickleball</a>
-              <a href="lesson7_badminton.html">Badminton</a>
-              <a href="lesson8_table_tennis.html">Table Tennis</a>
-              <a href="lesson9_swimming.html">Swimming</a>
-            </div>
-            <div class="lesson-tab2" onclick="openTab(martialTab, arrowMartial, dropdownMartial)">
-              <b>Martial Arts</b>
-              <span class="material-symbols-outlined" id="arrowMartial">arrow_drop_down</span>
-            </div>
-            <div id="dropdownMartial" class="dropdown2">
-              <a href="../lesson10_arnis.html">Arnis</a>
-            </div>
-            <div class="lesson-tab2" onclick="openTab(groupTab, arrowGroup, dropdownGroup)">
-              <b>Group Exercises</b>
-              <span class="material-symbols-outlined" id="arrowGroup">arrow_drop_down</span>
-            </div>
-            <div id="dropdownGroup" class="dropdown2">
-              <a href="../pf3_group_exercises/lesson11_cardio_workouts.html">Cardio Workouts</a>
-              <a href="../pf3_group_exercises/lesson12_core_and_circuit_training.html">Core and Circuit
-                Training</a>
-              <a href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html">Outdoor and Adventure</a>
-              <a href="../pf3_group_exercises/lesson14_hiking_and_trekking.html">Hiking and Trekking</a>
-            </div>
-            <div class="lesson-tab2" onclick="openTab(campingTab, arrowCamping, dropdownCamping)">
-              <b style="font-size: 0.9rem;">Camping and Safety Guidelines</b>
-              <span class="material-symbols-outlined" id="arrowCamping">arrow_drop_down</span>
-            </div>
-            <div id="dropdownCamping" class="dropdown2">
-              <a href="../lesson15_team_building_and_recreational_games.html">Team-Building and Recreational
-                Games</a>
-            </div>
-          </div>
-
         </div>
+        <div class="right-nav">
+          <a>Mission & Vision</a>
+          <a>Department Overview</a>
+          <a>About FitSpace</a>
+          <div class="input-container">
+            <input type="text" placeholder=" Search Lessons..." />
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="spacer"></div>
+      </nav>
+      <div
+        style="
+          background-color: white;
+          height: 1dvh;
+          border-bottom: 2px gray solid;
+        "
+      ></div>
+    </header>
+
+    <main>
+      <section class="sidebar">
+        <div class="spacer"></div>
+        <section class="sidebar-main">
+          <h1>COURSES:</h1>
+          <div class="lesson-tab-container">
+            <div
+              class="lesson-tab"
+              onclick="openTab(pathfit1, arrow1, dropdown1)"
+            >
+              <b>PATHFIT 1</b>
+              <span class="material-symbols-outlined" id="arrow1"
+                >arrow_drop_down</span
+              >
+            </div>
+            <div id="dropdown1" class="dropdown">
+              <a
+                href="/pathfit1/lesson1_introduction_to_physical_education.html"
+                >Introduction to Physical Education</a
+              >
+              <a href="/pathfit1/lesson2_PARQ.html">PAR Q</a>
+              <a
+                href="/pathfit1/lesson3_Introduction_to_movement_enhancement.html"
+                >Introduction to Movement Enhancement</a
+              >
+              <a href="/pathfit1/lesson4_fms_lecture.html">FMS Lecture</a>
+              <a href="/pathfit1/lesson5_Functional_Movement_Screen.html"
+                >Functional Movement Screen</a
+              >
+              <a href="/pathfit1/lesson6_Eating_Habits.html">Eating Habits</a>
+              <a href="/pathfit1/lesson7_Locomotor_and_Non_Locomotor.html"
+                >Locomotor and Non Locomotor</a
+              >
+              <a href="/pathfit1/lesson9_OK_DANCE_FULLVIDEO.html"
+                >OK DANCE-FULLVIDEO</a
+              >
+            </div>
+
+            <div
+              class="lesson-tab"
+              onclick="openTab(pathfit2, arrow2, dropdown2)"
+            >
+              <b>PATHFIT 2</b>
+              <span class="material-symbols-outlined" id="arrow2"
+                >arrow_drop_down</span
+              >
+            </div>
+            <div id="dropdown2" class="dropdown">
+              <a
+                href="lesson1_introduction_to_fitness_definitions_components.html"
+                class="active"
+                >Introduction to Fitness: Definitions & Components</a
+              >
+              <a href="lesson2_fundamentals_of_fitness_and_fitt.html"
+                >Fundamentals of Fitness & FITT Principle</a
+              >
+              <a href="lesson3_types_of_fitness_training.html"
+                >Types of Fitness Training</a
+              >
+              <a href="lesson4_fitness_assessment_and_screening.html"
+                >Fitness Assessment & Screening</a
+              >
+              <a href="lesson5_benefits_of_regular_exercise.html"
+                >Benefits of Regular Exercise</a
+              >
+              <a href="lesson6_weight_management.html">Weight Management</a>
+              <a href="lesson7_designing_personal_fitness_program.html"
+                >Designing a Personal Fitness Program</a
+              >
+              <a href="pathfit2_quiz_list.html">Quiz</a>
+            </div>
+
+            <div
+              class="lesson-tab"
+              onclick="openTab(pathfit3, arrow3, dropdown3)"
+            >
+              <b>PATHFIT 3 & 4</b>
+              <span class="material-symbols-outlined" id="arrow3"
+                >arrow_drop_down</span
+              >
+            </div>
+            <div id="dropdown3" class="dropdown">
+              <a
+                href="../lesson1_introduction_to_applied_physical_activities.html"
+                >Introduction to Applied Physical Activities</a
+              >
+              <div
+                class="lesson-tab2"
+                onclick="openTab(danceTab, arrowDance, dropdownDance)"
+              >
+                <b>Dance Activities</b>
+                <span class="material-symbols-outlined" id="arrowDance"
+                  >arrow_drop_down</span
+                >
+              </div>
+              <div id="dropdownDance" class="dropdown2">
+                <a href="../pf3_dance_act/lesson1_folk_dance.html"
+                  >Folk Dance</a
+                >
+                <a href="../pf3_dance_act/lesson2_modern_dance_hip_hop.html"
+                  >Modern Dance and Hip-Hop</a
+                >
+                <a href="../pf3_dance_act/lesson3_zumba_dance.html"
+                  >Zumba Dance</a
+                >
+              </div>
+              <div
+                class="lesson-tab2"
+                onclick="openTab(sportsTab, arrowSports, dropdownSports)"
+              >
+                <b>Sports Activities</b>
+                <span class="material-symbols-outlined" id="arrowSports"
+                  >arrow_drop_down</span
+                >
+              </div>
+              <div id="dropdownSports" class="dropdown2">
+                <a href="lesson4_basketball.html" class="active">Basketball</a>
+                <a href="lesson5_volleyball.html">Basketball</a>
+                <a href="lesson6_pickleball.html">Pickleball</a>
+                <a href="lesson7_badminton.html">Badminton</a>
+                <a href="lesson8_table_tennis.html">Table Tennis</a>
+                <a href="lesson9_swimming.html">Swimming</a>
+              </div>
+              <div
+                class="lesson-tab2"
+                onclick="openTab(martialTab, arrowMartial, dropdownMartial)"
+              >
+                <b>Martial Arts</b>
+                <span class="material-symbols-outlined" id="arrowMartial"
+                  >arrow_drop_down</span
+                >
+              </div>
+              <div id="dropdownMartial" class="dropdown2">
+                <a href="../lesson10_arnis.html">Arnis</a>
+              </div>
+              <div
+                class="lesson-tab2"
+                onclick="openTab(groupTab, arrowGroup, dropdownGroup)"
+              >
+                <b>Group Exercises</b>
+                <span class="material-symbols-outlined" id="arrowGroup"
+                  >arrow_drop_down</span
+                >
+              </div>
+              <div id="dropdownGroup" class="dropdown2">
+                <a href="../pf3_group_exercises/lesson11_cardio_workouts.html"
+                  >Cardio Workouts</a
+                >
+                <a
+                  href="../pf3_group_exercises/lesson12_core_and_circuit_training.html"
+                  >Core and Circuit Training</a
+                >
+                <a
+                  href="../pf3_group_exercises/lesson13_outdoor_and_adventure.html"
+                  >Outdoor and Adventure</a
+                >
+                <a
+                  href="../pf3_group_exercises/lesson14_hiking_and_trekking.html"
+                  >Hiking and Trekking</a
+                >
+              </div>
+              <div
+                class="lesson-tab2"
+                onclick="openTab(campingTab, arrowCamping, dropdownCamping)"
+              >
+                <b style="font-size: 0.9rem">Camping and Safety Guidelines</b>
+                <span class="material-symbols-outlined" id="arrowCamping"
+                  >arrow_drop_down</span
+                >
+              </div>
+              <div id="dropdownCamping" class="dropdown2">
+                <a href="../lesson15_team_building_and_recreational_games.html"
+                  >Team-Building and Recreational Games</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer"></div>
       </section>
 
-      <div class="spacer"></div>
-    </section>
+      <!-- MAIN CONTENT AREA -->
+      <section class="main-content-container">
+        <div class="main-content">
+          <!-- Back Link -->
+          <a href="/home_page.html#pathfit3" class="back-link"
+            >Back to PathFit 3 Index</a
+          >
 
-     <!-- MAIN CONTENT AREA -->
-<section class="main-content-container">
-  <div class="main-content">
-    <!-- Back Link -->
-    <a href="#" class="back-link">Back to PathFit 3 Index</a>
+          <!-- Main Header -->
+          <h1>BASKETBALL</h1>
 
-    <!-- Main Header -->
-    <h1>BASKETBALL</h1>
+          <!-- Banner Image Placeholder -->
+          <div style="height: 60%" class="image-placeholder">
+            <img src="/assets/images/pathfit3/Basketball.png" />
+          </div>
 
-    <!-- Banner Image Placeholder -->
-    <div style="height: 60%;" class="image-placeholder">
-      <img src="/assets/images/pathfit3/Basketball.png">
-    </div>
+          <!-- Lesson Overview -->
+          <section class="content-section">
+            <h2>Lesson Overview</h2>
+            <p>
+              Basketball is a fast-paced team sport that develops endurance,
+              agility, coordination, and teamwork. This course introduces the
+              fundamental skills, rules, and strategies essential for playing
+              basketball effectively.
+            </p>
 
-    <!-- Lesson Overview -->
-    <section class="content-section">
-      <h2>Lesson Overview</h2>
-      <p>Basketball is a fast-paced team sport that develops endurance, agility, coordination, and teamwork. This course introduces the fundamental skills, rules, and strategies essential for playing basketball effectively.</p>
+            <p>
+              Through drills, gameplay, and performance assessments, students
+              will improve their motor skills, tactical understanding, and
+              overall fitness while participating in structured basketball
+              activities.
+            </p>
+          </section>
 
-      <p>Through drills, gameplay, and performance assessments, students will improve their motor skills, tactical understanding, and overall fitness while participating in structured basketball activities.</p>
-    </section>
+          <!-- Main Discussion -->
+          <section class="content-section">
+            <h2>What is Basketball?</h2>
+            <p>
+              Basketball is a team sport played by two teams of five players
+              each, aiming to score points by shooting a ball through the
+              opponent’s hoop. The game emphasizes speed, strength,
+              coordination, and strategic thinking.
+            </p>
 
-    <!-- Main Discussion -->
-    <section class="content-section">
-      <h2>What is Basketball?</h2>
-      <p>Basketball is a team sport played by two teams of five players each, aiming to score points by shooting a ball through the opponent’s hoop. The game emphasizes speed, strength, coordination, and strategic thinking.</p>
+            <p>
+              Basketball promotes communication, teamwork, and quick
+              decision-making, making it one of the most popular sports
+              worldwide.
+            </p>
+          </section>
 
-      <p>Basketball promotes communication, teamwork, and quick decision-making, making it one of the most popular sports worldwide.</p>
-    </section>
+          <!-- Nature and Background -->
+          <section class="content-section">
+            <h2>Nature and Background</h2>
 
-    <!-- Nature and Background -->
-    <section class="content-section">
-      <h2>Nature and Background</h2>
+            <div class="nature-box">
+              <div class="left-side">
+                <div class="content-box">
+                  <p>
+                    Basketball was invented in December 1891 by Dr. James
+                    Naismith in Springfield, Massachusetts, as a way to keep
+                    athletes fit indoors during the winter. The first game was
+                    played with a soccer ball and peach baskets as goals.
+                  </p>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="content-box">
+                  <p>
+                    The sport rapidly gained popularity, leading to standardized
+                    rules, organized leagues, and eventually professional
+                    basketball worldwide. Today, basketball is recognized for
+                    its fast pace, skillful gameplay, and global competitions
+                    including the Olympics and NBA.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <div class="nature-box">
-        <div class="left-side">
-          <div class="content-box">
-            <p>Basketball was invented in December 1891 by Dr. James Naismith in Springfield, Massachusetts, as a way to keep athletes fit indoors during the winter. The first game was played with a soccer ball and peach baskets as goals.</p>
+          <!-- Basic Basketball Skills -->
+          <section class="content-section">
+            <h2>Basic Skills in Basketball</h2>
+            <h3>Dribbling</h3>
+            <p>
+              Dribbling is controlling and bouncing the ball while moving around
+              the court.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/Dribbling.png" />
+            </div>
+
+            <h3>Shooting</h3>
+            <p>
+              Shooting involves aiming and throwing the ball into the hoop to
+              score points.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/Shooting.png" />
+            </div>
+
+            <h3>Passing</h3>
+            <p>
+              Passing is moving the ball efficiently to teammates to maintain
+              possession and create scoring opportunities.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/Passing.png" />
+            </div>
+
+            <h3>Defense</h3>
+            <p>
+              Defense involves guarding opponents to prevent them from scoring,
+              using techniques such as blocking and stealing.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/Defense.png" />
+            </div>
+
+            <h3>Rebounding</h3>
+            <p>
+              Rebounding is gaining possession of the ball after a missed shot,
+              an essential skill for both offense and defense.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/Rebound.png" />
+            </div>
+          </section>
+
+          <!-- Court and Equipment -->
+          <section class="content-section">
+            <h2>Basketball Court and Equipment</h2>
+            <h3>1. Basketball Court</h3>
+            <p>
+              The basketball court is rectangular and divided into two halves by
+              a center line. It has a hoop at each end and is marked for
+              boundaries, free-throw lines, and three-point arcs.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/BasketballCourt.png" />
+            </div>
+
+            <h3>2. Basketball</h3>
+            <p>
+              A standard basketball is spherical and designed for grip and
+              bounce. Size may vary based on the level of play, with
+              professional games using size 7 for men and size 6 for women.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/BasketballBall.png" />
+            </div>
+
+            <h3>3. Hoops and Nets</h3>
+            <p>
+              The hoop consists of a metal rim and a net, positioned 10 feet
+              above the floor. Scoring involves getting the ball through the
+              hoop according to game rules.
+            </p>
+            <div style="height: 300px" class="image-placeholder">
+              <img src="/assets/images/pathfit3/Hoop.png" />
+            </div>
+          </section>
+
+          <!-- Rules of Basketball -->
+          <section class="content-section">
+            <h2>Basketball Rules and Regulations</h2>
+            <p>
+              Basketball has specific rules regarding game duration, scoring,
+              and fouls:
+            </p>
+            <ul>
+              <li>
+                A standard game consists of four quarters of 10–12 minutes each
+              </li>
+              <br />
+              <li>
+                Teams score 2 points for regular field goals, 3 points for shots
+                beyond the three-point line, and 1 point for free throws
+              </li>
+              <br />
+              <li>Each team has 5 players on the court at a time</li>
+              <br />
+              <li>
+                Players must dribble the ball while moving, or it is considered
+                a violation
+              </li>
+              <br />
+              <li>
+                Fouls, traveling, double dribble, and shot clock violations
+                result in penalties or turnovers
+              </li>
+              <br />
+            </ul>
+          </section>
+
+          <!-- Governing Body -->
+          <section class="content-section">
+            <h2>Governing Body in Basketball</h2>
+            <ul>
+              <li>
+                The International Basketball Federation (FIBA) is recognized by
+                the International Olympic Committee as the global governing body
+                for basketball.
+              </li>
+              <br />
+              <li>
+                The Philippine Basketball Association (PBA) and Samahang
+                Basketbol ng Pilipinas (SBP) are the main national organizations
+                governing basketball in the Philippines.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Basketball Officials -->
+          <section class="content-section">
+            <h2>Basketball Officials</h2>
+            <p>There are three types of officials in basketball:</p>
+            <h3>1. Referee</h3>
+            <p>
+              The Referee ensures the game is conducted fairly according to all
+              rules and maintains overall control of the match.
+            </p>
+            <h3>2. Umpire / Crew Chief</h3>
+            <p>
+              The Umpire or Crew Chief oversees the enforcement of rules on the
+              court, making final decisions on points and fouls.
+            </p>
+            <h3>3. Scorekeeper / Timekeeper</h3>
+            <p>
+              The Scorekeeper tracks points, fouls, and game duration while the
+              Timekeeper manages the game clock.
+            </p>
+          </section>
+
+          <!-- Key Takeaways -->
+          <section class="key-takeaways">
+            <h2>Key Takeaways</h2>
+            <div class="takeaways-box">
+              <ol>
+                <li>
+                  Basketball is a fast-paced team sport that enhances physical
+                  fitness, coordination, and teamwork.
+                </li>
+                <li>
+                  Mastering fundamental skills such as dribbling, shooting,
+                  passing, defense, and rebounding is essential for effective
+                  gameplay.
+                </li>
+                <li>
+                  Understanding the rules and court layout ensures fair and
+                  competitive matches.
+                </li>
+                <li>
+                  Regular participation improves endurance, strategic thinking,
+                  and mental alertness.
+                </li>
+                <li>
+                  The sport is governed internationally by FIBA and locally by
+                  organizations such as SBP and PBA to maintain standardized
+                  rules and development.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- Quiz Section -->
+          <section class="quiz-section">
+            <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
+            <p>
+              You've completed the lesson on <strong>Basketball</strong>. Now
+              it's time to assess your understanding through our interactive
+              quiz.
+            </p>
+            <button
+              class="quiz-button"
+              data-quiz="../pathfit3/pf3_sports_act/data/lesson4_basketball.json"
+              data-next="../pathfit3/pf3_sports_act/data/lesson5_volleyball.json"
+              onclick="takeQuiz(this)"
+            >
+              TAKE QUIZ
+            </button>
+          </section>
+        </div>
+      </section>
+      <!-- END OF MAIN CONTENT AREA -->
+    </main>
+
+    <footer>
+      <section class="main-footer">
+        <div class="sub-main-footer">
+          <div class="footer-logo">
+            <div class="logo-circle">
+              <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo" />
+            </div>
+            <h1>LPU Fit Space</h1>
+          </div>
+
+          <p>
+            LPU FitSpace is a digital hub for PATHFIT lessons, videos, and
+            resources, designed to supplement classroom learning and support
+            holistic student growth.
+          </p>
+        </div>
+
+        <div class="sub-main-footer">
+          <h1>Courses:</h1>
+          <a href="../../home_page.html#pathfit1"
+            >PATHFIT 1: Movement competency Training</a
+          >
+          <a href="../../home_page.html#pathfit2"
+            >PATHFIT 2: Exercise Based Fitness Activities</a
+          >
+          <a href="../../home_page.html#pathfit3"
+            >PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br />
+            and Group Fitness Activities</a
+          >
+        </div>
+        <div class="sub-main-footer">
+          <h1>Contact:</h1>
+
+          <div class="contact-item">
+            <span class="material-symbols-outlined">location_on</span>
+            <p>LPU Cavite</p>
+          </div>
+          <div class="contact-item">
+            <span class="material-symbols-outlined">call</span>
+            <p>(639) 158-3558</p>
+          </div>
+          <div class="contact-item">
+            <span class="material-symbols-outlined">mail</span>
+            <p>fitspace@lpu.edu.ph</p>
           </div>
         </div>
-        <div class="right-side">
-          <div class="content-box">
-            <p>The sport rapidly gained popularity, leading to standardized rules, organized leagues, and eventually professional basketball worldwide. Today, basketball is recognized for its fast pace, skillful gameplay, and global competitions including the Olympics and NBA.</p>
-          </div>
-        </div>
+      </section>
+      <div class="bottom-footer">
+        <p>
+          ©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- Basic Basketball Skills -->
-    <section class="content-section">
-      <h2>Basic Skills in Basketball</h2>
-      <h3>Dribbling</h3>
-      <p>Dribbling is controlling and bouncing the ball while moving around the court.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Dribbling.png">
-      </div>
-
-      <h3>Shooting</h3>
-      <p>Shooting involves aiming and throwing the ball into the hoop to score points.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Shooting.png">
-      </div>
-
-      <h3>Passing</h3>
-      <p>Passing is moving the ball efficiently to teammates to maintain possession and create scoring opportunities.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Passing.png">
-      </div>
-
-      <h3>Defense</h3>
-      <p>Defense involves guarding opponents to prevent them from scoring, using techniques such as blocking and stealing.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Defense.png">
-      </div>
-
-      <h3>Rebounding</h3>
-      <p>Rebounding is gaining possession of the ball after a missed shot, an essential skill for both offense and defense.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Rebound.png">
-      </div>
-    </section>
-
-    <!-- Court and Equipment -->
-    <section class="content-section">
-      <h2>Basketball Court and Equipment</h2>
-      <h3>1. Basketball Court</h3>
-      <p>The basketball court is rectangular and divided into two halves by a center line. It has a hoop at each end and is marked for boundaries, free-throw lines, and three-point arcs.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/BasketballCourt.png">
-      </div>
-
-      <h3>2. Basketball</h3>
-      <p>A standard basketball is spherical and designed for grip and bounce. Size may vary based on the level of play, with professional games using size 7 for men and size 6 for women.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/BasketballBall.png">
-      </div>
-
-      <h3>3. Hoops and Nets</h3>
-      <p>The hoop consists of a metal rim and a net, positioned 10 feet above the floor. Scoring involves getting the ball through the hoop according to game rules.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Hoop.png">
-      </div>
-    </section>
-
-    <!-- Rules of Basketball -->
-    <section class="content-section">
-      <h2>Basketball Rules and Regulations</h2>
-      <p>Basketball has specific rules regarding game duration, scoring, and fouls:</p>
-      <ul>
-        <li>A standard game consists of four quarters of 10–12 minutes each</li><br>
-        <li>Teams score 2 points for regular field goals, 3 points for shots beyond the three-point line, and 1 point for free throws</li><br>
-        <li>Each team has 5 players on the court at a time</li><br>
-        <li>Players must dribble the ball while moving, or it is considered a violation</li><br>
-        <li>Fouls, traveling, double dribble, and shot clock violations result in penalties or turnovers</li><br>
-      </ul>
-    </section>
-
-    <!-- Governing Body -->
-    <section class="content-section">
-      <h2>Governing Body in Basketball</h2>
-      <ul>
-        <li>The International Basketball Federation (FIBA) is recognized by the International Olympic Committee as the global governing body for basketball.</li><br>
-        <li>The Philippine Basketball Association (PBA) and Samahang Basketbol ng Pilipinas (SBP) are the main national organizations governing basketball in the Philippines.</li>
-      </ul>
-    </section>
-
-    <!-- Basketball Officials -->
-    <section class="content-section">
-      <h2>Basketball Officials</h2>
-      <p>There are three types of officials in basketball:</p>
-      <h3>1. Referee</h3>
-      <p>The Referee ensures the game is conducted fairly according to all rules and maintains overall control of the match.</p>
-      <h3>2. Umpire / Crew Chief</h3>
-      <p>The Umpire or Crew Chief oversees the enforcement of rules on the court, making final decisions on points and fouls.</p>
-      <h3>3. Scorekeeper / Timekeeper</h3>
-      <p>The Scorekeeper tracks points, fouls, and game duration while the Timekeeper manages the game clock.</p>
-    </section>
-
-    <!-- Key Takeaways -->
-    <section class="key-takeaways">
-      <h2>Key Takeaways</h2>
-      <div class="takeaways-box">
-        <ol>
-          <li>Basketball is a fast-paced team sport that enhances physical fitness, coordination, and teamwork.</li>
-          <li>Mastering fundamental skills such as dribbling, shooting, passing, defense, and rebounding is essential for effective gameplay.</li>
-          <li>Understanding the rules and court layout ensures fair and competitive matches.</li>
-          <li>Regular participation improves endurance, strategic thinking, and mental alertness.</li>
-          <li>The sport is governed internationally by FIBA and locally by organizations such as SBP and PBA to maintain standardized rules and development.</li>
-        </ol>
-      </div>
-    </section>
-
-        <!-- Quiz Section -->
-        <section class="quiz-section">
-          <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
-          <p>You've completed the lesson on Definition of Physical Fitness. Now it's time to assess your understanding
-            through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
-          <button class="quiz-button" onclick="takeQuiz()">TAKE QUIZ</button>
-        </section>
-      </div>
-    </section>
-    <!-- END OF MAIN CONTENT AREA -->
-
-  </main>
-
- <footer>
-    <section class="main-footer">
-      <div class="sub-main-footer">
-
-        <div class="footer-logo">
-          <div class="logo-circle">
-            <img src="/assets/images/logo/fitspace_logo.svg" alt="LPU Logo">
-          </div>
-          <h1>LPU Fit Space</h1>
-        </div>
-
-        <p>LPU FitSpace is a digital hub for PATHFIT lessons, videos, and resources, designed to supplement
-          classroom learning and support holistic student growth.</p>
-      </div>
-
-      <div class="sub-main-footer">
-        <h1>Courses:</h1>
-        <a href="../../home_page.html#pathfit1">PATHFIT 1: Movement competency Training</a>
-        <a href="../../home_page.html#pathfit2">PATHFIT 2: Exercise Based Fitness Activities</a>
-        <a href="../../home_page.html#pathfit3">PATHFIT 3 & 4: Dance, Sports, Martial Arts,<br> and Group Fitness
-          Activities</a>
-      </div>
-      <div class="sub-main-footer">
-        <h1>Contact:</h1>
-
-        <div class="contact-item">
-          <span class="material-symbols-outlined">location_on</span>
-          <p>LPU Cavite</p>
-        </div>
-        <div class="contact-item">
-          <span class="material-symbols-outlined">call</span>
-          <p>(639) 158-3558</p>
-        </div>
-        <div class="contact-item">
-          <span class="material-symbols-outlined">mail</span>
-          <p>fitspace@lpu.edu.ph</p>
-        </div>
-
-      </div>
-    </section>
-    <div class="bottom-footer">
-      <p>©2025 LPU FitSpace | Lyceum of the Philippines University - Cavite</p>
-    </div>
-
-  </footer>
-
-  <script src="/pathfit3/js/pathfit3.js"></script>
-  <script src="/assets/js/main.js"> </script>
-  <!-- END: Copied from template -->
-
-</body>
-
+    <script src="/pathfit3/js/pathfit3.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- END: Copied from template -->
+  </body>
 </html>
