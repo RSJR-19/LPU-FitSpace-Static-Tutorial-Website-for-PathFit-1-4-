@@ -11,10 +11,7 @@ FitSpace is a learning hub for PathFit 1–4 that helps Lyceans stay active, hea
 - Responsive layout, slideshow, and simple navigation
 
 ## How to Run the Project
-- Open `index.html` directly in a modern browser for basic browsing.
-- For correct cross-page navigation, run a simple static server:
-  - VS Code Live Server, Python `python -m http.server`, or any static host.
-- Quizzes are available under `quiz/quiz.html` and load content via URL parameters.
+- Open `index.html` directly in a browser for basic browsing.
 
 ## Hosted on GitHub Pages
 - Live site: https://rsjr-19.github.io/LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-/
