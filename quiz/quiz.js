@@ -214,13 +214,25 @@ function goToNextQuiz() {
     "../pathfit3/data/lesson15_team_building_and_recreational_games.json",
   ];
 
-  // Get index of the next quiz
-  const nextIndex = quizOrder.indexOf(nextQuiz);
+  // Normalize paths so comparisons work whether paths are relative or absolute
+  const normalize = (p) => {
+    try {
+      return new URL(p, window.location.href).pathname;
+    } catch (e) {
+      return p;
+    }
+  };
 
-  // Build URL for the next quiz
+  const normalizedOrder = quizOrder.map(normalize);
+  const normalizedNext = normalize(nextQuiz);
+
+  // Get index of the next quiz (using normalized paths)
+  const nextIndex = normalizedOrder.indexOf(normalizedNext);
+
+  // Build URL for the next quiz (use the original nextQuiz value, which may be absolute)
   let urlBuild = `quiz.html?quiz=${encodeURIComponent(nextQuiz)}`;
 
-  // If a quiz exists after nextQuiz, attach &next=...
+  // If a quiz exists after nextQuiz, attach &next=... (use the original ordering entry)
   if (nextIndex !== -1 && nextIndex < quizOrder.length - 1) {
     const followingQuiz = quizOrder[nextIndex + 1];
     urlBuild += `&next=${encodeURIComponent(followingQuiz)}`;

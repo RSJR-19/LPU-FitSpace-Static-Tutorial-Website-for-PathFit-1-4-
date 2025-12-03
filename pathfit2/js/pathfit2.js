@@ -13,8 +13,22 @@ document.addEventListener("DOMContentLoaded", () => {
 function takeQuiz(btn) {
   const file = btn.dataset.quiz;
   const next = btn.dataset.next;
-  let url = "/quiz/quiz.html?quiz=" + encodeURIComponent(file);
-  if (next) url += "&next=" + encodeURIComponent(next);
+
+  function resolvePath(rel) {
+    try {
+      const abs = new URL(rel, window.location.href);
+      return abs.pathname + abs.search;
+    } catch (e) {
+      return rel;
+    }
+  }
+
+  const quizPath = resolvePath(file);
+  let url = "/quiz/quiz.html?quiz=" + encodeURIComponent(quizPath);
+  if (next) {
+    const nextPath = resolvePath(next);
+    url += "&next=" + encodeURIComponent(nextPath);
+  }
   window.location.href = url;
 }
 
