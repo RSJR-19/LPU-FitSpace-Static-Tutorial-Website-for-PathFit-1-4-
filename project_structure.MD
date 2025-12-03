@@ -9,6 +9,8 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 ├── index.html
 ├── project_structure.MD
 ├── README.md
+├── test-website.ps1
+├── website_test_report.txt
 ├── assets/
 │   ├── search-index.json
 │   ├── css/
@@ -70,6 +72,7 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │   │   │   ├── PE.png
 │   │   │   ├── PF.png
 │   │   │   ├── running_shadow.png
+│   │   │   ├── scale.png
 │   │   │   ├── trainer.png
 │   │   │   └── training.png
 │   │   ├── pathfit3/
@@ -122,6 +125,15 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │   │   │   ├── Zumba.png
 │   │   │   └── ZumbaHealth.png
 │   │   ├── pathfit4/
+│   │   │   ├── arnis_strike.png
+│   │   │   ├── lesson_10.png
+│   │   │   ├── lesson_11.png
+│   │   │   ├── lesson_12.png
+│   │   │   ├── lesson_13.png
+│   │   │   ├── lesson_14.png
+│   │   │   ├── lesson_15.png
+│   │   │   ├── lesson_8.png
+│   │   │   └── lesson_9.png
 │   │   └── table_of_index/
 │   │       ├── LPU_landscape_reddish.svg
 │   │       └── LPU_landscape.svg
@@ -240,22 +252,23 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 
 **Documentation:**
 - Markdown files: 2
+- Text files: 1
 - PDF files: 2
 
 **Images:**
-- PNG files: 89
+- PNG files: 99
 - SVG files: 10
-- **Total images: 99**
+- **Total images: 109**
 
 **Videos:**
 - WEBM files: 1
 - **Total videos: 1**
 
 **Scripts:**
-- PowerShell scripts: 1
+- PowerShell scripts: 2
 
 ### Summary
 
-- **Total Files:** 188
+- **Total Files:** 200
 - **Total Folders:** 32
-- **Total Items:** 220
+- **Total Items:** 232

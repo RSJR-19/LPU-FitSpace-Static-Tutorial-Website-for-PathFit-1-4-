@@ -6,31 +6,28 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Team Building and Recreational Games - FitSpace</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href="css/pathfit3.css">
-  
-    <link rel="stylesheet" href="../assets/css/search.css">
-  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/search.css">
 </head>
 
 <body>
-  <!-- START: Copied from template -->
-  <!-- header + sidebar from template -->
   <header>
     <div style="height: 1dvh;background-color: white;"></div>
     <nav>
       <div class="spacer"></div>
       <div class="left-nav">
         <div class="lpu-logo">
-          <img src="/assets/images/logo/LPU-logo.svg" alt="lpu logo">
+          <img src="../../assets/images/logo/fitspace_logo.svg" alt="fitspacelogo">
         </div>
         <div class="fitspace-text">
           <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
         </div>
       </div>
-          <div class="right-nav">
-        <a href="../home_page.html#mission">Mission & Vision</a>
-        <a href="../home_page.html#aboutUs">About FitSpace</a>
+      <div class="right-nav">
+        <a href="../../home_page.html#mission">Mission & Vision</a>
+        <a href="../../home_page.html#aboutUs">About FitSpace</a>
 
         <div class="search-box">
           <a onclick="displaySearch()" id="search">Search</a>
@@ -39,7 +36,6 @@
         <div class="search-results" id="search-results"></div>
 
       </div>
-
       <div class="spacer"></div>
     </nav>
     <div style="background-color: white;height: 1dvh;border-bottom: 2px gray solid;"></div>
@@ -69,22 +65,22 @@
           </div>
 
           <div class="lesson-tab" onclick="openTab(pathfit2, arrow2, dropdown2)">
-                        <b>PATHFIT 2</b>
-                        <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
-                    </div>
-                    <div id="dropdown2" class="dropdown">
-                        <a href="lesson1_introduction_to_fitness_definitions_components.html" class="active">Introduction to
-                            Fitness: Definitions & Components</a>
-                        <a href="lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
-                            Principle</a>
-                        <a href="lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
-                        <a href="lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
-                        <a href="lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
-                        <a href="lesson6_weight_management.html">Weight Management</a>
-                        <a href="lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
-                            Program</a>
-                        <a href="pathfit2_quiz_list.html">Quiz</a>
-                    </div>
+            <b>PATHFIT 2</b>
+            <span class="material-symbols-outlined" id="arrow2">arrow_drop_down</span>
+          </div>
+          <div id="dropdown2" class="dropdown">
+            <a href="lesson1_introduction_to_fitness_definitions_components.html" class="active">Introduction to
+              Fitness: Definitions & Components</a>
+            <a href="lesson2_fundamentals_of_fitness_and_fitt.html">Fundamentals of Fitness & FITT
+              Principle</a>
+            <a href="lesson3_types_of_fitness_training.html">Types of Fitness Training</a>
+            <a href="lesson4_fitness_assessment_and_screening.html">Fitness Assessment & Screening</a>
+            <a href="lesson5_benefits_of_regular_exercise.html">Benefits of Regular Exercise</a>
+            <a href="lesson6_weight_management.html">Weight Management</a>
+            <a href="lesson7_designing_personal_fitness_program.html">Designing a Personal Fitness
+              Program</a>
+            <a href="pathfit2_quiz_list.html">Quiz</a>
+          </div>
 
           <div class="lesson-tab" onclick="openTab(pathfit3, arrow3, dropdown3)">
             <b>PATHFIT 3 & 4</b>
@@ -108,7 +104,7 @@
             </div>
             <div id="dropdownSports" class="dropdown2">
               <a href="pf3_sports_act/lesson4_basketball.html">Basketball</a>
-              <a href="pf3_sports_act/lesson5_volleyball.html">Basketball</a>
+              <a href="pf3_sports_act/lesson5_volleyball.html">Volleyball</a>
               <a href="pf3_sports_act/lesson6_pickleball.html">Pickleball</a>
               <a href="pf3_sports_act/lesson7_badminton.html">Badminton</a>
               <a href="pf3_sports_act/lesson8_table_tennis.html">Table Tennis</a>
@@ -157,11 +153,8 @@
         <!-- Main Header -->
         <h1>Team Building and Recreational Games</h1>
 
-        <div class="image-placeholder">
-          <div class="image-placeholder-icon"></div>
-          <div class="image-placeholder-text">Team Building Activities Overview</div>
-          <div class="image-placeholder-subtext">Visual representation of a group engaging in a collaborative
-            problem-solving activity </div>
+        <div style="height: 60%" class="image-placeholder">
+          <img src="/assets/images/pathfit4/lesson_15.png" />
         </div>
 
         <section class="content-section">
@@ -293,9 +286,11 @@
         <!-- Quiz Section -->
         <section class="quiz-section">
           <h2>READY TO TEST YOUR KNOWLEDGE?</h2>
-          <p>You've completed the lesson on team building and recreational activities. Now it's time to assess your understanding
+          <p>You've completed the lesson on team building and recreational activities. Now it's time to assess your
+            understanding
             through our interactive quiz. This quiz will help reinforce key concepts and identify areas for review.</p>
-            <button class="quiz-button" data-quiz="../pathfit3/data/lesson15_team_building_and_recreational_games.json" onclick="takeQuiz(this)">TAKE QUIZ</button>
+          <button class="quiz-button" data-quiz="../pathfit3/data/lesson15_team_building_and_recreational_games.json"
+            onclick="takeQuiz(this)">TAKE QUIZ</button>
         </section>
       </div>
     </section>
@@ -303,7 +298,7 @@
 
   </main>
 
- <footer>
+  <footer>
     <section class="main-footer">
       <div class="sub-main-footer">
 
@@ -350,7 +345,7 @@
   </footer>
 
   <script src="js/pathfit3.js"></script>
-   <script src="../assets/js/main.js"> </script>
+  <script src="../assets/js/main.js"> </script>
   <script src="../assets/js/home_page.js"></script>
   <script src="../assets/js/search.js"></script>
   <!-- END: Copied from template -->

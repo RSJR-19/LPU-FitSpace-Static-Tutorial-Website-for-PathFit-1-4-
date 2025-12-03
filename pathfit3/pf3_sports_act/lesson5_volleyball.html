@@ -7,6 +7,7 @@
   <title>Volleyball - FitSpace</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/search.css">
   <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href="../css/pathfit3.css">
 </head>
@@ -14,26 +15,27 @@
 <body>
   <!-- START: Copied from template -->
   <!-- header + sidebar from template -->
- <header>
+  <header>
     <div style="height: 1dvh;background-color: white;"></div>
     <nav>
       <div class="spacer"></div>
       <div class="left-nav">
         <div class="lpu-logo">
-          <img src="../../assets/images/logo/LPU-logo.svg" alt="lpu logo">
+          <img src="/assets/images/logo/fitspace_logo.svg" alt="fitspacelogo">
         </div>
         <div class="fitspace-text">
           <a style="color: #b11e23;">LPU <a style="color: rgb(83, 83, 83);"> FitSpace</a></a>
         </div>
       </div>
       <div class="right-nav">
-        <a>Mission & Vision</a>
-        <a>Department Overview</a>
-        <a>About FitSpace</a>
-        <div class="input-container">
-          <input type="text" placeholder=" Search Lessons...">
-          <button>Search</button>
+        <a href="/home_page.html#mission">Mission & Vision</a>
+        <a href="/home_page.html#aboutUs">About FitSpace</a>
+
+        <div class="search-box">
+          <a onclick="displaySearch()" id="search">Search</a>
+          <input type="text" id="input-bar" placeholder="Lessons...">
         </div>
+        <div class="search-results" id="search-results"></div>
       </div>
       <div class="spacer"></div>
     </nav>
@@ -73,7 +75,8 @@
             <a href="/pathfit2/lesson3_definition_of_fitness.html">Definiton of Fitness</a>
             <a href="/pathfit2/lesson4_fundamentals_of_fitness.html">Fundamentals of Fitness</a>
             <a href="/pathfit2/lesson5_definition_of_exercise.html">Definiton of Exercise</a>
-            <a href="/pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical Activity/Exercise</a>
+            <a href="/pathfit2/lesson6_benefits_of_regular_exercise.html">Benefits of Regular Physical
+              Activity/Exercise</a>
             <a href="/pathfit2/lesson7_definition_of_training.html">Definition of Training</a>
             <a href="/pathfit2/lesson8_types_of_fitness_training.html">Types of Fitness Training</a>
             <a href="/pathfit2/lesson9_fitness_program_5_steps.html">Fitness Program: 5 Steps to Get Started</a>
@@ -147,157 +150,175 @@
       <div class="spacer"></div>
     </section>
 
-     <!-- MAIN CONTENT AREA -->
-<section class="main-content-container">
-  <div class="main-content">
-    <!-- Back Link -->
-    <a href="/home_page.html#pathfit3" class="back-link">Back to PathFit 3 Index</a>
+    <!-- MAIN CONTENT AREA -->
+    <section class="main-content-container">
+      <div class="main-content">
+        <!-- Back Link -->
+        <a href="/home_page.html#pathfit3" class="back-link">Back to PathFit 3 Index</a>
 
-    <!-- Main Header -->
-    <h1>VOLLEYBALL</h1>
+        <!-- Main Header -->
+        <h1>VOLLEYBALL</h1>
 
-    <!-- Banner Image Placeholder -->
-    <div style="height: 60%;" class="image-placeholder">
-      <img src="/assets/images/pathfit3/Volleyball.png">
-    </div>
-
-    <!-- Lesson Overview -->
-    <section class="content-section">
-      <h2>Lesson Overview</h2>
-      <p>Volleyball is a dynamic team sport that develops agility, coordination, endurance, and teamwork. This course introduces the fundamental skills, rules, and strategies essential for playing volleyball effectively.</p>
-
-      <p>Through drills, gameplay, and performance assessments, students will enhance their motor skills, tactical understanding, and overall fitness while participating in structured volleyball activities.</p>
-    </section>
-
-    <!-- Main Discussion -->
-    <section class="content-section">
-      <h2>What is Volleyball?</h2>
-      <p>Volleyball is a team sport played by two teams on a rectangular court divided by a net. The objective is to send the ball over the net and ground it on the opponent’s side while preventing the opponent from doing the same.</p>
-
-      <p>The sport emphasizes communication, teamwork, and quick reflexes, making it highly popular in schools, recreational leagues, and professional competitions worldwide.</p>
-    </section>
-
-    <!-- Nature and Background -->
-    <section class="content-section">
-      <h2>Nature and Background</h2>
-
-      <div class="nature-box">
-        <div class="left-side">
-          <div class="content-box">
-            <p>Volleyball was invented in 1895 by William G. Morgan in Holyoke, Massachusetts, as a combination of basketball, baseball, tennis, and handball to create a less strenuous sport.</p>
-          </div>
+        <!-- Banner Image Placeholder -->
+        <div style="height: 60%;" class="image-placeholder">
+          <img src="/assets/images/pathfit3/Volleyball.png">
         </div>
-        <div class="right-side">
-          <div class="content-box">
-            <p>The sport gained rapid popularity, leading to the establishment of formal rules, competitive leagues, and international competitions. Today, volleyball is played both indoors and on sand (beach volleyball), with worldwide recognition and professional tournaments.</p>
+
+        <!-- Lesson Overview -->
+        <section class="content-section">
+          <h2>Lesson Overview</h2>
+          <p>Volleyball is a dynamic team sport that develops agility, coordination, endurance, and teamwork. This
+            course introduces the fundamental skills, rules, and strategies essential for playing volleyball
+            effectively.</p>
+
+          <p>Through drills, gameplay, and performance assessments, students will enhance their motor skills, tactical
+            understanding, and overall fitness while participating in structured volleyball activities.</p>
+        </section>
+
+        <!-- Main Discussion -->
+        <section class="content-section">
+          <h2>What is Volleyball?</h2>
+          <p>Volleyball is a team sport played by two teams on a rectangular court divided by a net. The objective is to
+            send the ball over the net and ground it on the opponent’s side while preventing the opponent from doing the
+            same.</p>
+
+          <p>The sport emphasizes communication, teamwork, and quick reflexes, making it highly popular in schools,
+            recreational leagues, and professional competitions worldwide.</p>
+        </section>
+
+        <!-- Nature and Background -->
+        <section class="content-section">
+          <h2>Nature and Background</h2>
+
+          <div class="nature-box">
+            <div class="left-side">
+              <div class="content-box">
+                <p>Volleyball was invented in 1895 by William G. Morgan in Holyoke, Massachusetts, as a combination of
+                  basketball, baseball, tennis, and handball to create a less strenuous sport.</p>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="content-box">
+                <p>The sport gained rapid popularity, leading to the establishment of formal rules, competitive leagues,
+                  and international competitions. Today, volleyball is played both indoors and on sand (beach
+                  volleyball), with worldwide recognition and professional tournaments.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Basic Volleyball Skills -->
-    <section class="content-section">
-      <h2>Basic Skills in Volleyball</h2>
-      <h3>Serving</h3>
-      <p>The serve is used to start a rally and can be performed underhand or overhand.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Serving.png">
-      </div>
+        <!-- Basic Volleyball Skills -->
+        <section class="content-section">
+          <h2>Basic Skills in Volleyball</h2>
+          <h3>Serving</h3>
+          <p>The serve is used to start a rally and can be performed underhand or overhand.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/Serving.png">
+          </div>
 
-      <h3>Passing / Bumping</h3>
-      <p>Passing is used to control the ball after receiving a serve or attack and set it up for a teammate.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Receiving.png">
-      </div>
+          <h3>Passing / Bumping</h3>
+          <p>Passing is used to control the ball after receiving a serve or attack and set it up for a teammate.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/Receiving.png">
+          </div>
 
-      <h3>Setting</h3>
-      <p>Setting involves using the fingers to accurately place the ball for an attacker to spike.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Setting.png">
-      </div>
+          <h3>Setting</h3>
+          <p>Setting involves using the fingers to accurately place the ball for an attacker to spike.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/Setting.png">
+          </div>
 
-      <h3>Attacking / Spiking</h3>
-      <p>Spiking is a forceful overhead hit intended to ground the ball on the opponent’s court.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Spiking.png">
-      </div>
+          <h3>Attacking / Spiking</h3>
+          <p>Spiking is a forceful overhead hit intended to ground the ball on the opponent’s court.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/Spiking.png">
+          </div>
 
-      <h3>Blocking</h3>
-      <p>Blocking is a defensive action where players jump near the net to prevent the opponent’s attack from crossing the net.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/Blocking.png">
-      </div>
-    </section>
+          <h3>Blocking</h3>
+          <p>Blocking is a defensive action where players jump near the net to prevent the opponent’s attack from
+            crossing the net.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/Blocking.png">
+          </div>
+        </section>
 
-    <!-- Court and Equipment -->
-    <section class="content-section">
-      <h2>Volleyball Court and Equipment</h2>
-      <h3>1. Volleyball Court</h3>
-      <p>The court is rectangular, measuring 18m by 9m, divided by a net. Lines mark attack zones, service areas, and boundaries.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/VolleyballCourt.png">
-      </div>
+        <!-- Court and Equipment -->
+        <section class="content-section">
+          <h2>Volleyball Court and Equipment</h2>
+          <h3>1. Volleyball Court</h3>
+          <p>The court is rectangular, measuring 18m by 9m, divided by a net. Lines mark attack zones, service areas,
+            and boundaries.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/VolleyballCourt.png">
+          </div>
 
-      <h3>2. Volleyball</h3>
-      <p>The ball is spherical, lightweight, and designed for grip and control. Size and weight may vary for indoor or beach volleyball.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/VolleyballBall.png">
-      </div>
+          <h3>2. Volleyball</h3>
+          <p>The ball is spherical, lightweight, and designed for grip and control. Size and weight may vary for indoor
+            or beach volleyball.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/VolleyballBall.png">
+          </div>
 
-      <h3>3. Net</h3>
-      <p>The net divides the court and varies in height depending on age and gender: 2.43m for men, 2.24m for women, and 2.24m for coed youth leagues.</p>
-      <div style="height: 300px;" class="image-placeholder">
-        <img src="/assets/images/pathfit3/VballNet.png">
-      </div>
-    </section>
+          <h3>3. Net</h3>
+          <p>The net divides the court and varies in height depending on age and gender: 2.43m for men, 2.24m for women,
+            and 2.24m for coed youth leagues.</p>
+          <div style="height: 300px;" class="image-placeholder">
+            <img src="/assets/images/pathfit3/VballNet.png">
+          </div>
+        </section>
 
-    <!-- Rules of Volleyball -->
-    <section class="content-section">
-      <h2>Volleyball Rules and Regulations</h2>
-      <p>Volleyball has specific rules to ensure fair and competitive play:</p>
-      <ul>
-        <li>A match is played best of five sets, each set to 25 points (15 points for the deciding set)</li><br>
-        <li>A team must win a set by at least 2 points</li><br>
-        <li>Each team has six players on the court at a time</li><br>
-        <li>Players are not allowed to touch the net or cross the centerline</li><br>
-        <li>Each team can hit the ball up to three times before sending it over the net</li><br>
-      </ul>
-    </section>
+        <!-- Rules of Volleyball -->
+        <section class="content-section">
+          <h2>Volleyball Rules and Regulations</h2>
+          <p>Volleyball has specific rules to ensure fair and competitive play:</p>
+          <ul>
+            <li>A match is played best of five sets, each set to 25 points (15 points for the deciding set)</li><br>
+            <li>A team must win a set by at least 2 points</li><br>
+            <li>Each team has six players on the court at a time</li><br>
+            <li>Players are not allowed to touch the net or cross the centerline</li><br>
+            <li>Each team can hit the ball up to three times before sending it over the net</li><br>
+          </ul>
+        </section>
 
-    <!-- Governing Body -->
-    <section class="content-section">
-      <h2>Governing Body in Volleyball</h2>
-      <ul>
-        <li>The Fédération Internationale de Volleyball (FIVB) governs international volleyball competitions and rules.</li><br>
-        <li>The Philippine National Volleyball Federation (PNVF) governs volleyball locally and is recognized by the FIVB and Olympic Committee.</li>
-      </ul>
-    </section>
+        <!-- Governing Body -->
+        <section class="content-section">
+          <h2>Governing Body in Volleyball</h2>
+          <ul>
+            <li>The Fédération Internationale de Volleyball (FIVB) governs international volleyball competitions and
+              rules.</li><br>
+            <li>The Philippine National Volleyball Federation (PNVF) governs volleyball locally and is recognized by the
+              FIVB and Olympic Committee.</li>
+          </ul>
+        </section>
 
-    <!-- Volleyball Officials -->
-    <section class="content-section">
-      <h2>Volleyball Officials</h2>
-      <p>There are several key officials in volleyball:</p>
-      <h3>1. Referee</h3>
-      <p>The Referee supervises the entire match, enforces rules, and ensures fair play.</p>
-      <h3>2. Second Referee</h3>
-      <p>The Second Referee assists the first referee, monitors substitutions, and manages the net area.</p>
-      <h3>3. Line Judges</h3>
-      <p>Line Judges observe whether the ball lands in or out of the court and help the referees make accurate calls.</p>
-    </section>
+        <!-- Volleyball Officials -->
+        <section class="content-section">
+          <h2>Volleyball Officials</h2>
+          <p>There are several key officials in volleyball:</p>
+          <h3>1. Referee</h3>
+          <p>The Referee supervises the entire match, enforces rules, and ensures fair play.</p>
+          <h3>2. Second Referee</h3>
+          <p>The Second Referee assists the first referee, monitors substitutions, and manages the net area.</p>
+          <h3>3. Line Judges</h3>
+          <p>Line Judges observe whether the ball lands in or out of the court and help the referees make accurate
+            calls.</p>
+        </section>
 
-    <!-- Key Takeaways -->
-    <section class="key-takeaways">
-      <h2>Key Takeaways</h2>
-      <div class="takeaways-box">
-        <ol>
-          <li>Volleyball is a high-energy team sport that enhances physical fitness, agility, and coordination.</li>
-          <li>Mastering fundamental skills such as serving, passing, setting, spiking, and blocking is essential for effective gameplay.</li>
-          <li>Understanding rules, court layout, and player rotations ensures fair and competitive matches.</li>
-          <li>Regular participation improves teamwork, reflexes, strategic thinking, and mental alertness.</li>
-          <li>The sport is governed internationally by FIVB and locally by PNVF to maintain standardized rules and development.</li>
-        </ol>
-      </div>
-    </section>
+        <!-- Key Takeaways -->
+        <section class="key-takeaways">
+          <h2>Key Takeaways</h2>
+          <div class="takeaways-box">
+            <ol>
+              <li>Volleyball is a high-energy team sport that enhances physical fitness, agility, and coordination.</li>
+              <li>Mastering fundamental skills such as serving, passing, setting, spiking, and blocking is essential for
+                effective gameplay.</li>
+              <li>Understanding rules, court layout, and player rotations ensures fair and competitive matches.</li>
+              <li>Regular participation improves teamwork, reflexes, strategic thinking, and mental alertness.</li>
+              <li>The sport is governed internationally by FIVB and locally by PNVF to maintain standardized rules and
+                development.</li>
+            </ol>
+          </div>
+        </section>
 
         <!-- Quiz Section -->
         <section class="quiz-section">
@@ -306,10 +327,9 @@
             You've completed the lesson on <strong>Volleyball</strong>.
             Now it's time to assess your understanding through our interactive quiz.
           </p>
-          <button class="quiz-button"
-            data-quiz="../pathfit3/pf3_sports_act/data/lesson5_volleyball.json"
-            data-next="../pathfit3/pf3_sports_act/data/lesson6_pickleball.json"
-            onclick="takeQuiz(this)">TAKE QUIZ</button>
+          <button class="quiz-button" data-quiz="../pathfit3/pf3_sports_act/data/lesson5_volleyball.json"
+            data-next="../pathfit3/pf3_sports_act/data/lesson6_pickleball.json" onclick="takeQuiz(this)">TAKE
+            QUIZ</button>
         </section>
       </div>
     </section>
@@ -317,7 +337,7 @@
 
   </main>
 
- <footer>
+  <footer>
     <section class="main-footer">
       <div class="sub-main-footer">
 
@@ -365,6 +385,7 @@
 
   <script src="/pathfit3/js/pathfit3.js"></script>
   <script src="/assets/js/main.js"> </script>
+  <script src="/assets/js/search.js"> </script>
   <!-- END: Copied from template -->
 
 </body>

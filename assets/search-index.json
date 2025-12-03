@@ -17,7 +17,7 @@
   {
     "Title": "Benefits of Regular Exercise - FitSpace",
     "Snippet": "Regular physical activity offers many benefits for the body and mind. This lesson summarizes the major physical, mental, and social benefits of exerci",
-    "Path": "pathfit2/lesson6_benefits_of_regular_exercise.html"
+    "Path": "pathfit2/lesson5_benefits_of_regular_exercise.html"
   },
   {
     "Title": "Cardio Workouts - FitSpace",
@@ -30,34 +30,9 @@
     "Path": "pathfit3/pf3_group_exercises/lesson12_core_and_circuit_training.html"
   },
   {
-    "Title": "Definition of Exercise - FitSpace",
-    "Snippet": "Exercise is a planned, structured, and repetitive physical activity designed to maintain or improve one or more components of physical fitness. Unlike",
-    "Path": "pathfit2/lesson5_definition_of_exercise.html"
-  },
-  {
-    "Title": "Definition of Fitness - FitSpace",
-    "Snippet": "Fitness is a comprehensive state of well-being that encompasses physical, mental, and social dimensions. This lesson explores how fitness extends beyo",
-    "Path": "pathfit2/lesson3_definition_of_fitness.html"
-  },
-  {
-    "Title": "Definition of Physical Activity - FitSpace",
-    "Snippet": "Physical activity encompasses any bodily movement produced by skeletal muscles that requires energy expenditure. Understanding what constitutes physic",
-    "Path": "pathfit2/lesson2_definition_of_physical_activity.html"
-  },
-  {
-    "Title": "Definition of Physical Fitness - FitSpace",
-    "Snippet": "Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leis",
-    "Path": "pathfit2/lesson1_definition_of_physical_fitness.html"
-  },
-  {
-    "Title": "Definition of Training - PathFit",
-    "Snippet": "Training is a systematic process designed to improve physical performance and adaptation through planned and progressive exercise. This lesson explore",
-    "Path": "pathfit2/lesson7_definition_of_training.html"
-  },
-  {
-    "Title": "Developing a Personal Fitness Plan - FitSpace",
-    "Snippet": "Creating a personal fitness plan is the key to achieving long-term health and wellness. This lesson guides you through the steps of designing, impleme",
-    "Path": "pathfit2/lesson14_developing_a_personal_fitness_plan.html"
+    "Title": "Designing a Personal Fitness Program - FitSpace",
+    "Snippet": "Creating a personal fitness plan is the key to achieving long-term health and wellness. This lesson guides you through the essential steps of assessin",
+    "Path": "pathfit2/lesson7_designing_personal_fitness_program.html"
   },
   {
     "Title": "Eating Habits - FitSpace",
@@ -65,9 +40,9 @@
     "Path": "pathfit1/lesson6_Eating_Habits.html"
   },
   {
-    "Title": "Fitness Program: 5 Steps to Get Started - FitSpace",
-    "Snippet": "Starting a fitness program can seem overwhelming, but it doesn't have to be. This lesson breaks down the process into five manageable steps that will ",
-    "Path": "pathfit2/lesson9_fitness_program_5_steps.html"
+    "Title": "Fitness Assessment & Screening - FitSpace",
+    "Snippet": "Physical fitness tests are essential tools for assessing your current fitness level and tracking progress over time. This lesson covers the main types",
+    "Path": "pathfit2/lesson4_fitness_assessment_and_screening.html"
   },
   {
     "Title": "FitSpace - Home",
@@ -75,24 +50,29 @@
     "Path": "home_page.html"
   },
   {
-    "Title": "FITT Principle - FitSpace",
-    "Snippet": "The FITT Principle is a fundamental framework for designing effective exercise programs. It considers four key variables: Frequency, Intensity, Time, ",
-    "Path": "pathfit2/lesson11_fitt_principle.html"
+    "Title": "FitSpace - Quiz",
+    "Snippet": "No description available",
+    "Path": "quiz/quiz.html"
   },
   {
-    "Title": "FMS Lecture - FitSpace",
-    "Snippet": "The Functional Movement Screen (FMS) is a screening tool used to evaluate seven fundamental movement patterns in individuals with no current pain or m",
-    "Path": "pathfit1/lesson4_fms_lecture.html"
+    "Title": "FitSpace - Quiz Selection",
+    "Snippet": "No description available",
+    "Path": "quiz/quiz_list.html"
   },
   {
-    "Title": "Functional Movement Screen - FitSpace",
+    "Title": "FMS Sheet - FitSpace",
     "Snippet": "The Functional Movement Screen (FMS) is a screening tool used to evaluate fundamental movement patterns to identify limitations and asymmetries. It he",
     "Path": "pathfit1/lesson5_Functional_Movement_Screen.html"
   },
   {
-    "Title": "Fundamentals of Fitness - FitSpace",
+    "Title": "Functional Movement Screen - FitSpace",
+    "Snippet": "The Functional Movement Screen (FMS) is a screening tool used to evaluate seven fundamental movement patterns in individuals with no current pain or m",
+    "Path": "pathfit1/lesson4_fms_lecture.html"
+  },
+  {
+    "Title": "Fundamentals of Fitness & FITT Principle - FitSpace",
     "Snippet": "Understanding the fundamental principles of fitness is crucial for developing an effective exercise program. These principles guide how we should stru",
-    "Path": "pathfit2/lesson4_fundamentals_of_fitness.html"
+    "Path": "pathfit2/lesson2_fundamentals_of_fitness_and_fitt.html"
   },
   {
     "Title": "Hiking and Trekking - FitSpace",
@@ -103,6 +83,11 @@
     "Title": "Introduction to Applied Physical Activities - FitSpace",
     "Snippet": "Physical fitness is the body's ability to perform daily tasks efficiently and effectively, without undue fatigue, and with enough energy left for leis",
     "Path": "pathfit3/lesson1_Introduction_to_applied_physical_activities.html"
+  },
+  {
+    "Title": "Introduction to Fitness: Definitions and Components - FitSpace",
+    "Snippet": "This lesson introduces the core concepts that form the foundation of fitness, physical activity, and exercise. You'll learn how these ideas connect to",
+    "Path": "pathfit2/lesson1_introduction_to_fitness_definitions_components.html"
   },
   {
     "Title": "Introduction to Folk Dance - FitSpace",
@@ -160,29 +145,14 @@
     "Path": "pathfit1/lesson2_PARQ.html"
   },
   {
-    "Title": "PathFit 3 & 4 — Quiz",
-    "Snippet": "No description available",
-    "Path": "pathfit3/quiz/quiz.html"
-  },
-  {
-    "Title": "Pathfit Quiz",
-    "Snippet": "No description available",
-    "Path": "pathfit2/quiz/quiz.html"
-  },
-  {
-    "Title": "Physical Fitness Test Score Card - FitSpace",
-    "Snippet": "Physical fitness tests are essential tools for assessing your current fitness level and tracking progress over time. This lesson covers the main types",
-    "Path": "pathfit2/lesson13_physical_fitness_test.html"
-  },
-  {
     "Title": "Pickleball - FitSpace",
     "Snippet": "Pickleball is a paddle sport that combines elements of tennis, badminton, and table tennis. This course introduces the fundamentals of pickleball, inc",
     "Path": "pathfit3/pf3_sports_act/lesson6_pickleball.html"
   },
   {
-    "Title": "Sample Fitness Plan - FitSpace",
-    "Snippet": "A well-structured fitness plan is essential for achieving your health and fitness goals. This lesson provides a comprehensive sample plan that you can",
-    "Path": "pathfit2/lesson10_sample_fitness_plan.html"
+    "Title": "Quiz - FitSpace",
+    "Snippet": "Test your knowledge and reinforce key concepts from the PathFit 2: Exercise-Based Fitness Activities course. The quizzes below cover the core lessons ",
+    "Path": "pathfit2/pathfit2_quiz_list.html"
   },
   {
     "Title": "Team Building and Recreational Games - FitSpace",
@@ -190,9 +160,9 @@
     "Path": "pathfit3/lesson15_team_building_and_recreational_games.html"
   },
   {
-    "Title": "Types of Fitness Training - PathFit",
+    "Title": "Types of Fitness Training - FitSpace",
     "Snippet": "Understanding different types of fitness training is essential for developing a well-rounded exercise program. Each type of training serves specific p",
-    "Path": "pathfit2/lesson8_types_of_fitness_training.html"
+    "Path": "pathfit2/lesson3_types_of_fitness_training.html"
   },
   {
     "Title": "Volleyball - FitSpace",
@@ -202,7 +172,7 @@
   {
     "Title": "Weight Management - FitSpace",
     "Snippet": "Weight management is a crucial aspect of overall health and fitness. This lesson explores the principles of maintaining a healthy weight through prope",
-    "Path": "pathfit2/lesson12_weight_management.html"
+    "Path": "pathfit2/lesson6_weight_management.html"
   },
   {
     "Title": "Zumba - FitSpace",
