@@ -205,7 +205,7 @@
   font-size: 0.9em;
   cursor: pointer;
   border-radius: 5px;
-  transition: all ease-in 0.2s;
+ transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .explore-button:hover{
@@ -255,7 +255,7 @@
   font-size: 0.9em;
   cursor: pointer;
   border-radius: 5px;
-  transition: all ease-in-out 0.2s;
+  transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .about-pe-btn:hover{
