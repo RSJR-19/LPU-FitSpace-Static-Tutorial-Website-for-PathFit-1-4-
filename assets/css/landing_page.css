@@ -85,6 +85,19 @@
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.start-button:hover{
+  background-color: #b11e23;
+  transform: scale(1.05);
+  border: 1px solid #8c171b;
+  
+}
+
+.start-button:hover a{
+  color: white;
+  border: none;
 }
 
 .start-button a {
@@ -192,6 +205,17 @@
   font-size: 0.9em;
   cursor: pointer;
   border-radius: 5px;
+  transition: all ease-in 0.2s;
+}
+
+.explore-button:hover{
+  background-color: #b11e23;
+  transform: scale(1.05);
+}
+
+.explore-button:hover a{
+  color: white;
+
 }
 .explore-button a {
   text-decoration: none;
@@ -231,6 +255,12 @@
   font-size: 0.9em;
   cursor: pointer;
   border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+
+.about-pe-btn:hover{
+  box-shadow: inset #db3238 0px 0px 20px 0px;
+  transform: scale(1.05);
 }
 .about-pe-btn a {
   text-decoration: none;
