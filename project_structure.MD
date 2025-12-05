@@ -9,8 +9,6 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 ├── index.html
 ├── project_structure.MD
 ├── README.md
-├── test-website.ps1
-├── website_test_report.txt
 ├── assets/
 │   ├── search-index.json
 │   ├── css/
@@ -54,13 +52,15 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │   │   │   └── pf3K.png
 │   │   ├── logo/
 │   │   │   ├── campus_background.svg
+│   │   │   ├── favicon.png
 │   │   │   ├── fitspace_logo.svg
+│   │   │   ├── icon.png
 │   │   │   ├── LPU-Logo-256x256.png
 │   │   │   └── LPU-logo.svg
 │   │   ├── pathfit1/
 │   │   │   ├── eating_habits.png
 │   │   │   ├── fms_guy_holding_a_stick_while_ouching.png
-│   │   │   ├── fms.svg
+│   │   │   ├── fms.png
 │   │   │   ├── locomotor.png
 │   │   │   ├── movement_enhancement.png
 │   │   │   └── physical_education.png
@@ -116,7 +116,7 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │   │   │   ├── Shooting.png
 │   │   │   ├── Shuttlecock.png
 │   │   │   ├── Spiking.png
-│   │   │   ├── sports.svg
+│   │   │   ├── sports.png
 │   │   │   ├── VballNet.png
 │   │   │   ├── Volleyball.png
 │   │   │   ├── VolleyballBall.png
@@ -231,11 +231,15 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │           ├── lesson7_badminton.json
 │           ├── lesson8_table_tennis.json
 │           └── lesson9_swimming.json
-└── quiz/
-    ├── quiz_list.html
-    ├── quiz.css
-    ├── quiz.html
-    └── quiz.js
+├── quiz/
+│   ├── quiz_list.html
+│   ├── quiz.css
+│   ├── quiz.html
+│   └── quiz.js
+└── scripts_FOR_TESTING/
+    ├── search-index.ps1
+    ├── test-website.ps1
+    └── website_test_report.txt
 ```
 
 ## Project Statistics
@@ -256,19 +260,19 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 - PDF files: 2
 
 **Images:**
-- PNG files: 99
-- SVG files: 10
-- **Total images: 109**
+- PNG files: 103
+- SVG files: 8
+- **Total images: 111**
 
 **Videos:**
 - WEBM files: 1
 - **Total videos: 1**
 
 **Scripts:**
-- PowerShell scripts: 2
+- PowerShell scripts: 3
 
 ### Summary
 
-- **Total Files:** 200
-- **Total Folders:** 32
-- **Total Items:** 232
+- **Total Files:** 203
+- **Total Folders:** 33
+- **Total Items:** 236

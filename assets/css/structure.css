@@ -656,6 +656,24 @@ main {
   align-items: center;
   overflow: hidden;
   transition: flex 0.3s ease;
+  
+
+}
+.pic-item p{
+  position: absolute;
+  opacity: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  backdrop-filter: blur(2px);
+  transition: all ease-in-out 0.3s;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.pic-item:hover p{
+  opacity: 1;
 
 }
 
