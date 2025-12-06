@@ -356,6 +356,8 @@ main .sidebar .spacer {
   display: none;
 }
 
+
+
 /* ============================================= */
 /* RESPONSIVE LAYOUT                            */
 /* ============================================= */
@@ -386,4 +388,6 @@ main .sidebar .spacer {
     text-align: center;
     padding: 0 10px;
   }
+
+ 
 }

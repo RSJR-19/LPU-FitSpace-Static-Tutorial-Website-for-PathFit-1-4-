@@ -180,7 +180,7 @@ function goToNextQuiz() {
     "../pathfit2/data/lesson13_physical_fitness_test.json",
     "../pathfit2/data/lesson14_developing_a_personal_fitness_plan.json",
 
-    // PathFit 3 sequence — include dance, sports, group exercises, and lesson15
+    // PathFit 3 sequence — include dance, sports, martial arts, group exercises, and lesson15
     "../pathfit3/data/lesson1_introduction_to_applied_physical_activities.json",
     "../pathfit3/pf3_dance_act/data/lesson1_folk_dance.json",
     "../pathfit3/pf3_dance_act/data/lesson2_modern_dance_hip_hop.json",
@@ -192,7 +192,8 @@ function goToNextQuiz() {
     "../pathfit3/pf3_sports_act/data/lesson7_badminton.json",
     "../pathfit3/pf3_sports_act/data/lesson8_table_tennis.json",
     "../pathfit3/pf3_sports_act/data/lesson9_swimming.json",
-    "../pathfit3/pf3_sports_act/data/lesson10_arnis.json",
+    
+    "../pathfit3/data/lesson10_arnis.json",
 
     "../pathfit3/pf3_group_exercises/data/lesson11_cardio_workouts.json",
     "../pathfit3/pf3_group_exercises/data/lesson12_core_and_circuit_training.json",

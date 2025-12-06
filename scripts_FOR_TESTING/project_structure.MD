@@ -5,10 +5,12 @@
 ```
 LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 ├── diagram_generator.ps1
+├── git_log.txt
 ├── home_page.html
 ├── index.html
 ├── project_structure.MD
 ├── README.md
+├── sitemap generator.py
 ├── assets/
 │   ├── search-index.json
 │   ├── css/
@@ -196,6 +198,7 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │   │   └── pathfit3.css
 │   ├── data/
 │   │   ├── lesson1_introduction_to_applied_physical_activities.json
+│   │   ├── lesson10_arnis.json
 │   │   └── lesson15_team_building_and_recreational_games.json
 │   ├── js/
 │   │   └── pathfit3.js
@@ -238,6 +241,8 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 │   └── quiz.js
 └── scripts_FOR_TESTING/
     ├── search-index.ps1
+    ├── sitemap generator.py
+    ├── sitemapgenerator.py
     ├── test-website.ps1
     └── website_test_report.txt
 ```
@@ -252,11 +257,11 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 - JavaScript files: 8
 
 **Data Files:**
-- JSON files: 29
+- JSON files: 30
 
 **Documentation:**
 - Markdown files: 2
-- Text files: 1
+- Text files: 2
 - PDF files: 2
 
 **Images:**
@@ -271,8 +276,11 @@ LPU-FitSpace-Static-Tutorial-Website-for-PathFit-1-4-
 **Scripts:**
 - PowerShell scripts: 3
 
+**Other Files:**
+- Other file types: 3
+
 ### Summary
 
-- **Total Files:** 203
+- **Total Files:** 208
 - **Total Folders:** 33
-- **Total Items:** 236
+- **Total Items:** 241

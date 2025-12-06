@@ -10,11 +10,15 @@ FitSpace is a learning hub for PathFit 1–4 that helps Lyceans stay active, hea
 - Interactive quizzes with instant feedback and score calculation
 - Responsive layout, slideshow, and simple navigation
 
-## How to Run the Project
-- Open `index.html` directly in a browser for basic browsing.
+## Access the Website
 
-## Hosted on Netlify
-- Live site: https://lpufitspace.netlify.app/
+**Option A - Live Hosted Version:**
+- Visit: https://lpufitspace.netlify.app/
+
+**Option B - Local Version:**
+- Download the project files
+- Open `index.html` in your web browser
+- Click "Start Learning" to proceed to the main hub
 
 
 ## Repository Structure
