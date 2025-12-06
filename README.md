@@ -2,26 +2,29 @@
 
 FitSpace is a learning hub for PathFit 1–4 that helps Lyceans stay active, healthy, and informed. Built for the Physical Education Department of Lyceum of the Philippines University – Cavite, it centralizes lessons, approved resources, interactive quizzes, and department information in one place.
 
+## Access the Website
+
+**Option A - Live Hosted Version:**
+
+- Visit: https://lpufitspace.netlify.app/
+
+**Option B - Local Version:**
+
+- Download the project files
+- Open `index.html` in your web browser
+- Click "Start Learning" to proceed to the main hub
+
 ## Features
+
 - PathFit 1: movement competency training and foundational PE principles
 - PathFit 2: exercise-based fitness activities, training plans, fitness measurement
 - PathFit 3 & 4: applied physical activities, performance-based and recreational exercises
 - Site-wide search powered by a JSON index
 - Interactive quizzes with instant feedback and score calculation
-- Responsive layout, slideshow, and simple navigation
-
-## Access the Website
-
-**Option A - Live Hosted Version:**
-- Visit: https://lpufitspace.netlify.app/
-
-**Option B - Local Version:**
-- Download the project files
-- Open `index.html` in your web browser
-- Click "Start Learning" to proceed to the main hub
-
+- Simple navigation
 
 ## Repository Structure
+
 ```
 assets/
   css/           Global and page-specific styles
@@ -39,10 +42,10 @@ scripts_FOR_TESTING/ Utilities (search index generator, site tests)
 ```
 
 ## Tech Stack
+
 - HTML for structure and content
 - CSS for layout, theme, responsiveness
 - Vanilla JavaScript for navigation, search, slideshow, and quizzes
 - JSON for quiz content
-
 
 ---
