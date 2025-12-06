@@ -1,16 +1,3 @@
-/**
- * FITSPACE QUIZ SYSTEM — Simplified Version
- *
- * Features :
- * Load quiz from JSON
- * Display questions
- * Check answers
- * Show explanation
- * rack score
- * Show final results
- * Support "Next Quiz"
- */
-
 // =======================
 // GLOBAL STATE VARIABLES
 // =======================
@@ -205,6 +192,7 @@ function goToNextQuiz() {
     "../pathfit3/pf3_sports_act/data/lesson7_badminton.json",
     "../pathfit3/pf3_sports_act/data/lesson8_table_tennis.json",
     "../pathfit3/pf3_sports_act/data/lesson9_swimming.json",
+    "../pathfit3/pf3_sports_act/data/lesson10_arnis.json",
 
     "../pathfit3/pf3_group_exercises/data/lesson11_cardio_workouts.json",
     "../pathfit3/pf3_group_exercises/data/lesson12_core_and_circuit_training.json",

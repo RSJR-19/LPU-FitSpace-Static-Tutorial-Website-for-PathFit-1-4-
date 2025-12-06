@@ -1,0 +1,57 @@
+[
+  {
+    "question": "In what year was Arnis officially declared the national martial art and sport of the Philippines?",
+    "options": [
+      "1992",
+      "2000",
+      "2009",
+      "1521"
+    ],
+    "answer": 2,
+    "explanation": "Arnis was declared the national martial art and sport of the Philippines in 2009 by virtue of Republic Act No. 9850, as stated in the Key Historical Points section."
+  },
+  {
+    "question": "The primary training weapon in Arnis, the Yantok, is typically made from what type of material?",
+    "options": [
+      "Bamboo",
+      "Hardwood (like Narra)",
+      "Fiberglass",
+      "Rattan"
+    ],
+    "answer": 3,
+    "explanation": "The lesson specifies that the Yantok (Stick), the primary training weapon, is typically made from rattan, and is about 28 inches long."
+  },
+  {
+    "question": "The term Eskrima, an alternative name for Arnis, is derived from the Spanish word for which activity?",
+    "options": [
+      "Armor (\"Arnes de mano\")",
+      "Fencing (\"esgrima\")",
+      "Blade (\"Bolo\")",
+      "Defense (\"Daga\")"
+    ],
+    "answer": 1,
+    "explanation": "The lesson notes that Eskrima is derived from the Spanish word for fencing, which is \"esgrima.\""
+  },
+  {
+    "question": "Which basic Arnis stance is used for powerful strikes and blocking because it is specifically designed to provide maximum stability?",
+    "options": [
+      "Ready Stance",
+      "Forward Stance",
+      "Back Stance",
+      "Straddle Stance (Horse Stance)"
+    ],
+    "answer": 3,
+    "explanation": "The Basic Stances section defines the Straddle Stance (Horse Stance) as the one used for powerful strikes and blocking because it provides maximum stability."
+  },
+  {
+    "question": "All offensive and defensive training in Arnis is often structured around how many fundamental striking areas of the human body?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "The lesson explicitly states that Arnis training is often structured around the 12 fundamental striking areas of the human body."
+  }
+]

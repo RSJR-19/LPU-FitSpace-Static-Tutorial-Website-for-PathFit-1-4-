@@ -7,7 +7,6 @@ const pathfit3Page = document.getElementById("pathfit3");
 const missionPage = document.getElementById("mission");
 const aboutUsPage = document.getElementById("aboutUs");
 
-// Track current page - initialize to null, will be set in initializeSections
 var initial = null;
 
 function toTop() {window.scrollTo({

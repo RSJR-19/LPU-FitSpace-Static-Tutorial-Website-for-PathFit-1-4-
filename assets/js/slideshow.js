@@ -1,4 +1,4 @@
-// ACTIVITY SLIDES (replace images later)
+// ACTIVITY SLIDES
 const activities = [
   {
     title: "Movement Competency Training",
@@ -74,7 +74,7 @@ function goToSlide(i) {
   // Reset progress bar
   const bar = slides[currentIndex].querySelector(".progress-bar");
   bar.style.animation = "none";
-  bar.offsetHeight; // forces reflow (fixes animation reset)
+  bar.offsetHeight; 
   bar.style.animation = "progress 4s linear";
 
   clearInterval(intervalId);
